@@ -1,10 +1,18 @@
-@import base;
+/* @import base;
 @import components;
-@import utilities;
+@import utilities; */
 
-/* @import 'tailwindcss/base';
+@import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities'; */
+@import 'tailwindcss/utilities';
+
+.card-title-container {
+  @apply border-solid border-2 rounded-b-lg shadow-md p-2 text-center text-xl;
+}
+
+.card-title {
+  @apply p-4 text-center text-xl;
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;

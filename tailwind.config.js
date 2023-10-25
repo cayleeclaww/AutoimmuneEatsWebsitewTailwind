@@ -30,7 +30,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'turquoise': '#99CED3',
+      },
+    },
   },
   plugins: [],
 }

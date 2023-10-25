@@ -7,12 +7,12 @@ import "tailwindcss/tailwind.css";
 import main_image from "../../../public/main_image_front_page_autoimmune_eats.jpg";
 // import RootLayout from "../layout";
 import placeholder_image from "../../../public/placeholder_article_photo.jpg";
+import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
 
 
 
 
-
-// **** BREADCRUMBS: fix white box over main image 
+// **** NOTES FOR LATER: Add "alt" to all images 
 
 
 
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       {/* creates main image with overlayed text boxes */}
-      <div className="w-full  flex justify-center">
+      <div className="w-full flex justify-center">
         <Image className="w-full z-1 min-w-[100%]" src={main_image} />
         <div className="absolute z-2 m-40 justify-center">
           <p className="text-6xl bg-white box-border p-10 text-center opacity-80 ">
@@ -75,24 +75,150 @@ export default function Home() {
         </div>
       </div>
 
+
+{/* ***** NOTE: below code and everything above need to be reworked for mobile responsiveness */}
       {/* featured article photo + description box */}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center pb-16">
         <Image
-          className="w-1/2"
+          className="w-[50%] h-[50%]"
           // width={500}
           src={placeholder_image}
         />
         <div className="w-1/3 h-1/2 mt-44 bg-white border-solid border-2 border-black-600 -ml-14">
           <div className="text-l p-5">Article category </div>
           <div className="text-2xl p-5">Article title </div>
-          <button className="text-l p-2 m-5 bg-[#99CED3] rounded-md">
-            read more{" "}
+          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md">
+            read more
           </button>
         </div>
       </div>
+
+
+{/* "symptoms" section - COMPLETE: is mobile friendly! */}
+<div className="w-full">
+    <p className="text-6xl pl-6 pb-2" style={{textShadow: '3px 3px 3px #99CED3'}}>symptoms</p>
+    <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
+        <div className="grid p-4">
+          <Image className="rounded-t-lg"
+            src={placeholder_image}
+          />
+            <div className="card-title-container">
+                <p className="card-title">Article title</p>
+              </div>
+        </div>
+
+        <div className="grid p-4">
+          <Image className="rounded-t-lg"
+            src={placeholder_image}
+          />
+            <div className="card-title-container">
+                <p className="card-title">Article title</p>
+              </div>
+        </div>
+
+        <div className="grid p-4">
+          <Image className="rounded-t-lg"
+            src={placeholder_image}
+          />
+            <div className="card-title-container">
+                <p className="card-title">Article title</p>
+              </div>
+        </div>
+
+        <div className="grid p-4">
+          <Image className="rounded-t-lg"
+            src={placeholder_image}
+          />
+            <div className="card-title-container">
+                <p className="card-title">Article title</p>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+
+{/* Book section - COMPLETE: is mobile friendly! */}
+
+    {/* below is for desktop responsiveness */}
+    <div className="w-full flex justify-center py-16 items-center">
+          <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14">
+              <p className="text-2xl p-4 text-bold text-center">Gain Control Over Your Psoriasis</p>
+            <p className="text-l px-4 pb-4">Stop living in pain & start self-healing by harnessing the power of the latest psoriasis science & research.<br/> <br/>Make peace with your body by learning your psoriasis triggers, not by attempting to follow some unproven highly restrictive psoriasis diet.</p>
+            <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center ">
+                buy here
+              </button>
+          </div>
+            <Image
+              className="hidden md:flex visible w-[50%] h-[50%] z-1 "
+              src={book}
+            />
+          </div>
+
+      {/* below is for mobile responsiveness */}
+      <div className="md:hidden grid p-4">
+      <Image className="ps-10"
+        src={book}
+      />
+      </div>
+        <div className="md:hidden flex flex-col items-center mx-4">
+            <p className="text-2xl px-4 pt-6 text-bold text-center">Gain Control Over Your Psoriasis</p>
+            <p className="text-l px-4 p-2 text-center">Stop living in pain & start self-healing by harnessing the power of the latest psoriasis science & research. <br/><br/>Make peace with your body by learning your psoriasis triggers, not by attempting to follow some unproven highly restrictive psoriasis diet.</p>
+            <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center ">
+                buy here
+              </button>
+        </div>
+
+
+
+{/* "conditions" section - COMPLETE: is mobile friendly! */}
+<div className="w-full mt-24">
+    <p className="text-6xl pl-6 pb-2" style={{textShadow: '3px 3px 3px #99CED3'}}>conditions</p>
+    <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
+        <div className="grid p-4">
+          <Image className="rounded-t-lg"
+            src={placeholder_image}
+          />
+            <div className="card-title-container">
+                <p className="card-title">Article title</p>
+              </div>
+        </div>
+
+        <div className="grid p-4">
+          <Image className="rounded-t-lg"
+            src={placeholder_image}
+          />
+            <div className="card-title-container">
+                <p className="card-title">Article title</p>
+              </div>
+        </div>
+
+        <div className="grid p-4">
+          <Image className="rounded-t-lg"
+            src={placeholder_image}
+          />
+            <div className="card-title-container">
+                <p className="card-title">Article title</p>
+              </div>
+        </div>
+
+        <div className="grid p-4">
+          <Image className="rounded-t-lg"
+            src={placeholder_image}
+          />
+            <div className="card-title-container">
+                <p className="card-title">Article title</p>
+              </div>
+        </div>
+    </div>
+</div>
+
     </>
   );
 }
+
+
+
 
 {
   /* 
