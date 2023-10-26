@@ -14,6 +14,49 @@
   @apply p-4 text-center text-xl;
 }
 
+.speech {
+  /* text settings */
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 700;
+ 
+  /* text and background colors */
+  color: #000000;
+  background: #99CED3;
+ 
+  /* dimensions and position */
+  position: relative;
+  padding: 10px 55px;
+  /* border-radius: 10px; */
+  margin: 50px auto;
+  max-width: 300px;
+  max-height: 50px;
+}
+
+.speech::after {
+  /* attach transparent borders */
+  content: "";
+  border: 20px solid transparent;
+ 
+  /* necessary to position the tail */
+  position: absolute;
+}
+
+.bottom.speech::after {
+  /* triangle */
+  border-top-color: #99CED3;
+  border-bottom: 0;
+ 
+  /* position at bottom */
+  bottom: -18px; left: 50%;
+  margin-left: -20px;
+}
+
+
+
+
+
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

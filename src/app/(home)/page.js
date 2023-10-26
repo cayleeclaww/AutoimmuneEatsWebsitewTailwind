@@ -1,50 +1,69 @@
 // 'use client'
 // import Image from "next/image";
 import Image from "next/image";
-import Navbar from "../../../components/navbar";
-// import './globals.css'
 import "tailwindcss/tailwind.css";
 import main_image from "../../../public/main_image_front_page_autoimmune_eats.jpg";
-// import RootLayout from "../layout";
+import main_image_mobile from "../../../public/main_image_front_page_autoimmune_eats_HALF.jpg";
 import placeholder_image from "../../../public/placeholder_article_photo.jpg";
 import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
 
-
-
-
-// **** NOTES FOR LATER: Add "alt" to all images 
-
-
-
-
-
+// **** NOTES FOR LATER: Add "alt" to all images
 
 export default function Home() {
   return (
     <>
-      {/* creates main image with overlayed text boxes */}
+      {/* creates main image with overlayed text boxes - COMPLETE: is mobile friendly!  */}
       <div className="w-full flex justify-center">
-        <Image className="w-full z-1 min-w-[100%]" src={main_image} />
-        <div className="absolute z-2 m-40 justify-center">
-          <p className="text-6xl bg-white box-border p-10 text-center opacity-80 ">
-            <b>welcome</b>
-            <br />
-            to autoimmune eats
-          </p>
-          <p className="text-3xl bg-white box-border px-10 pt-0 pb-10 text-center opacity-80 ">
-            Discover how to live with
-            <br /> more peace & less pain.
-          </p>
+        <Image
+          className="hidden md:grid w-full z-1 min-w-[100%]"
+          src={main_image}
+        />
+        <Image
+          className="grid w-full z-1 min-w-[100%] md:hidden"
+          src={main_image_mobile}
+        />
+        {/* text boxes for sm and larger screens */}
+        <div className="hidden sm:grid absolute z-2 m-14 justify-center max-h-24 lg:pt-20">
+          <div className="bg-white box-border px-10 pt-10 text-center opacity-80">
+            <p className="text-6xl pb-4 ">
+              <b>welcome</b>
+              <br />
+              to autoimmune eats
+            </p>
+            <p className="text-3xl px-10 pb-8 pt-0">
+              Discover how to live with
+              <br /> more peace & less pain.
+            </p>
+          </div>
           <div class="w-60 mx-auto">
-            <button className="text-xl bg-white rounded-md box-border mt-20 p-5 text-center opacity-80 justify-center">
+            <button className="text-xl bg-white rounded-md box-border mt-6 p-4 text-center opacity-80 justify-center">
+              join our mailing list
+            </button>
+          </div>
+        </div>
+
+        {/* text boxes for very small screens */}
+        <div className="sm:hidden grid absolute m-14 z-2 place-self-center ">
+          <div className="bg-white box-border px-2 pt-5 sm:pt-10 text-center opacity-80">
+            <p className="text-2xl sm:text-6xl pb-4 ">
+              <b>welcome</b>
+              <br />
+              to autoimmune eats
+            </p>
+            <p className="grid text-l px-5 pb-5">
+              Discover how to live with more peace & less pain.
+            </p>
+          </div>
+          <div class="w-full flex justify-center">
+            <button className="w-40 text-l bg-white rounded-md box-border mt-6 p-2 sm:p-4 text-center opacity-80 ">
               join our mailing list
             </button>
           </div>
         </div>
       </div>
 
-      {/* 4 boxes with main site features  */}
-      <div className="w-full grid grid-cols-2 md:flex pb-16">
+      {/* 4 boxes with main site features - COMPLETE: is mobile friendly! */}
+      <div className="w-full grid grid-cols-2 md:flex my-12">
         <div className="border-box p-10 text-center text-xl">
           <p>
             <b>Free of dieting,</b>
@@ -63,7 +82,7 @@ export default function Home() {
           <p>
             <b>Supported by</b>
             <br />
-            medical research & indigenous knowledge
+            medical research & Indigenous knowledge
           </p>
         </div>
         <div className="border-box p-10 text-center text-xl">
@@ -75,150 +94,301 @@ export default function Home() {
         </div>
       </div>
 
-
-{/* ***** NOTE: below code and everything above need to be reworked for mobile responsiveness */}
-      {/* featured article photo + description box */}
-      <div className="w-full flex justify-center pb-16">
+      {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
+      <div className="w-full flex justify-center p-4">
+        {/* desktop image */}
         <Image
-          className="w-[50%] h-[50%]"
-          // width={500}
+          className="hidden md:flex w-[50%] h-[50%]"
+          style={{ boxShadow: "-10px 10px 4px #99CED3" }}
           src={placeholder_image}
         />
-        <div className="w-1/3 h-1/2 mt-44 bg-white border-solid border-2 border-black-600 -ml-14">
-          <div className="text-l p-5">Article category </div>
-          <div className="text-2xl p-5">Article title </div>
-          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md">
+        {/* mobile image */}
+        <Image
+          className="w-full mx-6 flex md:hidden"
+          style={{ boxShadow: "10px 10px 4px #99CED3" }}
+          src={placeholder_image}
+        />
+
+        {/* desktop responsiveness */}
+        <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
+          <div className="text-2xl p-5 text-bold ">Article title </div>
+          <p className="text-m px-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          </p>
+          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40">
             read more
           </button>
         </div>
       </div>
 
+      {/* mobile responsiveness  */}
+      <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
+        <p className="text-2xl px-4 text-bold text-center">Article title</p>
+        <p className="text-l p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        </p>
+        <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 ">
+          read more
+        </button>
+      </div>
 
-{/* "symptoms" section - COMPLETE: is mobile friendly! */}
-<div className="w-full">
-    <p className="text-6xl pl-6 pb-2" style={{textShadow: '3px 3px 3px #99CED3'}}>symptoms</p>
-    <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
-        <div className="grid p-4">
-          <Image className="rounded-t-lg"
-            src={placeholder_image}
-          />
+      {/* "symptoms" section - COMPLETE: is mobile friendly! */}
+      <div className="w-full mt-24">
+        <p
+          className="text-6xl pl-6 pb-2"
+          style={{ textShadow: "3px 3px 3px #99CED3" }}
+        >
+          symptoms
+        </p>
+        <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
             <div className="card-title-container">
-                <p className="card-title">Article title</p>
-              </div>
-        </div>
-
-        <div className="grid p-4">
-          <Image className="rounded-t-lg"
-            src={placeholder_image}
-          />
-            <div className="card-title-container">
-                <p className="card-title">Article title</p>
-              </div>
-        </div>
-
-        <div className="grid p-4">
-          <Image className="rounded-t-lg"
-            src={placeholder_image}
-          />
-            <div className="card-title-container">
-                <p className="card-title">Article title</p>
-              </div>
-        </div>
-
-        <div className="grid p-4">
-          <Image className="rounded-t-lg"
-            src={placeholder_image}
-          />
-            <div className="card-title-container">
-                <p className="card-title">Article title</p>
-              </div>
-        </div>
-    </div>
-</div>
-
-
-
-{/* Book section - COMPLETE: is mobile friendly! */}
-
-    {/* below is for desktop responsiveness */}
-    <div className="w-full flex justify-center py-16 items-center">
-          <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14">
-              <p className="text-2xl p-4 text-bold text-center">Gain Control Over Your Psoriasis</p>
-            <p className="text-l px-4 pb-4">Stop living in pain & start self-healing by harnessing the power of the latest psoriasis science & research.<br/> <br/>Make peace with your body by learning your psoriasis triggers, not by attempting to follow some unproven highly restrictive psoriasis diet.</p>
-            <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center ">
-                buy here
-              </button>
+              <p className="card-title">Article title</p>
+            </div>
           </div>
-            <Image
-              className="hidden md:flex visible w-[50%] h-[50%] z-1 "
-              src={book}
-            />
+
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
+            <div className="card-title-container">
+              <p className="card-title">Article title</p>
+            </div>
           </div>
+
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
+            <div className="card-title-container">
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
+
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
+            <div className="card-title-container">
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Book section - COMPLETE: is mobile friendly! */}
+
+      {/* below is for desktop responsiveness */}
+      <div className="w-full flex justify-center py-16 items-center">
+        <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14">
+          <p className="text-2xl p-4 text-bold text-center">
+            Gain Control Over Your Psoriasis
+          </p>
+          <p className="text-l px-4 pb-4">
+            Stop living in pain & start self-healing by harnessing the power of
+            the latest psoriasis science & research.
+            <br /> <br />
+            Make peace with your body by learning your psoriasis triggers, not
+            by attempting to follow some unproven highly restrictive psoriasis
+            diet.
+          </p>
+          <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center ">
+            buy here
+          </button>
+        </div>
+        <Image
+          className="hidden md:flex visible w-[50%] h-[50%] z-1 "
+          src={book}
+        />
+      </div>
 
       {/* below is for mobile responsiveness */}
       <div className="md:hidden grid p-4">
-      <Image className="ps-10"
-        src={book}
-      />
+        <Image className="ps-10" src={book} />
       </div>
-        <div className="md:hidden flex flex-col items-center mx-4">
-            <p className="text-2xl px-4 pt-6 text-bold text-center">Gain Control Over Your Psoriasis</p>
-            <p className="text-l px-4 p-2 text-center">Stop living in pain & start self-healing by harnessing the power of the latest psoriasis science & research. <br/><br/>Make peace with your body by learning your psoriasis triggers, not by attempting to follow some unproven highly restrictive psoriasis diet.</p>
-            <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center ">
-                buy here
-              </button>
-        </div>
+      <div className="md:hidden flex flex-col items-center mx-4">
+        <p className="text-2xl px-4 pt-6 text-bold text-center">
+          Gain Control Over Your Psoriasis
+        </p>
+        <p className="text-l px-4 p-2 text-center">
+          Stop living in pain & start self-healing by harnessing the power of
+          the latest psoriasis science & research. <br />
+          <br />
+          Make peace with your body by learning your psoriasis triggers, not by
+          attempting to follow some unproven highly restrictive psoriasis diet.
+        </p>
+        <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center ">
+          buy here
+        </button>
+      </div>
 
-
-
-{/* "conditions" section - COMPLETE: is mobile friendly! */}
-<div className="w-full mt-24">
-    <p className="text-6xl pl-6 pb-2" style={{textShadow: '3px 3px 3px #99CED3'}}>conditions</p>
-    <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
-        <div className="grid p-4">
-          <Image className="rounded-t-lg"
-            src={placeholder_image}
-          />
+      {/* "conditions" section - COMPLETE: is mobile friendly! */}
+      <div className="w-full mt-24">
+        <p
+          className="text-6xl pl-6 pb-2"
+          style={{ textShadow: "3px 3px 3px #99CED3" }}
+        >
+          conditions
+        </p>
+        <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
             <div className="card-title-container">
-                <p className="card-title">Article title</p>
-              </div>
-        </div>
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
 
-        <div className="grid p-4">
-          <Image className="rounded-t-lg"
-            src={placeholder_image}
-          />
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
             <div className="card-title-container">
-                <p className="card-title">Article title</p>
-              </div>
-        </div>
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
 
-        <div className="grid p-4">
-          <Image className="rounded-t-lg"
-            src={placeholder_image}
-          />
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
             <div className="card-title-container">
-                <p className="card-title">Article title</p>
-              </div>
-        </div>
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
 
-        <div className="grid p-4">
-          <Image className="rounded-t-lg"
-            src={placeholder_image}
-          />
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
             <div className="card-title-container">
-                <p className="card-title">Article title</p>
-              </div>
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
+      {/* green speech bubbles section - COMPLETE: is mobile friendly! */}
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-24 ">
+        {/* did you know? */}
+        <div className="grid grid-cols-1 ">
+          <div class="speech bottom">did you know?</div>
+
+          <div className="flex px-20 py-5 justify-center">
+            <Image
+              className="rounded-l-lg w-1/2 object-cover"
+              src={placeholder_image}
+            />
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+              <p className="card-title ">Fact with link to article</p>
+            </div>
+          </div>
+
+          <div className="flex px-20 py-5 justify-center">
+            <Image
+              className="rounded-l-lg w-1/2 object-cover"
+              src={placeholder_image}
+            />
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+              <p className="card-title">Fact with link to article</p>
+            </div>
+          </div>
+
+          <div className="flex px-20 py-5 justify-center">
+            <Image
+              className="rounded-l-lg w-1/2 object-cover"
+              src={placeholder_image}
+            />
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+              <p className="card-title">Fact with link to article</p>
+            </div>
+          </div>
+        </div>
+
+        {/* tools and calulators section  */}
+        <div className="grid grid-cols-1 ">
+          <div class="speech bottom">tools & calculators</div>
+
+          <div className="flex px-20 py-5 justify-center">
+            <Image
+              className="rounded-l-lg w-1/2 object-cover"
+              src={placeholder_image}
+            />
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center ">
+              <p className="card-title ">PASI Calculator</p>
+            </div>
+          </div>
+
+          <div className="flex px-20 py-5 justify-center">
+            <Image
+              className="rounded-l-lg w-1/2 object-cover"
+              src={placeholder_image}
+            />
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+              <p className="card-title">Symptom Checker</p>
+            </div>
+          </div>
+
+          <div className="flex px-20 py-5 justify-center">
+            <Image
+              className="rounded-l-lg w-1/2 object-cover"
+              src={placeholder_image}
+            />
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+              <p className="card-title">Something Else</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* prompt to join email list  */}
+      <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
+        <p className="text-center p-24">Prompt to join email list</p>
+      </div>
+
+      {/* "recipes" section - COMPLETE: is mobile friendly! */}
+      <div className="w-full mt-24">
+        <p
+          className="text-6xl pl-6 pb-2"
+          style={{ textShadow: "3px 3px 3px #99CED3" }}
+        >
+          recipes
+        </p>
+        <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
+            <div className="card-title-container">
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
+
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
+            <div className="card-title-container">
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
+
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
+            <div className="card-title-container">
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
+
+          <div className="grid p-4">
+            <Image className="rounded-t-lg" src={placeholder_image} />
+            <div className="card-title-container">
+              <p className="card-title">Article title</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* statement on scientific/journalistic integrity */}
+      <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
+        <p className="text-center p-24">
+          Statement on scientific/journalistic integrity
+        </p>
+      </div>
+
+      {/* prompt to join email list  */}
+      <div className="w-full bg-gray-300 h-64 place-items-center">
+        <p className="text-center p-24">footer</p>
+      </div>
     </>
   );
 }
-
-
-
 
 {
   /* 
@@ -329,8 +499,4 @@ export default function Home() {
         </a>
       </div>
     </main>   */
-}
-
-{
-  /* </RootLayout> */
 }
