@@ -63,29 +63,29 @@ export default function Home() {
       </div>
 
       {/* 4 boxes with main site features - COMPLETE: is mobile friendly! */}
-      <div className="w-full grid grid-cols-2 md:flex my-12">
-        <div className="border-box p-10 text-center text-xl">
+      <div className="w-full grid grid-cols-2 md:flex my-6 sm:my-12">
+        <div className="border-box p-5 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Free of dieting,</b>
             <br />
             fearing foods, & fat shaming
           </p>
         </div>
-        <div className="border-box p-10 text-center text-xl">
+        <div className="border-box p-5 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Natural remedies</b>
             <br />
             prioritized, plus medication encouraged
           </p>
         </div>
-        <div className="border-box p-10 text-center text-xl">
+        <div className="border-box p-5 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Supported by</b>
             <br />
             medical research & Indigenous knowledge
           </p>
         </div>
-        <div className="border-box p-10 text-center text-xl">
+        <div className="border-box p-5 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Holistic</b>
             <br />
@@ -264,32 +264,32 @@ export default function Home() {
         <div className="grid grid-cols-1 ">
           <div class="speech bottom">did you know?</div>
 
-          <div className="flex px-20 py-5 justify-center">
+          <div className="flex px-5 md:px-20 py-5 justify-center">
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
             />
-            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
-              <p className="card-title ">Fact with link to article</p>
-            </div>
-          </div>
-
-          <div className="flex px-20 py-5 justify-center">
-            <Image
-              className="rounded-l-lg w-1/2 object-cover"
-              src={placeholder_image}
-            />
-            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Fact with link to article</p>
             </div>
           </div>
 
-          <div className="flex px-20 py-5 justify-center">
+          <div className="flex px-5 md:px-20 py-5 justify-center">
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
             />
-            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
+              <p className="card-title">Fact with link to article</p>
+            </div>
+          </div>
+
+          <div className="flex px-5 md:px-20 py-5 justify-center">
+            <Image
+              className="rounded-l-lg w-1/2 object-cover"
+              src={placeholder_image}
+            />
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Fact with link to article</p>
             </div>
           </div>
@@ -299,32 +299,32 @@ export default function Home() {
         <div className="grid grid-cols-1 ">
           <div class="speech bottom">tools & calculators</div>
 
-          <div className="flex px-20 py-5 justify-center">
+          <div className="flex px-5 md:px-20 py-5 justify-center">
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
             />
-            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center ">
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center ">
               <p className="card-title ">PASI Calculator</p>
             </div>
           </div>
 
-          <div className="flex px-20 py-5 justify-center">
+          <div className="flex px-5 md:px-20 py-5 justify-center">
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
             />
-            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Symptom Checker</p>
             </div>
           </div>
 
-          <div className="flex px-20 py-5 justify-center">
+          <div className="flex px-5 md:px-20 py-5 justify-center">
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
             />
-            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl min-w-[50%] flex items-center">
+            <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Something Else</p>
             </div>
           </div>

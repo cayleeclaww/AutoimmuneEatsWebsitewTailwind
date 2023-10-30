@@ -11,10 +11,6 @@ import {
 } from "react-icons/ai";
 import { useState } from "react";
 
-// BREACRUMBS:::: start around 15 mins from below link
-{
-  /* NOTE: need to set up hamburger menu. Use: https://www.youtube.com/watch?v=8s4DK5PkRNQ */
-}
 
 const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -24,15 +20,15 @@ const Navbar = () => {
   };
 
   return (
-    <header className="navbar relative w-full h-42 shadow-xl bg-white z-40">
-      <div className="justify-between items-center h-full w-full p-4 2xl:px-16">
+    <header className="navbar relative w-full h-42 shadow-xl bg-white z-40 grid">
+      <div className="flex justify-center md:block md:justify-between items-center h-full w-full p-4 2xl:px-16">
         <Link href="/">
           <Image
             src={Autoimmune_Eats_Logo}
             alt="Logo"
             height="100"
             width="247"
-            className="cursor-pointer"
+            className="cursor-pointer "
             priority
           />
         </Link>
@@ -235,25 +231,25 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* mobile menu NEW */}
+        {/* mobile menu */}
         <div
           onClick={handleHamburger}
-          className="md:hidden cursor-pointer absolute top-10 right-10"
+          className="md:hidden cursor-pointer absolute top-10 left-10"
         >
-          <AiOutlineMenu size={25} />
+          <AiOutlineMenu size={30} />
         </div>
 
         {/* mobile menu  */}
         <div
           className={
             hamburgerOpen
-              ? "fixed right-0 top-0 width-[65%] md:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 width-[65%] md:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed right-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
-          <div className="flex w-full items-center justify-end">
+          <div className="flex w-full items-center justify-start">
             <div onClick={handleHamburger} className="cursor-pointer">
-              <AiOutlineClose size={25} />
+              <AiOutlineClose size={30} />
             </div>
           </div>
           <div className="flex-col py-4">
