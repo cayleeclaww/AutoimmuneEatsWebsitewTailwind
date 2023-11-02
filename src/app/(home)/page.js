@@ -6,6 +6,7 @@ import main_image from "../../../public/main_image_front_page_autoimmune_eats.jp
 import main_image_mobile from "../../../public/main_image_front_page_autoimmune_eats_HALF.jpg";
 import placeholder_image from "../../../public/placeholder_article_photo.jpg";
 import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
+import FourCardSpread from "../../../components/FourCardSpread";
 
 // **** NOTES FOR LATER: Add "alt" to all images
 
@@ -99,13 +100,13 @@ export default function Home() {
         {/* desktop image */}
         <Image
           className="hidden md:flex w-[50%] h-[50%]"
-          style={{ boxShadow: "-10px 10px 4px #99CED3" }}
+          style={{ boxShadow: "-10px 10px 15px #99CED3" }}
           src={placeholder_image}
         />
         {/* mobile image */}
         <Image
           className="w-full mx-6 flex md:hidden"
-          style={{ boxShadow: "10px 10px 4px #99CED3" }}
+          style={{ boxShadow: "10px 10px 15px #99CED3" }}
           src={placeholder_image}
         />
 
@@ -142,7 +143,8 @@ export default function Home() {
         >
           symptoms
         </p>
-        <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
+        <FourCardSpread />
+        {/* <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
           <div className="grid p-4">
             <Image className="rounded-t-lg" src={placeholder_image} />
             <div className="card-title-container">
@@ -170,7 +172,7 @@ export default function Home() {
               <p className="card-title">Article title</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Book section - COMPLETE: is mobile friendly! */}
@@ -227,7 +229,9 @@ export default function Home() {
         >
           conditions
         </p>
-        <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
+        <FourCardSpread />
+
+        {/* <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
           <div className="grid p-4">
             <Image className="rounded-t-lg" src={placeholder_image} />
             <div className="card-title-container">
@@ -255,7 +259,7 @@ export default function Home() {
               <p className="card-title">Article title</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* green speech bubbles section - COMPLETE: is mobile friendly! */}
@@ -344,7 +348,9 @@ export default function Home() {
         >
           recipes
         </p>
-        <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
+        <FourCardSpread />
+
+        {/* <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
           <div className="grid p-4">
             <Image className="rounded-t-lg" src={placeholder_image} />
             <div className="card-title-container">
@@ -372,7 +378,7 @@ export default function Home() {
               <p className="card-title">Article title</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* statement on scientific/journalistic integrity */}
@@ -382,7 +388,7 @@ export default function Home() {
         </p>
       </div>
 
-      {/* prompt to join email list  */}
+      {/* footer  */}
       <div className="w-full bg-gray-300 h-64 place-items-center">
         <p className="text-center p-24">footer</p>
       </div>

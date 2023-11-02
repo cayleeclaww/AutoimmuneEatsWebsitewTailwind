@@ -2,28 +2,29 @@
 @import components;
 @import utilities; */
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-.card-title-container {
+/* .card-title-container {
   @apply border-solid border-2 rounded-b-lg shadow-md p-2 text-center text-xl;
-}
+} */
 
-.card-title {
+/* .card-title {
   @apply p-4 text-center text-xl;
-}
+} */
 
+/* generates "did you know?" and "tools & calculator" speech bubbles */
 .speech {
   /* text settings */
   font-size: 1.1em;
   text-align: center;
   font-weight: 700;
- 
+
   /* text and background colors */
   color: #000000;
-  background: #99CED3;
- 
+  background: #99ced3;
+
   /* dimensions and position */
   position: relative;
   padding: 10px 55px;
@@ -37,25 +38,67 @@
   /* attach transparent borders */
   content: "";
   border: 20px solid transparent;
- 
+
   /* necessary to position the tail */
   position: absolute;
 }
 
 .bottom.speech::after {
   /* triangle */
-  border-top-color: #99CED3;
+  border-top-color: #99ced3;
   border-bottom: 0;
- 
+
   /* position at bottom */
-  bottom: -18px; left: 50%;
+  bottom: -18px;
+  left: 50%;
   margin-left: -20px;
 }
 
+/* generates up arrow for articl voting button */
 
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+.arrow {
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
 
+.up-arrow {
+  margin-bottom: -5px;
+  transform: rotate(-45deg);
+}
 
+/* SECOND ATTEMPT generates up arrow for articl voting button */
 
+.arrow-container-two {
+  display: flex;
+  align-items: center;
+}
+.up-arrow-two {
+  display: inline-block;
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  border-top: 4px solid black;
+  border-left: 4px solid black;
+  transform-origin: center;
+  transform: rotate(45deg);
+}
+
+.up-arrow-two:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 15px;
+  background-color: black;
+  transform: rotate(-45deg) translate(4px, 1px);
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
