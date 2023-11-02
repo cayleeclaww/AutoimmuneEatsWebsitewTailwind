@@ -1,11 +1,12 @@
 import { BsLink45Deg } from "react-icons/bs";
 import { BiSolidPrinter, BiLogoPinterestAlt } from "react-icons/bi";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import headshot from "../../../../../public/Caylee_headshot.jpeg";
 import Image from "next/image";
 import {
   AiFillInstagram,
   AiFillLinkedin,
+  AiOutlineInstagram,
 } from "react-icons/ai";
 import placeholder_image from "../../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../../components/FourCardSpread";
@@ -61,22 +62,25 @@ const Page = () => {
         </div>
       </div>
       {/* mobile social media icons - COMPLETE: is mobile friendly! */}
-      <div className="flex md: hidden justify-center gap-2 mt-4 ">
-        <AiFillInstagram
+      <div className="flex md:hidden justify-center gap-2 mt-4 ">
+        <AiOutlineInstagram
           size={25}
           style={{
             borderRadius: "50%",
             border: "1px solid grey",
             padding: "2px",
             fontSize: "30px",
+            backgroundImage: "linear-gradient(120deg, blue, red, yellow)",
+            color: "white",
           }}
-        ></AiFillInstagram>
+        ></AiOutlineInstagram>
         <FaFacebookF
           size={25}
           style={{
             borderRadius: "50%",
             border: "1px solid grey",
             padding: "4px",
+            color: "#007FFF",
           }}
         ></FaFacebookF>
         <BiLogoPinterestAlt
@@ -85,6 +89,7 @@ const Page = () => {
             borderRadius: "50%",
             border: "1px solid grey",
             padding: "2px",
+            color: "red",
           }}
         ></BiLogoPinterestAlt>
         <AiFillLinkedin
@@ -93,6 +98,7 @@ const Page = () => {
             borderRadius: "50%",
             border: "1px solid grey",
             padding: "2px",
+            color: "#0066b2",
           }}
         ></AiFillLinkedin>
         <BsLink45Deg
@@ -116,18 +122,21 @@ const Page = () => {
       <div className="md:hidden ml-6 mt-10 text-base">
         Article Section 1 | Article Section 2 | Article Section 3
       </div>
-      {/* article image - COMPLETE: is mobile friendly! */}
-      <div className="w-full flex justify-center p-4">
-        <Image
-          className="flex w-[80%] mt-4 "
-          style={{ boxShadow: "10px 10px 15px #99CED3" }}
-          src={placeholder_image}
-        />
-      </div>
+
       {/* content section */}
+      {/* break into two columns */}
       <div className="flex md:columns-2">
+        {/* first of two columns */}
         <div className="md:w-[66%] columns-1">
-          {/* article contents - NOT mobile friendly... */}
+          {/* article contents */}
+          {/* article image - COMPLETE: is mobile friendly! */}
+          <div className="w-full flex justify-center p-4">
+            <Image
+              className="flex w-[80%] mt-4 "
+              style={{ boxShadow: "10px 10px 15px #99CED3" }}
+              src={placeholder_image}
+            />
+          </div>
           <div className="grid">
             <p
               className="text-lg ml-6 mt-8 mb-2"
@@ -208,6 +217,13 @@ const Page = () => {
               </button>
             </div>
 
+            {/* prompt to join email list */}
+            <div className="hidden md:block bg-turquoise h-48 w-full mb-4 mt-8 ">
+              <h1 className="text-lg text-center pt-20">
+                Prompt to join email list
+              </h1>
+            </div>
+
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
@@ -224,32 +240,92 @@ const Page = () => {
               iaculis eu non.
             </p>
           </div>
-
-          {/* is this article helpful? */}
-          <div className="grid place-items-center py-24 md:hidden">
-            <p className="text-xl">Is this article helpful?</p>
-            <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
-              <div class="arrow-container-two">
-                <span class="up-arrow-two"></span>
-                <p className="mx-3">vote up</p>
-                <span class="up-arrow-two"></span>
-              </div>
-            </button>
-          </div>
         </div>
         {/* second column on desktop */}
-        <div className="hidden md:grid w-[33%] columns-1 content-start">
+        <div className="hidden md:grid w-[33%] columns-1">
           {/* desktop author name & article date section - COMPLETE! */}
-          <div className="flex items-center mt-12">
-            <Image
-              alt="Caylee Clay's Author Headshot"
-              src={headshot}
-              className="w-20 h-20 rounded-full "
-            />
-            <div className="ml-4 text-sm">
-              By Caylee Clay, RDN CDN CYT
-              <br />
-              Updated on November 1, 2023
+          <div className="content-start max-h-10">
+            <div className="flex items-center mt-12 pb-6 border-b-4 border-black-500">
+              <Image
+                alt="Caylee Clay's Author Headshot"
+                src={headshot}
+                className="w-20 h-20 rounded-full "
+              />
+              <div className="ml-4 text-sm ">
+                By Caylee Clay, RDN CDN CYT
+                <br />
+                Updated on November 1, 2023
+              </div>
+            </div>
+            {/* desktop social media icons - COMPLETE! */}
+            <div className="flex justify-center gap-2 mt-4 ">
+              <AiOutlineInstagram
+                size={25}
+                style={{
+                  borderRadius: "50%",
+                  border: "1px solid grey",
+                  padding: "2px",
+                  fontSize: "30px",
+                  backgroundImage: "linear-gradient(120deg, blue, red, yellow)",
+                  color: "white",
+                }}
+              ></AiOutlineInstagram>
+              <FaFacebookF
+                size={25}
+                style={{
+                  borderRadius: "50%",
+                  border: "1px solid grey",
+                  padding: "4px",
+                  color: "#007FFF",
+                }}
+              ></FaFacebookF>
+              <BiLogoPinterestAlt
+                size={25}
+                style={{
+                  borderRadius: "50%",
+                  border: "1px solid grey",
+                  padding: "2px",
+                  color: "red",
+                }}
+              ></BiLogoPinterestAlt>
+              <AiFillLinkedin
+                size={25}
+                style={{
+                  borderRadius: "50%",
+                  border: "1px solid grey",
+                  padding: "2px",
+                  color: "#0066b2",
+                }}
+              ></AiFillLinkedin>
+              <BsLink45Deg
+                size={25}
+                style={{
+                  borderRadius: "50%",
+                  border: "1px solid grey",
+                  padding: "2px",
+                }}
+              ></BsLink45Deg>
+              <BiSolidPrinter
+                size={25}
+                style={{
+                  borderRadius: "50%",
+                  border: "1px solid grey",
+                  padding: "3px",
+                }}
+              ></BiSolidPrinter>
+            </div>
+          </div>
+          {/* is this article helpful? */}
+          <div className="place-content-center">
+            <div className="grid place-items-center">
+              <p className="text-xl">Is this article helpful?</p>
+              <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
+                <div class="arrow-container-two">
+                  <span class="up-arrow-two"></span>
+                  <p className="mx-3">vote up</p>
+                  <span class="up-arrow-two"></span>
+                </div>
+              </button>
             </div>
           </div>
         </div>
@@ -271,7 +347,7 @@ const Page = () => {
       </div>
       {/* author bio section */}
       <div className="grid mx-6 mt-8 ">
-        <div className="text-lg mb-2">About the Author:</div>
+        <div className="text-lg mb-2">About the author:</div>
         <div className="flex ">
           <Image
             alt="Caylee Clay's Author Headshot"
