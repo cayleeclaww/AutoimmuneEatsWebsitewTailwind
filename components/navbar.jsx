@@ -73,7 +73,7 @@ const Navbar = () => {
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
-                <Link href="/bydisease">by symptom</Link>
+                <Link href="/bysymptom">by symptom</Link>
               </span>
               <svg
                 className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
@@ -94,9 +94,6 @@ const Navbar = () => {
               </li>
               <li className="bg-gray-200 hover:bg-[#99CED3] py-4 px-4 cursor-pointer">
                 <Link href="/bysymptom/jointpain">joint pain</Link>
-              </li>
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/bydisease/eczema">eczema</Link>
               </li>
             </ul>
           </div>

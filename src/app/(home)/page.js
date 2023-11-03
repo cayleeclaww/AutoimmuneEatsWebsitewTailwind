@@ -1,5 +1,4 @@
 // 'use client'
-// import Image from "next/image";
 import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import main_image from "../../../public/main_image_front_page_autoimmune_eats.jpg";
@@ -9,6 +8,10 @@ import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
 import FourCardSpread from "../../../components/FourCardSpread";
 
 // **** NOTES FOR LATER: Add "alt" to all images
+// **** NOTES FOR LATER: Add link for buttons to join email list 
+// **** NOTES FOR LATER: Add link to Amazon for book 
+// Create FourCardSpreadTitle component 
+
 
 export default function Home() {
   return (
@@ -105,7 +108,7 @@ export default function Home() {
         />
         {/* mobile image */}
         <Image
-          className="w-full mx-6 flex md:hidden"
+          className="w-full border-x-6 flex md:hidden"
           style={{ boxShadow: "10px 10px 15px #99CED3" }}
           src={placeholder_image}
         />
@@ -136,44 +139,7 @@ export default function Home() {
       </div>
 
       {/* "symptoms" section - COMPLETE: is mobile friendly! */}
-      <div className="w-full mt-24">
-        <p
-          className="text-6xl pl-6 pb-2"
-          style={{ textShadow: "3px 3px 3px #99CED3" }}
-        >
-          symptoms
-        </p>
-        <FourCardSpread />
-        {/* <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-        </div> */}
-      </div>
+      <FourCardSpread>BY SYMPTOM</FourCardSpread>
 
       {/* Book section - COMPLETE: is mobile friendly! */}
 
@@ -222,45 +188,7 @@ export default function Home() {
       </div>
 
       {/* "conditions" section - COMPLETE: is mobile friendly! */}
-      <div className="w-full mt-24">
-        <p
-          className="text-6xl pl-6 pb-2"
-          style={{ textShadow: "3px 3px 3px #99CED3" }}
-        >
-          conditions
-        </p>
-        <FourCardSpread />
-
-        {/* <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-        </div> */}
-      </div>
+      <FourCardSpread>by condition</FourCardSpread>
 
       {/* green speech bubbles section - COMPLETE: is mobile friendly! */}
       <div className="grid grid-cols-1 md:grid-cols-2 mt-24 ">
@@ -341,45 +269,7 @@ export default function Home() {
       </div>
 
       {/* "recipes" section - COMPLETE: is mobile friendly! */}
-      <div className="w-full mt-24">
-        <p
-          className="text-6xl pl-6 pb-2"
-          style={{ textShadow: "3px 3px 3px #99CED3" }}
-        >
-          recipes
-        </p>
-        <FourCardSpread />
-
-        {/* <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-
-          <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
-            <div className="card-title-container">
-              <p className="card-title">Article title</p>
-            </div>
-          </div>
-        </div> */}
-      </div>
+      <FourCardSpread>recipes</FourCardSpread>
 
       {/* statement on scientific/journalistic integrity */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">

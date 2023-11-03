@@ -1,44 +1,31 @@
 import { BsLink45Deg } from "react-icons/bs";
 import { BiSolidPrinter, BiLogoPinterestAlt } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
+import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 import headshot from "../../../../../public/Caylee_headshot.jpeg";
 import Image from "next/image";
-import {
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiOutlineInstagram,
-} from "react-icons/ai";
 import placeholder_image from "../../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../../components/FourCardSpread";
+import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
 
-// ******BREADCRUMBS:::: create 2 colums for desktop view, where author photo/name + article date/etc
-//goes into second column, article content goes in first column.
-// revert to 1 column for web view
+
+// ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed 
+// ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 
 
 const Page = () => {
   return (
     <>
-      {/* turquoise article title rectangle - COMPLETE: is mobile friendly! */}
-      <div className="bg-turquoise h-48 md:w-4/5 mb-4 block">
-        <h1 className="text-3xl text-center pt-20">Article Title</h1>
-      </div>
-      {/* desktop article section links - COMPLETE: is mobile friendly! */}
+      {/* turquoise article title rectangle - desktop & mobile */}
+      <TitleRectangleTurquoise>
+        <p>Article Title</p>
+      </TitleRectangleTurquoise>
+      {/* desktop article section links */}
       <div className="hidden md:flex ml-6 text-base">
         Article Section 1 | Article Section 2 | Article Section 3
       </div>
-      {/* vote up button - COMPLETE: is mobile friendly! */}
+      {/* vote up button - desktop & mobile */}
       <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
-        {/* ** OLD BUTTOM ARROWS - FIRST ATTEMPT */}
-        {/* <button className="text-lg p-2 m-2 bg-turquoise rounded-md w-40 grid">
-          {/* <FaArrowUp size={15} className="ml-4 -mb-8 mt-1" /> */}
-
-        {/* <FaArrowUp size={15} className="ml-28 -mt-5" /> */}
-        {/* <p class="arrow-container">
-            <span class="arrow up-arrow"></span> vote up
-          </p>
-        </button>  */}
-
         <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
           <div class="arrow-container-two">
             <span class="up-arrow-two"></span>
@@ -47,8 +34,7 @@ const Page = () => {
           </div>
         </button>
       </div>
-      {/* mobile section */}
-      {/* mobile author name & article date section - COMPLETE: is mobile friendly! */}
+      {/* mobile author name & article date section */}
       <div className="flex md:hidden">
         <Image
           alt="Caylee Clay's Author Headshot"
@@ -61,7 +47,7 @@ const Page = () => {
           Updated on November 1, 2023
         </div>
       </div>
-      {/* mobile social media icons - COMPLETE: is mobile friendly! */}
+      {/* mobile social media icons */}
       <div className="flex md:hidden justify-center gap-2 mt-4 ">
         <AiOutlineInstagram
           size={25}
@@ -118,18 +104,17 @@ const Page = () => {
           }}
         ></BiSolidPrinter>
       </div>
-      {/* mobile article section links - COMPLETE: is mobile friendly! */}
+      {/* mobile article section links */}
       <div className="md:hidden ml-6 mt-10 text-base">
         Article Section 1 | Article Section 2 | Article Section 3
       </div>
 
-      {/* content section */}
-      {/* break into two columns */}
+      {/* content section - desktop & mobile*/}
+      {/* desktop break into two columns */}
       <div className="flex md:columns-2">
         {/* first of two columns */}
         <div className="md:w-[66%] columns-1">
-          {/* article contents */}
-          {/* article image - COMPLETE: is mobile friendly! */}
+          {/* article image - desktop & mobile */}
           <div className="w-full flex justify-center p-4">
             <Image
               className="flex w-[80%] mt-4 "
@@ -137,7 +122,9 @@ const Page = () => {
               src={placeholder_image}
             />
           </div>
-          <div className="grid">
+          {/* article contents - desktop & mobile*/}
+
+          <div className="grid px-8">
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
@@ -205,7 +192,7 @@ const Page = () => {
               cursus. Volutpat odio facilisis mauris sit.
             </p>
 
-            {/* is this article helpful? */}
+            {/* mobile - is this article helpful, vote up */}
             <div className="grid place-items-center py-24 md:hidden">
               <p className="text-xl">Is this article helpful?</p>
               <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
@@ -217,8 +204,8 @@ const Page = () => {
               </button>
             </div>
 
-            {/* prompt to join email list */}
-            <div className="hidden md:block bg-turquoise h-48 w-full mb-4 mt-8 ">
+            {/* desktop - prompt to join email list */}
+            <div className="hidden md:block bg-turquoise h-48  mb-4 mt-8 -ml-8">
               <h1 className="text-lg text-center pt-20">
                 Prompt to join email list
               </h1>
@@ -243,7 +230,7 @@ const Page = () => {
         </div>
         {/* second column on desktop */}
         <div className="hidden md:grid w-[33%] columns-1">
-          {/* desktop author name & article date section - COMPLETE! */}
+          {/* desktop author name & article date section */}
           <div className="content-start max-h-10">
             <div className="flex items-center mt-12 pb-6 border-b-4 border-black-500">
               <Image
@@ -257,7 +244,7 @@ const Page = () => {
                 Updated on November 1, 2023
               </div>
             </div>
-            {/* desktop social media icons - COMPLETE! */}
+            {/* desktop social media icons */}
             <div className="flex justify-center gap-2 mt-4 ">
               <AiOutlineInstagram
                 size={25}
@@ -315,7 +302,7 @@ const Page = () => {
               ></BiSolidPrinter>
             </div>
           </div>
-          {/* is this article helpful? */}
+          {/* desktop is this article helpful */}
           <div className="place-content-center">
             <div className="grid place-items-center">
               <p className="text-xl">Is this article helpful?</p>
@@ -330,11 +317,11 @@ const Page = () => {
           </div>
         </div>
       </div>
-      {/* prompt to join email list */}
+      {/* prompt to join email list - desktop & mobile */}
       <div className="bg-turquoise h-48 md:w-4/5 mb-4 block mt-8 ">
         <h1 className="text-lg text-center pt-20">Prompt to join email list</h1>
       </div>
-      {/* is this article helpful? */}
+      {/* is this article helpful? - desktop & mobile */}
       <div className="grid place-items-center py-24">
         <p className="text-xl">Is this article helpful?</p>
         <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
@@ -345,7 +332,7 @@ const Page = () => {
           </div>
         </button>
       </div>
-      {/* author bio section */}
+      {/* author bio section - desktop & mobile */}
       <div className="grid mx-6 mt-8 ">
         <div className="text-lg mb-2">About the author:</div>
         <div className="flex ">
@@ -363,27 +350,11 @@ const Page = () => {
           </div>
         </div>
       </div>
-      {/* related articles */}
-      <div className="w-full mt-24">
-        <p
-          className="text-4xl pl-6 pb-2"
-          style={{ textShadow: "3px 3px 3px #99CED3" }}
-        >
-          related articles
-        </p>
-        <FourCardSpread />
-      </div>
-      {/* did you know? articles */}
-      <div className="w-full mt-24">
-        <p
-          className="text-4xl pl-6 pb-2"
-          style={{ textShadow: "3px 3px 3px #99CED3" }}
-        >
-          did you know?
-        </p>
-        <FourCardSpread />
-      </div>
-      {/* footer  */}
+      {/* related articles - desktop & mobile */}
+      <FourCardSpread>related articles</FourCardSpread>
+      {/* did you know? articles - desktop & mobile */}
+      <FourCardSpread>did you know?</FourCardSpread>
+      {/* footer - desktop & mobile */}
       <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
         <p className="text-center p-24">footer</p>
       </div>

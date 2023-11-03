@@ -8,15 +8,15 @@ import placeholder_image from "../../../../public/placeholder_article_photo.jpg"
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
 
-//NOTE FOR LATER: create component for social icons - need to add CSS inline styling to globals.css or something: https://www.pluralsight.com/guides/inline-styling-with-react
+//NOTE FOR LATER: create component for social icons - one more social, one for mobile?
 //NOTE FOR LATER: figure out how to make the feature photo into a component... use an object as the prop???
 
-export default function ByDiseasePage() {
+export default function NutritionAndSupplementsPage() {
   return (
     <>
       {/* turquoise category title rectangle - desktop & mobile */}
       <TitleRectangleTurquoise>
-        <p>By Disease</p>
+        <p>Nutrition & Supplements</p>
       </TitleRectangleTurquoise>
 
       {/* category description */}
@@ -28,28 +28,22 @@ export default function ByDiseasePage() {
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">
         <Link
-          href="/bydisease/psoriasis"
+          href="/nutritionandsupplements/supplements"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
-          psoriasis
+          top supplements
         </Link>
         <Link
-          href="/bydisease/arthritis"
+          href="/nutritionandsupplements/foodsensitivities"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
-          arthritis
+          food sensitivities
         </Link>
         <Link
-          href="/bydisease/hashimotos"
+          href="/nutritionandsupplements/nutritionrecommendations"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
-          hashimoto's
-        </Link>
-        <Link
-          href="/bydisease/eczema"
-          className="uppercase text-base hover:text-turquoise mx-8 my-4"
-        >
-          eczema
+          nutrition recommendations
         </Link>
       </div>
 
@@ -151,17 +145,14 @@ export default function ByDiseasePage() {
         </button>
       </div>
 
-      {/* psoriasis section */}
-      <FourCardSpread>psoriasis</FourCardSpread>
+      {/* top supplements section */}
+      <FourCardSpread>top supplements</FourCardSpread>
 
-      {/* arthritis section */}
-      <FourCardSpread>arthritis</FourCardSpread>
+      {/* food sensitivities section */}
+      <FourCardSpread>food sensitivities</FourCardSpread>
 
-      {/* hashimoto's section */}
-      <FourCardSpread>hashimoto's</FourCardSpread>
-
-      {/* eczema section  */}
-      <FourCardSpread>eczema</FourCardSpread>
+      {/* nutrition recommendations section */}
+      <FourCardSpread>nutrition recommendations</FourCardSpread>
 
       {/* prompt to join email list  */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
