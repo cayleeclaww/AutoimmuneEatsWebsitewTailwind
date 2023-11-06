@@ -18,7 +18,7 @@ const Page = () => {
     <>
       {/* turquoise article title rectangle - desktop & mobile */}
       <TitleRectangleTurquoise>
-        <p>Article Title</p>
+        Article Title
       </TitleRectangleTurquoise>
       {/* desktop article section links */}
       <div className="hidden md:flex ml-6 text-base">
