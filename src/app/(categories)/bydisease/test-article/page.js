@@ -9,9 +9,68 @@ import FourCardSpread from "../../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
 
 
+
+
+
+
+
+
+
+
+// ************** BREADCRUMBS: *********** Google article/video on how to use the metadata object in NextJS, esp author and publication date tags 
+
+
+
+ç
+
+
+
+
+
+
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed 
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 
+export const metadata = {
+  title: "Test Article | Autoimmune Eats",
+  description:
+    "This is a test article generated to create a template layout for future articles",
+  openGraph: {
+    title: "Test Article",
+    description:
+      "This is a test article generated to create a template layout for future articles",
+    url: "http://localhost:3000/bydisease/test-article", // update later to http://autoimmuneeats.com/bydisease/test-article
+    siteName: "Autoimmune Eats",
+    images: [
+      {
+        url: "http://localhost:3000/placeholder_article_photo.jpg", //update later to http://autoimmuneeats.com/placeholder_article_photo.jpg
+        width: 800,
+        height: 600,
+      },
+      // {
+      //   url: "https://nextjs.org/og-alt.png", //is necessary?
+      //   width: 1800,
+      //   height: 1600,
+      //   alt: "My custom alt",
+      // },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
 
 const Page = () => {
   return (
