@@ -1,0 +1,22 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+# Blocking Google AI (Bard and Vertex AI generative APIs) 
+User-agent: Google-Extended
+Disallow: /
+
+# Blocking commoncrawl (CCBot)
+User-agent: CCBot
+Disallow: /
+
+# Speech synthesis only?
+User-agent: FacebookBot
+Disallow: /
+
+# Multi-purpose, commercial uses; including LLMs
+User-agent: Omgilibot
+Disallow: /

@@ -21,7 +21,7 @@ import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTur
 
 
 
-ç
+
 
 
 
@@ -32,11 +32,15 @@ import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTur
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 
 export const metadata = {
-  title: "Test Article | Autoimmune Eats",
+  title: "Test Article",
   description:
     "This is a test article generated to create a template layout for future articles",
+  keywords: ["First keyword", "second keyword", "third keyword"],
+  icons: {
+    icon: "/icon.png",
+  },
   openGraph: {
-    title: "Test Article",
+    title: "Test Article | Autoimmune Eats", //May need to delete "| Autoimmune Eats" from here later, since it's in the root layout metadata
     description:
       "This is a test article generated to create a template layout for future articles",
     url: "http://localhost:3000/bydisease/test-article", // update later to http://autoimmuneeats.com/bydisease/test-article
@@ -55,16 +59,17 @@ export const metadata = {
       // },
     ],
     locale: "en_US",
-    type: "website",
+    type: "article", //Could be "website" or "video" (LATER: set homepage to "website")
+    publishedTime: "2023-11-07",
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true,
+      // noimageindex: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
