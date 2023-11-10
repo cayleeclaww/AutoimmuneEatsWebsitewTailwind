@@ -6,8 +6,6 @@ import "tailwindcss/tailwind.css";
 import {
   AiOutlineMenu,
   AiOutlineClose,
-  AiOutlineCaretDown,
-  AiOutlineCaretUp,
 } from "react-icons/ai";
 import { useState } from "react";
 
@@ -228,7 +226,7 @@ const Navbar = () => {
         {/* mobile menu */}
         <div
           onClick={handleHamburger}
-          className="md:hidden cursor-pointer absolute top-10 left-10"
+          className="md:hidden cursor-pointer absolute top-5 left-5"
         >
           <AiOutlineMenu size={30} />
         </div>
@@ -237,7 +235,7 @@ const Navbar = () => {
         <div
           className={
             hamburgerOpen
-              ? "fixed left-0 top-0 width-[65%] md:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 width-[65%] md:hidden h-screen bg-[#ecf0f3] p-5 ease-in duration-500"
               : "fixed right-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
