@@ -70,28 +70,28 @@ export default function Home() {
 
       {/* 4 boxes with main site features - COMPLETE: is mobile friendly! */}
       <div className="w-full grid grid-cols-2 md:flex my-6 sm:my-12">
-        <div className="border-box p-5 sm:p-10 text-center text-l sm:text-xl">
+        <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Free of dieting,</b>
             <br />
             fearing foods, & fat shaming
           </p>
         </div>
-        <div className="border-box p-5 sm:p-10 text-center text-l sm:text-xl">
+        <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Natural remedies</b>
             <br />
-            prioritized, plus medication encouraged
+            prioritized, medication supported
           </p>
         </div>
-        <div className="border-box p-5 sm:p-10 text-center text-l sm:text-xl">
+        <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Supported by</b>
             <br />
             medical research & Indigenous knowledge
           </p>
         </div>
-        <div className="border-box p-5 sm:p-10 text-center text-l sm:text-xl">
+        <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Holistic</b>
             <br />
