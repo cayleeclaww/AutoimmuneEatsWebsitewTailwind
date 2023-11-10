@@ -112,12 +112,14 @@ export default function NutritionAndSupplementsPage() {
           className="hidden md:flex w-[50%] h-[50%]"
           style={{ boxShadow: "-10px 10px 15px #99CED3" }}
           src={placeholder_image}
+          alt="placeholder image"
         />
         {/* mobile image */}
         <Image
           className="w-full border-x-6 flex md:hidden"
           style={{ boxShadow: "10px 10px 15px #99CED3" }}
           src={placeholder_image}
+          alt="placeholder image"
         />
 
         {/* desktop responsiveness */}

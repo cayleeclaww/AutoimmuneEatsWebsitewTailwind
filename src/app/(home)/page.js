@@ -21,10 +21,12 @@ export default function Home() {
         <Image
           className="hidden md:grid w-full z-1 min-w-[100%]"
           src={main_image}
+          alt="wooden cutting board with colorful dried herbs mirrored on left and right sides"
         />
         <Image
           className="grid w-full z-1 min-w-[100%] md:hidden"
           src={main_image_mobile}
+          alt="wooden cutting board with colorful dried herbs on left side"
         />
         {/* text boxes for sm and larger screens */}
         <div className="hidden sm:grid absolute z-2 m-14 justify-center max-h-24 lg:pt-20">
@@ -111,6 +113,7 @@ export default function Home() {
           className="w-full border-x-6 flex md:hidden"
           style={{ boxShadow: "10px 10px 15px #99CED3" }}
           src={placeholder_image}
+          alt="placeholder image"
         />
 
         {/* desktop responsiveness */}
@@ -164,12 +167,17 @@ export default function Home() {
         <Image
           className="hidden md:flex visible w-[50%] h-[50%] z-1 "
           src={book}
+          alt="Display of the book, tablet, and ebook covers for Gain Control Over Your Psoriasis"
         />
       </div>
 
       {/* below is for mobile responsiveness */}
       <div className="md:hidden grid p-4">
-        <Image className="ps-10" src={book} />
+        <Image
+          className="ps-10"
+          src={book}
+          alt="Display of the book, tablet, and ebook covers for Gain Control Over Your Psoriasis"
+        />
       </div>
       <div className="md:hidden flex flex-col items-center mx-4">
         <p className="text-2xl px-4 pt-6 text-bold text-center">
@@ -200,6 +208,7 @@ export default function Home() {
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
+              alt="placeholder image"
             />
             <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Fact with link to article</p>
@@ -210,6 +219,7 @@ export default function Home() {
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
+              alt="placeholder image"
             />
             <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Fact with link to article</p>
@@ -220,6 +230,7 @@ export default function Home() {
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
+              alt="placeholder image"
             />
             <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Fact with link to article</p>
@@ -235,6 +246,7 @@ export default function Home() {
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
+              alt="placeholder image"
             />
             <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center ">
               <p className="card-title ">PASI Calculator</p>
@@ -245,6 +257,7 @@ export default function Home() {
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
+              alt="placeholder image"
             />
             <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Symptom Checker</p>
@@ -255,6 +268,7 @@ export default function Home() {
             <Image
               className="rounded-l-lg w-1/2 object-cover"
               src={placeholder_image}
+              alt="placeholder image"
             />
             <div className="border-solid border-2 rounded-r-lg shadow-md p-2 text-center text-xl flex items-center">
               <p className="card-title">Something Else</p>

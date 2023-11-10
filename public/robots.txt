@@ -1,7 +1,4 @@
-# Allow all crawlers
-User-agent: *
-Allow: /
-
+# Blocking ChatGPT bot
 User-agent: GPTBot
 Disallow: /
 
@@ -20,3 +17,7 @@ Disallow: /
 # Multi-purpose, commercial uses; including LLMs
 User-agent: Omgilibot
 Disallow: /
+
+# Allow all other crawlers
+User-agent: *
+Allow: /

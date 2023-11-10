@@ -61,7 +61,7 @@ const Navbar = () => {
                 <Link href="/bydisease/arthritis">arthritis</Link>{" "}
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/bydisease/hashimotos">hashimoto's</Link>
+                <Link href="/bydisease/hashimotos">hashimoto&apos;s</Link>
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link href="/bydisease/eczema">eczema</Link>
@@ -194,7 +194,7 @@ const Navbar = () => {
 
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link href="/resources/autoimmunenutritionstartersguide">
-                  autoimmune nutrition starters' guide
+                  autoimmune nutrition starters&apos; guide
                 </Link>
               </li>
 

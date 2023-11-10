@@ -81,9 +81,7 @@ const Page = () => {
   return (
     <>
       {/* turquoise article title rectangle - desktop & mobile */}
-      <TitleRectangleTurquoise>
-        Article Title
-      </TitleRectangleTurquoise>
+      <TitleRectangleTurquoise>Article Title</TitleRectangleTurquoise>
       {/* desktop article section links */}
       <div className="hidden md:flex ml-6 text-base">
         Article Section 1 | Article Section 2 | Article Section 3
@@ -184,6 +182,7 @@ const Page = () => {
               className="flex w-[80%] mt-4 "
               style={{ boxShadow: "10px 10px 15px #99CED3" }}
               src={placeholder_image}
+              alt="placeholder image"
             />
           </div>
           {/* article contents - desktop & mobile*/}

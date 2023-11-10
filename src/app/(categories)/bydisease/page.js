@@ -43,7 +43,7 @@ export default function ByDiseasePage() {
           href="/bydisease/hashimotos"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
-          hashimoto's
+          hashimoto&apos;s
         </Link>
         <Link
           href="/bydisease/eczema"
@@ -118,12 +118,14 @@ export default function ByDiseasePage() {
           className="hidden md:flex w-[50%] h-[50%]"
           style={{ boxShadow: "-10px 10px 15px #99CED3" }}
           src={placeholder_image}
+          alt="placeholder image"
         />
         {/* mobile image */}
         <Image
           className="w-full border-x-6 flex md:hidden"
           style={{ boxShadow: "10px 10px 15px #99CED3" }}
           src={placeholder_image}
+          alt="placeholder image"
         />
 
         {/* desktop responsiveness */}
@@ -158,7 +160,7 @@ export default function ByDiseasePage() {
       <FourCardSpread>arthritis</FourCardSpread>
 
       {/* hashimoto's section */}
-      <FourCardSpread>hashimoto's</FourCardSpread>
+      <FourCardSpread>hashimoto&apos;s</FourCardSpread>
 
       {/* eczema section  */}
       <FourCardSpread>eczema</FourCardSpread>

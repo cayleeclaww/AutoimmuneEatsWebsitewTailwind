@@ -9,32 +9,48 @@ export default function FourCardSpread(props) {
           className="text-6xl pl-6 pb-2 lowercase"
           style={{ textShadow: "3px 3px 3px #99CED3" }}
         >
-          { props.children }
+          {props.children}
         </p>
         <div className="grid grid-cols-2 mx-4 md:grid-cols-4">
           <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
+            <Image
+              className="rounded-t-lg"
+              src={placeholder_image}
+              alt="placeholder image"
+            />
             <div className="border-solid border-2 rounded-b-lg shadow-md p-2 text-center text-xl">
               <p className="p-4 text-center text-xl">Article title</p>
             </div>
           </div>
 
           <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
+            <Image
+              className="rounded-t-lg"
+              src={placeholder_image}
+              alt="placeholder image"
+            />
             <div className="border-solid border-2 rounded-b-lg shadow-md p-2 text-center text-xl">
               <p className="p-4 text-center text-xl">Article title</p>
             </div>
           </div>
 
           <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
+            <Image
+              className="rounded-t-lg"
+              src={placeholder_image}
+              alt="placeholder image"
+            />
             <div className="border-solid border-2 rounded-b-lg shadow-md p-2 text-center text-xl">
               <p className="p-4 text-center text-xl">Article title</p>
             </div>
           </div>
 
           <div className="grid p-4">
-            <Image className="rounded-t-lg" src={placeholder_image} />
+            <Image
+              className="rounded-t-lg"
+              src={placeholder_image}
+              alt="placeholder image"
+            />
             <div className="border-solid border-2 rounded-b-lg shadow-md p-2 text-center text-xl">
               <p className="p-4 text-center text-xl">Article title</p>
             </div>
