@@ -17,7 +17,7 @@ import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTur
 
 
 
-// ************** BREADCRUMBS: *********** Google article/video on how to use the metadata object in NextJS, esp author and publication date tags 
+// ************** BREADCRUMBS: *********** Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags 
 
 
 
