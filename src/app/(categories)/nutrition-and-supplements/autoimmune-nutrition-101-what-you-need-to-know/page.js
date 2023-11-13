@@ -7,60 +7,41 @@ import Image from "next/image";
 import placeholder_image from "../../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
+import Link from "next/link";
 
-
-
-
-
-
-
-
-
-
-// ************** BREADCRUMBS: *********** Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags 
-
-
-
-
-
-
-
-
-
-
-// ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed 
+// ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
+// ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
+// ****** NOTES FOR LATER: Cannot get article section links to wrap correctly...
 
 export const metadata = {
-  title: "Test Article",
+  title: "Autoimmune Nutrition 101: What You Need to Know", // 47 characters
   description:
-    "This is a test article generated to create a template layout for future articles",
-  keywords: ["First keyword", "second keyword", "third keyword"],
+    "Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!", // 130 characters
+  keywords: [
+    "worst foods for autoimmune disease",
+    "autoimmune disease anti inflammatory diet",
+    "aip diet",
+  ],
   icons: {
     icon: "/icon.png",
   },
   openGraph: {
-    title: "Test Article | Autoimmune Eats", //May need to delete "| Autoimmune Eats" from here later, since it's in the root layout metadata
+    title: "Autoimmune Nutrition 101: What You Need to Know | Autoimmune Eats", //May need to delete "| Autoimmune Eats" from here later, since it's in the root layout metadata
     description:
-      "This is a test article generated to create a template layout for future articles",
-    url: "http://autoimmuneeats.com/by-disease/test-article", // update 
+      "Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!", // 130 characters
+    url: "http://autoimmuneeats.com/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know", // update later to
     siteName: "Autoimmune Eats",
     images: [
       {
-        url: "http://autoimmuneeats.com/placeholder_article_photo.jpg", //update
+        url: "http://autoimmuneeats.com/placeholder_article_photo.jpg", //update??
         width: 800,
         height: 600,
       },
-      // {
-      //   url: "https://nextjs.org/og-alt.png", //is necessary?
-      //   width: 1800,
-      //   height: 1600,
-      //   alt: "My custom alt",
-      // },
     ],
     locale: "en_US",
-    type: "article", //Could be "website" or "video" (LATER: set homepage to "website")
-    publishedTime: "2023-11-07",
+    type: "article", //Could be "website" or "video" or "article" (LATER: set homepage to "website")
+    publishedTime: "2023-11-13",
   },
   robots: {
     index: true,
@@ -81,11 +62,9 @@ const Page = () => {
   return (
     <>
       {/* turquoise article title rectangle - desktop & mobile */}
-      <TitleRectangleTurquoise>Article Title</TitleRectangleTurquoise>ç
-      {/* desktop article section links */}
-      <div className="hidden md:flex ml-6 text-base w-[60%]">
-        Article Section 1 | Article Section 2 | Article Section 3
-      </div>
+      <TitleRectangleTurquoise>
+        Autoimmune Nutrition 101:<br></br> What You Need to Know
+      </TitleRectangleTurquoise>
       {/* vote up button - desktop & mobile */}
       <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
         <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
@@ -96,6 +75,39 @@ const Page = () => {
           </div>
         </button>
       </div>
+      {/* desktop article section links */}
+      <div className="hidden md:block w-2/3 mx-6 pr-20 text-base">
+        <Link href="#Why-Nutrition-is-Important" className="whitespace-nowrap">
+          Why Nutrition is Important
+        </Link>
+        &nbsp;|&nbsp;
+        <Link
+          href="#Does-the-Anti-Inflammatory-Diet-Work"
+          className="whitespace-nowrap"
+        >
+          Does the Anti-Inflammatory Diet Work?
+        </Link>
+        &nbsp;|&nbsp;<br></br>
+        <Link href="#Does-the-AIP-Diet-Work" className="whitespace-nowrap">
+          Does the AIP Diet Work?
+        </Link>
+        &nbsp;|&nbsp;
+        <Link href="#Dangers-of-Dieting" className="whitespace-nowrap">
+          Dangers of Dieting
+        </Link>
+        &nbsp;|&nbsp; <br></br>
+        <Link
+          href="#Safer-Alternative-to-Dieting"
+          className="whitespace-nowrap"
+        >
+          Safer Alternative to Dieting
+        </Link>
+        &nbsp;|&nbsp;
+        <Link href="#Bottom-Line" className="whitespace-nowrap">
+          Bottom Line
+        </Link>
+      </div>
+
       {/* mobile author name & article date section */}
       <div className="flex md:hidden">
         <Image
@@ -106,7 +118,7 @@ const Page = () => {
         <div className="ml-4 mt-4 text-lg">
           By Caylee Clay, RDN CDN CYT
           <br />
-          Updated on November 1, 2023
+          Updated on November 13, 2023
         </div>
       </div>
       {/* mobile social media icons */}
@@ -167,8 +179,36 @@ const Page = () => {
         ></BiSolidPrinter>
       </div>
       {/* mobile article section links */}
-      <div className="md:hidden ml-6 mt-10 text-base">
-        Article Section 1 | Article Section 2 | Article Section 3
+      <div className="md:hidden block mx-6 mt-10 text-base w-1/2">
+        <Link href="#Why-Nutrition-is-Important" className="whitespace-nowrap">
+          Why Nutrition is Important
+        </Link>
+        &nbsp;|&nbsp;<br></br>
+        <Link
+          href="#Does-the-Anti-Inflammatory-Diet-Work"
+          className="whitespace-nowrap"
+        >
+          Does the Anti-Inflammatory Diet Work?
+        </Link>
+        &nbsp;|&nbsp;<br></br>
+        <Link href="#Does-the-AIP-Diet-Work" className="whitespace-nowrap">
+          Does the AIP Diet Work?
+        </Link>
+        &nbsp;|&nbsp;
+        <Link href="#Dangers-of-Dieting" className="whitespace-nowrap">
+          Dangers of Dieting
+        </Link>
+        &nbsp;|&nbsp; <br></br>
+        <Link
+          href="#Safer-Alternative-to-Dieting"
+          className="whitespace-nowrap"
+        >
+          Safer Alternative to Dieting
+        </Link>
+        &nbsp;|&nbsp;
+        <Link href="#Bottom-Line" className="whitespace-nowrap">
+          Bottom Line
+        </Link>
       </div>
 
       {/* content section - desktop & mobile*/}
@@ -191,69 +231,58 @@ const Page = () => {
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id="Why-Nutrition-is-Important"
             >
-              Overview
+              Why Nutrition is Important
             </p>
-            <p className="text-sm mx-6 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Faucibus purus in massa tempor nec feugiat nisl. Dolor sit amet
-              consectetur adipiscing elit. Cursus vitae congue mauris rhoncus
-              aenean. Tincidunt ornare massa eget egestas purus viverra accumsan
-              in. Ultrices tincidunt arcu non sodales neque sodales ut etiam
-              sit. Non sodales neque sodales ut etiam sit amet nisl purus. Quis
-              eleifend quam adipiscing vitae proin sagittis. Consectetur a erat
-              nam at lectus urna duis convallis. Sodales ut etiam sit amet nisl
-              purus. Justo nec ultrices dui sapien eget mi proin sed. Arcu
-              cursus euismod quis viverra nibh. Rhoncus est pellentesque elit
-              ullamcorper dignissim. Dui ut ornare lectus sit. Tincidunt dui ut
-              ornare lectus sit. Aliquam sem et tortor consequat id porta. Nisl
-              tincidunt eget nullam non. Donec et odio pellentesque diam
-              volutpat commodo sed egestas egestas. Parturient montes nascetur
-              ridiculus mus mauris vitae ultricies.
-            </p>
+            <p className="text-sm mx-6 ">paragraph text</p>
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id="Does-the-Anti-Inflammatory-Diet-Work"
             >
-              Section 1
+              Does the Anti-Inflammatory Diet Work?
             </p>
-            <p className="text-sm mx-6 ">
-              Duis convallis convallis tellus id. A pellentesque sit amet
-              porttitor eget dolor morbi. Habitant morbi tristique senectus et
-              netus et malesuada fames. Non quam lacus suspendisse faucibus. Et
-              odio pellentesque diam volutpat. Dui id ornare arcu odio ut sem
-              nulla. Tristique senectus et netus et malesuada fames. Aenean vel
-              elit scelerisque mauris pellentesque. Amet massa vitae tortor
-              condimentum lacinia quis vel eros. Sed faucibus turpis in eu. Duis
-              at tellus at urna. Tortor condimentum lacinia quis vel eros. Dui
-              id ornare arcu odio ut sem nulla. Penatibus et magnis dis
-              parturient montes nascetur ridiculus mus mauris. Et leo duis ut
-              diam quam nulla porttitor massa. Montes nascetur ridiculus mus
-              mauris vitae ultricies leo integer. Morbi tristique senectus et
-              netus et malesuada fames.
-            </p>
+            <p className="text-sm mx-6 ">paragraph text</p>
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id="Does-the-AIP-Diet-Work"
             >
-              Section 2
+              Does the AIP Diet Work?
             </p>
-            <p className="text-sm mx-6 ">
-              Scelerisque purus semper eget duis at tellus at urna. Arcu odio ut
-              sem nulla pharetra diam sit amet nisl. Sapien nec sagittis aliquam
-              malesuada bibendum. Lacus vestibulum sed arcu non odio euismod
-              lacinia. Et tortor at risus viverra. Tristique magna sit amet
-              purus gravida quis blandit. Sit amet mattis vulputate enim nulla.
-              Viverra vitae congue eu consequat ac felis. Cursus metus aliquam
-              eleifend mi in nulla. Nisl tincidunt eget nullam non nisi est sit.
-              Nulla at volutpat diam ut venenatis tellus. Sed id semper risus in
-              hendrerit gravida rutrum. Aenean pharetra magna ac placerat. Est
-              velit egestas dui id ornare arcu odio ut sem. Amet nisl suscipit
-              adipiscing bibendum est ultricies integer quis. Enim nulla aliquet
-              porttitor lacus luctus accumsan tortor. Egestas diam in arcu
-              cursus. Volutpat odio facilisis mauris sit.
+            <p className="text-sm mx-6 ">paragraph text</p>
+            <p
+              className="text-lg ml-6 mt-8 mb-2"
+              style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id="Dangers-of-Dieting"
+            >
+              Dangers of Dieting
             </p>
+            <p className="text-sm mx-6 ">paragraph text</p>
+
+            {/* desktop - prompt to join email list */}
+            <div className="hidden md:block bg-turquoise h-48  mb-4 mt-8 -ml-8">
+              <h1 className="text-lg text-center pt-20">
+                Prompt to join email list
+              </h1>
+            </div>
+            <p
+              className="text-lg ml-6 mt-8 mb-2"
+              style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id="Safer-Alternative-to-Dieting"
+            >
+              Safer Alternative to Dieting
+            </p>
+            <p className="text-sm mx-6 ">paragraph text</p>
+            <p
+              className="text-lg ml-6 mt-8 mb-2"
+              style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id="Bottom-Line"
+            >
+              Bottom Line
+            </p>
+            <p className="text-sm mx-6 ">paragraph text</p>
 
             {/* mobile - is this article helpful, vote up */}
             <div className="grid place-items-center py-24 md:hidden">
@@ -265,13 +294,6 @@ const Page = () => {
                   <span class="up-arrow-two"></span>
                 </div>
               </button>
-            </div>
-
-            {/* desktop - prompt to join email list */}
-            <div className="hidden md:block bg-turquoise h-48  mb-4 mt-8 -ml-8">
-              <h1 className="text-lg text-center pt-20">
-                Prompt to join email list
-              </h1>
             </div>
 
             <p
@@ -407,9 +429,11 @@ const Page = () => {
           <div className="ml-4 mt-4 text-base">
             Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist,
             scientist, researcher, author, software engineer, & autoimmune
-            disease expert. Caylee is the author of{" "}
-            <Link href="https://www.amazon.com/gp/product/173515041X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173515041X&linkCode=as2&tag=eatyerveggies-20&linkId=7933144f7c8eea01d9847a2da039b38f">
-              {" "}
+            disease expert. Caylee is the author of
+            <Link
+              href="https://www.amazon.com/gp/product/173515041X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173515041X&linkCode=as2&tag=eatyerveggies-20&linkId=7933144f7c8eea01d9847a2da039b38f"
+              target="_blank"
+            >
               Gain Control Over Your Psoriasis
             </Link>
             . Outside of work, Caylee loves gardening, hiking, cooking, & biking

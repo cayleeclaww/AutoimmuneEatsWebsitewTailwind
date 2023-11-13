@@ -37,9 +37,14 @@ const Navbar = () => {
 
           {/* bydisease menu item  */}
           <div className="group relative ">
-            <button className="text-gray-700 rounded inline-flex items-center group">
+            <button className="text-gray-700 rounded inline-flex items-center group text-black">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex ">
-                <Link href="/by-disease">by disease</Link>
+                <Link
+                  href="/by-disease"
+                  className="text-black visited:text-black"
+                >
+                  by disease
+                </Link>
               </span>
               <svg
                 className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
@@ -53,16 +58,36 @@ const Navbar = () => {
             {/* submenu list */}
             <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer ">
-                <Link href="/by-disease/psoriasis">psoriasis</Link>
+                <Link
+                  href="/by-disease/psoriasis"
+                  className="text-black visited:text-black"
+                >
+                  psoriasis
+                </Link>
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/by-disease/arthritis">arthritis</Link>{" "}
+                <Link
+                  href="/by-disease/arthritis"
+                  className="text-black visited:text-black"
+                >
+                  arthritis
+                </Link>{" "}
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/by-disease/hashimotos">hashimoto&apos;s</Link>
+                <Link
+                  href="/by-disease/hashimotos"
+                  className="text-black visited:text-black"
+                >
+                  hashimoto&apos;s
+                </Link>
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/by-disease/eczema">eczema</Link>
+                <Link
+                  href="/by-disease/eczema"
+                  className="text-black visited:text-black"
+                >
+                  eczema
+                </Link>
               </li>
             </ul>
           </div>
@@ -71,7 +96,12 @@ const Navbar = () => {
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
-                <Link href="/by-symptom">by symptom</Link>
+                <Link
+                  href="/by-symptom"
+                  className="text-black visited:text-black"
+                >
+                  by symptom
+                </Link>
               </span>
               <svg
                 className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
@@ -85,13 +115,28 @@ const Navbar = () => {
             {/* submenu list */}
             <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/by-symptom/skin-pain">skin pain</Link>
+                <Link
+                  href="/by-symptom/skin-pain"
+                  className="text-black visited:text-black"
+                >
+                  skin pain
+                </Link>
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/by-symptom/fatigue">fatigue</Link>{" "}
+                <Link
+                  href="/by-symptom/fatigue"
+                  className="text-black visited:text-black"
+                >
+                  fatigue
+                </Link>{" "}
               </li>
               <li className="bg-gray-200 hover:bg-[#99CED3] py-4 px-4 cursor-pointer">
-                <Link href="/by-symptom/joint-pain">joint pain</Link>
+                <Link
+                  href="/by-symptom/joint-pain"
+                  className="text-black visited:text-black"
+                >
+                  joint pain
+                </Link>
               </li>
             </ul>
           </div>
@@ -100,7 +145,10 @@ const Navbar = () => {
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
-                <Link href="/nutrition-and-supplements">
+                <Link
+                  href="/nutrition-and-supplements"
+                  className="text-black visited:text-black"
+                >
                   nutrition & supplements
                 </Link>
               </span>
@@ -116,17 +164,26 @@ const Navbar = () => {
             {/* submenu list */}
             <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/nutrition-and-supplements/top-supplements">
+                <Link
+                  href="/nutrition-and-supplements/top-supplements"
+                  className="text-black visited:text-black"
+                >
                   top supplements
                 </Link>
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/nutrition-and-supplements/food-sensitivities">
+                <Link
+                  href="/nutrition-and-supplements/food-sensitivities"
+                  className="text-black visited:text-black"
+                >
                   food sensitivities
                 </Link>
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/nutrition-and-supplements/nutrition-recommendations">
+                <Link
+                  href="/nutrition-and-supplements/nutrition-recommendations"
+                  className="text-black visited:text-black"
+                >
                   nutrition recommendations
                 </Link>
               </li>
@@ -137,7 +194,9 @@ const Navbar = () => {
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
-                <Link href="/about">about</Link>
+                <Link href="/about" className="text-black visited:text-black">
+                  about
+                </Link>
               </span>
               {/* <svg
         className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
@@ -166,7 +225,12 @@ const Navbar = () => {
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
-                <Link href="/by-disease">resources</Link>
+                <Link
+                  href="/by-disease"
+                  className="text-black visited:text-black"
+                >
+                  resources
+                </Link>
               </span>
               <svg
                 className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
@@ -180,42 +244,63 @@ const Navbar = () => {
             {/* submenu list */}
             <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/resources/gain-control-over-your-psoriasis-book">
+                <Link
+                  href="/resources/gain-control-over-your-psoriasis-book"
+                  className="text-black visited:text-black"
+                >
                   book
                 </Link>
               </li>
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/nutrition-and-supplements/top-supplements">
+                <Link
+                  href="/nutrition-and-supplements/top-supplements"
+                  className="text-black visited:text-black"
+                >
                   top supplements
-                </Link>{" "}
+                </Link>
               </li>
 
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/resources/autoimmune-nutrition-starters-guide">
+                <Link
+                  href="/resources/autoimmune-nutrition-starters-guide"
+                  className="text-black visited:text-black"
+                >
                   autoimmune nutrition starters&apos; guide
                 </Link>
               </li>
 
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/resources/guided-meditations">
+                <Link
+                  href="/resources/guided-meditations"
+                  className="text-black visited:text-black"
+                >
                   guided meditation for eating
                 </Link>
               </li>
 
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/resources/candida-screening-form">
+                <Link
+                  href="/resources/candida-screening-form"
+                  className="text-black visited:text-black"
+                >
                   candida screening form
                 </Link>
               </li>
 
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/resources/dinner-meal-planner">
+                <Link
+                  href="/resources/dinner-meal-planner"
+                  className="text-black visited:text-black"
+                >
                   dinner meal planner
                 </Link>
               </li>
 
               <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link href="/resources/track-psoriasis-severity">
+                <Link
+                  href="/resources/track-psoriasis-severity"
+                  className="text-black visited:text-black"
+                >
                   track psoriasis severity
                 </Link>
               </li>

@@ -6,12 +6,11 @@ import main_image_mobile from "../../../public/main_image_front_page_autoimmune_
 import placeholder_image from "../../../public/placeholder_article_photo.jpg";
 import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
 import FourCardSpread from "../../../components/FourCardSpread";
+import Link from "next/link";
 
 // **** NOTES FOR LATER: Add "alt" to all images
-// **** NOTES FOR LATER: Add link for buttons to join email list 
-// **** NOTES FOR LATER: Add link to Amazon for book 
-// Create FourCardSpreadTitle component 
-
+// **** NOTES FOR LATER: Add link for buttons to join email list
+// Create FourCardSpreadTitle component
 
 export default function Home() {
   return (
@@ -118,14 +117,18 @@ export default function Home() {
 
         {/* desktop responsiveness */}
         <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
-          <div className="text-2xl p-5 text-bold ">Article title </div>
+          <div className="text-2xl p-5 text-bold ">
+            Autoimmune Nutrition 101: What You Need to Know
+          </div>
           <p className="text-m px-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua...
           </p>
-          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40">
-            read more
-          </button>
+          <Link href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know">
+            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-[90%]">
+              read more
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -160,9 +163,14 @@ export default function Home() {
             by attempting to follow some unproven highly restrictive psoriasis
             diet.
           </p>
-          <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center ">
-            buy here
-          </button>
+          <Link
+            href="https://www.amazon.com/gp/product/173515041X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173515041X&linkCode=as2&tag=eatyerveggies-20&linkId=7933144f7c8eea01d9847a2da039b38f"
+            target="_blank"
+          >
+            <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center w-[95%]">
+              buy here
+            </button>
+          </Link>
         </div>
         <Image
           className="hidden md:flex visible w-[50%] h-[50%] z-1 "
@@ -190,9 +198,14 @@ export default function Home() {
           Make peace with your body by learning your psoriasis triggers, not by
           attempting to follow some unproven highly restrictive psoriasis diet.
         </p>
-        <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center ">
-          buy here
-        </button>
+        <Link
+          href="https://www.amazon.com/gp/product/173515041X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173515041X&linkCode=as2&tag=eatyerveggies-20&linkId=7933144f7c8eea01d9847a2da039b38f"
+          target="_blank"
+        >
+          <button className="text-l p-2 m-3 w-60 bg-turquoise uppercase rounded-md justify-center ">
+            buy here
+          </button>
+        </Link>
       </div>
 
       {/* "conditions" section - COMPLETE: is mobile friendly! */}

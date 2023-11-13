@@ -6,14 +6,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* .card-title-container {
-  @apply border-solid border-2 rounded-b-lg shadow-md p-2 text-center text-xl;
-} */
-
-/* .card-title {
-  @apply p-4 text-center text-xl;
-} */
-
 /* generates "did you know?" and "tools & calculator" speech bubbles */
 .speech {
   /* text settings */
@@ -54,9 +46,9 @@
   margin-left: -20px;
 }
 
-/* generates up arrow for articl voting button */
+/* generates up arrow for article voting button */
 
-.arrow-container {
+/* .arrow-container {
   display: flex;
   align-items: center;
 }
@@ -72,11 +64,11 @@
 .up-arrow {
   margin-bottom: -5px;
   transform: rotate(-45deg);
-}
+} */
 
-/* SECOND ATTEMPT generates up arrow for articl voting button */
+/* SECOND ATTEMPT generates up arrow for article voting button */
 
-.arrow-container-two {
+/* .arrow-container-two {
   display: flex;
   align-items: center;
 }
@@ -98,6 +90,18 @@
   height: 15px;
   background-color: black;
   transform: rotate(-45deg) translate(4px, 1px);
+} */
+
+a {
+  color: #8cb9be;
+}
+
+a:hover{
+  font-weight: 600;
+}
+
+a:visited{
+  color: purple;
 }
 
 /* :root {

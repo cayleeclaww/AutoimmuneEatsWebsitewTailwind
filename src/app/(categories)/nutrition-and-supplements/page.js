@@ -8,6 +8,7 @@ import placeholder_image from "../../../../public/placeholder_article_photo.jpg"
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
 
+//NOTE FOR SOON: *** ASK COREN *** how to get article title, photo, and URL into FourCardSpread component???  
 //NOTE FOR LATER: create component for social icons - one more social, one for mobile?
 //NOTE FOR LATER: figure out how to make the feature photo into a component... use an object as the prop???
 
