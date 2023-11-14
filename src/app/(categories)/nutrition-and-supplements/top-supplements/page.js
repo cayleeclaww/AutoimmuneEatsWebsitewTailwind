@@ -1,6 +1,6 @@
 import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
 // import "tailwindcss/tailwind.css";
-// import Script from "next/script";
+import Script from "next/script";
 
 
 
@@ -20,10 +20,10 @@ export default function TopSupplementsPage() {
       >
         {/* <div className="flex"> */}
           {/* NOW Liquid Vitamin D-3 */}
-          {/* <script
+          <Script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"89020","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script> */}
+          ></Script>
           {/* Seeking Health Multivitamin One MF */}
           {/* <script
             src="//us.fullscript.com/oembed/embed.js"
