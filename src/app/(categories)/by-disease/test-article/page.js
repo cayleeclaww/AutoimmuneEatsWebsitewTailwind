@@ -7,7 +7,7 @@ import Image from "next/image";
 import placeholder_image from "../../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
-
+import Link from "next/link";
 
 
 

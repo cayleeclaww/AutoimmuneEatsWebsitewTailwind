@@ -106,6 +106,7 @@ export default function Home() {
           className="hidden md:flex w-[50%] h-[50%]"
           style={{ boxShadow: "-10px 10px 15px #99CED3" }}
           src={placeholder_image}
+          alt="placeholder image"
         />
         {/* mobile image */}
         <Image

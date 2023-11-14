@@ -20,40 +20,40 @@ export default function TopSupplementsPage() {
       >
         {/* <div className="flex"> */}
           {/* NOW Liquid Vitamin D-3 */}
-          <script
+          {/* <script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"89020","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script>
+          ></script> */}
           {/* Seeking Health Multivitamin One MF */}
-          <script
+          {/* <script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"84044","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script>
+          ></script> */}
           {/* NOW Omega-3 */}
-          <script
+          {/* <script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"64623","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script>
+          ></script> */}
           {/* NOW Psyllium Husk Powder */}
-          <script
+          {/* <script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"66929","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script>
+          ></script> */}
           {/* Curcum-Evail - Designs for Health */}
-          <script
+          {/* <script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"90978","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script>
+          ></script> */}
           {/* NAC - Integrative Therapeutics */}
-          <script
+          {/* <script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"58733","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script>
+          ></script> */}
           {/* Ox Bile 125mg - Allergy Research Group */}
-          <script
+          {/* <script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"64184","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script>
+          ></script> */}
         {/* </div> */}
       </body>
     </>
