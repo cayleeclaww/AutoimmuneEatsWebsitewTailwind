@@ -77,33 +77,37 @@ const Page = () => {
       </div>
       {/* desktop article section links */}
       <div className="hidden md:block w-2/3 mx-6 pr-20 text-base">
-        <Link href="#Why-Nutrition-is-Important" className="whitespace-nowrap">
+        <Link href="#Why-Nutrition-is-Important" className="inline-block">
           Why Nutrition is Important
         </Link>
         &nbsp;|&nbsp;
         <Link
+          href="#What-are-the-Worst-Foods-for-Autoimmune-Disease"
+          className="inline-block"
+        >
+          What are the Worst Foods for Autoimmune Disease?
+        </Link>
+        &nbsp;|&nbsp;
+        <Link
           href="#Does-the-Anti-Inflammatory-Diet-Work"
-          className="whitespace-nowrap"
+          className="inline-block"
         >
           Does the Anti-Inflammatory Diet Work?
         </Link>
-        &nbsp;|&nbsp;<br></br>
-        <Link href="#Does-the-AIP-Diet-Work" className="whitespace-nowrap">
+        &nbsp;|&nbsp;
+        <Link href="#Does-the-AIP-Diet-Work" className="inline-block">
           Does the AIP Diet Work?
         </Link>
         &nbsp;|&nbsp;
-        <Link href="#Dangers-of-Dieting" className="whitespace-nowrap">
+        <Link href="#Dangers-of-Dieting" className="inline-block">
           Dangers of Dieting
         </Link>
-        &nbsp;|&nbsp; <br></br>
-        <Link
-          href="#Safer-Alternative-to-Dieting"
-          className="whitespace-nowrap"
-        >
+        &nbsp;|&nbsp;
+        <Link href="#Safer-Alternative-to-Dieting" className="inline-block">
           Safer Alternative to Dieting
         </Link>
         &nbsp;|&nbsp;
-        <Link href="#Bottom-Line" className="whitespace-nowrap">
+        <Link href="#Bottom-Line" className="inline-block">
           Bottom Line
         </Link>
       </div>
@@ -179,34 +183,38 @@ const Page = () => {
         ></BiSolidPrinter>
       </div>
       {/* mobile article section links */}
-      <div className="md:hidden block mx-6 mt-10 text-base w-1/2">
-        <Link href="#Why-Nutrition-is-Important" className="whitespace-nowrap">
+      <div className="md:hidden block mx-6 mt-10 text-base">
+        <Link href="#Why-Nutrition-is-Important" className="inline-block">
           Why Nutrition is Important
         </Link>
-        &nbsp;|&nbsp;<br></br>
+        &nbsp;|&nbsp;
+        <Link
+          href="#What-are-the-Worst-Foods-for-Autoimmune-Disease"
+          className="inline-block"
+        >
+          What are the Worst Foods for Autoimmune Disease?
+        </Link>
+        &nbsp;|&nbsp;
         <Link
           href="#Does-the-Anti-Inflammatory-Diet-Work"
-          className="whitespace-nowrap"
+          className="inline-block"
         >
           Does the Anti-Inflammatory Diet Work?
         </Link>
-        &nbsp;|&nbsp;<br></br>
-        <Link href="#Does-the-AIP-Diet-Work" className="whitespace-nowrap">
+        &nbsp;|&nbsp;
+        <Link href="#Does-the-AIP-Diet-Work" className="inline-block">
           Does the AIP Diet Work?
         </Link>
         &nbsp;|&nbsp;
-        <Link href="#Dangers-of-Dieting" className="whitespace-nowrap">
+        <Link href="#Dangers-of-Dieting" className="inline-block">
           Dangers of Dieting
         </Link>
-        &nbsp;|&nbsp; <br></br>
-        <Link
-          href="#Safer-Alternative-to-Dieting"
-          className="whitespace-nowrap"
-        >
+        &nbsp;|&nbsp;
+        <Link href="#Safer-Alternative-to-Dieting" className="inline-block">
           Safer Alternative to Dieting
         </Link>
         &nbsp;|&nbsp;
-        <Link href="#Bottom-Line" className="whitespace-nowrap">
+        <Link href="#Bottom-Line" className="inline-block">
           Bottom Line
         </Link>
       </div>
@@ -239,6 +247,15 @@ const Page = () => {
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id="What-are-the-Worst-Foods-for-Autoimmune-Disease"
+            >
+              What are the Worst Foods for Autoimmune Disease?
+            </p>
+            <p className="text-sm mx-6 ">paragraph text</p>
+
+            <p
+              className="text-lg ml-6 mt-8 mb-2"
+              style={{ textShadow: "2px 2px 2px #99CED3" }}
               id="Does-the-Anti-Inflammatory-Diet-Work"
             >
               Does the Anti-Inflammatory Diet Work?
@@ -260,7 +277,6 @@ const Page = () => {
               Dangers of Dieting
             </p>
             <p className="text-sm mx-6 ">paragraph text</p>
-
             {/* desktop - prompt to join email list */}
             <div className="hidden md:block bg-turquoise h-48  mb-4 mt-8 -ml-8">
               <h1 className="text-lg text-center pt-20">
@@ -283,7 +299,6 @@ const Page = () => {
               Bottom Line
             </p>
             <p className="text-sm mx-6 ">paragraph text</p>
-
             {/* mobile - is this article helpful, vote up */}
             <div className="grid place-items-center py-24 md:hidden">
               <p className="text-xl">Is this article helpful?</p>
@@ -295,7 +310,6 @@ const Page = () => {
                 </div>
               </button>
             </div>
-
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
@@ -429,7 +443,7 @@ const Page = () => {
           <div className="ml-4 mt-4 text-base">
             Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist,
             scientist, researcher, author, software engineer, & autoimmune
-            disease expert. Caylee is the author of
+            disease expert. Caylee is the author of{" "}
             <Link
               href="https://www.amazon.com/gp/product/173515041X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173515041X&linkCode=as2&tag=eatyerveggies-20&linkId=7933144f7c8eea01d9847a2da039b38f"
               target="_blank"
