@@ -126,7 +126,7 @@ export default function Home() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua...
           </p>
           <Link href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know">
-            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-[90%]">
+            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-[90%] visited:text-black">
               read more
             </button>
           </Link>

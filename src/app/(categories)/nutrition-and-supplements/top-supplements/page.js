@@ -16,8 +16,7 @@ export default function TopSupplementsPage() {
         <p>Top Supplements</p>
       </TitleRectangleTurquoise>
       <body
-      // style={{display: "flex"}}
-      >
+      className="flex">
         {/* <div className="flex"> */}
           {/* NOW Liquid Vitamin D-3 */}
           <Script
@@ -25,35 +24,35 @@ export default function TopSupplementsPage() {
             data-fs='{"product_id":"89020","store_slug":"cclaynutrition","return":"product_card"}'
           ></Script>
           {/* Seeking Health Multivitamin One MF */}
-          {/* <script
+          <Script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"84044","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script> */}
+          ></Script>
           {/* NOW Omega-3 */}
-          {/* <script
+          <Script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"64623","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script> */}
+          ></Script>
           {/* NOW Psyllium Husk Powder */}
-          {/* <script
+          <Script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"66929","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script> */}
+          ></Script>
           {/* Curcum-Evail - Designs for Health */}
-          {/* <script
+          <Script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"90978","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script> */}
+          ></Script>
           {/* NAC - Integrative Therapeutics */}
-          {/* <script
+          <Script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"58733","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script> */}
+          ></Script>
           {/* Ox Bile 125mg - Allergy Research Group */}
-          {/* <script
+          <Script
             src="//us.fullscript.com/oembed/embed.js"
             data-fs='{"product_id":"64184","store_slug":"cclaynutrition","return":"product_card"}'
-          ></script> */}
+          ></Script>
         {/* </div> */}
       </body>
     </>
