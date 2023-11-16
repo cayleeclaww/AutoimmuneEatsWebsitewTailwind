@@ -68,7 +68,7 @@
 
 /* SECOND ATTEMPT generates up arrow for article voting button */
 
-/* .arrow-container-two {
+.arrow-container-two {
   display: flex;
   align-items: center;
 }
@@ -90,7 +90,7 @@
   height: 15px;
   background-color: black;
   transform: rotate(-45deg) translate(4px, 1px);
-} */
+}
 
 a {
   color: #8cb9be;

@@ -8,28 +8,19 @@ import placeholder_image from "../../../../../public/placeholder_article_photo.j
 import FourCardSpread from "../../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
 import Link from "next/link";
+import TestArticle from "../../../../../components/ArticleTest";
+import VoteUpButton from "../../../../../components/VoteUpButton";
+import SocialMediaMobile from "../../../../../components/SocialMediaMobile";
+import SocialMediaDesktop from "../../../../../components/SocialMediaDesktop";
+import ArticleFeatureImage from "../../../../../components/ArticleFeatureImage";
+import ArticleSectionSubtitle from "../../../../../components/ArticleSectionSubtitle";
 
 
-
-
-
-
-
-
-
-// ************** BREADCRUMBS: *********** Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags 
-
-
-
-
-
-
-
-
-
-
+// ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags 
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed 
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
+
+
 
 export const metadata = {
   title: "Test Article",
@@ -77,25 +68,17 @@ export const metadata = {
   },
 };
 
-const Page = () => {
+const Page = (props) => {
   return (
     <>
       {/* turquoise article title rectangle - desktop & mobile */}
-      <TitleRectangleTurquoise>Article Title</TitleRectangleTurquoise>ç
+      <TitleRectangleTurquoise> {TestArticle.title}</TitleRectangleTurquoise>
       {/* desktop article section links */}
       <div className="hidden md:flex ml-6 text-base w-[60%]">
         Article Section 1 | Article Section 2 | Article Section 3
       </div>
       {/* vote up button - desktop & mobile */}
-      <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
-        <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
-          <div class="arrow-container-two">
-            <span class="up-arrow-two"></span>
-            <p className="mx-3">vote up</p>
-            <span class="up-arrow-two"></span>
-          </div>
-        </button>
-      </div>
+      <VoteUpButton></VoteUpButton>
       {/* mobile author name & article date section */}
       <div className="flex md:hidden">
         <Image
@@ -103,80 +86,25 @@ const Page = () => {
           src={headshot}
           className="w-20 h-20 rounded-full ml-10"
         />
-        <div className="ml-4 mt-4 text-lg">
-          By Caylee Clay, RDN CDN CYT
+        <div className="ml-4 mt-4 text-sm">
+          By {TestArticle.authorInfo.authorName}
           <br />
-          Updated on November 1, 2023
+          Updated on {TestArticle.datePublishedOrUpdated}
         </div>
       </div>
       {/* mobile social media icons */}
-      <div className="flex md:hidden justify-center gap-2 mt-4 ">
-        <AiOutlineInstagram
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "2px",
-            fontSize: "30px",
-            backgroundImage: "linear-gradient(120deg, blue, red, yellow)",
-            color: "white",
-          }}
-        ></AiOutlineInstagram>
-        <FaFacebookF
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "4px",
-            color: "#007FFF",
-          }}
-        ></FaFacebookF>
-        <BiLogoPinterestAlt
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "2px",
-            color: "red",
-          }}
-        ></BiLogoPinterestAlt>
-        <AiFillLinkedin
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "2px",
-            color: "#0066b2",
-          }}
-        ></AiFillLinkedin>
-        <BsLink45Deg
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "2px",
-          }}
-        ></BsLink45Deg>
-        <BiSolidPrinter
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "3px",
-          }}
-        ></BiSolidPrinter>
-      </div>
+      <SocialMediaMobile></SocialMediaMobile>
       {/* mobile article section links */}
       <div className="md:hidden ml-6 mt-10 text-base">
         Article Section 1 | Article Section 2 | Article Section 3
       </div>
-
       {/* content section - desktop & mobile*/}
       {/* desktop break into two columns */}
       <div className="flex md:columns-2">
         {/* first of two columns */}
         <div className="md:w-[66%] columns-1">
           {/* article image - desktop & mobile */}
+          {/* <ArticleFeatureImage>TestArticle</ArticleFeatureImage> ***NOT WORKING*** */}
           <div className="w-full flex justify-center p-4">
             <Image
               className="flex w-[80%] mt-4 "
@@ -186,14 +114,16 @@ const Page = () => {
             />
           </div>
           {/* article contents - desktop & mobile*/}
-
           <div className="grid px-8">
-            <p
+            {/* <ArticleSectionSubtitle>
+              {TestArticle.sections.sectionOne.subtitle}
+            </ArticleSectionSubtitle> ***NOT WORKING*** */}
+            {/* <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
             >
-              Overview
-            </p>
+              {TestArticle.sections.sectionOne.subtitle}
+            </p> */}
             <p className="text-sm mx-6 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -301,69 +231,14 @@ const Page = () => {
                 src={headshot}
                 className="w-20 h-20 rounded-full "
               />
-              <div className="ml-4 text-sm ">
-                By Caylee Clay, RDN CDN CYT
+              <div className="ml-4 text-sm">
+                By {TestArticle.authorInfo.authorName}
                 <br />
-                Updated on November 1, 2023
+                Updated on {TestArticle.datePublishedOrUpdated}
               </div>
             </div>
             {/* desktop social media icons */}
-            <div className="flex justify-center gap-2 mt-4 ">
-              <AiOutlineInstagram
-                size={25}
-                style={{
-                  borderRadius: "50%",
-                  border: "1px solid grey",
-                  padding: "2px",
-                  fontSize: "30px",
-                  backgroundImage: "linear-gradient(120deg, blue, red, yellow)",
-                  color: "white",
-                }}
-              ></AiOutlineInstagram>
-              <FaFacebookF
-                size={25}
-                style={{
-                  borderRadius: "50%",
-                  border: "1px solid grey",
-                  padding: "4px",
-                  color: "#007FFF",
-                }}
-              ></FaFacebookF>
-              <BiLogoPinterestAlt
-                size={25}
-                style={{
-                  borderRadius: "50%",
-                  border: "1px solid grey",
-                  padding: "2px",
-                  color: "red",
-                }}
-              ></BiLogoPinterestAlt>
-              <AiFillLinkedin
-                size={25}
-                style={{
-                  borderRadius: "50%",
-                  border: "1px solid grey",
-                  padding: "2px",
-                  color: "#0066b2",
-                }}
-              ></AiFillLinkedin>
-              <BsLink45Deg
-                size={25}
-                style={{
-                  borderRadius: "50%",
-                  border: "1px solid grey",
-                  padding: "2px",
-                }}
-              ></BsLink45Deg>
-              <BiSolidPrinter
-                size={25}
-                style={{
-                  borderRadius: "50%",
-                  border: "1px solid grey",
-                  padding: "3px",
-                }}
-              ></BiSolidPrinter>
-            </div>
+            <SocialMediaDesktop></SocialMediaDesktop>
           </div>
           {/* desktop is this article helpful */}
           <div className="place-content-center">
