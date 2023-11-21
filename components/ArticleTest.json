@@ -12,7 +12,7 @@
     "authorPhoto": "photo URL or local path?",
     "authorBio": "the bio of the author"
   },
-  "photoFeature": "../public/placeholder_article_photo.jpg",
+  "photoFeature": "http://localhost:3000/placeholder_article_photo.jpg",
   "photoFeatureAlt": "test placeholder image alt",
   "sections": {
     "sectionOne": {
@@ -21,12 +21,12 @@
       "content": "the paragraphs in that section"
     },
     "sectionTwo": {
-      "subtitle": "the subtitle",
+      "subtitle": "The Second Section",
       "hrefAndID": "the href/id",
       "content": "the paragraphs in that section"
     },
     "sectionThree": {
-      "subtitle": "the subtitle",
+      "subtitle": "The Third Section",
       "hrefAndID": "the href/id",
       "content": "the paragraphs in that section"
     }

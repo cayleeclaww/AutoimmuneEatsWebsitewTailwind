@@ -1,7 +1,9 @@
+//not working
+
 import Image from "next/image";
 
 export default function ArticleFeatureImage(props) {
-  //PROBLEM: how to get photo to work.... may need internet connection...? 
+  //PROBLEM: how to get photo to work.....? 
     return (
       <div className="w-full flex justify-center p-4">
         <Image

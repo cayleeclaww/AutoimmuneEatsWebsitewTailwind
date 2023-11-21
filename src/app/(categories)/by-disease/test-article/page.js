@@ -14,12 +14,15 @@ import SocialMediaMobile from "../../../../../components/SocialMediaMobile";
 import SocialMediaDesktop from "../../../../../components/SocialMediaDesktop";
 import ArticleFeatureImage from "../../../../../components/ArticleFeatureImage";
 import ArticleSectionSubtitle from "../../../../../components/ArticleSectionSubtitle";
+import ArticleIsHelpfulMobile from "../../../../../components/ArticleIsHelpfulMobile";
+import ArticleIsHelpfulDesktop from "../../../../../components/ArticleIsHelpfulDesktop";
+import TestArticleComponent from "../../../../../components/TestArticleComponent";
 
-
-// ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags 
-// ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed 
+// ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
+// ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 
+const Title = TestArticle.title;
 
 
 export const metadata = {
@@ -34,7 +37,7 @@ export const metadata = {
     title: "Test Article | Autoimmune Eats", //May need to delete "| Autoimmune Eats" from here later, since it's in the root layout metadata
     description:
       "This is a test article generated to create a template layout for future articles",
-    url: "http://autoimmuneeats.com/by-disease/test-article", // update 
+    url: "http://autoimmuneeats.com/by-disease/test-article", // update
     siteName: "Autoimmune Eats",
     images: [
       {
@@ -78,7 +81,9 @@ const Page = (props) => {
         Article Section 1 | Article Section 2 | Article Section 3
       </div>
       {/* vote up button - desktop & mobile */}
-      <VoteUpButton></VoteUpButton>
+      <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
+        <VoteUpButton></VoteUpButton>
+      </div>
       {/* mobile author name & article date section */}
       <div className="flex md:hidden">
         <Image
@@ -107,7 +112,7 @@ const Page = (props) => {
           {/* <ArticleFeatureImage>TestArticle</ArticleFeatureImage> ***NOT WORKING*** */}
           <div className="w-full flex justify-center p-4">
             <Image
-              className="flex w-[80%] mt-4 "
+              className="flex w-[80%] h-[80%] mt-4 "
               style={{ boxShadow: "10px 10px 15px #99CED3" }}
               src={placeholder_image}
               alt="placeholder image"
@@ -118,12 +123,12 @@ const Page = (props) => {
             {/* <ArticleSectionSubtitle>
               {TestArticle.sections.sectionOne.subtitle}
             </ArticleSectionSubtitle> ***NOT WORKING*** */}
-            {/* <p
+            <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
             >
               {TestArticle.sections.sectionOne.subtitle}
-            </p> */}
+            </p>
             <p className="text-sm mx-6 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -146,7 +151,7 @@ const Page = (props) => {
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
             >
-              Section 1
+              {TestArticle.sections.sectionTwo.subtitle}
             </p>
             <p className="text-sm mx-6 ">
               Duis convallis convallis tellus id. A pellentesque sit amet
@@ -167,7 +172,7 @@ const Page = (props) => {
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
             >
-              Section 2
+              {TestArticle.sections.sectionThree.subtitle}
             </p>
             <p className="text-sm mx-6 ">
               Scelerisque purus semper eget duis at tellus at urna. Arcu odio ut
@@ -186,17 +191,7 @@ const Page = (props) => {
             </p>
 
             {/* mobile - is this article helpful, vote up */}
-            <div className="grid place-items-center py-24 md:hidden">
-              <p className="text-xl">Is this article helpful?</p>
-              <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
-                <div class="arrow-container-two">
-                  <span class="up-arrow-two"></span>
-                  <p className="mx-3">vote up</p>
-                  <span class="up-arrow-two"></span>
-                </div>
-              </button>
-            </div>
-
+            <ArticleIsHelpfulMobile></ArticleIsHelpfulMobile>
             {/* desktop - prompt to join email list */}
             <div className="hidden md:block bg-turquoise h-48  mb-4 mt-8 -ml-8">
               <h1 className="text-lg text-center pt-20">
@@ -241,18 +236,7 @@ const Page = (props) => {
             <SocialMediaDesktop></SocialMediaDesktop>
           </div>
           {/* desktop is this article helpful */}
-          <div className="place-content-center">
-            <div className="grid place-items-center">
-              <p className="text-xl">Is this article helpful?</p>
-              <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
-                <div class="arrow-container-two">
-                  <span class="up-arrow-two"></span>
-                  <p className="mx-3">vote up</p>
-                  <span class="up-arrow-two"></span>
-                </div>
-              </button>
-            </div>
-          </div>
+          <ArticleIsHelpfulDesktop></ArticleIsHelpfulDesktop>
         </div>
       </div>
       {/* prompt to join email list - desktop & mobile */}
@@ -300,6 +284,8 @@ const Page = (props) => {
       <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
         <p className="text-center p-24">footer</p>
       </div>
+
+      <TestArticleComponent>{Title}</TestArticleComponent>
     </>
   );
 };

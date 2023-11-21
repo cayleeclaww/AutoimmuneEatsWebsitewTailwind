@@ -8,9 +8,6 @@ import placeholder_image from "../../../../public/placeholder_article_photo.jpg"
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
 
-//NOTE FOR LATER: create component for social icons - one more social, one for mobile?
-//NOTE FOR LATER: figure out how to make the feature photo into a component... use an object as the prop???
-//NOTE FOR LATER: need to reconfigure fourcardspread title so that it fits better in smaller screens?? (in localhost review nutrition recommendations below)
 
 export default function BySymptomPage() {
   return (

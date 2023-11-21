@@ -12,7 +12,7 @@ import Link from "next/link";
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
-// ****** NOTES FOR LATER: Cannot get article section links to wrap correctly...
+// ****** NOTES FOR LATER: Make sure article section links wrap correctly/acceptably...
 
 export const metadata = {
   title: "Autoimmune Nutrition 101: What You Need to Know", // 47 characters

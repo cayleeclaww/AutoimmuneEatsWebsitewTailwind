@@ -1,10 +1,11 @@
+//props will eventually be.... ???? Some way to post content directly onto social media...
+
 import { BsLink45Deg } from "react-icons/bs";
 import { BiSolidPrinter, BiLogoPinterestAlt } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 
 export default function SocialMediaDesktop(props) {
-  //props will eventually be.... ???? Some way to post content directly onto social media...
   return (
     <div className="flex justify-center gap-2 mt-4 ">
       <AiOutlineInstagram

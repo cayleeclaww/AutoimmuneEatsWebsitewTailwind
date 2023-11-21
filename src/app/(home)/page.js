@@ -8,9 +8,8 @@ import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
 import FourCardSpread from "../../../components/FourCardSpread";
 import Link from "next/link";
 
-// **** NOTES FOR LATER: Add "alt" to all images
 // **** NOTES FOR LATER: Add link for buttons to join email list
-// Create FourCardSpreadTitle component
+// **** NOTES FOR LATER: Create FourCardSpreadTitle component
 
 export default function Home() {
   return (

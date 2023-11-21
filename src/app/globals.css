@@ -47,32 +47,11 @@
 }
 
 /* generates up arrow for article voting button */
-
-/* .arrow-container {
+.arrow-container {
   display: flex;
   align-items: center;
 }
-.arrow {
-  display: inline-block;
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
-}
-
 .up-arrow {
-  margin-bottom: -5px;
-  transform: rotate(-45deg);
-} */
-
-/* SECOND ATTEMPT generates up arrow for article voting button */
-
-.arrow-container-two {
-  display: flex;
-  align-items: center;
-}
-.up-arrow-two {
   display: inline-block;
   margin: 5px;
   width: 15px;
@@ -83,7 +62,7 @@
   transform: rotate(45deg);
 }
 
-.up-arrow-two:after {
+.up-arrow:after {
   content: "";
   display: block;
   width: 4px;
