@@ -9,7 +9,8 @@
   "voteCount": "number of up votes",
   "authorInfo": {
     "authorName": "The Author's Name, RD",
-    "authorPhoto": "photo URL or local path?",
+    "authorPhoto": "/../../../../../public/Caylee_headshot.jpeg",
+    "authorPhotoAlt": "Author's image alt image description",
     "authorBio": "the bio of the author"
   },
   "photoFeature": "http://localhost:3000/placeholder_article_photo.jpg",
@@ -17,17 +18,20 @@
   "sections": {
     "sectionOne": {
       "subtitle": "The First Section",
-      "hrefAndID": "the href/id",
+      "href": "#The-First-Section",
+      "ID": "The-First-Section",
       "content": "the paragraphs in that section"
     },
     "sectionTwo": {
       "subtitle": "The Second Section",
-      "hrefAndID": "the href/id",
+      "href": "#The-Second-Section",
+      "ID": "The-Second-Section",
       "content": "the paragraphs in that section"
     },
     "sectionThree": {
       "subtitle": "The Third Section",
-      "hrefAndID": "the href/id",
+      "href": "#The-Third-Section",
+      "ID": "The-Third-Section",
       "content": "the paragraphs in that section"
     }
   },

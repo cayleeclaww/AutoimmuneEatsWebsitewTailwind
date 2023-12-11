@@ -18,8 +18,15 @@ import ArticleIsHelpfulMobile from "../../../../../components/ArticleIsHelpfulMo
 import ArticleIsHelpfulDesktop from "../../../../../components/ArticleIsHelpfulDesktop";
 import TestArticleComponent from "../../../../../components/TestArticleComponent";
 
+
+// ****** NOTES FOR LATER: will need to up map function or something to replace below portion, so any number of article sections/subtitles can be used:
+// - "article section links"
+// - hrefs
+// - IDs
+// ****** NOTES FOR LATER: troubleshoot how to use object property as URL/path for photos........ 
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
-// ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
+// ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed - perhaps first/left arrow disappears, 
+// and instead appears a circle with the # of upvotes in it
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 
 export const metadata = {
@@ -75,7 +82,26 @@ const Page = (props) => {
       <TitleRectangleTurquoise> {TestArticle.title}</TitleRectangleTurquoise>
       {/* desktop article section links */}
       <div className="hidden md:flex ml-6 text-base w-[60%]">
-        Article Section 1 | Article Section 2 | Article Section 3
+        <Link
+          href={TestArticle.sections.sectionOne.href}
+          className="inline-block"
+        >
+          {TestArticle.sections.sectionOne.subtitle}
+        </Link>
+        &nbsp;|&nbsp;
+        <Link
+          href={TestArticle.sections.sectionTwo.href}
+          className="inline-block"
+        >
+          {TestArticle.sections.sectionTwo.subtitle}
+        </Link>
+        &nbsp;|&nbsp;
+        <Link
+          href={TestArticle.sections.sectionThree.href}
+          className="inline-block"
+        >
+          {TestArticle.sections.sectionThree.subtitle}
+        </Link>
       </div>
       {/* vote up button - desktop & mobile */}
       <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
@@ -84,7 +110,7 @@ const Page = (props) => {
       {/* mobile author name & article date section */}
       <div className="flex md:hidden">
         <Image
-          alt="Caylee Clay's Author Headshot"
+          alt= {TestArticle.authorInfo.authorPhotoAlt}
           src={headshot}
           className="w-20 h-20 rounded-full ml-10"
         />
@@ -98,7 +124,26 @@ const Page = (props) => {
       <SocialMediaMobile></SocialMediaMobile>
       {/* mobile article section links */}
       <div className="md:hidden ml-6 mt-10 text-base">
-        Article Section 1 | Article Section 2 | Article Section 3
+        <Link
+          href={TestArticle.sections.sectionOne.href}
+          className="inline-block"
+        >
+          {TestArticle.sections.sectionOne.subtitle}
+        </Link>
+        &nbsp;|&nbsp;
+        <Link
+          href={TestArticle.sections.sectionTwo.href}
+          className="inline-block"
+        >
+          {TestArticle.sections.sectionTwo.subtitle}
+        </Link>
+        &nbsp;|&nbsp;
+        <Link
+          href={TestArticle.sections.sectionThree.href}
+          className="inline-block"
+        >
+          {TestArticle.sections.sectionThree.subtitle}
+        </Link>
       </div>
       {/* content section - desktop & mobile*/}
       {/* desktop break into two columns */}
@@ -123,6 +168,7 @@ const Page = (props) => {
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id={TestArticle.sections.sectionOne.ID}
             >
               {TestArticle.sections.sectionOne.subtitle}
             </p>
@@ -147,6 +193,7 @@ const Page = (props) => {
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id={TestArticle.sections.sectionTwo.ID}
             >
               {TestArticle.sections.sectionTwo.subtitle}
             </p>
@@ -168,6 +215,7 @@ const Page = (props) => {
             <p
               className="text-lg ml-6 mt-8 mb-2"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
+              id={TestArticle.sections.sectionThree.ID}
             >
               {TestArticle.sections.sectionThree.subtitle}
             </p>

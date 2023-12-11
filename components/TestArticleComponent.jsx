@@ -22,34 +22,40 @@ import VoteUpButton from "./VoteUpButton";
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 
 
+
+
+
+
 const TestArticleComponent = (props) => {
-  return (
-    <>
-      {/* turquoise article title rectangle - desktop & mobile */}
-      <TitleRectangleTurquoise> {props.children}</TitleRectangleTurquoise>
-      {/* desktop article section links */}
-      {/* <div className="hidden md:flex ml-6 text-base w-[60%]">
+
+
+        return (
+          <>
+            {/* turquoise article title rectangle - desktop & mobile */}
+            {/* <TitleRectangleTurquoise> {props}</TitleRectangleTurquoise> */}
+            {/* desktop article section links */}
+            {/* <div className="hidden md:flex ml-6 text-base w-[60%]">
         Article Section 1 | Article Section 2 | Article Section 3
       </div> */}
-      {/* vote up button - desktop & mobile */}
-      <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
-        <VoteUpButton></VoteUpButton>
-      </div>
-      {/* mobile author name & article date section */}
-      <div className="flex md:hidden">
-        <Image
-          alt="Caylee Clay's Author Headshot"
-          src={headshot}
-          className="w-20 h-20 rounded-full ml-10"
-        />
-        <div className="ml-4 mt-4 text-sm">
-          By {props.children.authorInfo.authorName}
-          <br />
-          Updated on {TestArticle.datePublishedOrUpdated}
-        </div>
-      </div>
-    </>
-  );
+            {/* vote up button - desktop & mobile */}
+            <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
+              <VoteUpButton></VoteUpButton>
+            </div>
+            {/* mobile author name & article date section */}
+            <div className="flex md:hidden">
+              <Image
+                alt="Caylee Clay's Author Headshot"
+                src={headshot}
+                className="w-20 h-20 rounded-full ml-10"
+              />
+              <div className="ml-4 mt-4 text-sm">
+                {/* By {props.children.authorInfo.authorName} */}
+                <br />
+                {/* Updated on {TestArticle.datePublishedOrUpdated} */}
+              </div>
+            </div>
+          </>
+        );
 };
 
 export default TestArticleComponent;
