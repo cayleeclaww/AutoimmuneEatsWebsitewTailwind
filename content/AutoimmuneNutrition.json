@@ -4,7 +4,42 @@
   "metadata": {
     "title": "Autoimmune Nutrition 101: What You Need to Know",
     "description": "Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
-    "etc": "etc"
+    "keywords": [
+      "worst foods for autoimmune disease",
+      "autoimmune disease anti inflammatory diet",
+      "aip diet"
+    ],
+    "icons": {
+      "icon": "/icon.png"
+    },
+    "openGraph": {
+      "title": "Autoimmune Nutrition 101: What You Need to Know | Autoimmune Eats",
+      "description": "Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
+      "url": "http://autoimmuneeats.com/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know",
+      "siteName": "Autoimmune Eats",
+      "images": [
+        {
+          "url": "http://autoimmuneeats.com/placeholder_article_photo.jpg",
+          "width": 800,
+          "height": 600
+        }
+      ],
+      "locale": "en_US",
+      "type": "article",
+      "publishedTime": "2023-11-13"
+    },
+    "robots": {
+      "index": true,
+      "follow": true,
+      "nocache": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1
+      }
+    }
   },
   "voteCount": 20,
   "authorInfo": {
@@ -19,17 +54,17 @@
     {
       "subtitle": "Why Nutrition is Important",
       "hrefID": "Why-Nutrition-is-Important",
-      "content": "the paragraphs in that section"
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl. Dolor sit amet consectetur adipiscing elit. Cursus vitae congue mauris rhoncus aenean. Tincidunt ornare massa eget egestas purus viverra accumsan in. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Non sodales neque sodales ut etiam sit amet nisl purus. Quis eleifend quam adipiscing vitae proin sagittis. Consectetur a erat nam at lectus urna duis convallis. Sodales ut etiam sit amet nisl purus. Justo nec ultrices dui sapien eget mi proin sed. Arcu cursus euismod quis viverra nibh. Rhoncus est pellentesque elit ullamcorper dignissim. Dui ut ornare lectus sit. Tincidunt dui ut ornare lectus sit. Aliquam sem et tortor consequat id porta. Nisl tincidunt eget nullam non. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Parturient montes nascetur ridiculus mus mauris vitae ultricies."
     },
     {
       "subtitle": "What are the Worst Foods for Autoimmune Disease?",
       "hrefID": "What-are-the-Worst-Foods-for-Autoimmune-Disease",
-      "content": "the paragraphs in that section"
+      "content": "Duis convallis convallis tellus id. A pellentesque sit amet porttitor eget dolor morbi. Habitant morbi tristique senectus et netus et malesuada fames. Non quam lacus suspendisse faucibus. Et odio pellentesque diam volutpat. Dui id ornare arcu odio ut sem nulla. Tristique senectus et netus et malesuada fames. Aenean vel elit scelerisque mauris pellentesque. Amet massa vitae tortor condimentum lacinia quis vel eros. Sed faucibus turpis in eu. Duis at tellus at urna. Tortor condimentum lacinia quis vel eros. Dui id ornare arcu odio ut sem nulla. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Et leo duis ut diam quam nulla porttitor massa. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Morbi tristique senectus et netus et malesuada fames."
     },
     {
       "subtitle": "Does the Anti-Inflammatory Diet Work?",
       "hrefID": "Does-the-Anti-Inflammatory-Diet-Work",
-      "content": "the paragraphs in that section"
+      "content": "Scelerisque purus semper eget duis at tellus at urna. Arcu odio ut sem nulla pharetra diam sit amet nisl. Sapien nec sagittis aliquam malesuada bibendum. Lacus vestibulum sed arcu non odio euismod lacinia. Et tortor at risus viverra. Tristique magna sit amet purus gravida quis blandit. Sit amet mattis vulputate enim nulla. Viverra vitae congue eu consequat ac felis. Cursus metus aliquam eleifend mi in nulla. Nisl tincidunt eget nullam non nisi est sit. Nulla at volutpat diam ut venenatis tellus. Sed id semper risus in hendrerit gravida rutrum. Aenean pharetra magna ac placerat. Est velit egestas dui id ornare arcu odio ut sem. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Egestas diam in arcu cursus. Volutpat odio facilisis mauris sit."
     },
     {
       "subtitle": "Does the AIP Diet Work?",
@@ -52,7 +87,7 @@
       "content": "the paragraphs in that section"
     }
   ],
-  "categories" : ["anti-inflammatory", "diet", "beginner"], 
+  "categories": ["anti-inflammatory", "diet", "beginner"],
   "photoAdditionalOne": "https://www.autoimmuneeats.com/Gain_Control_Over_Your_Psoriasis_book.jpeg",
   "photoAdditionalTwo": "../public/main_image_front_page_autoimmune_eats_HALFOLD.jpg",
   "photoAdditionalThree": "https://my.clevelandclinic.org/-/scassets/images/org/health/articles/6866-psoriasis"
