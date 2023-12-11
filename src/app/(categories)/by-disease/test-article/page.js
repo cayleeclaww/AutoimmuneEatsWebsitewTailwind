@@ -8,7 +8,7 @@ import placeholder_image from "../../../../../public/placeholder_article_photo.j
 import FourCardSpread from "../../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
 import Link from "next/link";
-import TestArticle from "../../../../../components/ArticleTest";
+import TestArticle from "../../../../../content/ArticleTest";
 import VoteUpButton from "../../../../../components/VoteUpButton";
 import SocialMediaMobile from "../../../../../components/SocialMediaMobile";
 import SocialMediaDesktop from "../../../../../components/SocialMediaDesktop";
@@ -68,7 +68,7 @@ export const metadata = {
   },
 };
 
-const Page = (props) => {
+const Page = () => {
   return (
     <>
       {/* turquoise article title rectangle - desktop & mobile */}

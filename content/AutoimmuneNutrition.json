@@ -1,0 +1,59 @@
+{
+  "title": "Autoimmune Nutrition 101: What You Need to Know",
+  "datePublishedOrUpdated": "December 11, 2023",
+  "metadata": {
+    "title": "Autoimmune Nutrition 101: What You Need to Know",
+    "description": "Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
+    "etc": "etc"
+  },
+  "voteCount": 20,
+  "authorInfo": {
+    "authorName": "Coren Frankel, PhD",
+    "authorPhoto": "../public/Caylee_headshot.jpeg",
+    "authorPhotoAlt": "Coren's alt image description",
+    "authorBio": "the bio of the Kernz"
+  },
+  "photoFeature": "https://www.autoimmuneeats.com/placeholder_article_photo.jpg",
+  "photoFeatureAlt": "test placeholder image alt",
+  "sections": [
+    {
+      "subtitle": "Why Nutrition is Important",
+      "hrefID": "Why-Nutrition-is-Important",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "What are the Worst Foods for Autoimmune Disease?",
+      "hrefID": "What-are-the-Worst-Foods-for-Autoimmune-Disease",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "Does the Anti-Inflammatory Diet Work?",
+      "hrefID": "Does-the-Anti-Inflammatory-Diet-Work",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "Does the AIP Diet Work?",
+      "hrefID": "Does-the-AIP-Diet-Work",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "Dangers of Dieting",
+      "hrefID": "Dangers-of-Dieting",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "Safer Alternative to Dieting",
+      "hrefID": "Safer-Alternative-to-Dieting",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "Bottom Line",
+      "hrefID": "Bottom-Line",
+      "content": "the paragraphs in that section"
+    }
+  ],
+  "categories" : ["anti-inflammatory", "diet", "beginner"], 
+  "photoAdditionalOne": "https://www.autoimmuneeats.com/Gain_Control_Over_Your_Psoriasis_book.jpeg",
+  "photoAdditionalTwo": "../public/main_image_front_page_autoimmune_eats_HALFOLD.jpg",
+  "photoAdditionalThree": "https://my.clevelandclinic.org/-/scassets/images/org/health/articles/6866-psoriasis"
+}
