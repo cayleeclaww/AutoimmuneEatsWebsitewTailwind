@@ -16,12 +16,12 @@ import ArticleSectionSubtitle from "./ArticleSectionSubtitle";
 import ArticleIsHelpfulMobile from "./ArticleIsHelpfulMobile";
 import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 
+// ****** NOTES FOR LATER: fix if statement on line 39 so | does not print after last subtitle
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 
-
-const TestArticleComponent = (props) => {
+const ArticleComponent = (props) => {
   const { article } = props;
 
   return (
@@ -30,9 +30,21 @@ const TestArticleComponent = (props) => {
       <TitleRectangleTurquoise>{article.title}</TitleRectangleTurquoise>
       {/* desktop article section links */}
       <ul className="hidden md:block w-2/3 mx-6 pr-20 text-base">
-        {article.sections.map((sect) => (
-          <li key={sect.hrefID}>
-            <Link href={`#${sect.hrefID}`}>{sect.subtitle}</Link>
+        {article.sections.map((sect, i) => (
+          <li key={sect.hrefID} className="inline-block">
+            {/* if (i + 1 < article.sections.length){
+             sect.subtitle + " | "
+              console.log(article.sections.length);
+            }
+            else {
+             sect.subtitle = sect.subtitle;
+            }  */}
+            <Link href={`#${sect.hrefID} `}>
+              &nbsp;{sect.subtitle}
+              {" | "}
+            </Link>
+            {/* if (i + 1 < sections.length){" | "} */}{" "}
+            {/* https://stackoverflow.com/questions/38176352/javascript-map-array-last-item */}
           </li>
         ))}
       </ul>
@@ -80,8 +92,13 @@ const TestArticleComponent = (props) => {
           </div>
           {/* article contents - desktop & mobile*/}
           <div className="grid px-8">
-            
+            {/* disclaimer */}
+            <p className="text-sm ml-6 mt-8 mb-2 italic">
+              {article.disclaimer}
+            </p>
+            {/* subtitle + content */}
             {article.sections.map((sect) => (
+              // subtitle name + href ID
               <div key={sect.hrefID}>
                 <p
                   className="text-lg ml-6 mt-8 mb-2"
@@ -90,7 +107,20 @@ const TestArticleComponent = (props) => {
                 >
                   {sect.subtitle}
                 </p>
-                <p className="text-sm mx-6 ">{sect.content}</p>
+                {/* paragraphs */}
+                {/* <p className="text-sm mx-6 ">{sect.content}</p> */}
+                {/* <div key={sect.hrefID}> */}
+                  {article.sections.map((sect, i) => (
+                    <p className="text-sm mx-6 ">{sect.content[i]}</p>
+                  ))}
+                {/* </div> */}
+
+                {/* 
+                {article.sections.map((sect) => (
+                  <li key={sect.hrefID}>
+                    <Link href={`#${sect.hrefID}`}>{sect.subtitle}</Link>
+                  </li>
+                ))} */}
               </div>
             ))}
           </div>
@@ -122,16 +152,12 @@ const TestArticleComponent = (props) => {
       <div className="bg-turquoise h-48 md:w-4/5 mb-4 block mt-8 ">
         <h1 className="text-lg text-center pt-20">Prompt to join email list</h1>
       </div>
-      {/* is this article helpful? - desktop & mobile */}
+      {/* is this article helpful? - desktop & mobile - bottom of page */}
       <div className="grid place-items-center py-24">
         <p className="text-xl">Is this article helpful?</p>
-        <button className="text-lg p-2 m-2 bg-turquoise rounded-md grid">
-          <div class="arrow-container-two">
-            <span class="up-arrow-two"></span>
-            <p className="mx-3">vote up</p>
-            <span class="up-arrow-two"></span>
-          </div>
-        </button>
+        <div className="p-2 m-2 grid">
+          <VoteUpButton></VoteUpButton>
+        </div>
       </div>
       {/* author bio section - desktop & mobile */}
       <div className="grid mx-6 mt-8 ">
@@ -167,4 +193,4 @@ const TestArticleComponent = (props) => {
   );
 };
 
-export default TestArticleComponent;
+export default ArticleComponent;

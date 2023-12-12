@@ -1,0 +1,103 @@
+{
+  "title": "Template Article: Fill in the Blanks",
+  "datePublishedOrUpdated": "December 11, 2023",
+  "metadata": {
+    "title": "Template Article: Fill in the Blanks",
+    "description": "**Add info about suggested character limit here???** Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
+    "keywords": [
+      "main keyword",
+      "supporting keyword",
+      "supporting keyword"
+    ],
+    "icons": {
+      "icon": "/icon.png"
+    },
+    "openGraph": {
+      "title": "Template Article: Fill in the Blanks | Autoimmune Eats",
+      "description": "**same as above** Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
+      "url": "http://autoimmuneeats.com/nutrition-and-supplements/template-article",
+      "siteName": "Autoimmune Eats",
+      "images": [
+        {
+          "url": "http://autoimmuneeats.com/placeholder_article_photo.jpg",
+          "width": 800,
+          "height": 600
+        }
+      ],
+      "locale": "en_US",
+      "type": "article",
+      "publishedTime": "2023-12-11"
+    },
+    "robots": {
+      "index": true,
+      "follow": true,
+      "nocache": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1
+      }
+    }
+  },
+  "voteCount": 20,
+  "authorInfo": {
+    "authorName": "Coren Frankel, PhD",
+    "authorPhoto": "../public/Caylee_headshot.jpeg",
+    "authorPhotoAlt": "Coren's alt image description",
+    "authorBio": "Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist, scientist, researcher, author, software engineer, & autoimmune disease expert. Caylee is the author of Gain Control Over Your Psoriasis. Outside of work, Caylee loves gardening, hiking, cooking, & biking all over NYC."
+  },
+  "photoFeature": "https://www.autoimmuneeats.com/placeholder_article_photo.jpg",
+  "photoFeatureAlt": "test placeholder image alt",
+  "disclaimer": "PLEASE NOTE: Sections of this article may not be appropriate for those who have been diagnosed with an eating disorder, suspect they may have an eating disorder, or are engaging in disordered eating behaviors. This article is provided as informational content only, not as medical advice.",
+  "sections": [
+    {
+      "subtitle": "Nutrition is Key",
+      "hrefID": "Nutrition-is-Key",
+      "content": ["Nutrition can have a huge impact on how severe your autoimmune disease is, for several major reasons.",
+      "First, about 80% of our immune system lies within our intestines (cite). Since autoimmune diseases are described as an overactive immune system (cite?), nutrition and the related field of gut health have a huge impact on how bad your symptoms are.", 
+      "Second, a properly functioning immune system requires adequate nutrients to operate. It's important to eat well enough to support the immune system, so it has all the tools it needs to complete its essential functions.", 
+      "Third, autoimmune diseases can come with a whole host of unpleasant symptoms. This includes painful inflammation, stomachaches and other gastrointestinal issues, higher risk of heart disease, and more. Nutrition can play a huge role in reducing or even completely eliminating these symptoms.",
+      "However, while eating well is crucial to improving the painful symptoms of autoimmune disease, it's essential to understand that people with autoimmune diseases are more likely to also develop eating disorders (cite). For this reason, it is simply unethical to recommend diets or dieting to autoimmune disease sufferers.", 
+      "It's easy to make the mistake of thinking that an eating disorder looks like not eating enough or throwing up after eating - but these disorders can be more complicated than that. There are many types of eating disorders, and the same eating disorder can look very different from person to person.",
+      "For those with autoimmune disease, it's common to see people suffering from orthorexia, which is an excessive obsession with eating \"healthy\" (cite). While it's important to nourish yourself well, it's just as important to not obsess over it or morph the practice into something that is, paradoxically, unhealthy.",
+      "The key is to find ways to gently help yourself eat well a majority of the time, while still maintaining plenty of room to enjoy all your favorite foods, whether they are \"healthy\" or \"unhealthy\" or somewhere in between.",
+      "For many people, this is simply not the advice they want to hear. It can be very tempting to get caught up in the excitement of starting a diet, thinking this will cure all your pains. Some people may experience a relief in symptoms when attempting these severely restrictive diets - however, the results are rarely if ever long lasting, and the culprit food is almost never identified (cite?). Therefore, it is simply not worth attempting these dangerous diets. Ultimately, dieting in an attempt to alleviate autoimmune disease can be described as self-harm. This includes all diets, even the AIP diet and other types of elimination diets."]
+    },
+    {
+      "subtitle": "Worst Foods for Autoimmune Disease",
+      "hrefID": "Worst-Foods-for-Autoimmune-Disease",
+      "content": "Duis convallis convallis tellus id. A pellentesque sit amet porttitor eget dolor morbi. Habitant morbi tristique senectus et netus et malesuada fames. Non quam lacus suspendisse faucibus. Et odio pellentesque diam volutpat. Dui id ornare arcu odio ut sem nulla. Tristique senectus et netus et malesuada fames. Aenean vel elit scelerisque mauris pellentesque. Amet massa vitae tortor condimentum lacinia quis vel eros. Sed faucibus turpis in eu. Duis at tellus at urna. Tortor condimentum lacinia quis vel eros. Dui id ornare arcu odio ut sem nulla. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Et leo duis ut diam quam nulla porttitor massa. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Morbi tristique senectus et netus et malesuada fames."
+    },
+    {
+      "subtitle": "Autoimmune Disease & the Anti-Inflammatory Diet",
+      "hrefID": "Autoimmune-Disease-and-the-Anti-Inflammatory-Diet",
+      "content": "Scelerisque purus semper eget duis at tellus at urna. Arcu odio ut sem nulla pharetra diam sit amet nisl. Sapien nec sagittis aliquam malesuada bibendum. Lacus vestibulum sed arcu non odio euismod lacinia. Et tortor at risus viverra. Tristique magna sit amet purus gravida quis blandit. Sit amet mattis vulputate enim nulla. Viverra vitae congue eu consequat ac felis. Cursus metus aliquam eleifend mi in nulla. Nisl tincidunt eget nullam non nisi est sit. Nulla at volutpat diam ut venenatis tellus. Sed id semper risus in hendrerit gravida rutrum. Aenean pharetra magna ac placerat. Est velit egestas dui id ornare arcu odio ut sem. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Egestas diam in arcu cursus. Volutpat odio facilisis mauris sit."
+    },
+    {
+      "subtitle": "Autoimmune Disease & the AIP Diet",
+      "hrefID": "Autoimmune-Disease-and-the-AIP-Diet",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "Dangers of Dieting",
+      "hrefID": "Dangers-of-Dieting",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "Safer Alternative to Dieting",
+      "hrefID": "Safer-Alternative-to-Dieting",
+      "content": "the paragraphs in that section"
+    },
+    {
+      "subtitle": "Bottom Line",
+      "hrefID": "Bottom-Line",
+      "content": "the paragraphs in that section"
+    }
+  ],
+  "categories": ["anti-inflammatory", "diet", "beginner"],
+  "photoAdditionalOne": "https://www.autoimmuneeats.com/Gain_Control_Over_Your_Psoriasis_book.jpeg",
+  "photoAdditionalTwo": "../public/main_image_front_page_autoimmune_eats_HALFOLD.jpg",
+  "photoAdditionalThree": "https://my.clevelandclinic.org/-/scassets/images/org/health/articles/6866-psoriasis"
+}

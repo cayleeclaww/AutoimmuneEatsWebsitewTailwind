@@ -15,26 +15,23 @@
   },
   "photoFeature": "http://localhost:3000/placeholder_article_photo.jpg",
   "photoFeatureAlt": "test placeholder image alt",
-  "sections": {
-    "sectionOne": {
+  "sections": [
+    {
       "subtitle": "The First Section",
-      "href": "#The-First-Section",
-      "ID": "The-First-Section",
+      "hrefID": "The-First-Section",
       "content": "the paragraphs in that section"
     },
-    "sectionTwo": {
+    {
       "subtitle": "The Second Section",
-      "href": "#The-Second-Section",
-      "ID": "The-Second-Section",
+      "hrefID": "The-Second-Section",
       "content": "the paragraphs in that section"
     },
-    "sectionThree": {
+    {
       "subtitle": "The Third Section",
-      "href": "#The-Third-Section",
-      "ID": "The-Third-Section",
+      "hrefID": "The-Third-Section",
       "content": "the paragraphs in that section"
     }
-  },
+  ],
   "relatedArticles": {
     "articleOne": "the title",
     "articleTwo": "the title",
