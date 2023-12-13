@@ -11,11 +11,13 @@ import Link from "next/link";
 import VoteUpButton from "./VoteUpButton";
 import SocialMediaMobile from "./SocialMediaMobile";
 import SocialMediaDesktop from "./SocialMediaDesktop";
-import ArticleFeatureImage from "./ArticleFeatureImage";
-import ArticleSectionSubtitle from "./ArticleSectionSubtitle";
-import ArticleIsHelpfulMobile from "./ArticleIsHelpfulMobile";
+// import ArticleFeatureImage from "./ArticleFeatureImage";
+// import ArticleSectionSubtitle from "./ArticleSectionSubtitle";
+// import ArticleIsHelpfulMobile from "./ArticleIsHelpfulMobile";
 import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
+// import parse from "html-react-parser";
 
+// ****** NOTES FOR LATER: better way to deal with dangerouslySetInnerHTML on line 116??? cause a security risk + hydration errors... perhaps using html-react-parser? If not, then uninstall (npm uninstall html-react-parser)
 // ****** NOTES FOR LATER: fix if statement on line 39 so | does not print after last subtitle
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
@@ -108,19 +110,11 @@ const ArticleComponent = (props) => {
                   {sect.subtitle}
                 </p>
                 {/* paragraphs */}
-                {/* <p className="text-sm mx-6 ">{sect.content}</p> */}
-                {/* <div key={sect.hrefID}> */}
-                  {article.sections.map((sect, i) => (
-                    <p className="text-sm mx-6 ">{sect.content[i]}</p>
-                  ))}
-                {/* </div> */}
-
-                {/* 
-                {article.sections.map((sect) => (
-                  <li key={sect.hrefID}>
-                    <Link href={`#${sect.hrefID}`}>{sect.subtitle}</Link>
-                  </li>
-                ))} */}
+                {/* const sectionContent = {sect.content}; */}
+                {/* {parse(` */}
+                <p className="text-sm mx-6 "
+                  dangerouslySetInnerHTML={{__html: sect.content}}/>
+                {/* `)} */}
               </div>
             ))}
           </div>
