@@ -163,10 +163,7 @@ export default function Home() {
             by attempting to follow some unproven highly restrictive psoriasis
             diet.
           </p>
-          <Link
-            href="https://www.amazon.com/gp/product/173515041X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173515041X&linkCode=as2&tag=eatyerveggies-20&linkId=7933144f7c8eea01d9847a2da039b38f"
-            target="_blank"
-          >
+          <Link href="https://amzn.to/3xSaKFJ" target="_blank">
             <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center w-[95%]">
               buy here
             </button>
@@ -198,10 +195,7 @@ export default function Home() {
           Make peace with your body by learning your psoriasis triggers, not by
           attempting to follow some unproven highly restrictive psoriasis diet.
         </p>
-        <Link
-          href="https://www.amazon.com/gp/product/173515041X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173515041X&linkCode=as2&tag=eatyerveggies-20&linkId=7933144f7c8eea01d9847a2da039b38f"
-          target="_blank"
-        >
+        <Link href='https://amzn.to/3xSaKFJ' target='_blank'>
           <button className="text-l p-2 m-3 w-60 bg-turquoise uppercase rounded-md justify-center ">
             buy here
           </button>

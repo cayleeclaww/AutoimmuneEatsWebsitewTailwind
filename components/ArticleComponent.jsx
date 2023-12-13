@@ -15,10 +15,9 @@ import SocialMediaDesktop from "./SocialMediaDesktop";
 // import ArticleSectionSubtitle from "./ArticleSectionSubtitle";
 // import ArticleIsHelpfulMobile from "./ArticleIsHelpfulMobile";
 import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
-// import parse from "html-react-parser";
+import parse from "html-react-parser";
 
-// ****** NOTES FOR LATER: better way to deal with dangerouslySetInnerHTML on line 116??? cause a security risk + hydration errors... perhaps using html-react-parser? If not, then uninstall (npm uninstall html-react-parser)
-// ****** NOTES FOR LATER: fix if statement on line 39 so | does not print after last subtitle
+// ****** NOTES FOR LATER: fix if statement on line 39 so | does not print after last subtitle (https://stackoverflow.com/questions/38176352/javascript-map-array-last-item  && https://stackoverflow.com/questions/44969877/if-condition-inside-of-map-react)
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
@@ -46,7 +45,6 @@ const ArticleComponent = (props) => {
               {" | "}
             </Link>
             {/* if (i + 1 < sections.length){" | "} */}{" "}
-            {/* https://stackoverflow.com/questions/38176352/javascript-map-array-last-item */}
           </li>
         ))}
       </ul>
@@ -110,11 +108,7 @@ const ArticleComponent = (props) => {
                   {sect.subtitle}
                 </p>
                 {/* paragraphs */}
-                {/* const sectionContent = {sect.content}; */}
-                {/* {parse(` */}
-                <p className="text-sm mx-6 "
-                  dangerouslySetInnerHTML={{__html: sect.content}}/>
-                {/* `)} */}
+                <div className="text-sm mx-6 ">{parse(sect.content)}</div>
               </div>
             ))}
           </div>
@@ -166,7 +160,7 @@ const ArticleComponent = (props) => {
             Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist,
             scientist, researcher, author, software engineer, & autoimmune
             disease expert. Caylee is the author of{" "}
-            <Link href="https://www.amazon.com/gp/product/173515041X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173515041X&linkCode=as2&tag=eatyerveggies-20&linkId=7933144f7c8eea01d9847a2da039b38f">
+            <Link href='https://amzn.to/3xSaKFJ' target='_blank'>
               {" "}
               Gain Control Over Your Psoriasis
             </Link>
