@@ -30,9 +30,9 @@ const ArticleComponent = (props) => {
       {/* turquoise article title rectangle - desktop & mobile */}
       <TitleRectangleTurquoise>{article.title}</TitleRectangleTurquoise>
       {/* desktop article section links */}
-      <ul className="hidden md:block w-2/3 mx-6 pr-20 text-base">
+      <div className="hidden md:block w-2/3 mx-6 pr-20 text-base">
         {article.sections.map((sect, i) => (
-          <li key={sect.hrefID} className="inline-block">
+          <div key={sect.hrefID} className="inline-block">
             {/* if (i + 1 < article.sections.length){
              sect.subtitle + " | "
               console.log(article.sections.length);
@@ -45,9 +45,9 @@ const ArticleComponent = (props) => {
               {" | "}
             </Link>
             {/* if (i + 1 < sections.length){" | "} */}{" "}
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
 
       {/* vote up button - desktop & mobile */}
       <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
@@ -160,7 +160,7 @@ const ArticleComponent = (props) => {
             Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist,
             scientist, researcher, author, software engineer, & autoimmune
             disease expert. Caylee is the author of{" "}
-            <Link href='https://amzn.to/3xSaKFJ' target='_blank'>
+            <Link href="https://amzn.to/3xSaKFJ" target="_blank">
               {" "}
               Gain Control Over Your Psoriasis
             </Link>
