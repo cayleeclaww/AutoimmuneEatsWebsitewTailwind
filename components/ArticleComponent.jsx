@@ -110,7 +110,7 @@ const ArticleComponent = (props) => {
           {/* article contents - desktop & mobile*/}
           <div className="grid px-8">
             {/* disclaimer */}
-            <p className="text-sm ml-6 mt-8 mb-2 italic">
+            <p className="text-sm ml-1 mt-8 mb-2 italic">
               {article.disclaimer}
             </p>
             {/* subtitle + content */}
@@ -118,14 +118,14 @@ const ArticleComponent = (props) => {
               // subtitle name + href ID
               <div key={sect.hrefID}>
                 <p
-                  className="text-lg ml-6 mt-8 mb-2"
+                  className="text-lg ml-1 mt-8 mb-2"
                   style={{ textShadow: "2px 2px 2px #99CED3" }}
                   id={sect.hrefID}
                 >
                   {sect.subtitle}
                 </p>
                 {/* paragraphs */}
-                <div className="text-sm mx-6 ">{parse(sect.content)}</div>
+                <div className="text-sm mx-1 ">{parse(sect.content)}</div>
               </div>
             ))}
           </div>

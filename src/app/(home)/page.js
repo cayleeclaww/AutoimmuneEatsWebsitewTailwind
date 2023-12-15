@@ -135,15 +135,19 @@ export default function Home() {
       {/* mobile responsiveness  */}
       <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
         <p className="text-2xl px-4 text-bold text-center">
-          Autoimmune Nutrition 101:<br/>What You Need to Know
+          Autoimmune Nutrition 101:
+          <br />
+          What You Need to Know
         </p>
         <p className="text-l p-4 text-center">
           Do you know the best and worst foods for autoimmune disease? Should
           you eat an anti-inflammatory diet? The answer may surprise you!
         </p>
-        <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 text-black hover:font-bold">
-          read more
-        </button>
+        <Link href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know">
+          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 text-black hover:font-bold">
+            read more
+          </button>
+        </Link>
       </div>
 
       {/* "symptoms" section - COMPLETE: is mobile friendly! */}
