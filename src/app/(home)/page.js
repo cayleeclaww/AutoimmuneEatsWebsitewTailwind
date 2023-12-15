@@ -121,11 +121,11 @@ export default function Home() {
             Autoimmune Nutrition 101: What You Need to Know
           </div>
           <p className="text-m px-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua...
+            Do you know the best and worst foods for autoimmune disease? Should
+            you eat an anti-inflammatory diet? The answer may surprise you!
           </p>
           <Link href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know">
-            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-[90%] visited:text-black">
+            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-[90%] text-black hover:font-bold">
               read more
             </button>
           </Link>
@@ -134,12 +134,14 @@ export default function Home() {
 
       {/* mobile responsiveness  */}
       <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
-        <p className="text-2xl px-4 text-bold text-center">Article title</p>
-        <p className="text-l p-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        <p className="text-2xl px-4 text-bold text-center">
+          Autoimmune Nutrition 101:<br/>What You Need to Know
         </p>
-        <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 ">
+        <p className="text-l p-4 text-center">
+          Do you know the best and worst foods for autoimmune disease? Should
+          you eat an anti-inflammatory diet? The answer may surprise you!
+        </p>
+        <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 text-black hover:font-bold">
           read more
         </button>
       </div>
@@ -164,7 +166,7 @@ export default function Home() {
             diet.
           </p>
           <Link href="https://amzn.to/3xSaKFJ" target="_blank">
-            <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center w-[95%]">
+            <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center w-[95%] hover:font-bold">
               buy here
             </button>
           </Link>
@@ -195,8 +197,8 @@ export default function Home() {
           Make peace with your body by learning your psoriasis triggers, not by
           attempting to follow some unproven highly restrictive psoriasis diet.
         </p>
-        <Link href='https://amzn.to/3xSaKFJ' target='_blank'>
-          <button className="text-l p-2 m-3 w-60 bg-turquoise uppercase rounded-md justify-center ">
+        <Link href="https://amzn.to/3xSaKFJ" target="_blank">
+          <button className="text-l p-2 m-3 w-60 bg-turquoise uppercase rounded-md justify-center hover:font-bold">
             buy here
           </button>
         </Link>

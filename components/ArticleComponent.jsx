@@ -1,7 +1,3 @@
-// import { BsLink45Deg } from "react-icons/bs";
-// import { BiSolidPrinter, BiLogoPinterestAlt } from "react-icons/bi";
-// import { FaFacebookF } from "react-icons/fa";
-// import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 import headshot from "../public/Caylee_headshot.jpeg";
 import Image from "next/image";
 import placeholder_image from "../public/placeholder_article_photo.jpg";
@@ -11,11 +7,21 @@ import Link from "next/link";
 import VoteUpButton from "./VoteUpButton";
 import SocialMediaMobile from "./SocialMediaMobile";
 import SocialMediaDesktop from "./SocialMediaDesktop";
-// import ArticleFeatureImage from "./ArticleFeatureImage";
-// import ArticleSectionSubtitle from "./ArticleSectionSubtitle";
-// import ArticleIsHelpfulMobile from "./ArticleIsHelpfulMobile";
 import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 import parse from "html-react-parser";
+
+
+
+
+
+
+// *********************BREADCRUMBS: get photos & alts to pull from article object ************************
+
+
+
+
+
+
 
 // ****** NOTES FOR LATER: fix if statement on line 39 so | does not print after last subtitle (https://stackoverflow.com/questions/38176352/javascript-map-array-last-item  && https://stackoverflow.com/questions/44969877/if-condition-inside-of-map-react)
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
@@ -56,8 +62,8 @@ const ArticleComponent = (props) => {
       {/* mobile author name & article date section */}
       <div className="flex md:hidden">
         <Image
-          alt="Caylee Clay's Author Headshot"
-          src={headshot}
+          alt="Caylee Clay's Author Headshot" //should be: {authorInfo.authorPhotoAlt}
+          src={headshot} //should be: {authorInfo.authorPhoto}
           className="w-20 h-20 rounded-full ml-10"
         />
         <div className="ml-4 mt-4 text-sm">
@@ -72,7 +78,10 @@ const ArticleComponent = (props) => {
       <div className="md:hidden block mx-6 mt-10 text-base">
         {article.sections.map((sect) => (
           <div key={sect.hrefID}>
-            <Link href={`#${sect.hrefID}`}>{sect.subtitle}</Link>
+            <Link href={`#${sect.hrefID}`}>
+              &nbsp;{sect.subtitle}
+              {" | "}
+            </Link>
           </div>
         ))}
       </div>
@@ -81,7 +90,7 @@ const ArticleComponent = (props) => {
       <div className="flex md:columns-2">
         {/* first of two columns */}
         <div className="md:w-[66%] columns-1">
-          {/* article image - desktop & mobile */}
+          {/* article photo/image - desktop & mobile */}
           <div className="w-full flex justify-center p-4">
             <Image
               className="flex w-[80%] h-[80%] mt-4 "
@@ -157,15 +166,7 @@ const ArticleComponent = (props) => {
             className="w-20 h-20 rounded-full "
           />
           <div className="ml-4 mt-4 text-base">
-            Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist,
-            scientist, researcher, author, software engineer, & autoimmune
-            disease expert. Caylee is the author of{" "}
-            <Link href="https://amzn.to/3xSaKFJ" target="_blank">
-              {" "}
-              Gain Control Over Your Psoriasis
-            </Link>
-            . Outside of work, Caylee loves gardening, hiking, cooking, & biking
-            all over NYC.
+            {parse(article.authorInfo.authorBio)}
           </div>
         </div>
       </div>
