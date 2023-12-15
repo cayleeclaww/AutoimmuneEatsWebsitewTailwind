@@ -1,4 +1,4 @@
-import article from "../../../../../content/TemplateArticle.json";
+import article from "../../../../../content/AutoimmuneNutrition.json";
 import ArticleComponent from "../../../../../components/ArticleComponent";
 
 export const metadata = article.metadata;
