@@ -56,40 +56,40 @@ const Navbar = () => {
             </button>
 
             {/* submenu list */}
-            <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer ">
+            <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer ">
                 <Link
                   href="/by-disease/psoriasis"
                   className="text-black visited:text-black"
                 >
                   psoriasis
                 </Link>
-              </li>
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              </div>
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/by-disease/arthritis"
                   className="text-black visited:text-black"
                 >
                   arthritis
                 </Link>{" "}
-              </li>
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              </div>
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/by-disease/hashimotos"
                   className="text-black visited:text-black"
                 >
                   hashimoto&apos;s
                 </Link>
-              </li>
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              </div>
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/by-disease/eczema"
                   className="text-black visited:text-black"
                 >
                   eczema
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           {/* bysymptom menu item */}
@@ -113,32 +113,32 @@ const Navbar = () => {
             </button>
 
             {/* submenu list */}
-            <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+            <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/by-symptom/skin-pain"
                   className="text-black visited:text-black"
                 >
                   skin pain
                 </Link>
-              </li>
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              </div>
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/by-symptom/fatigue"
                   className="text-black visited:text-black"
                 >
                   fatigue
                 </Link>{" "}
-              </li>
-              <li className="bg-gray-200 hover:bg-[#99CED3] py-4 px-4 cursor-pointer">
+              </div>
+              <div className="bg-gray-200 hover:bg-[#99CED3] py-4 px-4 cursor-pointer">
                 <Link
                   href="/by-symptom/joint-pain"
                   className="text-black visited:text-black"
                 >
                   joint pain
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           {/* nutritionandsupplements menu item */}
@@ -162,32 +162,32 @@ const Navbar = () => {
             </button>
 
             {/* submenu list */}
-            <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+            <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/top-supplements"
                   className="text-black visited:text-black"
                 >
                   top supplements
                 </Link>
-              </li>
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              </div>
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/food-sensitivities"
                   className="text-black visited:text-black"
                 >
                   food sensitivities
                 </Link>
-              </li>
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              </div>
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/nutrition-recommendations"
                   className="text-black visited:text-black"
                 >
                   nutrition recommendations
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           {/* about menu item */}
@@ -208,7 +208,7 @@ const Navbar = () => {
             </button>
 
             {/* submenu list */}
-            {/* <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block">
+            {/* <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block">
       <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
         Profile
       </li>
@@ -242,69 +242,69 @@ const Navbar = () => {
             </button>
 
             {/* submenu list */}
-            <ul className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+            <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/resources/gain-control-over-your-psoriasis-book"
                   className="text-black visited:text-black"
                 >
                   book
                 </Link>
-              </li>
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              </div>
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/top-supplements"
                   className="text-black visited:text-black"
                 >
                   top supplements
                 </Link>
-              </li>
+              </div>
 
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/resources/autoimmune-nutrition-starters-guide"
                   className="text-black visited:text-black"
                 >
                   autoimmune nutrition starters&apos; guide
                 </Link>
-              </li>
+              </div>
 
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/resources/guided-meditations"
                   className="text-black visited:text-black"
                 >
                   guided meditation for eating
                 </Link>
-              </li>
+              </div>
 
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/resources/candida-screening-form"
                   className="text-black visited:text-black"
                 >
                   candida screening form
                 </Link>
-              </li>
+              </div>
 
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/resources/dinner-meal-planner"
                   className="text-black visited:text-black"
                 >
                   dinner meal planner
                 </Link>
-              </li>
+              </div>
 
-              <li className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/resources/track-psoriasis-severity"
                   className="text-black visited:text-black"
                 >
                   track psoriasis severity
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -330,52 +330,52 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex-col py-4">
-            <ul>
+            <div>
               <Link href="/by-disease">
-                <li
+                <div
                   onClick={() => setHamburgerOpen(false)}
                   className="py-4 cursor-pointer"
                 >
                   by disease
-                </li>
+                </div>
               </Link>
 
               <Link href="/by-symptom">
-                <li
+                <div
                   onClick={() => setHamburgerOpen(false)}
                   className="py-4 cursor-pointer"
                 >
                   by symptom
-                </li>
+                </div>
               </Link>
 
               <Link href="/nutrition-and-supplements">
-                <li
+                <div
                   onClick={() => setHamburgerOpen(false)}
                   className="py-4 cursor-pointer"
                 >
                   nutrition and supplements
-                </li>
+                </div>
               </Link>
 
               <Link href="/about">
-                <li
+                <div
                   onClick={() => setHamburgerOpen(false)}
                   className="py-4 cursor-pointer"
                 >
                   about
-                </li>
+                </div>
               </Link>
 
               <Link href="/resources">
-                <li
+                <div
                   onClick={() => setHamburgerOpen(false)}
                   className="py-4 cursor-pointer"
                 >
                   resources
-                </li>
+                </div>
               </Link>
-            </ul>
+            </div>
           </div>
         </div>
       </div>

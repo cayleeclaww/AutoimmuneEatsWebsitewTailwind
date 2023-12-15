@@ -69,13 +69,13 @@ const ArticleComponent = (props) => {
       {/* mobile social media icons */}
       <SocialMediaMobile></SocialMediaMobile>
       {/* mobile article section links */}
-      <ul className="md:hidden block mx-6 mt-10 text-base">
+      <div className="md:hidden block mx-6 mt-10 text-base">
         {article.sections.map((sect) => (
-          <li key={sect.hrefID}>
+          <div key={sect.hrefID}>
             <Link href={`#${sect.hrefID}`}>{sect.subtitle}</Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
       {/* content section - desktop & mobile*/}
       {/* desktop break into two columns */}
       <div className="flex md:columns-2">
