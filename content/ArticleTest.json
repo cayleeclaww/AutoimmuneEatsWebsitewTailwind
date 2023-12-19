@@ -13,7 +13,7 @@
     "authorPhotoAlt": "Author's image alt image description",
     "authorBio": "the bio of the author"
   },
-  "photoFeature": "http://localhost:3000/placeholder_article_photo.jpg",
+  "photoFeature": "/placeholder_article_photo.jpg",
   "photoFeatureAlt": "test placeholder image alt",
   "sections": [
     {

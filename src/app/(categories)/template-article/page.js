@@ -1,8 +1,10 @@
 import article from "../../../../content/TemplateArticle.json";
 import ArticleComponent from "../../../../components/ArticleComponent";
+import FourCardSpreadNEW from "../../../../components/FourCardSpreadNEW";
+import Card from "../../../../components/CardsComponent";
 
-// ****** NOTES FOR LATER: In JSONs - add each new paragraph into a new object subproperty so can add <p> breaks. 
-// ****** NOTES FOR LATER: In JSONs - add optional photo subproperty into each section, run code to display if present 
+// ****** NOTES FOR LATER: In JSONs - add each new paragraph into a new object subproperty so can add <p> breaks.
+// ****** NOTES FOR LATER: In JSONs - add optional photo subproperty into each section, run code to display if present
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 // ****** NOTES FOR LATER: troubleshoot how to use object property as URL/path for photos........
@@ -15,6 +17,7 @@ const Page = () => {
   return (
     <>
       <ArticleComponent article={article} />
+      <Card />
     </>
   );
 };
