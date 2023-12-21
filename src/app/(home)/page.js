@@ -5,20 +5,39 @@ import main_image from "../../../public/main_image_front_page_autoimmune_eats.jp
 import main_image_mobile from "../../../public/main_image_front_page_autoimmune_eats_HALF.jpg";
 import placeholder_image from "../../../public/placeholder_article_photo.jpg";
 import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
-import FourCardSpread from "../../../components/FourCardSpread";
 import Link from "next/link";
 import CardTitle from "../../../components/CardTitleComponent";
 import Cards from "../../../components/CardsComponent";
-import articleOne from "../../../content/TemplateArticle.json";
-import articleTwo from "../../../content/ArticleTest.json";
-import articleThree from "../../../content/AutoimmuneNutrition.json";
+import BestAutoimmuneDiseaseDiet from "../../../content/BestAutoimmuneDiseaseDiet.json";
+import AutoimmuneNutritionNEW from "../../../content/AutoimmuneNutritionNEW.json";
+import WorstFoodsforAutoimmuneDisease from "../../../content/WorstFoodsforAutoimmuneDisease.json";
+import WhatIsTheBestPsoriasisDiet from "../../../content/WhatIsTheBestPsoriasisDiet.json";
+import HashimotosAndGluten from "../../../content/HashimotosAndGluten.json";
+import FoodsThatCauseEczema from "../../../content/FoodsThatCauseEczema.json";
+import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.json";
+import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
+import AutoimmuneDiseaseAndCovid from "../../../content/AutoimmuneDiseaseAndCovid.json";
+import HowtoImproveFatigue from "../../../content/HowtoImproveFatigue.json";
 
 // **** NOTES FOR LATER: Add link for buttons to join email list
 
-
-
 export default function Home() {
-  const symptomsArticles = [articleOne, articleTwo, articleThree];
+  const symptomsArticles = [
+    IsItAutoimmuneChecklist,
+    LupusAndArthritisHowToImprove,
+    HowtoImproveFatigue,
+  ];
+  const nutAndSuppsArticles = [
+     AutoimmuneNutritionNEW,
+     BestAutoimmuneDiseaseDiet,
+    WorstFoodsforAutoimmuneDisease,
+  ];
+  const byDiseaseArticles = [
+    WhatIsTheBestPsoriasisDiet,
+    HashimotosAndGluten,
+    FoodsThatCauseEczema,
+    AutoimmuneDiseaseAndCovid,
+  ];
 
   return (
     <>
@@ -157,7 +176,6 @@ export default function Home() {
       {/* "symptoms" section - COMPLETE: is mobile friendly! */}
       <CardTitle>BY SYMPTOM</CardTitle>
       <Cards allArticles={symptomsArticles}></Cards>
-      {/* <FourCardSpread>BY SYMPTOM</FourCardSpread> */}
       {/* Book section - COMPLETE: is mobile friendly! */}
       {/* below is for desktop responsiveness */}
       <div className="w-full flex justify-center py-16 items-center">
@@ -211,9 +229,8 @@ export default function Home() {
         </Link>
       </div>
       {/* "conditions" section - COMPLETE: is mobile friendly! */}
-      {/* <FourCardSpread>by condition</FourCardSpread> */}
       <CardTitle>BY condition</CardTitle>
-      <Cards allArticles={symptomsArticles}></Cards>
+      <Cards allArticles={byDiseaseArticles}></Cards>
       {/* green speech bubbles section - COMPLETE: is mobile friendly! */}
       <div className="grid grid-cols-1 md:grid-cols-2 mt-24 ">
         {/* did you know? */}
@@ -297,9 +314,10 @@ export default function Home() {
         <p className="text-center p-24">Prompt to join email list</p>
       </div>
       {/* "recipes" section - COMPLETE: is mobile friendly! */}
-      <CardTitle>recipes</CardTitle>
-      <Cards allArticles={symptomsArticles}></Cards>
-      {/* <FourCardSpread>recipes</FourCardSpread> */}
+      {/* <CardTitle>recipes</CardTitle> */}
+      {/* <Cards allArticles={symptomsArticles}></Cards> */}
+      <CardTitle>Nutrition & Supplements</CardTitle>
+      <Cards allArticles={nutAndSuppsArticles}></Cards>
       {/* statement on scientific/journalistic integrity */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
         <p className="text-center p-24">
