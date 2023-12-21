@@ -8,16 +8,21 @@ import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
 import Link from "next/link";
 import CardTitle from "../../../components/CardTitleComponent";
 import Cards from "../../../components/CardsComponent";
-import BestAutoimmuneDiseaseDiet from "../../../content/BestAutoimmuneDiseaseDiet.json";
+//by symptom:
+import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.json";
+import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
+import HowtoImproveFatigue from "../../../content/HowtoImproveFatigue.json";
+//nutrition and supplements:
 import AutoimmuneNutritionNEW from "../../../content/AutoimmuneNutritionNEW.json";
+import BestAutoimmuneDiseaseDiet from "../../../content/BestAutoimmuneDiseaseDiet.json";
 import WorstFoodsforAutoimmuneDisease from "../../../content/WorstFoodsforAutoimmuneDisease.json";
+//by disease:
 import WhatIsTheBestPsoriasisDiet from "../../../content/WhatIsTheBestPsoriasisDiet.json";
 import HashimotosAndGluten from "../../../content/HashimotosAndGluten.json";
 import FoodsThatCauseEczema from "../../../content/FoodsThatCauseEczema.json";
-import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.json";
-import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
 import AutoimmuneDiseaseAndCovid from "../../../content/AutoimmuneDiseaseAndCovid.json";
-import HowtoImproveFatigue from "../../../content/HowtoImproveFatigue.json";
+
+
 
 // **** NOTES FOR LATER: Add link for buttons to join email list
 
@@ -28,8 +33,8 @@ export default function Home() {
     HowtoImproveFatigue,
   ];
   const nutAndSuppsArticles = [
-     AutoimmuneNutritionNEW,
-     BestAutoimmuneDiseaseDiet,
+    AutoimmuneNutritionNEW,
+    BestAutoimmuneDiseaseDiet,
     WorstFoodsforAutoimmuneDisease,
   ];
   const byDiseaseArticles = [

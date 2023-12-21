@@ -7,9 +7,17 @@ import Image from "next/image";
 import placeholder_image from "../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
+import Cards from "../../../../components/CardsComponent";
+import CardTitle from "../../../../components/CardTitleComponent";
+//articles
+import WhatIsTheBestPsoriasisDiet from "../../../../content/WhatIsTheBestPsoriasisDiet.json";
+import HashimotosAndGluten from "../../../../content/HashimotosAndGluten.json";
+import FoodsThatCauseEczema from "../../../../content/FoodsThatCauseEczema.json";
+import AutoimmuneDiseaseAndCovid from "../../../../content/AutoimmuneDiseaseAndCovid.json";
 
+//NOTE FOR LATER: decide which article to feature 
+//NOTE FOR LATER: update social media icons to component 
 //NOTE FOR LATER: figure out how to make the feature photo into a component... use an object as the prop???
-//NOTE FOR LATER: need to reconfigure fourcardspread title so that it fits better in smaller screens?? (in localhost review nutrition recommendations below)
 
 
 export default function ByDiseasePage() {
@@ -19,7 +27,6 @@ export default function ByDiseasePage() {
       <TitleRectangleTurquoise>
         <p>By Disease</p>
       </TitleRectangleTurquoise>
-
       {/* category description */}
       <p className="mt-8 flex text-center mx-auto w-3/4">
         1-2 sentence long description of category. Lorem ipsum dolor sit amet,
@@ -29,31 +36,30 @@ export default function ByDiseasePage() {
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">
         <Link
-          href="/bydisease/psoriasis"
+          href="/by-disease/What-is-the-Best-Psoriasis-Diet-9-Foods-to-Avoid-and-More"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           psoriasis
         </Link>
         <Link
-          href="/bydisease/arthritis"
+          href="/by-disease/Autoimmune-Disease-And-Covid-Can-Infections-Cause-Disease"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
-          arthritis
+          COVID & Infections
         </Link>
         <Link
-          href="/bydisease/hashimotos"
+          href="/by-disease/Hashimotos-And-Gluten-Whats-the-Best-Hashimotos-Diet"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           hashimoto&apos;s
         </Link>
         <Link
-          href="/bydisease/eczema"
+          href="/by-disease/Foods-That-Cause-Eczema-What-to-Eat-And-What-Helps-it-Go-Away"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           eczema
         </Link>
       </div>
-
       {/* social media icons */}
       <div className="flex justify-center gap-2 mt-8">
         <AiOutlineInstagram
@@ -111,7 +117,6 @@ export default function ByDiseasePage() {
           }}
         ></BiSolidPrinter>
       </div>
-
       {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
       <div className="w-full flex justify-center p-4 mt-12">
         {/* desktop image */}
@@ -141,7 +146,6 @@ export default function ByDiseasePage() {
           </button>
         </div>
       </div>
-
       {/* mobile responsiveness  */}
       <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
         <p className="text-2xl px-4 text-bold text-center">Article title</p>
@@ -153,27 +157,24 @@ export default function ByDiseasePage() {
           read more
         </button>
       </div>
-
       {/* psoriasis section */}
-      <FourCardSpread>psoriasis</FourCardSpread>
-
-      {/* arthritis section */}
-      <FourCardSpread>arthritis</FourCardSpread>
-
+      <CardTitle>psoriasis</CardTitle>
+      <Cards allArticles={[WhatIsTheBestPsoriasisDiet]}></Cards>
+      {/* COVID and infections section */}
+      <CardTitle>COVID & Infections</CardTitle>
+      <Cards allArticles={[AutoimmuneDiseaseAndCovid]}></Cards>
       {/* hashimoto's section */}
-      <FourCardSpread>hashimoto&apos;s</FourCardSpread>
-
+      <CardTitle>Hashimoto's</CardTitle>
+      <Cards allArticles={[HashimotosAndGluten]}></Cards>
       {/* eczema section  */}
-      <FourCardSpread>eczema</FourCardSpread>
-
+      <CardTitle>eczema</CardTitle>
+      <Cards allArticles={[FoodsThatCauseEczema]}></Cards>
       {/* prompt to join email list  */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
         <p className="text-center p-24">Prompt to join email list</p>
       </div>
-
       {/* did you know? section */}
       <FourCardSpread>did you know?</FourCardSpread>
-
       {/* footer - desktop & mobile */}
       <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
         <p className="text-center p-24">footer</p>
