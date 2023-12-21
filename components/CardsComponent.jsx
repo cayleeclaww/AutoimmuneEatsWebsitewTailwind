@@ -3,28 +3,35 @@ import Image from "next/image";
 import articleOne from "../content/TemplateArticle.json";
 import articleTwo from "../content/ArticleTest.json";
 import articleThree from "../content/AutoimmuneNutrition.json";
+import Link from "next/link";
 
 const Card = (props) => {
-  const allArticles = [articleOne, articleTwo, articleThree];
+  const {allArticles} = props;
 
   return (
     <>
-      <div className="container mx-auto py-36 px-8">
+      <div className="container mx-auto p-8">
         <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
           {allArticles.map((card) => (
-            <div className="shadow-lg rounded-lg max-w-[400px]">
-              <Image
-                className="rounded-t-lg"
-                src={card.photoFeature}
-                alt={card.photoFeatureAlt}
-                width={400}
-                height={400}
-              />
-              <div className="p-5">
-                <h3 className="text-xl text-slate-700 ">{card.title}</h3>
-                {/* <p className="text-lg font-normal text-gray-600 mb-3">{card.metadata.description}</p> */}
+            <Link href={card.metadata.openGraph.url}>
+              <div
+                className="shadow-lg rounded-lg max-w-[400px] text-center"
+                key={card.title}
+              >
+                <Image
+                  className="rounded-t-lg"
+                  src={card.photoFeature}
+                  alt={card.photoFeatureAlt}
+                  width={400}
+                  height={400}
+                  id={card.title}
+                />
+                <div className="p-5">
+                  <h3 className="text-xl text-slate-700 ">{card.title}</h3>
+                  {/* <p className="text-lg font-normal text-gray-600 mb-3">{card.metadata.description}</p> */}
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

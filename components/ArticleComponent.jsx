@@ -10,18 +10,8 @@ import SocialMediaDesktop from "./SocialMediaDesktop";
 import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 import parse from "html-react-parser";
 
-
-
-
-
-
-// *********************BREADCRUMBS: get photos & alts to pull from article object ************************
-
-
-
-
-
-
+// ****** NOTES FOR LATER: Create branded article post template like: https://alissarumsey.com/binge-restrict-cycle/
+// ****** NOTES FOR LATER: change favicon from "ae" to "aie"
 // ****** NOTES FOR LATER: may need to change "article photo/image" section from <Image> to <img> and delete ht/wd properties if causing a problem 
 // ****** NOTES FOR LATER: fix if statement on line 39 so | does not print after last subtitle (https://stackoverflow.com/questions/38176352/javascript-map-array-last-item  && https://stackoverflow.com/questions/44969877/if-condition-inside-of-map-react)
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
@@ -37,23 +27,13 @@ const ArticleComponent = (props) => {
     <>
       {/* turquoise article title rectangle - desktop & mobile */}
       <TitleRectangleTurquoise>{article.title}</TitleRectangleTurquoise>
-      
+
       {/* desktop article section links */}
-      <div className="hidden md:block w-2/3 mx-6 pr-20 text-base">
+      <div className="hidden md:block w-2/3 mx-6 pr-20 text-base lg:mx-10">
         {article.sections.map((sect, i) => (
           <div key={sect.hrefID} className="inline-block">
-            {/* if (i + 1 < article.sections.length){
-             sect.subtitle + " | "
-              console.log(article.sections.length);
-            }
-            else {
-             sect.subtitle = sect.subtitle;
-            }  */}
-            <Link href={`#${sect.hrefID} `}>
-              &nbsp;{sect.subtitle}
-              {" | "}
-            </Link>
-            {/* if (i + 1 < sections.length){" | "} */}{" "}
+            <Link href={`#${sect.hrefID}`}>&nbsp;{sect.subtitle}</Link>
+            {i + 1 == article.sections.length ? " " : " | "}
           </div>
         ))}
       </div>
@@ -108,7 +88,7 @@ const ArticleComponent = (props) => {
             />
           </div>
           {/* article contents - desktop & mobile*/}
-          <div className="grid px-8">
+          <div className="grid px-8 lg:px-12">
             {/* disclaimer */}
             <p className="text-sm ml-1 mt-8 mb-2 italic">
               {article.disclaimer}
@@ -183,13 +163,13 @@ const ArticleComponent = (props) => {
         </div>
       </div>
       {/* related articles - desktop & mobile */}
-      <FourCardSpread>related articles</FourCardSpread>
+      {/* <FourCardSpread>related articles</FourCardSpread> */}
       {/* did you know? articles - desktop & mobile */}
-      <FourCardSpread>did you know?</FourCardSpread>
+      {/* <FourCardSpread>did you know?</FourCardSpread> */}
       {/* footer - desktop & mobile */}
-      <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
+      {/* <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
         <p className="text-center p-24">footer</p>
-      </div>
+      </div> */}
     </>
   );
 };

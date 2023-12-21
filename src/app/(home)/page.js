@@ -7,12 +7,19 @@ import placeholder_image from "../../../public/placeholder_article_photo.jpg";
 import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
 import FourCardSpread from "../../../components/FourCardSpread";
 import Link from "next/link";
+import CardTitle from "../../../components/CardTitleComponent";
+import Cards from "../../../components/CardsComponent";
+import articleOne from "../../../content/TemplateArticle.json";
+import articleTwo from "../../../content/ArticleTest.json";
+import articleThree from "../../../content/AutoimmuneNutrition.json";
 
 // **** NOTES FOR LATER: Add link for buttons to join email list
 
 
 
 export default function Home() {
+  const symptomsArticles = [articleOne, articleTwo, articleThree];
+
   return (
     <>
       {/* creates main image with overlayed text boxes - COMPLETE: is mobile friendly!  */}
@@ -66,7 +73,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* 4 boxes with main site features - COMPLETE: is mobile friendly! */}
       <div className="w-full grid grid-cols-2 md:flex my-6 sm:my-12">
         <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
@@ -98,7 +104,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
       {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
       <div className="w-full flex justify-center p-4">
         {/* desktop image */}
@@ -132,7 +137,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-
       {/* mobile responsiveness  */}
       <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
         <p className="text-2xl px-4 text-bold text-center">
@@ -150,27 +154,11 @@ export default function Home() {
           </button>
         </Link>
       </div>
-
-
-
-
-
-
-{/* BREADCRUMBS: get CardsComponent working below for "symptoms section" */}
-
-
-
-
-
-
-
-
-
       {/* "symptoms" section - COMPLETE: is mobile friendly! */}
-      <FourCardSpread>BY SYMPTOM</FourCardSpread>
-
+      <CardTitle>BY SYMPTOM</CardTitle>
+      <Cards allArticles={symptomsArticles}></Cards>
+      {/* <FourCardSpread>BY SYMPTOM</FourCardSpread> */}
       {/* Book section - COMPLETE: is mobile friendly! */}
-
       {/* below is for desktop responsiveness */}
       <div className="w-full flex justify-center py-16 items-center">
         <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14">
@@ -197,7 +185,6 @@ export default function Home() {
           alt="Display of the book, tablet, and ebook covers for Gain Control Over Your Psoriasis"
         />
       </div>
-
       {/* below is for mobile responsiveness */}
       <div className="md:hidden grid p-4">
         <Image
@@ -223,10 +210,10 @@ export default function Home() {
           </button>
         </Link>
       </div>
-
       {/* "conditions" section - COMPLETE: is mobile friendly! */}
-      <FourCardSpread>by condition</FourCardSpread>
-
+      {/* <FourCardSpread>by condition</FourCardSpread> */}
+      <CardTitle>BY condition</CardTitle>
+      <Cards allArticles={symptomsArticles}></Cards>
       {/* green speech bubbles section - COMPLETE: is mobile friendly! */}
       <div className="grid grid-cols-1 md:grid-cols-2 mt-24 ">
         {/* did you know? */}
@@ -305,22 +292,20 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* prompt to join email list  */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
         <p className="text-center p-24">Prompt to join email list</p>
       </div>
-
       {/* "recipes" section - COMPLETE: is mobile friendly! */}
-      <FourCardSpread>recipes</FourCardSpread>
-
+      <CardTitle>recipes</CardTitle>
+      <Cards allArticles={symptomsArticles}></Cards>
+      {/* <FourCardSpread>recipes</FourCardSpread> */}
       {/* statement on scientific/journalistic integrity */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
         <p className="text-center p-24">
           Statement on scientific/journalistic integrity
         </p>
       </div>
-
       {/* footer  */}
       <div className="w-full bg-gray-300 h-64 place-items-center">
         <p className="text-center p-24">footer</p>
