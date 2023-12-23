@@ -15,11 +15,8 @@ const Cards = (props) => {
       <div className="container mx-auto p-8">
         <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
           {allArticles.map((card) => (
-            <Link href={card.metadata.openGraph.url}>
-              <div
-                key={card.metadata.title}
-                className="shadow-lg rounded-lg max-w-[400px] text-center"
-              >
+            <Link href={card.metadata.openGraph.url} key={card.metadata.title}>
+              <div className="shadow-lg rounded-lg max-w-[400px] text-center">
                 <Image
                   className="rounded-t-lg"
                   src={card.photoFeature}
