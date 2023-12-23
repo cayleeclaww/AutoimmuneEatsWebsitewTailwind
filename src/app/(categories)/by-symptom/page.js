@@ -7,6 +7,15 @@ import Image from "next/image";
 import placeholder_image from "../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
+import Cards from "../../../../components/CardsComponent";
+import CardTitle from "../../../../components/CardTitleComponent";
+//articles
+import IsItAutoimmuneChecklist from "../../../../content/IsItAutoimmuneChecklist.json";
+import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
+import HowtoImproveFatigue from "../../../../content/HowtoImproveFatigue.json";
+
+// NOTE FOR LATER: decide which article to feature 
+// NOTES FOR LATER: update social media stuff
 
 
 export default function BySymptomPage() {
@@ -16,7 +25,6 @@ export default function BySymptomPage() {
       <TitleRectangleTurquoise>
         <p>By Symptom</p>
       </TitleRectangleTurquoise>
-
       {/* category description */}
       <p className="mt-8 flex text-center mx-auto w-3/4">
         1-2 sentence long description of category. Lorem ipsum dolor sit amet,
@@ -26,25 +34,24 @@ export default function BySymptomPage() {
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">
         <Link
-          href="/bysymptom/skinpain"
+          href="/by-symptom/Lupus-Arthritis-How-to-Improve-Lupus-Joint-Pain"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
-          skin pain
+          joint pain & arthritis
         </Link>
         <Link
-          href="/bysymptom/fatigue"
+          href="/by-symptom/How-to-Improve-Fatigue-from-Autoimmune-Disease"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           fatigue
         </Link>
         <Link
-          href="/bysymptom/jointpain"
+          href="/by-symptom/Autoimmune-Disease-Symptom-Checklist"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
-          joint pain
+          is it autoimmune?
         </Link>
       </div>
-
       {/* social media icons */}
       <div className="flex justify-center gap-2 mt-8">
         <AiOutlineInstagram
@@ -102,7 +109,6 @@ export default function BySymptomPage() {
           }}
         ></BiSolidPrinter>
       </div>
-
       {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
       <div className="w-full flex justify-center p-4 mt-12">
         {/* desktop image */}
@@ -132,7 +138,6 @@ export default function BySymptomPage() {
           </button>
         </div>
       </div>
-
       {/* mobile responsiveness  */}
       <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
         <p className="text-2xl px-4 text-bold text-center">Article title</p>
@@ -144,24 +149,21 @@ export default function BySymptomPage() {
           read more
         </button>
       </div>
-
-      {/* skin pain section */}
-      <FourCardSpread>skin pain</FourCardSpread>
-
-      {/* fatigue section */}
-      <FourCardSpread>fatigue</FourCardSpread>
-
       {/* joint pain section */}
-      <FourCardSpread>joint pain</FourCardSpread>
-
+      <CardTitle>joint pain & arthritis</CardTitle>
+      <Cards allArticles={[LupusAndArthritisHowToImprove]}></Cards>
+      {/* fatigue section */}
+      <CardTitle>fatigue</CardTitle>
+      <Cards allArticles={[HowtoImproveFatigue]}></Cards>
+      {/* is it AI? section */}
+      <CardTitle>is it autoimmune?</CardTitle>
+      <Cards allArticles={[IsItAutoimmuneChecklist]}></Cards>
       {/* prompt to join email list  */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
         <p className="text-center p-24">Prompt to join email list</p>
       </div>
-
       {/* did you know? section */}
       <FourCardSpread>did you know?</FourCardSpread>
-
       {/* footer - desktop & mobile */}
       <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
         <p className="text-center p-24">footer</p>

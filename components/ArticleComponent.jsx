@@ -10,6 +10,8 @@ import SocialMediaDesktop from "./SocialMediaDesktop";
 import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 import parse from "html-react-parser";
 
+// ****** NOTES FOR LATER: build out resources page, about page, and disclaimer page 
+// ****** NOTES FOR LATER: update navbar dropdowns to match by-dz/by-dx/etc page offerings
 // ****** NOTES FOR LATER: Create branded article post template like: https://alissarumsey.com/binge-restrict-cycle/
 // ****** NOTES FOR LATER: change favicon from "ae" to "aie"
 // ****** NOTES FOR LATER: may need to change "article photo/image" section from <Image> to <img> and delete ht/wd properties if causing a problem 
@@ -18,6 +20,7 @@ import parse from "html-react-parser";
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 // ****** NOTES FOR LATER: figure out how to configure social media buttons...
+// ****** NOTES FOR LATER: update all comments to be clearer 
 
 const ArticleComponent = (props) => {
   const { article } = props;

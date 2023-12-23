@@ -7,6 +7,16 @@ import Image from "next/image";
 import placeholder_image from "../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
+import Cards from "../../../../components/CardsComponent";
+import CardTitle from "../../../../components/CardTitleComponent";
+//articles
+import BestAutoimmuneDiseaseDiet from "../../../../content/BestAutoimmuneDiseaseDiet.json";
+import AutoimmuneNutritionNEW from "../../../../content/AutoimmuneNutritionNEW.json";
+import WorstFoodsforAutoimmuneDisease from "../../../../content/WorstFoodsforAutoimmuneDisease.json";
+
+//NOTE FOR LATER: decide which article to feature 
+// NOTES FOR LATER: update "/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know-NEW" by removing NEW when article updated
+// NOTES FOR LATER: Write articles about food sensitivites and top supplements, uncomment categories below 
 
 export default function NutritionAndSupplementsPage() {
   return (
@@ -25,23 +35,23 @@ export default function NutritionAndSupplementsPage() {
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">
         <Link
-          href="/nutritionandsupplements/supplements"
-          className="uppercase text-base hover:text-turquoise mx-8 my-4"
-        >
-          top supplements
-        </Link>
-        <Link
-          href="/nutritionandsupplements/foodsensitivities"
-          className="uppercase text-base hover:text-turquoise mx-8 my-4"
-        >
-          food sensitivities
-        </Link>
-        <Link
-          href="/nutritionandsupplements/nutritionrecommendations"
+          href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know-NEW"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           nutrition recommendations
         </Link>
+        {/* <Link
+          href="/nutrition-and-supplements/***UPDATE***"
+          className="uppercase text-base hover:text-turquoise mx-8 my-4"
+        >
+          food sensitivities
+        </Link> */}
+        {/* <Link
+          href="/nutrition-and-supplements/***UPDATE***"
+          className="uppercase text-base hover:text-turquoise mx-8 my-4"
+        >
+          top supplements
+        </Link> */}
       </div>
 
       {/* social media icons */}
@@ -144,14 +154,23 @@ export default function NutritionAndSupplementsPage() {
         </button>
       </div>
 
+      {/* nutrition recommendations section */}
+      <CardTitle>nutrition recommendations</CardTitle>
+      <Cards
+        allArticles={[
+          AutoimmuneNutritionNEW,
+          BestAutoimmuneDiseaseDiet,
+          WorstFoodsforAutoimmuneDisease,
+        ]}
+      />
+
       {/* top supplements section */}
-      <FourCardSpread>top supplements</FourCardSpread>
+      {/* <CardTitle>top supplements</CardTitle>  */}
+      {/* <Cards allArticles={[ **Article Object/JSON title(s) here** ]}></Cards> */}
 
       {/* food sensitivities section */}
-      <FourCardSpread>food sensitivities</FourCardSpread>
-
-      {/* nutrition recommendations section */}
-      <FourCardSpread>nutrition recommendations</FourCardSpread>
+      {/* <CardTitle>food sensitivities</CardTitle>  */}
+      {/* <Cards allArticles={[ **Article Object/JSON title(s) here** ]}></Cards> */}
 
       {/* prompt to join email list  */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">

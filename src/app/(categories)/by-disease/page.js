@@ -14,9 +14,11 @@ import WhatIsTheBestPsoriasisDiet from "../../../../content/WhatIsTheBestPsorias
 import HashimotosAndGluten from "../../../../content/HashimotosAndGluten.json";
 import FoodsThatCauseEczema from "../../../../content/FoodsThatCauseEczema.json";
 import AutoimmuneDiseaseAndCovid from "../../../../content/AutoimmuneDiseaseAndCovid.json";
+import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
+
 
 //NOTE FOR LATER: decide which article to feature 
-//NOTE FOR LATER: update social media icons to component 
+//NOTE FOR LATER: update social media icons to component - create object inline to pass URL for whole page for FB/LinkedIn/Pinterest???? Or just exclude...? 
 //NOTE FOR LATER: figure out how to make the feature photo into a component... use an object as the prop???
 
 
@@ -41,12 +43,7 @@ export default function ByDiseasePage() {
         >
           psoriasis
         </Link>
-        <Link
-          href="/by-disease/Autoimmune-Disease-And-Covid-Can-Infections-Cause-Disease"
-          className="uppercase text-base hover:text-turquoise mx-8 my-4"
-        >
-          COVID & Infections
-        </Link>
+
         <Link
           href="/by-disease/Hashimotos-And-Gluten-Whats-the-Best-Hashimotos-Diet"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
@@ -58,6 +55,18 @@ export default function ByDiseasePage() {
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           eczema
+        </Link>
+        <Link
+          href="/by-disease/Autoimmune-Disease-And-Covid-Can-Infections-Cause-Disease"
+          className="uppercase text-base hover:text-turquoise mx-8 my-4"
+        >
+          COVID & Infections
+        </Link>
+        <Link
+          href="/by-symptom/Lupus-Arthritis-How-to-Improve-Lupus-Joint-Pain"
+          className="uppercase text-base hover:text-turquoise mx-8 my-4"
+        >
+          lupus
         </Link>
       </div>
       {/* social media icons */}
@@ -169,6 +178,9 @@ export default function ByDiseasePage() {
       {/* eczema section  */}
       <CardTitle>eczema</CardTitle>
       <Cards allArticles={[FoodsThatCauseEczema]}></Cards>
+      {/* lupus section  */}
+      <CardTitle>lupus</CardTitle>
+      <Cards allArticles={[LupusAndArthritisHowToImprove]}></Cards>
       {/* prompt to join email list  */}
       <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
         <p className="text-center p-24">Prompt to join email list</p>

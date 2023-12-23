@@ -1,11 +1,13 @@
-import placeholder_image from "../public/placeholder_article_photo.jpg";
 import Image from "next/image";
-import articleOne from "../content/TemplateArticle.json";
-import articleTwo from "../content/ArticleTest.json";
-import articleThree from "../content/AutoimmuneNutrition.json";
 import Link from "next/link";
 
-const Card = (props) => {
+// ERROR MESSAGE: 
+// Failed to compile.
+// ./components/CardsComponent.jsx
+// 16:13  Error: Missing "key" prop for element in iterator  react/jsx-key
+
+
+const Cards = (props) => {
   const {allArticles} = props;
 
   return (
@@ -15,8 +17,8 @@ const Card = (props) => {
           {allArticles.map((card) => (
             <Link href={card.metadata.openGraph.url}>
               <div
+                key={card.metadata.title}
                 className="shadow-lg rounded-lg max-w-[400px] text-center"
-                key={card.title}
               >
                 <Image
                   className="rounded-t-lg"
@@ -39,7 +41,7 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default Cards;
 
 {
   /* <div className="py-24 flex items-center justify-center ">

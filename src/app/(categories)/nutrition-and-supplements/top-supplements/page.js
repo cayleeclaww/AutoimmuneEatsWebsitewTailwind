@@ -8,7 +8,7 @@ import Script from "next/script";
 
 
 
-export default function TopSupplementsPage() {
+export default function NutAndSuppsPage() {
   return (
     <>
       {/* turquoise category title rectangle - desktop & mobile */}
@@ -23,7 +23,7 @@ export default function TopSupplementsPage() {
       {/* <Script
         src="//us.fullscript.com/oembed/embed.js"
         data-fs='{"product_id":"89020","store_slug":"cclaynutrition","return":"product_card"}' */}
-        {/* // strategy="beforeInteractive" */}
+      {/* // strategy="beforeInteractive" */}
       {/* ></Script> */}
       {/* Seeking Health Multivitamin One MF */}
       {/* <Script

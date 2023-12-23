@@ -59,7 +59,7 @@ const Navbar = () => {
             <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer ">
                 <Link
-                  href="/by-disease/psoriasis"
+                  href="/by-disease/What-is-the-Best-Psoriasis-Diet-9-Foods-to-Avoid-and-More"
                   className="text-black visited:text-black"
                 >
                   psoriasis
@@ -67,15 +67,15 @@ const Navbar = () => {
               </div>
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-disease/arthritis"
+                  href="/by-symptom/Lupus-Arthritis-How-to-Improve-Lupus-Joint-Pain"
                   className="text-black visited:text-black"
                 >
-                  arthritis
-                </Link>{" "}
+                  lupus
+                </Link>
               </div>
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-disease/hashimotos"
+                  href="/by-disease/Hashimotos-And-Gluten-Whats-the-Best-Hashimotos-Diet"
                   className="text-black visited:text-black"
                 >
                   hashimoto&apos;s
@@ -83,10 +83,18 @@ const Navbar = () => {
               </div>
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-disease/eczema"
+                  href="/by-disease/Foods-That-Cause-Eczema-What-to-Eat-And-What-Helps-it-Go-Away"
                   className="text-black visited:text-black"
                 >
                   eczema
+                </Link>
+              </div>
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+                <Link
+                  href="/by-disease/Autoimmune-Disease-And-Covid-Can-Infections-Cause-Disease"
+                  className="text-black visited:text-black"
+                >
+                  COVID & infections
                 </Link>
               </div>
             </div>
@@ -116,26 +124,26 @@ const Navbar = () => {
             <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-symptom/skin-pain"
+                  href="/by-symptom/Lupus-Arthritis-How-to-Improve-Lupus-Joint-Pain"
                   className="text-black visited:text-black"
                 >
-                  skin pain
+                  joint pain & arthritis
                 </Link>
               </div>
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-symptom/fatigue"
+                  href="/by-symptom/How-to-Improve-Fatigue-from-Autoimmune-Disease"
                   className="text-black visited:text-black"
                 >
                   fatigue
-                </Link>{" "}
+                </Link>
               </div>
               <div className="bg-gray-200 hover:bg-[#99CED3] py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-symptom/joint-pain"
+                  href="/by-symptom/Autoimmune-Disease-Symptom-Checklist"
                   className="text-black visited:text-black"
                 >
-                  joint pain
+                  is it autoimmune?
                 </Link>
               </div>
             </div>
@@ -163,25 +171,25 @@ const Navbar = () => {
 
             {/* submenu list */}
             <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
-              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              {/* <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/top-supplements"
                   className="text-black visited:text-black"
                 >
                   top supplements
                 </Link>
-              </div>
-              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              </div> */}
+              {/* <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/food-sensitivities"
                   className="text-black visited:text-black"
                 >
                   food sensitivities
                 </Link>
-              </div>
+              </div> */}
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/nutrition-and-supplements/nutrition-recommendations"
+                  href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know-NEW"
                   className="text-black visited:text-black"
                 >
                   nutrition recommendations
@@ -198,27 +206,7 @@ const Navbar = () => {
                   about
                 </Link>
               </span>
-              {/* <svg
-        className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-      >
-        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-      </svg> */}
             </button>
-
-            {/* submenu list */}
-            {/* <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block">
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-        Profile
-      </li>
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-        Settings
-      </li>
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-        Logout
-      </li>
-    </ul> */}
           </div>
 
           {/* resources menu item */}
@@ -384,170 +372,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* OLD CODE:
-
-    const [dropdownDzOpen, setDropdownDzOpen] = useState(false)
-    const [dropdownSxOpen, setDropdownSxOpen] = useState(false)
-
-    // const handleDropdown = () => {
-    //     setDropdownOpen(!dropdownOpen)
-    // }
-
-
-
-
-{/* attempt at new menu and submenu */
-}
-{
-  /* <div className="group relative flex">
-    <button className="text-gray-700 rounded inline-flex items-center group hidden sm:flex">
-        {/* bydisease menu item */
-}
-{
-  /* <span className="mr-1 ml-10 uppercase hover:border-b text-l flex"><Link href="/bydisease">by disease</Link></span>
-      <svg
-        className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-      >
-        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-      </svg>
-    </button> */
-}
-
-{
-  /* bydisease submenu list */
-}
-{
-  /* <ul className="rounded absolute hidden text-gray-700 pt-1 group-hover:block">
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-        <Link href="/bydisease/psoriasis">psoriasis</Link>
-      </li>
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-      <Link href="/bydisease/arthritis">arthritis</Link>
-      </li>
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-      <Link href="/bydisease/hashimotos">hashimoto's</Link>      
-      </li>
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-      <Link href="/bydisease/eczema">eczema</Link>      
-      </li>
-    </ul> */
-}
-
-{
-  /* <button className="text-gray-700 rounded inline-flex items-center group hidden sm:flex"> */
-}
-{
-  /* bydisease menu item */
-}
-{
-  /* <span className="mr-1 ml-10 uppercase hover:border-b text-l flex"><Link href="/bydisease">by disease</Link></span>
-      <svg
-        className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-      >
-        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-      </svg>
-    </button> */
-}
-
-{
-  /* bydisease submenu list */
-}
-{
-  /* <ul className="rounded absolute hidden text-gray-700 pt-1 group-hover:block">
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-        <Link href="/bydisease/psoriasis">psoriasis</Link>
-      </li>
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-      <Link href="/bydisease/arthritis">arthritis</Link>
-      </li>
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-      <Link href="/bydisease/hashimotos">hashimoto's</Link>      
-      </li>
-      <li className="bg-gray-200 hover:bg-gray-400 py-4 px-4 cursor-pointer">
-      <Link href="/bydisease/eczema">eczema</Link>      
-      </li>
-    </ul> */
-}
-
-{
-  /* <ul className="hidden sm:flex"> */
-}
-{
-  /* <Link href="/bydisease">
-                        <li className="ml-10 uppercase hover:border-b text-l flex"><span>by disease </span></li></Link>
-                        <button onClick={() => setDropdownDzOpen((prev) => !prev)}>
-                            {!dropdownDzOpen ? (
-                                <AiOutlineCaretDown className="h-6 pl-1"/>
-                            ) : (
-                                <AiOutlineCaretUp className="h-6 pl-1"/>
-                            )}
-                            </button>
-
-                            {dropdownDzOpen && (
-                                <div className="bg-yellow-400 absolute top-40 flex flex-column items-end z-1 ml-10">
-                                    <div className="flex w-full justify-between cursor-pointer flex-col">                             
-                                        <Link className="hover:bg-[#99CED3] px-2 py-1 w-full" href="/bydisease/psoriasis"><span>psoriasis</span></Link>
-                                        <Link className="hover:bg-[#99CED3] px-2 py-1 w-full" href="/bydisease/psoriasis"><span>arthritis</span></Link>
-                                        <Link className="hover:bg-[#99CED3] px-2 py-1 w-full" href="/bydisease/psoriasis"><span>hashimoto's</span></Link>
-                                        <Link className="hover:bg-[#99CED3] px-2 py-1 w-full" href="/bydisease/psoriasis"><span>eczema</span></Link>
-                                </div>
-                                </div>
-                            )}
-                        
-
-                    <Link href="/bysymptom">
-                        <li className="ml-10 uppercase hover:border-b text-l flex">by symptom </li></Link>
-                        <button onClick={() => setDropdownSxOpen((prev) => !prev)}>
-                            {!dropdownSxOpen ? (
-                                <AiOutlineCaretDown className="h-6 pl-1"/>
-                            ) : (
-                                <AiOutlineCaretUp className="h-6 pl-1"/>
-                            )}
-                            </button>
-
-                            {dropdownSxOpen && (
-                                <div className="bg-yellow-400 absolute top-40 flex flex-column items-end z-1 ml-56">
-                                    <div className="flex w-full justify-between cursor-pointer flex-col">                             
-                                        <Link className="hover:bg-[#99CED3] px-2 py-1 w-full" href="/bydisease/psoriasis"><span>skin pain</span></Link>
-                                        <Link className="hover:bg-[#99CED3] px-2 py-1 w-full" href="/bydisease/psoriasis"><span>joint pain</span></Link>
-                                        <Link className="hover:bg-[#99CED3] px-2 py-1 w-full" href="/bydisease/psoriasis"><span>hair loss</span></Link>
-                                </div>
-                                </div>
-                            )} */
-}
-
-{
-  /* BREADCRUMBS: change submenu items below. ALSO will need to find a way to get the submenus to be responsive and stay below their title menu item when screen size changes.... */
-}
-
-{
-  /* <Link href="/nutritionandsupplements">
-                    <li className="ml-10 uppercase hover:border-b text-l flex">nutrition & supplements <AiOutlineCaretDown className="h-6 pl-1"/></li>
-                    </Link>
-
-                    <Link href="/resources">
-                    <li className="ml-10 uppercase hover:border-b text-l flex">resources <AiOutlineCaretDown className="h-6 pl-1"/></li>
-                    </Link>
-
-                    <Link href="/about">
-                    <li className="ml-10 uppercase hover:border-b text-l">about</li>
-                    </Link>
-
-                </ul>
-            </div>
-            <div onClick={handleHamburger} className="md:hidden cursor-pointer pl-24">
-                <AiOutlineMenu size={25} />
-            </div> */
-}
-
-{
-  /* </ul>   
-        </div>
-        </div> */
-}
