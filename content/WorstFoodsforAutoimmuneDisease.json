@@ -11,11 +11,11 @@
     "openGraph": {
       "title": "Worst Foods for Autoimmune Disease: What You Need To Know | Autoimmune Eats",
       "description": "*same as above* Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
-      "url": "https://autoimmuneeats.com/nutrition-and-supplements/worst-foods-for-autoimmune-disease",
+      "url": "https://autoimmuneeats.com/nutrition-and-supplements/worst-foods-for-autoimmune-disease-what-you-need-to-know",
       "siteName": "Autoimmune Eats",
       "images": [
         {
-          "url": "http://autoimmuneeats.com/worst-foods-for-autoimmune-disease.png",
+          "url": "http://autoimmuneeats.com/worst-foods-for-autoimmune-disease-what-you-need-to-know.png",
           "width": 800,
           "height": 600
         }
@@ -44,7 +44,7 @@
     "authorPhotoAlt": "Headshot of author Caylee Clay. Caylee is smiling with a grey jacket and straight bangs",
     "authorBio": "Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist, software engineer, scientist, researcher, author, & autoimmune disease expert. Caylee is the author of <a href='https://amzn.to/3xSaKFJ' target='_blank'>Gain Control Over Your Psoriasis</a>. Outside of work, Caylee loves gardening, hiking, cooking, & biking all over NYC."
   },
-  "photoFeature": "/worst-foods-for-autoimmune-disease.png",
+  "photoFeature": "/worst-foods-for-autoimmune-disease-what-you-need-to-know.png",
   "photoFeatureAlt": "*test placeholder image alt",
   "disclaimer": "PLEASE NOTE: Sections of this article may not be appropriate for those who have been diagnosed with an eating disorder, suspect they may have an eating disorder, or are engaging in disordered eating behaviors. This article is provided as informational content only, not as medical advice.",
   "sections": [

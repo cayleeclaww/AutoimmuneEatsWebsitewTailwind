@@ -1,9 +1,9 @@
 import ArticleComponent from "../../../../../components/ArticleComponent";
-import article from "../../../../../content/HashimotosAndGluten.json";
+import article from "../../../../../content/WorstFoodsforAutoimmuneDisease.json";
 
 export const metadata = article.metadata;
 
-export default function ByDiseasePage() {
+export default function NutAndSuppsPage() {
   // const relatedArticles = [relatedArticleOne, relatedArticleTwo, relatedArticleThree];
   // const didYouKnowArticles = [didYouKnowArticleOne, didYouKnowArticleTwo, didYouKnowArticleThree];
 

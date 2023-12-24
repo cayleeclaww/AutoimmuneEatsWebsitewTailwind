@@ -28,7 +28,7 @@ export default function AboutPage() {
           We want you to feel better. We want you to empower you with knowledge,
           so that you can live in less pain without sacrificing quality of life.
           Ultimately, our main goal is to help those with autoimmune disease
-          live with less pain and suffering.
+          suffer less and live better.
         </p>
         <h2 className="text-2xl mt-16 mb-4">Our Approach</h2>
         <p>This is a space that is free of both dieting and fatphobia.</p>
@@ -36,8 +36,8 @@ export default function AboutPage() {
         <ul>
           Instead, we believe in:
           <li>
-            Creating & maintaining a healthy, safe relationship with food &
-            our bodies
+            Creating & maintaining a healthy, safe relationship with food & our
+            bodies
           </li>
           <li>Healing the gut by fostering a healthy microbiome</li>
           <li>Supporting the body’s natural detoxification pathways</li>
@@ -59,11 +59,11 @@ export default function AboutPage() {
           <br></br> Finally, we firmly believe that the constantly increasing
           rates of autoimmune disease are heavily related to the destruction of
           our planet. Incidence of autoimmune disease directly corresponds to
-          pollution levels in our waterways, food system, and air.{" "}
+          pollution levels in our waterways, air, and food system.
         </p>
         <p>
           <br></br> Our stance is that a healthier planet will support healthier
-          humans. (It just seems obvious, does it?)
+          humans. (It just seems obvious, doesn't it?)
         </p>
       </div>
     </>

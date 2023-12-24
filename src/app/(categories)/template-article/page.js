@@ -7,7 +7,8 @@ import articleTwo from "../../../../content/ArticleTest.json";
 import articleThree from "../../../../content/AutoimmuneNutrition.json";
 import CardTitle from "../../../../components/CardTitleComponent";
 
-// ****** NOTES FOR LATER: build out footer component 
+// ****** NOTES FOR LATER: build "Did You Know" "Related Articles" in ArticleComponent
+// ****** NOTES FOR LATER: build out footer component AND THEN add to layout.js
 // ****** NOTES FOR LATER: In JSONs - add optional photo subproperty into each section, run code to display if present
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
