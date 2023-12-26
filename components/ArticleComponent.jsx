@@ -9,16 +9,16 @@ import SocialMediaMobile from "./SocialMediaMobile";
 import SocialMediaDesktop from "./SocialMediaDesktop";
 import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 import parse from "html-react-parser";
+import Footer from "./Footer";
 
-// ****** NOTES FOR LATER: build out resources page, privacy policy page, and terms of service page 
-// ****** NOTES FOR LATER: update navbar Resource dropdowns to match #hrefID page section 
-// ****** NOTES FOR LATER: may need to change "article photo/image" section from <Image> to <img> and delete ht/wd properties if causing a problem 
-// ****** NOTES FOR LATER: fix if statement on line 39 so | does not print after last subtitle (https://stackoverflow.com/questions/38176352/javascript-map-array-last-item  && https://stackoverflow.com/questions/44969877/if-condition-inside-of-map-react)
+// ****** NOTES FOR LATER: build out resources page, privacy policy page, and terms of service page
+// ****** NOTES FOR LATER: update navbar Resource dropdowns to match #hrefID page section
+// ****** NOTES FOR LATER: may need to change "article photo/image" section from <Image> to <img> and delete ht/wd properties if causing a problem
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 // ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
 // ****** NOTES FOR LATER: figure out how to configure social media buttons...
-// ****** NOTES FOR LATER: update all comments to be clearer 
+// ****** NOTES FOR LATER: update all comments to be clearer
 
 const ArticleComponent = (props) => {
   const { article } = props;
@@ -167,10 +167,6 @@ const ArticleComponent = (props) => {
       {/* <FourCardSpread>related articles</FourCardSpread> */}
       {/* did you know? articles - desktop & mobile */}
       {/* <FourCardSpread>did you know?</FourCardSpread> */}
-      {/* footer - desktop & mobile */}
-      {/* <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
-        <p className="text-center p-24">footer</p>
-      </div> */}
     </>
   );
 };
