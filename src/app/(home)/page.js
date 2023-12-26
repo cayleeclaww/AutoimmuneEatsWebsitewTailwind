@@ -52,11 +52,13 @@ export default function Home() {
           className="hidden md:grid w-full z-1 min-w-[100%]"
           src={main_image}
           alt="wooden cutting board with colorful dried herbs mirrored on left and right sides"
+          priority={true}
         />
         <Image
           className="grid w-full z-1 min-w-[100%] md:hidden"
           src={main_image_mobile}
           alt="wooden cutting board with colorful dried herbs on left side"
+          priority={true}
         />
         {/* text boxes for sm and larger screens */}
         <div className="hidden sm:grid absolute z-2 m-14 justify-center max-h-24 lg:pt-20">
