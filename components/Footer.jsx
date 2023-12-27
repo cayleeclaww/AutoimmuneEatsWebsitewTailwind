@@ -6,7 +6,8 @@ export default function Footer() {
       <div className="grid content-center text-center gap-4 pb-0 text-sm w-1/2">
         <p>
           <Link href="/Privacy-Policy">Privacy Policy</Link> |{" "}
-          <Link href="/Terms-of-Use">Terms of Use</Link>
+          <Link href="/Terms-of-Use">Terms of Use</Link> |{" "}
+          <Link href="/Cookie-Policy">Cookie Policy</Link>
         </p>
         <p>
           &copy; 2023 Eat Your Veggies Nutrition PLLC. All rights reserved. Our
