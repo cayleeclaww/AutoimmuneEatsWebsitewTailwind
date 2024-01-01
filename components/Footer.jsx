@@ -10,7 +10,7 @@ export default function Footer() {
           <Link href="/Cookie-Policy">Cookie Policy</Link>
         </p>
         <p>
-          &copy; 2023 Eat Your Veggies Nutrition PLLC. All rights reserved. Our
+          &copy; 2024 Eat Your Veggies Nutrition PLLC. All rights reserved. Our
           website services, content, and products are for informational purposes
           only. Eat Your Veggies Nutrition does not provide medical advice,
           diagnosis, or treatment. See additional information in Terms of Use.

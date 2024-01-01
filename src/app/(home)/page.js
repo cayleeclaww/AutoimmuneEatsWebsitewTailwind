@@ -331,10 +331,6 @@ export default function Home() {
           Statement on scientific/journalistic integrity
         </p>
       </div>
-      {/* footer  */}
-      <div className="w-full bg-gray-300 h-64 place-items-center">
-        <p className="text-center p-24">footer</p>
-      </div>
     </>
   );
 }
