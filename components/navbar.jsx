@@ -214,7 +214,7 @@ const Navbar = () => {
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
                 <Link
-                  href="/by-disease"
+                  href="/resources"
                   className="text-black visited:text-black"
                 >
                   resources

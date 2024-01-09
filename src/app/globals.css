@@ -88,3 +88,12 @@ li {
   margin-left: 25px;
   margin-top: 5px;
 }
+
+/* styling for email/newsletter prompt sign up */
+#mc_embed_signup
+{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+  width: 600px;
+}

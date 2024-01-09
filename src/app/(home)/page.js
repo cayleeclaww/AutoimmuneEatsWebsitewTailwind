@@ -8,6 +8,7 @@ import book from "../../../public/Gain_Control_Over_Your_Psoriasis_book.jpeg";
 import Link from "next/link";
 import CardTitle from "../../../components/CardTitleComponent";
 import Cards from "../../../components/CardsComponent";
+import EmailPrompt from "../../../components/EmailPrompt";
 //by symptom:
 import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.json";
 import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
@@ -316,10 +317,53 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* // */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
       {/* prompt to join email list  */}
-      <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
-        <p className="text-center p-24">Prompt to join email list</p>
-      </div>
+      <EmailPrompt/>
+
+      {/* <div className="w-full bg-turquoise h-80 grid justify-items-center">
+        <p className="text-center pt-16 text-xl">Join our email list!</p>
+        <form
+          action=""
+          method="get"
+          class="form-example"
+          className="text-center "
+        >
+          <div class="form-example">
+            <label for="email">Email: </label>
+            <br></br>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="w-64 rounded h-8"
+              required
+            />
+          </div>
+          <div class="form-example">
+            <input
+              type="submit"
+              value="Subscribe!"
+              className="text-l p-2 m-3 bg-white uppercase rounded-md justify-center w-[95%] text-black hover:font-bold"
+            />
+          </div>
+        </form> */}
+        {/* action="https://eatyerveggies.us4.list-manage.com/subscribe/post-json?u=ed3887d0c66e0bebf95e5adf4&amp;id=db78bcafa9&amp;f_id=00812fe9f0" */}
+        {/* <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" /> */}
+      {/* </div> */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
+      {/* // */}
       {/* "recipes" section - COMPLETE: is mobile friendly! */}
       {/* <CardTitle>recipes</CardTitle> */}
       {/* <Cards allArticles={symptomsArticles}></Cards> */}
@@ -334,3 +378,7 @@ export default function Home() {
     </>
   );
 }
+
+
+
+
