@@ -9,6 +9,7 @@ import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
 import Cards from "../../../../components/CardsComponent";
 import CardTitle from "../../../../components/CardTitleComponent";
+import FeaturePhoto from "../../../../components/FeaturePhoto";
 //articles
 import BestAutoimmuneDiseaseDiet from "../../../../content/BestAutoimmuneDiseaseDiet.json";
 import AutoimmuneNutritionNEW from "../../../../content/AutoimmuneNutritionNEW.json";
@@ -19,6 +20,8 @@ import WorstFoodsforAutoimmuneDisease from "../../../../content/WorstFoodsforAut
 // NOTES FOR LATER: Write articles about food sensitivites and top supplements, uncomment categories below 
 
 export default function NutritionAndSupplementsPage() {
+        const featuredArticle = BestAutoimmuneDiseaseDiet;
+
   return (
     <>
       {/* turquoise category title rectangle - desktop & mobile */}
@@ -113,46 +116,7 @@ export default function NutritionAndSupplementsPage() {
       </div>
 
       {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
-      <div className="w-full flex justify-center p-4 mt-12">
-        {/* desktop image */}
-        <Image
-          className="hidden md:flex w-[50%] h-[50%]"
-          style={{ boxShadow: "-10px 10px 15px #99CED3" }}
-          src={placeholder_image}
-          alt="placeholder image"
-        />
-        {/* mobile image */}
-        <Image
-          className="w-full border-x-6 flex md:hidden"
-          style={{ boxShadow: "10px 10px 15px #99CED3" }}
-          src={placeholder_image}
-          alt="placeholder image"
-        />
-
-        {/* desktop responsiveness */}
-        <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
-          <div className="text-2xl p-5 text-bold ">Article title </div>
-          <p className="text-m px-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40">
-            read more
-          </button>
-        </div>
-      </div>
-
-      {/* mobile responsiveness  */}
-      <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
-        <p className="text-2xl px-4 text-bold text-center">Article title</p>
-        <p className="text-l p-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-        <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 ">
-          read more
-        </button>
-      </div>
+      <FeaturePhoto featuredArticle={featuredArticle} />
 
       {/* nutrition recommendations section */}
       <CardTitle>nutrition recommendations</CardTitle>
@@ -164,7 +128,7 @@ export default function NutritionAndSupplementsPage() {
         ]}
       />
 
-      {/* top supplements section */}
+      {/* top supplements section - use later after content is created! */}
       {/* <CardTitle>top supplements</CardTitle>  */}
       {/* <Cards allArticles={[ **Article Object/JSON title(s) here** ]}></Cards> */}
 

@@ -134,7 +134,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
+      {/* featured article photo + description box */}
       <FeaturePhoto featuredArticle={featuredArticle} />
       {/* <div className="w-full flex justify-center p-4"> */}
         {/* desktop image */}

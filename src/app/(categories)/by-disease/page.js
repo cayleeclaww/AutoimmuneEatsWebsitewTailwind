@@ -23,6 +23,8 @@ import FeaturePhoto from "../../../../components/FeaturePhoto";
 
 
 export default function ByDiseasePage() {
+    const featuredArticle = HashimotosAndGluten;
+
   return (
     <>
       {/* turquoise category title rectangle - desktop & mobile */}
@@ -126,46 +128,9 @@ export default function ByDiseasePage() {
           }}
         ></BiSolidPrinter>
       </div>
-      {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
-      <div className="w-full flex justify-center p-4 mt-12">
-        {/* desktop image */}
-        <Image
-          className="hidden md:flex w-[50%] h-[50%]"
-          style={{ boxShadow: "-10px 10px 15px #99CED3" }}
-          src={placeholder_image}
-          alt="placeholder image"
-        />
-        {/* mobile image */}
-        <Image
-          className="w-full border-x-6 flex md:hidden"
-          style={{ boxShadow: "10px 10px 15px #99CED3" }}
-          src={placeholder_image}
-          alt="placeholder image"
-        />
+      {/* featured article photo + description box */}
+      <FeaturePhoto featuredArticle={featuredArticle} />
 
-        {/* desktop responsiveness */}
-        <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
-          <div className="text-2xl p-5 text-bold ">Article title </div>
-          <p className="text-m px-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40">
-            read more
-          </button>
-        </div>
-      </div>
-      {/* mobile responsiveness  */}
-      <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
-        <p className="text-2xl px-4 text-bold text-center">Article title</p>
-        <p className="text-l p-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-        <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 ">
-          read more
-        </button>
-      </div>
       {/* psoriasis section */}
       <CardTitle>psoriasis</CardTitle>
       <Cards allArticles={[WhatIsTheBestPsoriasisDiet]}></Cards>

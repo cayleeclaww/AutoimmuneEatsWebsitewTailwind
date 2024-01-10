@@ -8,17 +8,19 @@ import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 export default function SocialMediaMobile(props) {
   return (
     <div className="flex md:hidden justify-center gap-2 mt-4 ">
-      <AiOutlineInstagram
-        size={25}
-        style={{
-          borderRadius: "50%",
-          border: "1px solid grey",
-          padding: "2px",
-          fontSize: "30px",
-          backgroundImage: "linear-gradient(120deg, blue, red, yellow)",
-          color: "white",
-        }}
-      ></AiOutlineInstagram>
+      <a href="http://instagram.com/_u/autoimmune.nutrition/" target="_blank">
+        <AiOutlineInstagram
+          size={25}
+          style={{
+            borderRadius: "50%",
+            border: "1px solid grey",
+            padding: "2px",
+            fontSize: "30px",
+            backgroundImage: "linear-gradient(120deg, blue, red, yellow)",
+            color: "white",
+          }}
+        ></AiOutlineInstagram>
+      </a>
       <FaFacebookF
         size={25}
         style={{

@@ -34,15 +34,15 @@ export default function EmailPrompt() {
               <div class="mc-field-group">
                 <label for="mce-EMAIL">
                   Email Address <span class="asterisk">*</span>
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    class="required email"
+                    id="mce-EMAIL"
+                    required=""
+                    value=""
+                  />
                 </label>
-                <input
-                  type="email"
-                  name="EMAIL"
-                  class="required email"
-                  id="mce-EMAIL"
-                  required=""
-                  value=""
-                />
               </div>
               <div hidden="">
                 <input type="hidden" name="tags" value="2270440" />
@@ -97,7 +97,14 @@ export default function EmailPrompt() {
                           class="refferal_badge"
                           src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
                           alt="Intuit Mailchimp"
-                          style={{width: "220px", height: "40px", display: "flex", padding: "2px 0px", justifyContent: "center", alignItems: "center"}}
+                          style={{
+                            width: "220px",
+                            height: "40px",
+                            display: "flex",
+                            padding: "2px 0px",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
                         />
                       </span>
                     </a>
