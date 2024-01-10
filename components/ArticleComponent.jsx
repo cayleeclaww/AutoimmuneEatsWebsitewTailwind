@@ -9,7 +9,8 @@ import SocialMediaMobile from "./SocialMediaMobile";
 import SocialMediaDesktop from "./SocialMediaDesktop";
 import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 import parse from "html-react-parser";
-import Footer from "./Footer";
+import EmailPrompt from "./EmailPrompt";
+
 
 // ****** NOTES FOR LATER: build out Resources page
 // ****** NOTES FOR LATER: update navbar Resource dropdowns to match #hrefID page section
@@ -132,9 +133,10 @@ const ArticleComponent = (props) => {
         </div>
       </div>
       {/* prompt to join email list */}
-      <div className="bg-turquoise h-48 md:w-4/5 mb-4 block mt-8 ">
+      {/* <div className="bg-turquoise h-48 md:w-4/5 mb-4 block mt-8 ">
         <h1 className="text-lg text-center pt-20">Prompt to join email list</h1>
-      </div>
+      </div> */}
+      <EmailPrompt/>
       {/* is this article helpful? - desktop & mobile - once Vote Up is functional, uncomment below + use ArticleIsHelpfulDesktop/Mobile components */}
       {/* <div className="grid place-items-center py-24">
         <p className="text-xl">Is this article helpful?</p>

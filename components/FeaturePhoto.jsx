@@ -14,7 +14,7 @@ export default function FeaturePhoto(props) {
           src={featuredArticle.photoFeature}
           alt={featuredArticle.photoFeatureAlt}
           width={800}
-          height={800}
+          height={560}
         />
         {/* mobile image */}
         <Image
@@ -23,7 +23,7 @@ export default function FeaturePhoto(props) {
           src={featuredArticle.photoFeature}
           alt={featuredArticle.photoFeatureAlt}
           width={800}
-          height={800}
+          height={560}
         />
 
         {/* desktop responsiveness */}

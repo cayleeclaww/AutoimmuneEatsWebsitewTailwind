@@ -1,10 +1,12 @@
-// "use client";
-// import React, { useState } from "react";
+"use client";
+import { useState } from "react";
 // import jsonp from "jsonp";
 
 export default function EmailPrompt() {
+  const [email, setEmail] = useState("");
+
   return (
-    <div className="w-full bg-turquoise h-80 grid justify-items-center">
+    <div className="w-full bg-turquoise h-80 grid justify-items-center my-16">
       <div id="mc_embed_shell">
         {/* <link
           href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
@@ -26,23 +28,35 @@ export default function EmailPrompt() {
             target="_self"
             novalidate=""
           >
-            <div id="mc_embed_signup_scroll">
-              <h2>Join our email list!</h2>
-              <div class="indicates-required">
-                <span class="asterisk">*</span> indicates required
-              </div>
+            <div id="mc_embed_signup_scroll" className="pt-6">
+              <h2 className="text-center ">Join our email list!</h2>
+
               <div class="mc-field-group">
                 <label for="mce-EMAIL">
-                  Email Address <span class="asterisk">*</span>
-                  <input
+                  Email Address 
+                  {/* <span class="asterisk">*</span> */}
+                  {/* <input
                     type="email"
                     name="EMAIL"
                     class="required email"
                     id="mce-EMAIL"
                     required=""
                     value=""
+                  /> */}
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    class="required email"
+                    id="mce-EMAIL"
+                    required=""
+                    value={email}
+                    placeholder="Good things incoming!"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </label>
+                {/* <div class="indicates-required">
+                  <span class="asterisk">*</span> indicates required
+                </div> */}
               </div>
               <div hidden="">
                 <input type="hidden" name="tags" value="2270440" />
