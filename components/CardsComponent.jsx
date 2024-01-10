@@ -1,12 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// ERROR MESSAGE: 
-// Failed to compile.
-// ./components/CardsComponent.jsx
-// 16:13  Error: Missing "key" prop for element in iterator  react/jsx-key
-
-
 const Cards = (props) => {
   const {allArticles} = props;
 

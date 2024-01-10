@@ -15,8 +15,8 @@ import IsItAutoimmuneChecklist from "../../../../content/IsItAutoimmuneChecklist
 import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
 import HowtoImproveFatigue from "../../../../content/HowtoImproveFatigue.json";
 
-// NOTE FOR LATER: decide which article to feature 
-// NOTES FOR LATER: update social media stuff
+// NOTES FOR LATER: add email prompt component once completed
+// NOTES FOR LATER: build out social media links
 
 
 export default function BySymptomPage() {
@@ -130,10 +130,7 @@ export default function BySymptomPage() {
       </div>
       {/* did you know? section */}
       <FourCardSpread>did you know?</FourCardSpread>
-      {/* footer - desktop & mobile */}
-      <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
-        <p className="text-center p-24">footer</p>
-      </div>
+
     </>
   );
 }

@@ -1,4 +1,3 @@
-// 'use client'
 import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import main_image from "../../../public/main_image_front_page_autoimmune_eats.jpg";
@@ -25,8 +24,7 @@ import FoodsThatCauseEczema from "../../../content/FoodsThatCauseEczema.json";
 import AutoimmuneDiseaseAndCovid from "../../../content/AutoimmuneDiseaseAndCovid.json";
 
 
-
-// **** NOTES FOR LATER: Add link for buttons to join email list
+// **** NOTES FOR LATER: Complete statement on scientific/journalistic integrity
 
 export default function Home() {
   const symptomsArticles = [
@@ -136,60 +134,12 @@ export default function Home() {
       </div>
       {/* featured article photo + description box */}
       <FeaturePhoto featuredArticle={featuredArticle} />
-      {/* <div className="w-full flex justify-center p-4"> */}
-        {/* desktop image */}
-        {/* <Image
-          className="hidden md:flex w-[50%] h-[50%]"
-          style={{ boxShadow: "-10px 10px 15px #99CED3" }}
-          src={placeholder_image}
-          alt="placeholder image"
-        /> */}
-        {/* mobile image */}
-        {/* <Image
-          className="w-full border-x-6 flex md:hidden"
-          style={{ boxShadow: "10px 10px 15px #99CED3" }}
-          src={placeholder_image}
-          alt="placeholder image"
-        /> */}
 
-        {/* desktop responsiveness */}
-        {/* <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
-          <div className="text-2xl p-5 text-bold ">
-            Autoimmune Nutrition 101: What You Need to Know
-          </div>
-          <p className="text-m px-5">
-            Do you know the best and worst foods for autoimmune disease? Should
-            you eat an anti-inflammatory diet? The answer may surprise you!
-          </p>
-          <Link href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know">
-            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-[90%] text-black hover:font-bold">
-              read more
-            </button>
-          </Link>
-        </div>
-      </div> */}
-      {/* mobile responsiveness  */}
-      {/* <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
-        <p className="text-2xl px-4 text-bold text-center">
-          Autoimmune Nutrition 101:
-          <br />
-          What You Need to Know
-        </p>
-        <p className="text-l p-4 text-center">
-          Do you know the best and worst foods for autoimmune disease? Should
-          you eat an anti-inflammatory diet? The answer may surprise you!
-        </p>
-        <Link href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know">
-          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 text-black hover:font-bold">
-            read more
-          </button>
-        </Link>
-      </div> */}
       {/* "symptoms" section - COMPLETE: is mobile friendly! */}
       <CardTitle>BY SYMPTOM</CardTitle>
       <Cards allArticles={symptomsArticles}></Cards>
       {/* Book section - COMPLETE: is mobile friendly! */}
-      {/* below is for desktop responsiveness */}
+      {/* desktop responsiveness */}
       <div className="w-full flex justify-center py-16 items-center">
         <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14">
           <p className="text-2xl p-4 text-bold text-center">
@@ -215,7 +165,7 @@ export default function Home() {
           alt="Display of the book, tablet, and ebook covers for Gain Control Over Your Psoriasis"
         />
       </div>
-      {/* below is for mobile responsiveness */}
+      {/* mobile responsiveness */}
       <div className="md:hidden grid p-4">
         <Image
           className="ps-10"
@@ -240,7 +190,7 @@ export default function Home() {
           </button>
         </Link>
       </div>
-      {/* "conditions" section - COMPLETE: is mobile friendly! */}
+      {/* "conditions" section */}
       <CardTitle>BY condition</CardTitle>
       <Cards allArticles={byDiseaseArticles}></Cards>
       {/* green speech bubbles section - COMPLETE: is mobile friendly! */}
@@ -321,56 +271,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
       {/* prompt to join email list  */}
       <EmailPrompt />
-
-      {/* <div className="w-full bg-turquoise h-80 grid justify-items-center">
-        <p className="text-center pt-16 text-xl">Join our email list!</p>
-        <form
-          action=""
-          method="get"
-          class="form-example"
-          className="text-center "
-        >
-          <div class="form-example">
-            <label for="email">Email: </label>
-            <br></br>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="w-64 rounded h-8"
-              required
-            />
-          </div>
-          <div class="form-example">
-            <input
-              type="submit"
-              value="Subscribe!"
-              className="text-l p-2 m-3 bg-white uppercase rounded-md justify-center w-[95%] text-black hover:font-bold"
-            />
-          </div>
-        </form> */}
-      {/* action="https://eatyerveggies.us4.list-manage.com/subscribe/post-json?u=ed3887d0c66e0bebf95e5adf4&amp;id=db78bcafa9&amp;f_id=00812fe9f0" */}
-      {/* <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" /> */}
-      {/* </div> */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* // */}
-      {/* "recipes" section - COMPLETE: is mobile friendly! */}
+      {/* "recipes" section - use later after content is created! */}
       {/* <CardTitle>recipes</CardTitle> */}
       {/* <Cards allArticles={symptomsArticles}></Cards> */}
+      {/* "nutrition and supplements" section */}
       <CardTitle>Nutrition & Supplements</CardTitle>
       <Cards allArticles={nutAndSuppsArticles}></Cards>
       {/* statement on scientific/journalistic integrity */}

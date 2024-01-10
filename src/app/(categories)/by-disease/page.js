@@ -17,10 +17,8 @@ import AutoimmuneDiseaseAndCovid from "../../../../content/AutoimmuneDiseaseAndC
 import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
 import FeaturePhoto from "../../../../components/FeaturePhoto";
 
-//NOTE FOR LATER: decide which article to feature 
-//NOTE FOR LATER: update social media icons to component - create object inline to pass URL for whole page for FB/LinkedIn/Pinterest???? Or just exclude...? 
-//NOTE FOR LATER: figure out how to make the feature photo into a component... use an object as the prop???
-
+// NOTES FOR LATER: add email prompt component once completed
+// NOTES FOR LATER: build out social media links
 
 export default function ByDiseasePage() {
     const featuredArticle = HashimotosAndGluten;
@@ -152,10 +150,7 @@ export default function ByDiseasePage() {
       </div>
       {/* did you know? section */}
       <FourCardSpread>did you know?</FourCardSpread>
-      {/* footer - desktop & mobile */}
-      <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
-        <p className="text-center p-24">footer</p>
-      </div>
+
     </>
   );
 }

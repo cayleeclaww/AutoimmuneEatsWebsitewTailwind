@@ -11,25 +11,20 @@ import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 import parse from "html-react-parser";
 import Footer from "./Footer";
 
-// ****** NOTES FOR LATER: build out resources page, privacy policy page, and terms of service page
+// ****** NOTES FOR LATER: build out Resources page
 // ****** NOTES FOR LATER: update navbar Resource dropdowns to match #hrefID page section
-// ****** NOTES FOR LATER: may need to change "article photo/image" section from <Image> to <img> and delete ht/wd properties if causing a problem
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
-// ****** NOTES FOR LATER: update prompt to join email with z-10 and other related code from turquoise article title rectangle
-// ****** NOTES FOR LATER: figure out how to configure social media buttons...
-// ****** NOTES FOR LATER: update all comments to be clearer
 
 const ArticleComponent = (props) => {
   const { article } = props;
-  // const pic = article.authorInfo.authorPhoto;
 
   return (
     <>
-      {/* turquoise article title rectangle - desktop & mobile */}
+      {/* turquoise article title rectangle */}
       <TitleRectangleTurquoise>{article.title}</TitleRectangleTurquoise>
 
-      {/* desktop article section links */}
+      {/* article section links - desktop*/}
       <div className="hidden md:block w-2/3 mx-6 pr-20 text-base lg:mx-10">
         {article.sections.map((sect, i) => (
           <div key={sect.hrefID} className="inline-block">
@@ -39,11 +34,11 @@ const ArticleComponent = (props) => {
         ))}
       </div>
 
-      {/* vote up button - desktop & mobile */}
-      <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
+      {/* vote up button - once operational, uncomment below */}
+      {/* <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
         <VoteUpButton></VoteUpButton>
-      </div>
-      {/* mobile author name & article date section */}
+      </div> */}
+      {/* author name & article date section - mobile*/}
       <div className="flex md:hidden">
         <Image
           // key={article.authorInfo.authorName}
@@ -59,9 +54,9 @@ const ArticleComponent = (props) => {
           Updated on {article.datePublishedOrUpdated}
         </div>
       </div>
-      {/* mobile social media icons */}
+      {/* social media icons - mobile */}
       <SocialMediaMobile></SocialMediaMobile>
-      {/* mobile article section links */}
+      {/* article section links - mobile */}
       <div className="md:hidden block mx-6 mt-10 text-base">
         {article.sections.map((sect) => (
           <div key={sect.hrefID}>
@@ -73,7 +68,7 @@ const ArticleComponent = (props) => {
         ))}
       </div>
       {/* content section - desktop & mobile*/}
-      {/* desktop break into two columns */}
+      {/* break into two columns - desktop */}
       <div className="flex md:columns-2">
         {/* first of two columns */}
         <div className="md:w-[66%] columns-1">
@@ -88,7 +83,7 @@ const ArticleComponent = (props) => {
               height={500}
             />
           </div>
-          {/* article contents - desktop & mobile*/}
+          {/* article contents */}
           <div className="grid px-8 lg:px-12">
             {/* disclaimer */}
             <p className="text-sm ml-1 mt-8 mb-2 italic">
@@ -111,9 +106,9 @@ const ArticleComponent = (props) => {
             ))}
           </div>
         </div>
-        {/* second column on desktop */}
+        {/* second column - desktop */}
         <div className="hidden md:grid w-[33%] columns-1">
-          {/* desktop author name & article date section */}
+          {/* author name & article date section - desktop */}
           <div className="content-start max-h-10">
             <div className="flex items-center mt-12 pb-6 border-b-4 border-black-500">
               <Image
@@ -129,25 +124,25 @@ const ArticleComponent = (props) => {
                 Updated on {article.datePublishedOrUpdated}
               </div>
             </div>
-            {/* desktop social media icons */}
+            {/* social media icons - desktop */}
             <SocialMediaDesktop></SocialMediaDesktop>
           </div>
-          {/* desktop is this article helpful */}
-          <ArticleIsHelpfulDesktop></ArticleIsHelpfulDesktop>
+          {/* is this article helpful - desktop - once Vote Up is functional, uncomment below*/}
+          {/* <ArticleIsHelpfulDesktop></ArticleIsHelpfulDesktop> */}
         </div>
       </div>
-      {/* prompt to join email list - desktop & mobile */}
+      {/* prompt to join email list */}
       <div className="bg-turquoise h-48 md:w-4/5 mb-4 block mt-8 ">
         <h1 className="text-lg text-center pt-20">Prompt to join email list</h1>
       </div>
-      {/* is this article helpful? - desktop & mobile - bottom of page */}
-      <div className="grid place-items-center py-24">
+      {/* is this article helpful? - desktop & mobile - once Vote Up is functional, uncomment below + use ArticleIsHelpfulDesktop/Mobile components */}
+      {/* <div className="grid place-items-center py-24">
         <p className="text-xl">Is this article helpful?</p>
         <div className="p-2 m-2 grid">
           <VoteUpButton></VoteUpButton>
         </div>
-      </div>
-      {/* author bio section - desktop & mobile */}
+      </div> */}
+      {/* author bio section */}
       <div className="grid mx-6 mt-8 ">
         <div className="text-lg mb-2">About the author:</div>
         <div className="flex ">
@@ -163,9 +158,9 @@ const ArticleComponent = (props) => {
           </div>
         </div>
       </div>
-      {/* related articles - desktop & mobile */}
+      {/* related articles - once it's functional, uncomment below */}
       {/* <FourCardSpread>related articles</FourCardSpread> */}
-      {/* did you know? articles - desktop & mobile */}
+      {/* did you know? articles - once it's functional, uncomment below */}
       {/* <FourCardSpread>did you know?</FourCardSpread> */}
     </>
   );

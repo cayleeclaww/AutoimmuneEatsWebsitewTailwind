@@ -15,8 +15,9 @@ import BestAutoimmuneDiseaseDiet from "../../../../content/BestAutoimmuneDisease
 import AutoimmuneNutritionNEW from "../../../../content/AutoimmuneNutritionNEW.json";
 import WorstFoodsforAutoimmuneDisease from "../../../../content/WorstFoodsforAutoimmuneDisease.json";
 
-//NOTE FOR LATER: decide which article to feature 
+// NOTES FOR LATER: add email prompt component once completed
 // NOTES FOR LATER: update "/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know-NEW" by removing NEW when article updated
+// NOTES FOR LATER: build out social media links
 // NOTES FOR LATER: Write articles about food sensitivites and top supplements, uncomment categories below 
 
 export default function NutritionAndSupplementsPage() {
@@ -44,13 +45,13 @@ export default function NutritionAndSupplementsPage() {
           nutrition recommendations
         </Link>
         {/* <Link
-          href="/nutrition-and-supplements/***UPDATE***"
+          href="/nutrition-and-supplements/***UPDATE later after content is created! ***"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           food sensitivities
         </Link> */}
         {/* <Link
-          href="/nutrition-and-supplements/***UPDATE***"
+          href="/nutrition-and-supplements/***UPDATE later after content is created! ***"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           top supplements
@@ -115,7 +116,7 @@ export default function NutritionAndSupplementsPage() {
         ></BiSolidPrinter>
       </div>
 
-      {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
+      {/* featured article photo + description box */}
       <FeaturePhoto featuredArticle={featuredArticle} />
 
       {/* nutrition recommendations section */}
@@ -132,7 +133,7 @@ export default function NutritionAndSupplementsPage() {
       {/* <CardTitle>top supplements</CardTitle>  */}
       {/* <Cards allArticles={[ **Article Object/JSON title(s) here** ]}></Cards> */}
 
-      {/* food sensitivities section */}
+      {/* food sensitivities section - use later after content is created! */}
       {/* <CardTitle>food sensitivities</CardTitle>  */}
       {/* <Cards allArticles={[ **Article Object/JSON title(s) here** ]}></Cards> */}
 
@@ -144,10 +145,6 @@ export default function NutritionAndSupplementsPage() {
       {/* did you know? section */}
       <FourCardSpread>did you know?</FourCardSpread>
 
-      {/* footer - desktop & mobile */}
-      <div className="w-full mt-24 bg-gray-300 h-64 place-items-center">
-        <p className="text-center p-24">footer</p>
-      </div>
     </>
   );
 }
