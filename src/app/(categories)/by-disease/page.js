@@ -15,7 +15,7 @@ import HashimotosAndGluten from "../../../../content/HashimotosAndGluten.json";
 import FoodsThatCauseEczema from "../../../../content/FoodsThatCauseEczema.json";
 import AutoimmuneDiseaseAndCovid from "../../../../content/AutoimmuneDiseaseAndCovid.json";
 import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
-
+import FeaturePhoto from "../../../../components/FeaturePhoto";
 
 //NOTE FOR LATER: decide which article to feature 
 //NOTE FOR LATER: update social media icons to component - create object inline to pass URL for whole page for FB/LinkedIn/Pinterest???? Or just exclude...? 

@@ -6,16 +6,16 @@ export default function EmailPrompt() {
   return (
     <div className="w-full bg-turquoise h-80 grid justify-items-center">
       <div id="mc_embed_shell">
-        <link
+        {/* <link
           href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
           rel="stylesheet"
           type="text/css"
         />
-        <style type="text/css">
+        <style type="text/css"> */}
         {/* #mc_embed_signup{{background:"#fff", font:"14px Helvetica", width: "600px"}}  */}
         {/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */}
-        </style>
+        {/* </style> */}
         <div id="mc_embed_signup">
           <form
             action="https://eatyerveggies.us4.list-manage.com/subscribe/post?u=ed3887d0c66e0bebf95e5adf4&amp;id=db78bcafa9&amp;f_id=00812fe9f0"
@@ -63,8 +63,8 @@ export default function EmailPrompt() {
                 aria-hidden="true"
                 style={{ position: "absolute", left: "-5000px" }}
               >
-                /* real people should not fill this in and expect good things -
-                do not remove this or risk form bot signups */
+                {/* real people should not fill this in and expect good things -
+                do not remove this or risk form bot signups */}
                 <input
                   type="text"
                   name="b_ed3887d0c66e0bebf95e5adf4_db78bcafa9"

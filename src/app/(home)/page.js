@@ -9,6 +9,7 @@ import Link from "next/link";
 import CardTitle from "../../../components/CardTitleComponent";
 import Cards from "../../../components/CardsComponent";
 import EmailPrompt from "../../../components/EmailPrompt";
+import FeaturePhoto from "../../../components/FeaturePhoto";
 //by symptom:
 import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.json";
 import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
@@ -44,6 +45,8 @@ export default function Home() {
     FoodsThatCauseEczema,
     AutoimmuneDiseaseAndCovid,
   ];
+
+  const featuredArticle = AutoimmuneNutritionNEW;
 
   return (
     <>
@@ -132,24 +135,25 @@ export default function Home() {
         </div>
       </div>
       {/* featured article photo + description box - COMPLETE: is mobile friendly! */}
-      <div className="w-full flex justify-center p-4">
+      <FeaturePhoto featuredArticle={featuredArticle} />
+      {/* <div className="w-full flex justify-center p-4"> */}
         {/* desktop image */}
-        <Image
+        {/* <Image
           className="hidden md:flex w-[50%] h-[50%]"
           style={{ boxShadow: "-10px 10px 15px #99CED3" }}
           src={placeholder_image}
           alt="placeholder image"
-        />
+        /> */}
         {/* mobile image */}
-        <Image
+        {/* <Image
           className="w-full border-x-6 flex md:hidden"
           style={{ boxShadow: "10px 10px 15px #99CED3" }}
           src={placeholder_image}
           alt="placeholder image"
-        />
+        /> */}
 
         {/* desktop responsiveness */}
-        <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
+        {/* <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
           <div className="text-2xl p-5 text-bold ">
             Autoimmune Nutrition 101: What You Need to Know
           </div>
@@ -163,9 +167,9 @@ export default function Home() {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
       {/* mobile responsiveness  */}
-      <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
+      {/* <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
         <p className="text-2xl px-4 text-bold text-center">
           Autoimmune Nutrition 101:
           <br />
@@ -180,7 +184,7 @@ export default function Home() {
             read more
           </button>
         </Link>
-      </div>
+      </div> */}
       {/* "symptoms" section - COMPLETE: is mobile friendly! */}
       <CardTitle>BY SYMPTOM</CardTitle>
       <Cards allArticles={symptomsArticles}></Cards>
@@ -325,7 +329,7 @@ export default function Home() {
       {/* // */}
       {/* // */}
       {/* prompt to join email list  */}
-      <EmailPrompt/>
+      <EmailPrompt />
 
       {/* <div className="w-full bg-turquoise h-80 grid justify-items-center">
         <p className="text-center pt-16 text-xl">Join our email list!</p>
@@ -354,8 +358,8 @@ export default function Home() {
             />
           </div>
         </form> */}
-        {/* action="https://eatyerveggies.us4.list-manage.com/subscribe/post-json?u=ed3887d0c66e0bebf95e5adf4&amp;id=db78bcafa9&amp;f_id=00812fe9f0" */}
-        {/* <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" /> */}
+      {/* action="https://eatyerveggies.us4.list-manage.com/subscribe/post-json?u=ed3887d0c66e0bebf95e5adf4&amp;id=db78bcafa9&amp;f_id=00812fe9f0" */}
+      {/* <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" /> */}
       {/* </div> */}
       {/* // */}
       {/* // */}
