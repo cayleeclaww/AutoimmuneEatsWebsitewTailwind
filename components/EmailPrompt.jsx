@@ -25,7 +25,7 @@ export default function EmailPrompt() {
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
             class="validate"
-            target="_self"
+            target="_blank"
             novalidate=""
           >
             <div id="mc_embed_signup_scroll" className="pt-6">
