@@ -1,6 +1,5 @@
 import article from "../../../../content/TemplateArticle.json";
 import ArticleComponent from "../../../../components/ArticleComponent";
-import FourCardSpreadNEW from "../../../../components/FourCardSpreadNEW";
 import Cards from "../../../../components/CardsComponent";
 // import articleOne from "../../../content/TemplateArticle.json";
 import articleTwo from "../../../../content/ArticleTest.json";
