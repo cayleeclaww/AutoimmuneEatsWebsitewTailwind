@@ -5,8 +5,11 @@ import FullscriptSupplement from "../../../../../components/FullscriptSupplement
 import UseScript from "../../../../../components/UseScript";
 import Link from "next/link";
 import vitamin_D_thorne_supplement_image from "../../../../../public/supplements/vitamin_D_thorne_supplement_image.png";
+import vitamin_D from "../../../../../content/supplements/vitamin-D.json";
+import omega_three from "../../../../../content/supplements/omega-3.json";
 
 // FOR LATER: figure out how to get supplement in flexbox
+// FOR LATER: delete UseScript component 
 
 // us.fullscript.com/o/catalog/products/U3ByZWU6OlByb2R1Y3QtODkwMjA=
 // us.fullscript.com/o/catalog/products/U3ByZWU6OlByb2R1Y3QtODkwMjA=
@@ -34,97 +37,24 @@ export default function TopSuppsPage() {
       </a>
       {/* all supplements */}
       <div className="grid md:w-1/2 mx-auto py-10 divide-y divide-solid">
-        {/* vitamin D supplements - use BELOW code to make component!! */}
-        <div className="grid md:grid-cols-[30%_70%] px-4 py-10">
-          <Link
-            href="https://us.fullscript.com/welcome/autoimmunenutrition/store-start"
-            target="_blank"
-            className="my-auto mx-auto "
-          >
-            <Image
-              src={vitamin_D_thorne_supplement_image}
-              width={182}
-              height={370}
-              className=""
-            ></Image>
-          </Link>
-          <div className="pt-6 grid p-2">
-            <h2 className="text-xl md:text-3xl font-bold mx-auto text-center">
-              Vitamin D Liquid
-            </h2>
-            <p className="mx-auto text-center">
-              Vitamin D is essential to proper immune system functioning.
-              Deficiency in vitamin D may make autoimmune disease worse, &
-              increases the risk of infection, which also can worsen autoimmune
-              disease.<br></br>
-              <br></br>
-              Vitamin D also helps promote healthy bones & maintain adequate
-              levels of calcium across the body (
-              <Link href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3166406/">
-                PubMed
-              </Link>
-              ).
-            </p>
-          </div>
-        </div>
-        {/* vitamin D supplements - USE THSI CODE!! */}
-        <div className="grid md:grid-cols-[30%_70%] px-4 py-10">
-          <Link
-            href="https://us.fullscript.com/welcome/autoimmunenutrition/store-start"
-            target="_blank"
-            className="my-auto mx-auto "
-          >
-            <Image
-              src={vitamin_D_thorne_supplement_image}
-              width={182}
-              height={370}
-            ></Image>
-          </Link>
-          <div className="pt-4 grid p-2 mx-auto place-content-start">
-            <h2 className="text-xl md:text-3xl font-bold mx-auto text-center my-4">
-              Vitamin D Liquid
-            </h2>
-            <p className="text-center">
-              Vitamin D is essential to proper immune system functioning.
-              Deficiency in vitamin D may make autoimmune disease worse, &
-              increases the risk of infection, which also can worsen autoimmune
-              disease.<br></br>
-              <br></br>
-              Vitamin D also helps promote healthy bones & maintain adequate
-              levels of calcium across the body (
-              <Link href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3166406/">
-                PubMed
-              </Link>
-              ).
-            </p>
-          </div>
-        </div>
+        {/* Vitamin D - Thorne */}
+        <FullscriptSupplement supplement={vitamin_D} />
+        {/* NOW Omega-3 */}
+        <FullscriptSupplement supplement={omega_three} />
+        {/* Seeking Health Multivitamin One MF */}
+        {/* NOW Psyllium Husk Powder */}
+        {/* Curcum-Evail - Designs for Health */}
+        {/* NAC - Integrative Therapeutics */}
+        {/* Ox Bile 125mg - Allergy Research Group */}
       </div>
-      {/* <Link href="https://us.fullscript.com/plans/cclaynutrition-vitamin-d">
-        Vitamin D
-      </Link> */}
-      {/* <UseScript/>
-      UseScript('"product_id":"89020","store_slug":"cclaynutrition","return":"product_card"') */}
-      {/* <FullscriptSupplement product_id={89020}></FullscriptSupplement> */}
-      {/* <div className="flex"> */}
-      {/* NOW Liquid Vitamin D-3 */}
-      {/* <script
-        src="//us.fullscript.com/oembed/embed.js"
-        data-fs='{"product_id":"76524","store_slug":"autoimmunenutrition","return":"product_card"}'
-      ></script> */}
 
       {/* Seeking Health Multivitamin One MF */}
-      {/* <script
+      <script
         src="//us.fullscript.com/oembed/embed.js"
         data-fs='{"product_id":"84044","store_slug":"cclaynutrition","return":"product_card"}'
         defer
-      ></script> */}
-      {/* NOW Omega-3 */}
-      {/* <script
-        src="//us.fullscript.com/oembed/embed.js"
-        data-fs='{"product_id":"64623","store_slug":"cclaynutrition","return":"product_card"}'
-        defer
-      ></script> */}
+      ></script>
+
       {/* NOW Psyllium Husk Powder */}
       {/* <script
         src="//us.fullscript.com/oembed/embed.js"
