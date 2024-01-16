@@ -1,3 +1,5 @@
+import EmailPrompt from "../../../components/EmailPrompt";
+
 export default function AboutPage() {
   return (
     <>
@@ -20,8 +22,8 @@ export default function AboutPage() {
         <p>
           <br></br>Both contemporary Western sciences & ancient Indigenous
           sciences are our guiding lights. While natural remedies are the main
-          focus, we acknowledge that over-the-counter & prescription
-          medications can also be essential to managing our diseases.{" "}
+          focus, we acknowledge that over-the-counter & prescription medications
+          can also be essential to managing our diseases.{" "}
         </p>
         <p>
           <br></br>
@@ -32,8 +34,8 @@ export default function AboutPage() {
         </p>
         <h2 className="text-2xl mt-16 mb-4">Our Approach</h2>
         <p>
-          This is a space that is free of both dieting & fatphobia. Restrictive diets &
-          fat shaming are harmful, not helpful, to those suffering from
+          This is a space that is free of both dieting & fatphobia. Restrictive
+          diets & fat shaming are harmful, not helpful, to those suffering from
           autoimmune disease. We have the science & the resources to offer
           better options than these outdated & unfounded methods. It's time to
           retire these prejudiced, damaging ideas.
@@ -71,6 +73,7 @@ export default function AboutPage() {
           <br></br> Our stance is that a healthier planet will support healthier
           humans. (It just seems obvious, doesn't it?)
         </p>
+        <EmailPrompt/>
       </div>
     </>
   );

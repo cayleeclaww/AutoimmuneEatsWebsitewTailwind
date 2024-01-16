@@ -30,9 +30,11 @@ export default function FeaturePhoto(props) {
         <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
           <div className="text-2xl p-5 text-bold ">{featuredArticle.title}</div>
           <p className="text-m px-5">{featuredArticle.metadata.description}</p>
-          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40">
-            read more
-          </button>
+          <Link href={featuredArticle.metadata.openGraph.url}>
+            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40">
+              read more
+            </button>
+          </Link>
         </div>
       </div>
       {/* mobile responsiveness  */}
@@ -41,9 +43,11 @@ export default function FeaturePhoto(props) {
           {featuredArticle.title}
         </p>
         <p className="text-l p-4">{featuredArticle.metadata.description}</p>
-        <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 ">
-          read more
-        </button>
+        <Link href={featuredArticle.metadata.openGraph.url}>
+          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 ">
+            read more
+          </button>
+        </Link>
       </div>
     </>
   );

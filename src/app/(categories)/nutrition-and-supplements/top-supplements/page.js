@@ -1,9 +1,5 @@
 import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
-import Image from "next/image";
-import Script from "next/script";
 import FullscriptSupplement from "../../../../../components/FullscriptSupplement";
-import UseScript from "../../../../../components/UseScript";
-import Link from "next/link";
 // import vitamin_D_thorne_supplement_image from "../../../../../public/supplements/vitamin_D_thorne_supplement_image.png";
 import vitamin_D from "../../../../../content/supplements/vitamin_D.json";
 import curcumin from "../../../../../content/supplements/curcumin.json";

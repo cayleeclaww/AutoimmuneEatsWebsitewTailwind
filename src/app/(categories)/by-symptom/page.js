@@ -10,6 +10,8 @@ import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquo
 import Cards from "../../../../components/CardsComponent";
 import CardTitle from "../../../../components/CardTitleComponent";
 import FeaturePhoto from "../../../../components/FeaturePhoto";
+import EmailPrompt from "../../../../components/EmailPrompt";
+
 //articles
 import IsItAutoimmuneChecklist from "../../../../content/IsItAutoimmuneChecklist.json";
 import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
@@ -18,9 +20,8 @@ import HowtoImproveFatigue from "../../../../content/HowtoImproveFatigue.json";
 // NOTES FOR LATER: add email prompt component once completed
 // NOTES FOR LATER: build out social media links
 
-
 export default function BySymptomPage() {
-      const featuredArticle = IsItAutoimmuneChecklist;
+  const featuredArticle = IsItAutoimmuneChecklist;
 
   return (
     <>
@@ -125,12 +126,9 @@ export default function BySymptomPage() {
       <CardTitle>is it autoimmune?</CardTitle>
       <Cards allArticles={[IsItAutoimmuneChecklist]}></Cards>
       {/* prompt to join email list  */}
-      <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
-        <p className="text-center p-24">Prompt to join email list</p>
-      </div>
+      <EmailPrompt />
       {/* did you know? section */}
       <FourCardSpread>did you know?</FourCardSpread>
-
     </>
   );
 }

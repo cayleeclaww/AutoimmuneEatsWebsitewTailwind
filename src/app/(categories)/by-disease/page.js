@@ -9,6 +9,7 @@ import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
 import Cards from "../../../../components/CardsComponent";
 import CardTitle from "../../../../components/CardTitleComponent";
+import EmailPrompt from "../../../../components/EmailPrompt";
 //articles
 import WhatIsTheBestPsoriasisDiet from "../../../../content/WhatIsTheBestPsoriasisDiet.json";
 import HashimotosAndGluten from "../../../../content/HashimotosAndGluten.json";
@@ -145,9 +146,7 @@ export default function ByDiseasePage() {
       <CardTitle>lupus</CardTitle>
       <Cards allArticles={[LupusAndArthritisHowToImprove]}></Cards>
       {/* prompt to join email list  */}
-      <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
-        <p className="text-center p-24">Prompt to join email list</p>
-      </div>
+<EmailPrompt/>
       {/* did you know? section */}
       <FourCardSpread>did you know?</FourCardSpread>
 

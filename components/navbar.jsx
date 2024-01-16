@@ -233,24 +233,16 @@ const Navbar = () => {
             <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/resources/gain-control-over-your-psoriasis-book"
+                  href="/resources#book"
                   className="text-black visited:text-black"
                 >
                   book
                 </Link>
               </div>
-              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
-                <Link
-                  href="/nutrition-and-supplements/top-supplements"
-                  className="text-black visited:text-black"
-                >
-                  top supplements
-                </Link>
-              </div>
 
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/resources/autoimmune-nutrition-starters-guide"
+                  href="/resources#autoimmune-nutrition-starters-guide"
                   className="text-black visited:text-black"
                 >
                   autoimmune nutrition starters&apos; guide
@@ -259,7 +251,7 @@ const Navbar = () => {
 
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/resources/guided-meditations"
+                  href="/resources#guided-meditation"
                   className="text-black visited:text-black"
                 >
                   guided meditation for eating
@@ -268,7 +260,7 @@ const Navbar = () => {
 
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/resources/candida-screening-form"
+                  href="/resources#candida-screening-form"
                   className="text-black visited:text-black"
                 >
                   candida screening form
@@ -277,7 +269,7 @@ const Navbar = () => {
 
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/resources/dinner-meal-planner"
+                  href="/resources#dinner-meal-planner"
                   className="text-black visited:text-black"
                 >
                   dinner meal planner
@@ -286,10 +278,19 @@ const Navbar = () => {
 
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/resources/track-psoriasis-severity"
+                  href="/resources#track-psoriasis-severity"
                   className="text-black visited:text-black"
                 >
                   track psoriasis severity
+                </Link>
+              </div>
+
+              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+                <Link
+                  href="/nutrition-and-supplements/top-supplements"
+                  className="text-black visited:text-black"
+                >
+                  top supplements
                 </Link>
               </div>
             </div>

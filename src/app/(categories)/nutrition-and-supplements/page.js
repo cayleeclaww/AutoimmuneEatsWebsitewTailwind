@@ -10,6 +10,8 @@ import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquo
 import Cards from "../../../../components/CardsComponent";
 import CardTitle from "../../../../components/CardTitleComponent";
 import FeaturePhoto from "../../../../components/FeaturePhoto";
+import EmailPrompt from "../../../../components/EmailPrompt";
+
 //articles
 import BestAutoimmuneDiseaseDiet from "../../../../content/BestAutoimmuneDiseaseDiet.json";
 import AutoimmuneNutritionNEW from "../../../../content/AutoimmuneNutritionNEW.json";
@@ -18,10 +20,10 @@ import WorstFoodsforAutoimmuneDisease from "../../../../content/WorstFoodsforAut
 // NOTES FOR LATER: add email prompt component once completed
 // NOTES FOR LATER: update "/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know-NEW" by removing NEW when article updated
 // NOTES FOR LATER: build out social media links
-// NOTES FOR LATER: Write articles about food sensitivites and top supplements, uncomment categories below 
+// NOTES FOR LATER: Write articles about food sensitivites and top supplements, uncomment categories below
 
 export default function NutritionAndSupplementsPage() {
-        const featuredArticle = BestAutoimmuneDiseaseDiet;
+  const featuredArticle = BestAutoimmuneDiseaseDiet;
 
   return (
     <>
@@ -138,13 +140,10 @@ export default function NutritionAndSupplementsPage() {
       {/* <Cards allArticles={[ **Article Object/JSON title(s) here** ]}></Cards> */}
 
       {/* prompt to join email list  */}
-      <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
-        <p className="text-center p-24">Prompt to join email list</p>
-      </div>
+      <EmailPrompt />
 
       {/* did you know? section */}
       <FourCardSpread>did you know?</FourCardSpread>
-
     </>
   );
 }
