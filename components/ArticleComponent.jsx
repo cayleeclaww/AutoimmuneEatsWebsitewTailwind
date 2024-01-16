@@ -130,13 +130,36 @@ const ArticleComponent = (props) => {
           </div>
           {/* is this article helpful - desktop - once Vote Up is functional, uncomment below*/}
           {/* <ArticleIsHelpfulDesktop></ArticleIsHelpfulDesktop> */}
+          <div className="place-content-center">
+            <div className="grid place-items-center">
+              <a
+                href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_dark_160x600.svg&signup_source=website_buttons"
+                target="_top"
+              >
+                <img
+                  src="https://assets.fullscript.com/buttons/dark_160x600.svg"
+                  alt="Order supplements through our Fullscript store."
+                />
+              </a>
+            </div>
+          </div>
+          <div className="place-content-center">
+            <div className="grid place-items-center">
+              <a
+                href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_dark_160x600.svg&signup_source=website_buttons"
+                target="_top"
+              >
+                <img
+                  src="https://assets.fullscript.com/buttons/dark_160x600.svg"
+                  alt="Order supplements through our Fullscript store."
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       {/* prompt to join email list */}
-      {/* <div className="bg-turquoise h-48 md:w-4/5 mb-4 block mt-8 ">
-        <h1 className="text-lg text-center pt-20">Prompt to join email list</h1>
-      </div> */}
-      <EmailPrompt/>
+      <EmailPrompt />
       {/* is this article helpful? - desktop & mobile - once Vote Up is functional, uncomment below + use ArticleIsHelpfulDesktop/Mobile components */}
       {/* <div className="grid place-items-center py-24">
         <p className="text-xl">Is this article helpful?</p>

@@ -4,9 +4,14 @@ import Script from "next/script";
 import FullscriptSupplement from "../../../../../components/FullscriptSupplement";
 import UseScript from "../../../../../components/UseScript";
 import Link from "next/link";
-import vitamin_D_thorne_supplement_image from "../../../../../public/supplements/vitamin_D_thorne_supplement_image.png";
-import vitamin_D from "../../../../../content/supplements/vitamin-D.json";
+// import vitamin_D_thorne_supplement_image from "../../../../../public/supplements/vitamin_D_thorne_supplement_image.png";
+import vitamin_D from "../../../../../content/supplements/vitamin_D.json";
+import curcumin from "../../../../../content/supplements/curcumin.json";
 import omega_three from "../../../../../content/supplements/omega-3.json";
+import multivitamin_methyl_free from "../../../../../content/supplements/multivitamin_methyl_free.json";
+import nac from "../../../../../content/supplements/nac.json";
+import ox_bile from "../../../../../content/supplements/ox_bile.json";
+import psyllium_husk from "../../../../../content/supplements/psyllium_husk.json";
 
 // FOR LATER: figure out how to get supplement in flexbox
 // FOR LATER: delete UseScript component 
@@ -41,45 +46,22 @@ export default function TopSuppsPage() {
         <FullscriptSupplement supplement={vitamin_D} />
         {/* NOW Omega-3 */}
         <FullscriptSupplement supplement={omega_three} />
-        {/* Seeking Health Multivitamin One MF */}
         {/* NOW Psyllium Husk Powder */}
+        <FullscriptSupplement supplement={psyllium_husk} />
+
         {/* Curcum-Evail - Designs for Health */}
+        <FullscriptSupplement supplement={curcumin} />
+
+        {/* Seeking Health Multivitamin One MF */}
+        <FullscriptSupplement supplement={multivitamin_methyl_free} />
+
         {/* NAC - Integrative Therapeutics */}
+        <FullscriptSupplement supplement={nac} />
+
         {/* Ox Bile 125mg - Allergy Research Group */}
+        <FullscriptSupplement supplement={ox_bile} />
       </div>
 
-      {/* Seeking Health Multivitamin One MF */}
-      <script
-        src="//us.fullscript.com/oembed/embed.js"
-        data-fs='{"product_id":"84044","store_slug":"cclaynutrition","return":"product_card"}'
-        defer
-      ></script>
-
-      {/* NOW Psyllium Husk Powder */}
-      {/* <script
-        src="//us.fullscript.com/oembed/embed.js"
-        data-fs='{"product_id":"66929","store_slug":"cclaynutrition","return":"product_card"}'
-        defer
-      ></script> */}
-      {/* Curcum-Evail - Designs for Health */}
-      {/* <script
-        src="//us.fullscript.com/oembed/embed.js"
-        data-fs='{"product_id":"90978","store_slug":"cclaynutrition","return":"product_card"}'
-        defer
-      ></script> */}
-      {/* NAC - Integrative Therapeutics */}
-      {/* <script
-        src="//us.fullscript.com/oembed/embed.js"
-        data-fs='{"product_id":"58733","store_slug":"cclaynutrition","return":"product_card"}'
-        defer
-      ></script> */}
-      {/* Ox Bile 125mg - Allergy Research Group */}
-      {/* <script
-        src="//us.fullscript.com/oembed/embed.js"
-        data-fs='{"product_id":"64184","store_slug":"cclaynutrition","return":"product_card"}'
-        defer
-      ></script> */}
-      {/* </div> */}
     </>
   );
 }
