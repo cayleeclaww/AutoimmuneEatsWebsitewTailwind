@@ -14,7 +14,7 @@ import ox_bile from "../../../../../content/supplements/ox_bile.json";
 import psyllium_husk from "../../../../../content/supplements/psyllium_husk.json";
 
 // FOR LATER: figure out how to get supplement in flexbox
-// FOR LATER: delete UseScript component 
+// FOR LATER: delete UseScript component
 
 // us.fullscript.com/o/catalog/products/U3ByZWU6OlByb2R1Y3QtODkwMjA=
 // us.fullscript.com/o/catalog/products/U3ByZWU6OlByb2R1Y3QtODkwMjA=
@@ -29,9 +29,10 @@ export default function TopSuppsPage() {
       <TitleRectangleTurquoise>
         <p>Top Supplements</p>
       </TitleRectangleTurquoise>
-      {/* banner to Fullscript dispensary */}
+      {/* banners to Fullscript dispensary */}
+      {/* desktop banner */}
       <a
-        className="flex justify-center"
+        className=" justify-center hidden md:flex pt-10"
         href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_light_728x90.svg&signup_source=website_buttons"
         target="_top"
       >
@@ -40,6 +41,18 @@ export default function TopSuppsPage() {
           alt="Order supplements through my Fullscript store."
         />
       </a>
+      {/* mobile banner */}
+      <a
+        className="flex justify-center md:hidden -mb-6"
+        href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_light_200x200.svg&signup_source=website_buttons"
+        target="_top"
+      >
+        <img
+          src="https://assets.fullscript.com/buttons/light_200x200.svg"
+          alt="Order supplements through my Fullscript store."
+        />
+      </a>
+
       {/* all supplements */}
       <div className="grid md:w-1/2 mx-auto py-10 divide-y divide-solid">
         {/* Vitamin D - Thorne */}
@@ -60,8 +73,30 @@ export default function TopSuppsPage() {
 
         {/* Ox Bile 125mg - Allergy Research Group */}
         <FullscriptSupplement supplement={ox_bile} />
+        {/* banners to Fullscript dispensary */}
+        {/* desktop banner */}
+        <a
+          className=" justify-center hidden md:flex -mb-16 pt-16"
+          href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_light_728x90.svg&signup_source=website_buttons"
+          target="_top"
+        >
+          <img
+            src="https://assets.fullscript.com/buttons/light_728x90.svg"
+            alt="Order supplements through my Fullscript store."
+          />
+        </a>
+        {/* mobile banner */}
+        <a
+          className="flex justify-center md:hidden -mb-24 pt-10"
+          href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_light_200x200.svg&signup_source=website_buttons"
+          target="_top"
+        >
+          <img
+            src="https://assets.fullscript.com/buttons/light_200x200.svg"
+            alt="Order supplements through my Fullscript store."
+          />
+        </a>
       </div>
-
     </>
   );
 }

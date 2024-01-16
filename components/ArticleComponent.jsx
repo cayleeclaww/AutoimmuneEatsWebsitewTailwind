@@ -11,7 +11,6 @@ import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 import parse from "html-react-parser";
 import EmailPrompt from "./EmailPrompt";
 
-
 // ****** NOTES FOR LATER: build out Resources page
 // ****** NOTES FOR LATER: update navbar Resource dropdowns to match #hrefID page section
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
@@ -130,15 +129,16 @@ const ArticleComponent = (props) => {
           </div>
           {/* is this article helpful - desktop - once Vote Up is functional, uncomment below*/}
           {/* <ArticleIsHelpfulDesktop></ArticleIsHelpfulDesktop> */}
+          {/* Fullscript sidebar - desktop */}
           <div className="place-content-center">
             <div className="grid place-items-center">
               <a
-                href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_dark_160x600.svg&signup_source=website_buttons"
+                href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_light_160x600.svg&signup_source=website_buttons"
                 target="_top"
               >
                 <img
-                  src="https://assets.fullscript.com/buttons/dark_160x600.svg"
-                  alt="Order supplements through our Fullscript store."
+                  src="https://assets.fullscript.com/buttons/light_160x600.svg"
+                  alt="Order supplements through my Fullscript store."
                 />
               </a>
             </div>
@@ -146,12 +146,12 @@ const ArticleComponent = (props) => {
           <div className="place-content-center">
             <div className="grid place-items-center">
               <a
-                href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_dark_160x600.svg&signup_source=website_buttons"
+                href="https://us.fullscript.com/welcome/autoimmunenutrition?utm_medium=webreferral&utm_source=other&utm_campaign=abmwebbuttons_light_160x600.svg&signup_source=website_buttons"
                 target="_top"
               >
                 <img
-                  src="https://assets.fullscript.com/buttons/dark_160x600.svg"
-                  alt="Order supplements through our Fullscript store."
+                  src="https://assets.fullscript.com/buttons/light_160x600.svg"
+                  alt="Order supplements through my Fullscript store."
                 />
               </a>
             </div>
