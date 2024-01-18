@@ -69,7 +69,7 @@ export default function EmailPrompt() {
                 <input
                   type="text"
                   name="b_ed3887d0c66e0bebf95e5adf4_db78bcafa9"
-                  tabindex="-1"
+                  tabIndex="-1"
                   defaultValue=""
                 />
               </div>

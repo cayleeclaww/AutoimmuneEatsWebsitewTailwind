@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// NOTE FOR LATER: will want to change "<Link href={card.metadata.openGraph.url}" to a dynamically loaded URL in the future
+
 const Cards = (props) => {
   const {allArticles} = props;
 

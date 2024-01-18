@@ -12,7 +12,6 @@ import parse from "html-react-parser";
 import EmailPrompt from "./EmailPrompt";
 
 // ****** NOTES FOR LATER: build out Resources page
-// ****** NOTES FOR LATER: update navbar Resource dropdowns to match #hrefID page section
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 

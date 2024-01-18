@@ -44,7 +44,7 @@ export default function FeaturePhoto(props) {
         </p>
         <p className="text-l p-4">{featuredArticle.metadata.description}</p>
         <Link href={featuredArticle.metadata.openGraph.url}>
-          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 ">
+          <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 visited:text-black-600">
             read more
           </button>
         </Link>
