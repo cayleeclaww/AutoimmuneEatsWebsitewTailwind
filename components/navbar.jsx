@@ -269,10 +269,10 @@ const Navbar = () => {
 
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/resources#dinner-meal-planner"
+                  href="/resources#better-than-a-meal-plan"
                   className="text-black visited:text-black"
                 >
-                  dinner meal planner
+                  better than a meal plan
                 </Link>
               </div>
 
@@ -285,14 +285,14 @@ const Navbar = () => {
                 </Link>
               </div>
 
-              <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
+              {/* <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/top-supplements"
                   className="text-black visited:text-black"
                 >
                   top supplements
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

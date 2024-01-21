@@ -2,11 +2,11 @@ import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTur
 import FullscriptSupplement from "../../../../../components/FullscriptSupplement";
 import TopSupplements from "../../../../../content/TopSupplements.json";
 
+// FOR LATER: add alt tags to supplement images 
 // FOR LATER: figure out how to get supplement in flexbox
 // FOR LATER: delete UseScript component
 // FOR LATER: add Magnesium (Glycinate) by Pure Encapsulations, and S boullardi
 
-// **USE THIS  us.fullscript.com/welcome/autoimmunenutrition/store-start?product_id=90612&signup_source=product_cards
 
 export default function TopSuppsPage() {
   return (

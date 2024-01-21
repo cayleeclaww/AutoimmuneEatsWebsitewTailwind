@@ -1,26 +1,20 @@
 [{
-  "title": "Curcumin",
-  "photo": "/supplements/curcumin_supplement_image.png",
-  "description": "Curcumin is an isolated compound from turmeric, that has traditionally been used for pain & wound healing. Curcumin achieves this by reducing inflammation.<br></br>Studies have shown that curcumin helps improve multiple sclerosis, rheumatoid arthritis, psoriasis, inflammatory bowel disease (ulcerative colitis & Crohn's disease), & more. (<a href='https://pubmed.ncbi.nlm.nih.gov/17569223/'>PubMed</a>).",
-  "product_id": "70217"
-},
-{
-  "title": "Methyl-Free Multivitamin",
-  "photo": "/supplements/multivitamin_seeking_health_supplement_image.png",
-  "description": "It's not always possible to get all the necessary nutrients from food, so a multivitamin can help bridge the gap. This specialy formulated multivitamin does not contain methyl groups, which can cause negative reactions.<br></br>People living with autoimmune disease may be more likely to have a MTHFR genetic variation, which can increase sensitivty to methyl groups. This methyl-free supplement is more likely to be better tolerated (<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9173919/'>PubMed</a>).",
-  "product_id": "84044"
-},
-{
-  "title": "NAC (N-Acetyl Cysteine)",
-  "photo": "/supplements/nac_supplement_image.png",
-  "description": "NAC is anti-inflammatory, & helps to replenish stores of glutathione, the body's master antioxidant. It supports natural detoxification pathways, promotes brain health, & may reduce the risk of heart diseease.<br></br> NAC has been shown to improve lupus, multiple sclerosis, & more. (<a href='https://pubmed.ncbi.nlm.nih.gov/36810107/'>PubMed</a>, <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7033492'>PubMed</a>, <a href='https://www.healthline.com/nutrition/nac-benefits'>Healthline</a>).",
-  "product_id": "58733"
+  "title": "Liquid Vitamin D",
+  "photo": "/supplements/vitamin_D_thorne_supplement_image.png",
+  "description": "Vitamin D is essential to proper immune system functioning. Deficiency in vitamin D may make autoimmune disease worse, & increases the risk of infection.<br></br>Vitamin D also helps promote healthy bones & maintain adequate levels of calcium across the body (<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3166406/'>PubMed</a>).",
+  "product_id": "76524"
 },
 {
   "title": "Omega-3",
   "photo": "/supplements/omega_3_now_supplement_image.png",
   "description": "Omega-3 fatty acids help to reduce inflammation, which has been found to reverse the progression of some autoimmune diseases. These fatty acids can also improve symptoms, such as reducing pain.<br></br>Omega-3 can improve arthritis, irritable bowel disease (ulcerative colitis & Crohn's disease), lupus, multiple sclerosis, psoriasis, & more. These fatty acids also promote brain, kidney, & cardiovascular health (<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4030645/'>PubMed</a>).",
   "product_id": "64623"
+},
+{
+  "title": "Curcumin",
+  "photo": "/supplements/curcumin_supplement_image.png",
+  "description": "Curcumin is an isolated compound from turmeric, that has traditionally been used for pain & wound healing. Curcumin achieves this by reducing inflammation.<br></br>Studies have shown that curcumin helps improve multiple sclerosis, rheumatoid arthritis, psoriasis, inflammatory bowel disease (ulcerative colitis & Crohn's disease), & more. (<a href='https://pubmed.ncbi.nlm.nih.gov/17569223/'>PubMed</a>).",
+  "product_id": "70217"
 },
 {
   "title": "Ox Bile",
@@ -35,9 +29,15 @@
   "product_id": "66929"
 },
 {
-  "title": "Liquid Vitamin D",
-  "photo": "/supplements/vitamin_D_thorne_supplement_image.png",
-  "description": "Vitamin D is essential to proper immune system functioning. Deficiency in vitamin D may make autoimmune disease worse, & increases the risk of infection.<br></br>Vitamin D also helps promote healthy bones & maintain adequate levels of calcium across the body (<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3166406/'>PubMed</a>).",
-  "product_id": "76524"
+  "title": "Methyl-Free Multivitamin",
+  "photo": "/supplements/multivitamin_seeking_health_supplement_image.png",
+  "description": "It's not always possible to get all the necessary nutrients from food, so a multivitamin can help bridge the gap. This specially formulated multivitamin does not contain methyl groups, which can cause negative reactions.<br></br>People living with autoimmune disease may be more likely to have a MTHFR genetic variation, which can increase sensitivty to methyl groups. This methyl-free supplement is more likely to be better tolerated (<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9173919/'>PubMed</a>).",
+  "product_id": "84044"
+},
+{
+  "title": "NAC (N-Acetyl Cysteine)",
+  "photo": "/supplements/nac_supplement_image.png",
+  "description": "NAC is anti-inflammatory, & helps to replenish stores of glutathione, the body's master antioxidant. It supports natural detoxification pathways, promotes brain health, & may reduce the risk of heart diseease.<br></br> NAC has been shown to improve lupus, multiple sclerosis, & more. (<a href='https://pubmed.ncbi.nlm.nih.gov/36810107/'>PubMed</a>, <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7033492'>PubMed</a>, <a href='https://www.healthline.com/nutrition/nac-benefits'>Healthline</a>).",
+  "product_id": "58733"
 }
 ]

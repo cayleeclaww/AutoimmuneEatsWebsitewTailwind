@@ -4,9 +4,10 @@ import BookBuyNow from "../../../../components/BookBuyNow";
 import EmailPrompt from "../../../../components/EmailPrompt";
 import Link from "next/link";
 import Image from "next/image";
-import Autoimmune_Nutrition_Starters_Guide_Website_Thumbnail from "public/Autoimmune_Nutrition_Starters_Guide_Website_Thumbnail.png";
 
-// ** MAKE SURE all images have alt tags
+import ResourceItem from "../../../../components/ResourceItem";
+
+// ** FOR LATER: create a carousel component to display supplements - uncomment related lines at bottom of this code & in navbar component
 
 export default function ResourcesPage() {
   return (
@@ -22,99 +23,61 @@ export default function ResourcesPage() {
       {/* Autoimmune Nutrition Starters' Guide */}
       <div id="autoimmune-nutrition-starters-guide">
         <CardTitle>Autoimmune Nutrition Starters' Guide</CardTitle>
-        {/* desktop responsiveness */}
-        <div className="w-full flex justify-center py-16 items-center">
-          <Link
-            href="https://mailchi.mp/dff1a9ca7a62/autoimmune-nutrition-starters-guide"
-            target="_blank"
-          >
-            <Image
-              src={Autoimmune_Nutrition_Starters_Guide_Website_Thumbnail}
-              className="hidden md:flex visible z-1 "
-              width={326}
-              height={448}
-            />
-          </Link>
-          <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14">
-            <p className="text-2xl p-4 text-bold text-center">
-              FREE! Autoimmune Nutrition Starters' Guide (PDF)
-            </p>
-            <p className="text-l px-4 pb-4">
-              Are you interested in reducing your autoimmune symptoms using
-              nutrition? You're in the right place! Use these 7 basic steps to
-              promote healing.
-            </p>
-            <Link
-              href="https://mailchi.mp/dff1a9ca7a62/autoimmune-nutrition-starters-guide"
-              target="_blank"
-            >
-              <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center w-[95%] text-black hover:font-bold">
-                get here
-              </button>
-            </Link>
-          </div>
-        </div>
+        <ResourceItem
+          url="https://mailchi.mp/dff1a9ca7a62/autoimmune-nutrition-starters-guide"
+          src="/Email_Signup_Thumbnail_Autoimmune_Nutrition_Starters_Guide.png"
+          alt="Thumbnail image for the Autoimmune Nutrition Starters' Guide"
+          subtitle="FREE! Autoimmune Nutrition Starters Guide (PDF)"
+          description="Are you interested in reducing your autoimmune symptoms using nutrition? You\'re in the right place! Use these 7 basic steps to promote healing."
+        />
       </div>
-      {/* mobile responsiveness */}
-      <div className="md:hidden grid p-4 place-content-center">
-        <Link
-          href="https://mailchi.mp/dff1a9ca7a62/autoimmune-nutrition-starters-guide"
-          target="_blank"
-        >
-          <Image
-            className=""
-            src={Autoimmune_Nutrition_Starters_Guide_Website_Thumbnail}
-            width={326}
-            height={448}
-            alt="Thumbnail cover image for the Autoimmune Nutrition Starters Guide downloadable PDF"
-          />
-        </Link>
-      </div>
-      <div className="md:hidden flex flex-col items-center mx-4">
-        <p className="text-2xl px-4 pt-6 text-bold text-center">
-          FREE! Autoimmune Nutrition Starters' Guide (PDF)
-        </p>
-        <p className="text-l px-4 p-2 text-center">
-          Are you interested in reducing your autoimmune symptoms using
-          nutrition? You're in the right place! Use these 7 basic steps to
-          promote healing.
-        </p>
-        <Link
-          href="https://mailchi.mp/dff1a9ca7a62/autoimmune-nutrition-starters-guide"
-          target="_blank"
-        >
-          <button className="text-l p-2 m-3 w-60 bg-turquoise uppercase rounded-md justify-center text-black hover:font-bold">
-            get here
-          </button>
-        </Link>
-      </div>
+      {/* Guided Meditation */}
       <div id="guided-meditation">
-        <CardTitle>Guided Meditation for Eating</CardTitle>
-        <Link href="https://mailchi.mp/4229b97caf89/guidedmeditation">
-          Put a picture for this link
-        </Link>
+        <CardTitle>10 Minute Guided Meditation for Eating</CardTitle>
+        <ResourceItem
+          url="https://mailchi.mp/4229b97caf89/guidedmeditation"
+          src="/Email_Signup_Thumbnail_10_Minute_Guided_Meditation.png"
+          alt="Thumbnail image for 10 Minute Guided Meditation for Eating"
+          subtitle="FREE! 10 Minute Guided Meditation for Eating: Using the Five Senses (Video)"
+          description="A whole host of health benefits can cascade from being more mindful when we eat. However, it's not always easy to eat without being distracted. This meditation will help you slow down & relax into eating."
+        />
       </div>
       <EmailPrompt />
+      {/* Candida screening form */}
       <div id="candida-screening-form">
         <CardTitle>Candida Screening Form</CardTitle>
-        <Link href="https://mailchi.mp/27c76ba54c78/candidascreen">
-          Put a picture for this link
-        </Link>
+        <ResourceItem
+          url="https://mailchi.mp/27c76ba54c78/candidascreen"
+          src="/Email_Signup_Thumbnail_Candida_Screening_Form.png"
+          alt="Thumbnail image for Candida Screening Form"
+          subtitle="FREE! Candida Screening Form (PDF)"
+          description="Candida yeast infections are commonly seen in people suffering from autoimmune diseases. Use this form to get a better idea if your health problems are related to Candida albicans or not."
+        />
       </div>
-      <div id="dinner-meal-planner">
-        <CardTitle>Dinner Meal Planner</CardTitle>
-        <Link href="https://mailchi.mp/fd4406528fee/betterthanamealplan">
-          Put a picture for this link
-        </Link>
+      {/* better than a meal plan */}
+      <div id="better-than-a-meal-plan">
+        <CardTitle>Better than a Meal Plan</CardTitle>
+        <ResourceItem
+          url="https://mailchi.mp/fd4406528fee/betterthanamealplan"
+          src="/Email_Signup_Thumbnail_Better_Than_a_Meal_Plan.jpg"
+          alt="Thumbnail image for the Better than a Meal Plan"
+          subtitle="FREE! Better than a Meal Plan (PDF)"
+          description="Get organized with healthy meals you actually like eating, instead of trying to follow some rigid meal plan made by someone else! Use this template to organize your dinners for the next week. Refill & reuse the template week after week to easily organize your meals."
+        />
       </div>
+      {/* track psoriasis severity with PASI */}
       <div id="track-psoriasis-severity">
         <CardTitle>Track Psoriasis Severity</CardTitle>
-        <Link href="https://mailchi.mp/ea121f177b09/pasi">
-          Put a picture for this link
-        </Link>
+        <ResourceItem
+          url="https://mailchi.mp/ea121f177b09/pasi"
+          src="/Email_Signup_Thumbnail_Track_Your_Psoriasis_Severity.png"
+          alt="Thumbnail image for Track Psoriasis Severity handout"
+          subtitle="FREE! Track Your Psoriasis Severity (PDF)"
+          description="Use this handout to keep track of the severity of your psoriasis over time. This will help you to measure your healing & improvement, so you can better understand which healthy changes are helping your psoriasis the most."
+        />
       </div>
+      {/* future top supplements section */}
       {/* <CardTitle>Top Supplements</CardTitle> */}
-      {/* prompt to join email list */}
       <EmailPrompt />
     </>
   );
