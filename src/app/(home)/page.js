@@ -80,7 +80,7 @@ export default function Home() {
               href="https://mailchi.mp/5ce73b419aaa/autoimmune-eats"
               target="_blank"
             >
-              <button className="text-xl bg-white rounded-md box-border mt-6 p-4 text-center opacity-80 justify-center">
+              <button className="text-xl text-black bg-white rounded-md box-border mt-6 p-4 text-center opacity-80 justify-center">
                 join our mailing list
               </button>
             </Link>
@@ -104,7 +104,7 @@ export default function Home() {
               href="https://mailchi.mp/5ce73b419aaa/autoimmune-eats"
               target="_blank"
             >
-              <button className="w-40 text-l bg-white rounded-md box-border mt-6 p-2 sm:p-4 text-center opacity-80 ">
+              <button className="w-40 text-l text-black bg-white rounded-md box-border mt-6 p-2 sm:p-4 text-center opacity-80 ">
                 join our mailing list
               </button>
             </Link>

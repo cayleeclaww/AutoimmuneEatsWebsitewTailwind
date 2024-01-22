@@ -4,7 +4,6 @@ import TopSupplements from "../../../../../content/TopSupplements.json";
 
 // FOR LATER: add alt tags to supplement images 
 // FOR LATER: figure out how to get supplement in flexbox
-// FOR LATER: delete UseScript component
 // FOR LATER: add Magnesium (Glycinate) by Pure Encapsulations, and S boullardi
 
 

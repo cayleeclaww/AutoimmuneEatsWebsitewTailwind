@@ -14,7 +14,7 @@ const FullscriptSupplement = (props) => {
         target="_blank"
         className="my-auto mx-auto"
       >
-        <Image src={supplement.photo} width={182} height={370}></Image>
+        <Image src={supplement.photo} width={182} height={370} alt={supplement.alt}></Image>
       </a>
       <div className="pt-4 grid p-2 mx-auto place-content-start">
         <h2 className="text-xl md:text-3xl font-bold mx-auto text-center my-4">
