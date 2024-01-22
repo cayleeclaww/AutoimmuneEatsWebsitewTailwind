@@ -7,8 +7,8 @@ import Image from "next/image";
 import placeholder_image from "../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
-import Cards from "../../../../components/CardsComponent";
-import CardTitle from "../../../../components/CardTitleComponent";
+import Cards from "../../../../components/CardComponent";
+import SectionTitleTurquoiseShadow from "../../../../components/SectionTitleTurquoiseShadow";
 import EmailPrompt from "../../../../components/EmailPrompt";
 //articles
 import WhatIsTheBestPsoriasisDiet from "../../../../content/WhatIsTheBestPsoriasisDiet.json";
@@ -16,13 +16,13 @@ import HashimotosAndGluten from "../../../../content/HashimotosAndGluten.json";
 import FoodsThatCauseEczema from "../../../../content/FoodsThatCauseEczema.json";
 import AutoimmuneDiseaseAndCovid from "../../../../content/AutoimmuneDiseaseAndCovid.json";
 import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
-import FeaturePhoto from "../../../../components/FeaturePhoto";
+import FeaturePhoto from "../../../../components/FeaturedArticle";
 
 // NOTES FOR LATER: add email prompt component once completed
 // NOTES FOR LATER: build out social media links
 
 export default function ByDiseasePage() {
-    const featuredArticle = HashimotosAndGluten;
+  const featuredArticle = HashimotosAndGluten;
 
   return (
     <>
@@ -131,25 +131,26 @@ export default function ByDiseasePage() {
       <FeaturePhoto featuredArticle={featuredArticle} />
 
       {/* psoriasis section */}
-      <CardTitle>psoriasis</CardTitle>
+      <SectionTitleTurquoiseShadow>psoriasis</SectionTitleTurquoiseShadow>
       <Cards allArticles={[WhatIsTheBestPsoriasisDiet]}></Cards>
       {/* COVID and infections section */}
-      <CardTitle>COVID & Infections</CardTitle>
+      <SectionTitleTurquoiseShadow>
+        COVID & Infections
+      </SectionTitleTurquoiseShadow>
       <Cards allArticles={[AutoimmuneDiseaseAndCovid]}></Cards>
       {/* hashimoto's section */}
-      <CardTitle>Hashimoto's</CardTitle>
+      <SectionTitleTurquoiseShadow>Hashimoto's</SectionTitleTurquoiseShadow>
       <Cards allArticles={[HashimotosAndGluten]}></Cards>
       {/* eczema section  */}
-      <CardTitle>eczema</CardTitle>
+      <SectionTitleTurquoiseShadow>eczema</SectionTitleTurquoiseShadow>
       <Cards allArticles={[FoodsThatCauseEczema]}></Cards>
       {/* lupus section  */}
-      <CardTitle>lupus</CardTitle>
+      <SectionTitleTurquoiseShadow>lupus</SectionTitleTurquoiseShadow>
       <Cards allArticles={[LupusAndArthritisHowToImprove]}></Cards>
       {/* prompt to join email list  */}
-<EmailPrompt/>
+      <EmailPrompt />
       {/* did you know? section */}
-      <FourCardSpread>did you know?</FourCardSpread>
-
+      {/* <FourCardSpread>did you know?</FourCardSpread> */}
     </>
   );
 }

@@ -1,10 +1,7 @@
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
-import CardTitle from "../../../../components/CardTitleComponent";
+import CardTitle from "../../../../components/SectionTitleTurquoiseShadow";
 import BookBuyNow from "../../../../components/BookBuyNow";
 import EmailPrompt from "../../../../components/EmailPrompt";
-import Link from "next/link";
-import Image from "next/image";
-
 import ResourceItem from "../../../../components/ResourceItem";
 
 // ** FOR LATER: create a carousel component to display supplements - uncomment related lines at bottom of this code & in navbar component

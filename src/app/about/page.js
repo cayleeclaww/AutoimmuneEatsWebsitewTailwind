@@ -23,7 +23,7 @@ export default function AboutPage() {
           <br></br>Both contemporary Western sciences & ancient Indigenous
           sciences are our guiding lights. While natural remedies are the main
           focus, we acknowledge that over-the-counter & prescription medications
-          can also be essential to managing our diseases.{" "}
+          can also be essential to managing our diseases. 
         </p>
         <p>
           <br></br>

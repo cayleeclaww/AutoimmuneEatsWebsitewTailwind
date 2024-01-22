@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="w-full mt-24 bg-gray-300 py-10 md:py-24 place-items-center grid">
+    <div className="w-full bg-gray-300 py-10 md:py-24 place-items-center grid">
       <div className="grid content-center text-center gap-4 pb-0 text-sm w-1/2">
         <p>
           <Link href="/Privacy-Policy">Privacy Policy</Link> |{" "}

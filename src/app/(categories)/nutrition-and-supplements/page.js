@@ -3,13 +3,13 @@ import { BsLink45Deg } from "react-icons/bs";
 import { BiSolidPrinter, BiLogoPinterestAlt } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
-import Image from "next/image";
-import placeholder_image from "../../../../public/placeholder_article_photo.jpg";
+// import Image from "next/image";
+// import placeholder_image from "../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
-import Cards from "../../../../components/CardsComponent";
-import CardTitle from "../../../../components/CardTitleComponent";
-import FeaturePhoto from "../../../../components/FeaturePhoto";
+import Cards from "../../../../components/CardComponent";
+import SectionTitleTurquoiseShadow from "../../../../components/SectionTitleTurquoiseShadow";
+import FeaturePhoto from "../../../../components/FeaturedArticle";
 import EmailPrompt from "../../../../components/EmailPrompt";
 
 //articles
@@ -17,6 +17,7 @@ import BestAutoimmuneDiseaseDiet from "../../../../content/BestAutoimmuneDisease
 import AutoimmuneNutritionNEW from "../../../../content/AutoimmuneNutritionNEW.json";
 import WorstFoodsforAutoimmuneDisease from "../../../../content/WorstFoodsforAutoimmuneDisease.json";
 
+// complete Did You Know section
 // NOTES FOR LATER: add email prompt component once completed
 // NOTES FOR LATER: update "/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know-NEW" by removing NEW when article updated
 // NOTES FOR LATER: build out social media links
@@ -122,7 +123,9 @@ export default function NutritionAndSupplementsPage() {
       <FeaturePhoto featuredArticle={featuredArticle} />
 
       {/* nutrition recommendations section */}
-      <CardTitle>nutrition recommendations</CardTitle>
+      <SectionTitleTurquoiseShadow>
+        nutrition recommendations
+      </SectionTitleTurquoiseShadow>
       <Cards
         allArticles={[
           AutoimmuneNutritionNEW,
@@ -132,18 +135,18 @@ export default function NutritionAndSupplementsPage() {
       />
 
       {/* top supplements section - use later after content is created! */}
-      {/* <CardTitle>top supplements</CardTitle>  */}
+      {/* <SectionTitleTurquoiseShadow>top supplements</SectionTitleTurquoiseShadow>  */}
       {/* <Cards allArticles={[ **Article Object/JSON title(s) here** ]}></Cards> */}
 
       {/* food sensitivities section - use later after content is created! */}
-      {/* <CardTitle>food sensitivities</CardTitle>  */}
+      {/* <SectionTitleTurquoiseShadow>food sensitivities</SectionTitleTurquoiseShadow>  */}
       {/* <Cards allArticles={[ **Article Object/JSON title(s) here** ]}></Cards> */}
 
       {/* prompt to join email list  */}
       <EmailPrompt />
 
       {/* did you know? section */}
-      <FourCardSpread>did you know?</FourCardSpread>
+      {/* <FourCardSpread>did you know?</FourCardSpread> */}
     </>
   );
 }

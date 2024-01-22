@@ -1,10 +1,10 @@
 import article from "../../../../content/TemplateArticle.json";
 import ArticleComponent from "../../../../components/ArticleComponent";
-import Cards from "../../../../components/CardsComponent";
+import Cards from "../../../../components/CardComponent";
 // import articleOne from "../../../content/TemplateArticle.json";
 import articleTwo from "../../../../content/ArticleTest.json";
 import articleThree from "../../../../content/AutoimmuneNutrition.json";
-import CardTitle from "../../../../components/CardTitleComponent";
+import CardTitle from "../../../../components/SectionTitleTurquoiseShadow";
 
 // ****** NOTES FOR LATER: build "Did You Know" "Related Articles" in ArticleComponent
 // ****** NOTES FOR LATER: build out footer component AND THEN add to layout.js

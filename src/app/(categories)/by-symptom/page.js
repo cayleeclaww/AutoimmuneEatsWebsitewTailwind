@@ -7,9 +7,9 @@ import Image from "next/image";
 import placeholder_image from "../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
-import Cards from "../../../../components/CardsComponent";
-import CardTitle from "../../../../components/CardTitleComponent";
-import FeaturePhoto from "../../../../components/FeaturePhoto";
+import Cards from "../../../../components/CardComponent";
+import SectionTitleTurquoiseShadow from "../../../../components/SectionTitleTurquoiseShadow";
+import FeaturePhoto from "../../../../components/FeaturedArticle";
 import EmailPrompt from "../../../../components/EmailPrompt";
 
 //articles
@@ -117,18 +117,22 @@ export default function BySymptomPage() {
       <FeaturePhoto featuredArticle={featuredArticle} />
 
       {/* joint pain section */}
-      <CardTitle>joint pain & arthritis</CardTitle>
+      <SectionTitleTurquoiseShadow>
+        joint pain & arthritis
+      </SectionTitleTurquoiseShadow>
       <Cards allArticles={[LupusAndArthritisHowToImprove]}></Cards>
       {/* fatigue section */}
-      <CardTitle>fatigue</CardTitle>
+      <SectionTitleTurquoiseShadow>fatigue</SectionTitleTurquoiseShadow>
       <Cards allArticles={[HowtoImproveFatigue]}></Cards>
       {/* is it AI? section */}
-      <CardTitle>is it autoimmune?</CardTitle>
+      <SectionTitleTurquoiseShadow>
+        is it autoimmune?
+      </SectionTitleTurquoiseShadow>
       <Cards allArticles={[IsItAutoimmuneChecklist]}></Cards>
       {/* prompt to join email list  */}
       <EmailPrompt />
       {/* did you know? section */}
-      <FourCardSpread>did you know?</FourCardSpread>
+      {/* <FourCardSpread>did you know?</FourCardSpread> */}
     </>
   );
 }

@@ -1,7 +1,6 @@
 // import headshot from "../public/Caylee_headshot.jpeg";
 import Image from "next/image";
 // import placeholder_image from "../public/placeholder_article_photo.jpg";
-import FourCardSpread from "./FourCardSpread";
 import TitleRectangleTurquoise from "./TitleRectangleTurquoise";
 import Link from "next/link";
 import VoteUpButton from "./VoteUpButton";
@@ -11,7 +10,6 @@ import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
 import parse from "html-react-parser";
 import EmailPrompt from "./EmailPrompt";
 
-// ****** NOTES FOR LATER: build out Resources page
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
 

@@ -1,13 +1,13 @@
 import Image from "next/image";
 import "tailwindcss/tailwind.css";
-import main_image from "../../../public/main_image_front_page_autoimmune_eats.jpg";
+import main_image from "../../../public/main_image_front_page_autoimmune_eats_cropped.jpg";
 import main_image_mobile from "../../../public/main_image_front_page_autoimmune_eats_HALF.jpg";
-import placeholder_image from "../../../public/placeholder_article_photo.jpg";
+// import placeholder_image from "../../../public/placeholder_article_photo.jpg";
 import Link from "next/link";
-import CardTitle from "../../../components/CardTitleComponent";
-import Cards from "../../../components/CardsComponent";
+import SectionTitleTurquoiseShadow from "../../../components/SectionTitleTurquoiseShadow";
+import Cards from "../../../components/CardComponent";
 import EmailPrompt from "../../../components/EmailPrompt";
-import FeaturePhoto from "../../../components/FeaturePhoto";
+import FeaturePhoto from "../../../components/FeaturedArticle";
 //by symptom:
 import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.json";
 import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
@@ -24,6 +24,7 @@ import AutoimmuneDiseaseAndCovid from "../../../content/AutoimmuneDiseaseAndCovi
 import BookBuyNow from "../../../components/BookBuyNow";
 
 // **** NOTES FOR LATER: Complete statement on scientific/journalistic integrity
+// **** NOTES FOR LATER: "Did you know?" + "tools and calulators" sections --> generate content, create components, update responsiveness/usability if needed, plug in code below
 
 export default function Home() {
   const symptomsArticles = [
@@ -62,22 +63,27 @@ export default function Home() {
           priority={true}
         />
         {/* text boxes for sm and larger screens */}
-        <div className="hidden sm:grid absolute z-2 m-14 justify-center max-h-24 lg:pt-20">
+        <div className="hidden sm:grid absolute z-2 m-16 justify-center max-h-24 lg:pt-20">
           <div className="bg-white box-border px-10 pt-10 text-center opacity-80">
-            <p className="text-6xl pb-4 ">
+            <p className="text-3xl lg:text-6xl pb-4 ">
               <b>welcome</b>
               <br />
               to autoimmune eats
             </p>
-            <p className="text-3xl px-10 pb-8 pt-0">
+            <p className="text-2xl lg:text-3xl px-10 pb-8 pt-0">
               Discover how to live with
               <br /> more peace & less pain.
             </p>
           </div>
           <div class="w-60 mx-auto">
-            <button className="text-xl bg-white rounded-md box-border mt-6 p-4 text-center opacity-80 justify-center">
-              join our mailing list
-            </button>
+            <Link
+              href="https://mailchi.mp/5ce73b419aaa/autoimmune-eats"
+              target="_blank"
+            >
+              <button className="text-xl bg-white rounded-md box-border mt-6 p-4 text-center opacity-80 justify-center">
+                join our mailing list
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -94,9 +100,14 @@ export default function Home() {
             </p>
           </div>
           <div class="w-full flex justify-center">
-            <button className="w-40 text-l bg-white rounded-md box-border mt-6 p-2 sm:p-4 text-center opacity-80 ">
-              join our mailing list
-            </button>
+            <Link
+              href="https://mailchi.mp/5ce73b419aaa/autoimmune-eats"
+              target="_blank"
+            >
+              <button className="w-40 text-l bg-white rounded-md box-border mt-6 p-2 sm:p-4 text-center opacity-80 ">
+                join our mailing list
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -135,18 +146,18 @@ export default function Home() {
       <FeaturePhoto featuredArticle={featuredArticle} />
 
       {/* "symptoms" section - COMPLETE: is mobile friendly! */}
-      <CardTitle>BY SYMPTOM</CardTitle>
+      <SectionTitleTurquoiseShadow>BY SYMPTOM</SectionTitleTurquoiseShadow>
       <Cards allArticles={symptomsArticles}></Cards>
       {/* Book section - COMPLETE: is mobile friendly! */}
       {/* desktop responsiveness */}
-      <BookBuyNow/>
+      <BookBuyNow />
       {/* "conditions" section */}
-      <CardTitle>BY condition</CardTitle>
+      <SectionTitleTurquoiseShadow>BY condition</SectionTitleTurquoiseShadow>
       <Cards allArticles={byDiseaseArticles}></Cards>
       {/* green speech bubbles section - COMPLETE: is mobile friendly! */}
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-24 ">
-        {/* did you know? */}
-        <div className="grid grid-cols-1 ">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 mt-24 "> */}
+      {/* did you know? */}
+      {/* <div className="grid grid-cols-1 ">
           <div class="speech bottom">did you know?</div>
 
           <div className="flex px-5 md:px-20 py-5 justify-center">
@@ -181,10 +192,10 @@ export default function Home() {
               <p className="card-title">Fact with link to article</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        {/* tools and calulators section  */}
-        <div className="grid grid-cols-1 ">
+      {/* tools and calulators section  */}
+      {/* <div className="grid grid-cols-1 ">
           <div class="speech bottom">tools & calculators</div>
 
           <div className="flex px-5 md:px-20 py-5 justify-center">
@@ -220,25 +231,36 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* prompt to join email list  */}
       <EmailPrompt />
       {/* "recipes" section - use later after content is created! */}
-      {/* <CardTitle>recipes</CardTitle> */}
+      {/* <SectionTitleTurquoiseShadow>recipes</SectionTitleTurquoiseShadow> */}
       {/* <Cards allArticles={symptomsArticles}></Cards> */}
       {/* "nutrition and supplements" section */}
-      <CardTitle>Nutrition & Supplements</CardTitle>
+      <SectionTitleTurquoiseShadow>
+        Nutrition & Supplements
+      </SectionTitleTurquoiseShadow>
       <Cards allArticles={nutAndSuppsArticles}></Cards>
       {/* statement on scientific/journalistic integrity */}
-      <div className="w-full bg-turquoise h-64 mt-24 place-items-center">
-        <p className="text-center p-24">
-          Statement on scientific/journalistic integrity
-        </p>
+      <div className="w-full bg-turquoise py-10 grid place-items-center text-center">
+        <div className="w-3/4 md:w-1/2">
+          <h2 className="text-xl font-bold md:text-2xl pb-6">
+            Scientific & Journalistic Integrity Matter to Us
+          </h2>
+          <p>
+            At Autoimmune Eats, we set high standards of quality, research, &
+            transparency for all of our content. Every article & resource
+            provided is replete with the highest quality citations & sources
+            available, & known limitations in the current body of research at
+            publication are noted whenever possible.<br></br>
+            <br></br>We value both contemporary Western sciences & ancient
+            Indigenous sciences equally, as we recognize that the Indigenous
+            sciences have been systemically discredited & inappropriately
+            disregarded in recent history.
+          </p>
+        </div>
       </div>
     </>
   );
 }
-
-
-
-
