@@ -1,6 +1,4 @@
-// import headshot from "../public/Caylee_headshot.jpeg";
 import Image from "next/image";
-// import placeholder_image from "../public/placeholder_article_photo.jpg";
 import TitleRectangleTurquoise from "./TitleRectangleTurquoise";
 import Link from "next/link";
 import VoteUpButton from "./VoteUpButton";
@@ -175,7 +173,7 @@ const ArticleComponent = (props) => {
             height={80}
             className="w-20 h-20 rounded-full "
           />
-          <div className="ml-4 mt-4 text-base">
+          <div className="ml-4 my-4 text-base">
             {parse(article.authorInfo.authorBio)}
           </div>
         </div>
