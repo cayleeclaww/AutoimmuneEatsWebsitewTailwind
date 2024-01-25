@@ -6,7 +6,8 @@ export default function EmailPrompt() {
   const [email, setEmail] = useState("");
 
   return (
-    <div className="w-full bg-turquoise h-80 grid justify-items-center my-16">
+    <div className="w-full bg-turquoise h-80 grid justify-items-cente
+    r my-16">
       <div id="mc_embed_shell">
         <div id="mc_embed_signup">
           <form

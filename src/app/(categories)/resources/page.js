@@ -19,12 +19,12 @@ export default function ResourcesPage() {
       </div>
       {/* Autoimmune Nutrition Starters' Guide */}
       <div id="autoimmune-nutrition-starters-guide">
-        <CardTitle>Autoimmune Nutrition Starters' Guide</CardTitle>
+        <CardTitle>Autoimmune Nutrition Starter Guide</CardTitle>
         <ResourceItem
           url="https://mailchi.mp/dff1a9ca7a62/autoimmune-nutrition-starters-guide"
           src="/Email_Signup_Thumbnail_Autoimmune_Nutrition_Starters_Guide.png"
-          alt="Thumbnail image for the Autoimmune Nutrition Starters' Guide"
-          subtitle="FREE! Autoimmune Nutrition Starters Guide (PDF)"
+          alt="Thumbnail image for the Autoimmune Nutrition Starter Guide"
+          subtitle="FREE! Autoimmune Nutrition Starter Guide (PDF)"
           description="Are you interested in reducing your autoimmune symptoms using nutrition? You\'re in the right place! Use these 7 basic steps to promote healing."
         />
       </div>
