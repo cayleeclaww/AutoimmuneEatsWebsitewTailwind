@@ -154,7 +154,7 @@ const ArticleComponent = (props) => {
         </div>
       </div>
       {/* prompt to join email list */}
-      <EmailPrompt />
+      <EmailPrompt className="md:w-1/2"/>
       {/* is this article helpful? - desktop & mobile - once Vote Up is functional, uncomment below + use ArticleIsHelpfulDesktop/Mobile components */}
       {/* <div className="grid place-items-center py-24">
         <p className="text-xl">Is this article helpful?</p>
@@ -163,7 +163,7 @@ const ArticleComponent = (props) => {
         </div>
       </div> */}
       {/* author bio section */}
-      <div className="grid mx-6 mt-8 ">
+      <div className="grid mx-6 my-10">
         <div className="text-lg mb-2">About the author:</div>
         <div className="flex ">
           <Image
