@@ -173,7 +173,7 @@ const Navbar = () => {
             <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know-NEW"
+                  href="/nutrition-and-supplements/Best-Autoimmune-Disease-Diet-Anti-Inflammatory-or-AIP-or"
                   className="text-black visited:text-black"
                 >
                   nutrition recommendations

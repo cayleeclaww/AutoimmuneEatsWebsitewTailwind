@@ -1,5 +1,5 @@
 import ArticleComponent from "../../../../../components/ArticleComponent";
-import article from "../../../../../content/AutoimmuneNutritionNEW.json";
+import article from "../../../../../content/WhatCausesAutoimmuneDiseaseandHowtoCureitNaturally.json";
 
 export const metadata = article.metadata;
 

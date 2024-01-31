@@ -13,7 +13,7 @@ import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.js
 import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
 import HowtoImproveFatigue from "../../../content/HowtoImproveFatigue.json";
 //nutrition and supplements:
-import AutoimmuneNutritionNEW from "../../../content/AutoimmuneNutritionNEW.json";
+import WhatCausesAutoimmuneDisease from "../../../content/WhatCausesAutoimmuneDiseaseandHowtoCureitNaturally.json";
 import BestAutoimmuneDiseaseDiet from "../../../content/BestAutoimmuneDiseaseDiet.json";
 import WorstFoodsforAutoimmuneDisease from "../../../content/WorstFoodsforAutoimmuneDisease.json";
 //by disease:
@@ -33,7 +33,7 @@ export default function Home() {
     HowtoImproveFatigue,
   ];
   const nutAndSuppsArticles = [
-    AutoimmuneNutritionNEW,
+    WhatCausesAutoimmuneDisease,
     BestAutoimmuneDiseaseDiet,
     WorstFoodsforAutoimmuneDisease,
   ];
@@ -44,7 +44,7 @@ export default function Home() {
     AutoimmuneDiseaseAndCovid,
   ];
 
-  const featuredArticle = AutoimmuneNutritionNEW;
+  const featuredArticle = WhatCausesAutoimmuneDisease;
 
   return (
     <>

@@ -14,7 +14,7 @@ import EmailPrompt from "../../../../components/EmailPrompt";
 
 //articles
 import BestAutoimmuneDiseaseDiet from "../../../../content/BestAutoimmuneDiseaseDiet.json";
-import AutoimmuneNutritionNEW from "../../../../content/AutoimmuneNutritionNEW.json";
+import WhatCausesAutoimmuneDisease from "../../../../content/WhatCausesAutoimmuneDiseaseandHowtoCureitNaturally.json";
 import WorstFoodsforAutoimmuneDisease from "../../../../content/WorstFoodsforAutoimmuneDisease.json";
 
 // complete Did You Know section
@@ -42,7 +42,7 @@ export default function NutritionAndSupplementsPage() {
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">
         <Link
-          href="/nutrition-and-supplements/autoimmune-nutrition-101-what-you-need-to-know-NEW"
+          href="/nutrition-and-supplements/Best-Autoimmune-Disease-Diet-Anti-Inflammatory-or-AIP-or"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           nutrition recommendations
@@ -128,8 +128,8 @@ export default function NutritionAndSupplementsPage() {
       </SectionTitleTurquoiseShadow>
       <Cards
         allArticles={[
-          AutoimmuneNutritionNEW,
           BestAutoimmuneDiseaseDiet,
+          WhatCausesAutoimmuneDisease,
           WorstFoodsforAutoimmuneDisease,
         ]}
       />
