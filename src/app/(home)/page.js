@@ -44,7 +44,7 @@ export default function Home() {
     AutoimmuneDiseaseAndCovid,
   ];
 
-  const featuredArticle = WhatCausesAutoimmuneDisease;
+  const featuredArticle = BestAutoimmuneDiseaseDiet;
 
   return (
     <>
