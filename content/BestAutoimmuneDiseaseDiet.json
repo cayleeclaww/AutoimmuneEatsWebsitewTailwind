@@ -4,7 +4,14 @@
   "metadata": {
     "title": "Best Autoimmune Disease Diet: Anti-Inflammatory or AIP or …?",
     "description": "Explore top autoimmune disease diets. Does the AIP diet work? Or the anti-inflammatory diet? Choose carefully - some diets can cause more harm than good.",
-    "keywords": ["autoimmune disease diet", "autoimmune disease anti inflammatory diet", "aip diet"],
+    "keywords": [
+      "autoimmune disease diet",
+      "autoimmune disease anti inflammatory diet",
+      "aip diet"
+    ],
+    "alternates": {
+      "canonical": "https://www.autoimmuneeats.com/nutrition-and-supplements/Best-Autoimmune-Disease-Diet-Anti-Inflammatory-or-AIP-or"
+    },
     "icons": {
       "icon": "/icon.png"
     },
@@ -45,7 +52,7 @@
     "authorBio": "Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist, software engineer, scientist, researcher, author, & autoimmune disease expert. Caylee is the author of <a href='https://amzn.to/3xSaKFJ' target='_blank'>Gain Control Over Your Psoriasis</a>. Outside of work, Caylee loves gardening, hiking, cooking, & biking all over NYC."
   },
   "photoFeature": "/Best-Autoimmune-Disease-Diet-Anti-Inflammatory-or-AIP.png",
-  "photoFeatureAlt": "Cover photo for article",
+  "photoFeatureAlt": "Featured image for Best Autoimmune Disease Diet article",
   "disclaimer": "PLEASE NOTE: Sections of this article may not be appropriate for those who have been diagnosed with an eating disorder, suspect they may have an eating disorder, or are engaging in disordered eating behaviors. This article is provided as informational content only, not as medical advice.",
   "sections": [
     {
@@ -79,5 +86,11 @@
       "content": "<p>Autoimmune disease sufferers face an increased risk of developing eating disorders. Restrictive  dieting and autoimmune disease diets can promote the development of eating disorders, which are extremely serious medical conditions with low recovery rates and high death rates (<a href='https://www.beateatingdisorders.org.uk/media-centre/eating-disorder-statistics/' target='_blank'>Beat Eating Disorders</a>, <a href='https://www.eatingrecoverycenter.com/conditions/eating-disorders#facts-statistics' target='_blank'>Eating Recovery Center</a>, <a href='https://anad.org/eating-disorders-statistics/' target='_blank'>National Association of Anorexia Nervosa and Associated Disorders</a>). </p><br/><p>Therefore, restrictive diets like the AIP diet should not be attempted by anyone with or at risk for developing an autoimmune disease. Not only is the AIP diet dangerous, but it's also nearly impossible to complete. It is unethical and unscientific for healthcare providers to recommend these restrictive diets.</p><br/><p>However, it's very clear that nutrition can offer so much for alleviating symptoms and promoting healing for autoimmune disease. It's safer, more practical, and more sustainable over the long run to increase our intake of anti-inflammatory foods, like the non-restrictive anti-inflammatory diet suggests. This way, we can harness the power of nutrition while reducing the risk of additional serious health problems, like eating disorders.</p><br/><p>It's essential that the anti-inflammatory diet is not used restrictively, and instead used as guidelines to gently change your everyday eating patterns. Focus on how these foods make you feel, and continue consuming them only if you enjoy them and they make you feel good. Don't force yourself to eat foods you don't like. </p><br/><p>Steer clear of diets, dieting, or unnecessary food restrictions. If you suspect you are engaging in disordered eating or have an eating disorder, seek related medical attention soon, as these conditions are considered very serious.</p>"
     }
   ],
-  "categories": ["anti-inflammatory diet", "diets", "beginner", "AIP diet", "nutrition and supplements"]
+  "categories": [
+    "anti-inflammatory diet",
+    "diets",
+    "beginner",
+    "AIP diet",
+    "nutrition and supplements"
+  ]
 }
