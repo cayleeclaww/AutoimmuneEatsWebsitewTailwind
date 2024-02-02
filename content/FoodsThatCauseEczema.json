@@ -4,7 +4,14 @@
   "metadata": {
     "title": "Foods That Cause Eczema: What to Eat & What Helps it Go Away",
     "description": "*Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
-    "keywords": ["Foods that cause eczema", "foods that help eczema go away", "eczema foods to eat"],
+    "keywords": [
+      "Foods that cause eczema",
+      "foods that help eczema go away",
+      "eczema foods to eat"
+    ],
+    "alternates": {
+      "canonical": "https://autoimmuneeats.com/template-article"
+    },
     "icons": {
       "icon": "/icon.png"
     },

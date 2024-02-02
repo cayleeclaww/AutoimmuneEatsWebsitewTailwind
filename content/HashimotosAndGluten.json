@@ -4,7 +4,14 @@
   "metadata": {
     "title": "Hashimoto's And Gluten: What's the Best Hashimoto's Diet?",
     "description": "*Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
-    "keywords": ["Hashimoto's and gluten", "hashimotos diet", "hashimoto disease and gluten free diet"],
+    "keywords": [
+      "Hashimoto's and gluten",
+      "hashimotos diet",
+      "hashimoto disease and gluten free diet"
+    ],
+    "alternates": {
+      "canonical": "https://autoimmuneeats.com/template-article"
+    },
     "icons": {
       "icon": "/icon.png"
     },

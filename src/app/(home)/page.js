@@ -23,7 +23,6 @@ import FoodsThatCauseEczema from "../../../content/FoodsThatCauseEczema.json";
 import AutoimmuneDiseaseAndCovid from "../../../content/AutoimmuneDiseaseAndCovid.json";
 import BookBuyNow from "../../../components/BookBuyNow";
 
-// **** NOTES FOR LATER: Complete statement on scientific/journalistic integrity
 // **** NOTES FOR LATER: "Did you know?" + "tools and calulators" sections --> generate content, create components, update responsiveness/usability if needed, plug in code below
 
 export default function Home() {

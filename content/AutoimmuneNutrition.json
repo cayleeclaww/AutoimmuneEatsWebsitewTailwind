@@ -9,6 +9,9 @@
       "autoimmune disease anti inflammatory diet",
       "aip diet"
     ],
+    "alternates": {
+      "canonical": "https://autoimmuneeats.com/template-article"
+    },
     "icons": {
       "icon": "/icon.png"
     },

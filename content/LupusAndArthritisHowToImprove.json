@@ -5,6 +5,9 @@
     "title": "Lupus & Arthritis: How to Improve Lupus Joint Pain",
     "description": "*Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
     "keywords": ["lupus arthritis", "lupus joint pain"],
+    "alternates": {
+      "canonical": "https://autoimmuneeats.com/template-article"
+    },
     "icons": {
       "icon": "/icon.png"
     },

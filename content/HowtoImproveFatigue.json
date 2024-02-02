@@ -5,6 +5,9 @@
     "title": "How to Improve Fatigue from Autoimmune Disease",
     "description": "*Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
     "keywords": ["fatigue and autoimmune disease"],
+    "alternates": {
+      "canonical": "https://autoimmuneeats.com/template-article"
+    },
     "icons": {
       "icon": "/icon.png"
     },

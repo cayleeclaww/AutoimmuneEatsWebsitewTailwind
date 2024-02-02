@@ -4,7 +4,14 @@
   "metadata": {
     "title": "Is It Autoimmune?: Autoimmune Disease Symptom Checklist",
     "description": "*Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
-    "keywords": ["autoimmune disease symptoms", "autoimmune disease symptom checklist", "do i have an autoimmune disease quiz"],
+    "keywords": [
+      "autoimmune disease symptoms",
+      "autoimmune disease symptom checklist",
+      "do i have an autoimmune disease quiz"
+    ],
+    "alternates": {
+      "canonical": "https://autoimmuneeats.com/template-article"
+    },
     "icons": {
       "icon": "/icon.png"
     },
