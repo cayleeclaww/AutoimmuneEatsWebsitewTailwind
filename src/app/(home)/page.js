@@ -98,7 +98,7 @@ export default function Home() {
               Discover how to live with more peace & less pain.
             </p>
           </div>
-          <div class="w-full flex justify-center">
+          <div className="w-full flex justify-center">
             <Link
               href="https://mailchi.mp/5ce73b419aaa/autoimmune-eats"
               target="_blank"
