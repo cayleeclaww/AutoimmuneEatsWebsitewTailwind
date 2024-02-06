@@ -247,7 +247,7 @@ export default function Home() {
             At Autoimmune Eats, we set high standards of quality, research, &
             transparency for all of our content. Every article & resource
             provided is replete with the highest quality citations & sources
-            available, & known limitations in the current body of research at
+            available. Known limitations in the current body of research at
             publication are noted whenever possible.<br></br>
             <br></br>We value both contemporary Western sciences & ancient
             Indigenous sciences equally, as we recognize that the Indigenous
