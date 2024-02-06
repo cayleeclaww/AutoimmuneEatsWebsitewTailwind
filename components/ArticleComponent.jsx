@@ -10,6 +10,7 @@ import EmailPrompt from "./EmailPrompt";
 
 // ****** NOTES FOR LATER: Google an article/video on how to use the metadata object in NextJS, esp author and publication date tags
 // ****** NOTES FOR LATER: figure out how I want the numbers of votes on each article to be displayed
+        // style={{ paddingRight: "25%" }}
 
 const ArticleComponent = (props) => {
   const { article } = props;

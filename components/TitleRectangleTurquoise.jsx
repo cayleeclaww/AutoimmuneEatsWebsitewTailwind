@@ -1,8 +1,13 @@
-export default function TitleRectangleTurquoise( props ) {
+export default function TitleRectangleTurquoise(props) {
   return (
-    <div className="relative w-full h-48 mb-10">
-      <div className="absolute bg-turquoise h-full w-full md:w-4/5 block"></div>
-      <h1 className="absolute w-full text-2xl md:text-3xl flex justify-center pt-16 pl-6 z-10">
+    <div className="bg-turquoise w-full md:w-4/5 h-48 mb-10 flex justify-center items-center">
+      <h1
+        className="hidden md:block text-3xl text-center pr-8"
+        style={{ paddingLeft: "25%" }}
+      >
+        {props.children}
+      </h1>
+      <h1 className="text-2xl text-center px-8 md:hidden">
         {props.children}
       </h1>
     </div>

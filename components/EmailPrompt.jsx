@@ -21,7 +21,7 @@ export default function EmailPrompt() {
             <div id="mc_embed_signup_scroll" className="pt-6">
               <h2 className="text-3xl font-bold my-4">Join our email list!</h2>
               <div className="mc-field-group">
-                <label for="mce-EMAIL">
+                <label htmlFor="mce-EMAIL">
                   Email Address
                   <input
                     type="email"
