@@ -12,6 +12,7 @@
     "alternates": {
       "canonical": "https://www.autoimmuneeats.com/by-disease/Hashimotos-And-Gluten-Whats-the-Best-Hashimotos-Diet"
     },
+    "publishedTime": "2024-02-06T12:00:00-05001",
     "icons": {
       "icon": "/icon.png"
     },
@@ -28,8 +29,7 @@
         }
       ],
       "locale": "en_US",
-      "type": "article",
-      "publishedTime": "2024-02-06T12:00:00-05001"
+      "type": "article"
     },
     "robots": {
       "index": true,
