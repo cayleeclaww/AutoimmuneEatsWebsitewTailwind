@@ -10,7 +10,7 @@ export default function TopSuppsPage() {
         <p>Top Supplements</p>
       </TitleRectangleTurquoise>
       {/* banners to Fullscript dispensary */}
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         {/* desktop */}
         <a
           className="pt-10 hidden md:flex justify"
@@ -36,7 +36,7 @@ export default function TopSuppsPage() {
       </div>
 
       {/* all supplements */}
-      <div className="grid md:w-1/2 mx-auto py-10 divide-y divide-solid">
+      <div className="grid md:w-1/2 mx-auto my-10 divide-y divide-solid bg-white">
         {TopSupplements.map((supp) => (
           <FullscriptSupplement key={supp.product_id} supplement={supp} />
         ))}

@@ -43,7 +43,7 @@ export default function Home() {
     AutoimmuneDiseaseAndCovid,
   ];
 
-  const featuredArticle = BestAutoimmuneDiseaseDiet;
+  const featuredArticle = IsItAutoimmuneChecklist;
 
   return (
     <>
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </div>
       {/* 4 boxes with main site features - COMPLETE: is mobile friendly! */}
-      <div className="w-full grid grid-cols-2 md:flex my-6 sm:my-12">
+      <div className="w-full grid grid-cols-2 md:flex my-6 sm:my-12 bg-white">
         <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
             <b>Free of dieting,</b>
@@ -143,13 +143,15 @@ export default function Home() {
       </div>
       {/* featured article photo + description box */}
       <FeaturePhoto featuredArticle={featuredArticle} />
-
-      {/* "symptoms" section - COMPLETE: is mobile friendly! */}
-      <SectionTitleTurquoiseShadow>BY SYMPTOM</SectionTitleTurquoiseShadow>
-      <Cards allArticles={symptomsArticles}></Cards>
+      {/* "nutrition and supplements" section */}
+      <SectionTitleTurquoiseShadow>
+        Nutrition & Supplements
+      </SectionTitleTurquoiseShadow>
+      <Cards allArticles={nutAndSuppsArticles}></Cards>
       {/* Book section - COMPLETE: is mobile friendly! */}
-      {/* desktop responsiveness */}
       <BookBuyNow />
+      {/* prompt to join email list  */}
+      <EmailPrompt />
       {/* "conditions" section */}
       <SectionTitleTurquoiseShadow>BY condition</SectionTitleTurquoiseShadow>
       <Cards allArticles={byDiseaseArticles}></Cards>
@@ -231,16 +233,10 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      {/* prompt to join email list  */}
-      <EmailPrompt />
+
       {/* "recipes" section - use later after content is created! */}
       {/* <SectionTitleTurquoiseShadow>recipes</SectionTitleTurquoiseShadow> */}
       {/* <Cards allArticles={symptomsArticles}></Cards> */}
-      {/* "nutrition and supplements" section */}
-      <SectionTitleTurquoiseShadow>
-        Nutrition & Supplements
-      </SectionTitleTurquoiseShadow>
-      <Cards allArticles={nutAndSuppsArticles}></Cards>
       {/* statement on scientific/journalistic integrity */}
       <div className="w-full bg-turquoise py-10 grid place-items-center text-center">
         <div className="w-3/4 md:w-1/2">
@@ -260,6 +256,9 @@ export default function Home() {
           </p>
         </div>
       </div>
+      {/* "symptoms" section - COMPLETE: is mobile friendly! */}
+      <SectionTitleTurquoiseShadow>BY SYMPTOM</SectionTitleTurquoiseShadow>
+      <Cards allArticles={symptomsArticles}></Cards>
     </>
   );
 }

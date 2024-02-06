@@ -9,9 +9,9 @@ const ResourceItem = ({ url, src, alt, subtitle, description }) => {
         <Link href={url} target="_blank">
           <img className="max-h-[450px] max-w-[400px]" src={src} alt={alt} />
         </Link>
-        <div className="grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14">
+        <div className="grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14 bg-white">
           <p className="text-2xl p-4 text-bold text-center">{subtitle}</p>
-          <p className="text-l px-4 pb-4">{description}</p>
+          <p className="text-l px-4 pb-4 text-center">{description}</p>
           <Link href={url} target="_blank">
             <button className="text-l p-2 m-3 bg-turquoise uppercase rounded-md justify-center w-[95%] text-black hover:font-bold">
               get here
@@ -25,7 +25,7 @@ const ResourceItem = ({ url, src, alt, subtitle, description }) => {
           <img className="max-h-[450px] max-w-[330px]" src={src} alt={alt} />
         </Link>
       </div>
-      <div className="md:hidden flex flex-col items-center mx-4">
+      <div className="md:hidden flex flex-col items-center mx-4 bg-white">
         <p className="text-2xl px-4 pt-6 text-bold text-center">{subtitle}</p>
         <p className="text-l px-4 p-2 text-center">{description}</p>
         <Link href={url} target="_blank">

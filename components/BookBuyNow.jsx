@@ -7,7 +7,7 @@ const BookBuyNow = () => {
     <>
       {/* desktop responsiveness */}
       <div className="w-full flex justify-center py-16 items-center">
-        <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14">
+        <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14 bg-white">
           <p className="text-2xl p-4 text-bold text-center">
             Gain Control Over Your Psoriasis
           </p>
@@ -32,14 +32,14 @@ const BookBuyNow = () => {
         />
       </div>
       {/* mobile responsiveness */}
-      <div className="md:hidden grid p-4">
+      <div className="md:hidden grid p-4 bg-white">
         <Image
           className="ps-10"
           src={book}
           alt="Display of the book, tablet, and ebook covers for Gain Control Over Your Psoriasis"
         />
       </div>
-      <div className="md:hidden flex flex-col items-center mx-4">
+      <div className="md:hidden flex flex-col items-center px-4 bg-white">
         <p className="text-2xl px-4 pt-6 text-bold text-center">
           Gain Control Over Your Psoriasis
         </p>

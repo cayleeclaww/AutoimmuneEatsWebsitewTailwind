@@ -6,6 +6,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+body{ background-color: #fbfbf6}
+
 /* generates "did you know?" and "tools & calculator" speech bubbles */
 .speech {
   /* text settings */

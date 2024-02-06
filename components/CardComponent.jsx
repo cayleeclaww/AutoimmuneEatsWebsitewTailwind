@@ -14,14 +14,14 @@ const Cards = (props) => {
             <Link href={card.metadata.openGraph.url} key={card.metadata.title}>
               <div className="shadow-lg rounded-lg max-w-[400px] text-center">
                 <Image
-                  className="rounded-t-lg"
+                  className="rounded-t-lg bg-white"
                   src={card.photoFeature}
                   alt={card.photoFeatureAlt}
                   width={400}
                   height={400}
                   id={card.title}
                 />
-                <div className="p-5">
+                <div className="p-5 bg-white rounded-b-lg ">
                   <h3 className="text-xl text-slate-700 ">{card.title}</h3>
                   {/* <p className="text-lg font-normal text-gray-600 mb-3">{card.metadata.description}</p> */}
                 </div>

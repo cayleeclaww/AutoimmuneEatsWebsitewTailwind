@@ -27,11 +27,18 @@ export default function FeaturedArticle(props) {
         />
 
         {/* desktop responsiveness */}
-        <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8">
-          <div className="text-2xl p-5 text-bold ">{featuredArticle.title}</div>
-          <p className="text-m px-5">{featuredArticle.metadata.description}</p>
-          <Link href={featuredArticle.metadata.openGraph.url}>
-            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 text-black">
+        <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8 ">
+          <div className="text-2xl p-5 text-bold text-center">
+            {featuredArticle.title}
+          </div>
+          <p className="text-m px-5 text-center">
+            {featuredArticle.metadata.description}
+          </p>
+          <Link
+            className="grid place-content-center"
+            href={featuredArticle.metadata.openGraph.url}
+          >
+            <button className="text-l p-2 m-5 bg-turquoise uppercase rounded-md w-40 text-black ">
               read more
             </button>
           </Link>
