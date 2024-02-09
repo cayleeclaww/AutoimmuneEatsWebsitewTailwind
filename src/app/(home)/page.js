@@ -8,6 +8,7 @@ import SectionTitleTurquoiseShadow from "../../../components/SectionTitleTurquoi
 import Cards from "../../../components/CardComponent";
 import EmailPrompt from "../../../components/EmailPrompt";
 import FeaturePhoto from "../../../components/FeaturedArticle";
+import BookBuyNow from "../../../components/BookBuyNow";
 //by symptom:
 import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.json";
 import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
@@ -20,8 +21,7 @@ import WorstFoodsforAutoimmuneDisease from "../../../content/WorstFoodsforAutoim
 import WhatIsTheBestPsoriasisDiet from "../../../content/WhatIsTheBestPsoriasisDiet.json";
 import HashimotosAndGluten from "../../../content/HashimotosAndGluten.json";
 import FoodsThatCauseEczema from "../../../content/FoodsThatCauseEczema.json";
-import AutoimmuneDiseaseAndCovid from "../../../content/AutoimmuneDiseaseAndCovid.json";
-import BookBuyNow from "../../../components/BookBuyNow";
+import AutoimmuneDiseaseAndInfections from "../../../content/LinkBetweenAutoimmuneDiseaseAndInfectionslikeCOVID.json";
 
 // **** NOTES FOR LATER: "Did you know?" + "tools and calulators" sections --> generate content, create components, update responsiveness/usability if needed, plug in code below
 
@@ -40,7 +40,7 @@ export default function Home() {
     WhatIsTheBestPsoriasisDiet,
     HashimotosAndGluten,
     FoodsThatCauseEczema,
-    AutoimmuneDiseaseAndCovid,
+    AutoimmuneDiseaseAndInfections,
   ];
 
   const featuredArticle = IsItAutoimmuneChecklist;

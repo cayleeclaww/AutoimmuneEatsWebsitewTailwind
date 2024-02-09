@@ -14,7 +14,8 @@ import EmailPrompt from "../../../../components/EmailPrompt";
 import WhatIsTheBestPsoriasisDiet from "../../../../content/WhatIsTheBestPsoriasisDiet.json";
 import HashimotosAndGluten from "../../../../content/HashimotosAndGluten.json";
 import FoodsThatCauseEczema from "../../../../content/FoodsThatCauseEczema.json";
-import AutoimmuneDiseaseAndCovid from "../../../../content/AutoimmuneDiseaseAndCovid.json";
+import AutoimmuneDiseaseAndInfections from "../../../../content/LinkBetweenAutoimmuneDiseaseAndInfectionslikeCOVID.json";
+
 import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
 import FeaturePhoto from "../../../../components/FeaturedArticle";
 
@@ -58,7 +59,7 @@ export default function ByDiseasePage() {
           eczema
         </Link>
         <Link
-          href="/by-disease/Autoimmune-Disease-And-Covid-Can-Infections-Cause-Disease"
+          href="/by-disease/The-Link-Between-Autoimmune-Disease-And-Infections-like-COVID"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           COVID & Infections
@@ -137,7 +138,7 @@ export default function ByDiseasePage() {
       <SectionTitleTurquoiseShadow>
         COVID & Infections
       </SectionTitleTurquoiseShadow>
-      <Cards allArticles={[AutoimmuneDiseaseAndCovid]}></Cards>
+      <Cards allArticles={[AutoimmuneDiseaseAndInfections]}></Cards>
       {/* hashimoto's section */}
       <SectionTitleTurquoiseShadow>Hashimoto's</SectionTitleTurquoiseShadow>
       <Cards allArticles={[HashimotosAndGluten]}></Cards>

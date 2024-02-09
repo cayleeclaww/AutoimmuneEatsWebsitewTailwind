@@ -2,6 +2,19 @@ import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTur
 import FullscriptSupplement from "../../../../../components/FullscriptSupplement";
 import TopSupplements from "../../../../../content/TopSupplements.json";
 
+// Magnesium script from Fullscript - uncomment inside function to take screen shot of image
+{/* <script
+  src="//us.fullscript.com/oembed/embed.js"
+  data-fs='{"product_id":"70617","store_slug":"autoimmunenutrition","return":"product_card"}'
+></script> */}
+
+// Ox bile script from Fullscript - uncomment inside function to take screen shot of image
+{/* <script
+  src="//us.fullscript.com/oembed/embed.js"
+  data-fs='{"product_id":"64184","store_slug":"autoimmunenutrition","return":"product_card"}'
+></script> */}
+
+
 export default function TopSuppsPage() {
   return (
     <>

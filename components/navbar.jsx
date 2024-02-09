@@ -91,7 +91,7 @@ const Navbar = () => {
               </div>
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-disease/Autoimmune-Disease-And-Covid-Can-Infections-Cause-Disease"
+                  href="/by-disease/The-Link-Between-Autoimmune-Disease-And-Infections-like-COVID"
                   className="text-black visited:text-black"
                 >
                   COVID & infections
