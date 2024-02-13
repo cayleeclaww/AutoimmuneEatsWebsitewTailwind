@@ -12,7 +12,7 @@ import BookBuyNow from "../../../components/BookBuyNow";
 //by symptom:
 import IsItAutoimmuneChecklist from "../../../content/IsItAutoimmuneChecklist.json";
 import LupusAndArthritisHowToImprove from "../../../content/LupusAndArthritisHowToImprove.json";
-import HowtoImproveFatigue from "../../../content/HowtoImproveFatigue.json";
+import FatigueAndAutoimmuneDisease from "../../../content/FatigueAndAutoimmuneDisease.json";
 //nutrition and supplements:
 import WhatCausesAutoimmuneDisease from "../../../content/WhatCausesAutoimmuneDiseaseandHowtoCureitNaturally.json";
 import BestAutoimmuneDiseaseDiet from "../../../content/BestAutoimmuneDiseaseDiet.json";
@@ -29,7 +29,7 @@ export default function Home() {
   const symptomsArticles = [
     IsItAutoimmuneChecklist,
     LupusAndArthritisHowToImprove,
-    HowtoImproveFatigue,
+    FatigueAndAutoimmuneDisease,
   ];
   const nutAndSuppsArticles = [
     WhatCausesAutoimmuneDisease,

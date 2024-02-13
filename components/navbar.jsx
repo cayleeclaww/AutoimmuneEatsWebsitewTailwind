@@ -132,7 +132,7 @@ const Navbar = () => {
               </div>
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-symptom/How-to-Improve-Fatigue-from-Autoimmune-Disease"
+                  href="/by-symptom/Fatigue-And-Autoimmune-Disease-How-Nutrition-Can-Help"
                   className="text-black visited:text-black"
                 >
                   fatigue

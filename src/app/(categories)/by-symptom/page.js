@@ -15,7 +15,7 @@ import EmailPrompt from "../../../../components/EmailPrompt";
 //articles
 import IsItAutoimmuneChecklist from "../../../../content/IsItAutoimmuneChecklist.json";
 import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
-import HowtoImproveFatigue from "../../../../content/HowtoImproveFatigue.json";
+import FatigueAndAutoimmuneDisease from "../../../../content/FatigueAndAutoimmuneDisease.json";
 
 // NOTES FOR LATER: add email prompt component once completed
 // NOTES FOR LATER: build out social media links
@@ -44,7 +44,7 @@ export default function BySymptomPage() {
           joint pain & arthritis
         </Link>
         <Link
-          href="/by-symptom/How-to-Improve-Fatigue-from-Autoimmune-Disease"
+          href="/by-symptom/Fatigue-And-Autoimmune-Disease-How-Nutrition-Can-Help "
           className="uppercase text-base hover:text-turquoise mx-8 my-4"
         >
           fatigue
@@ -123,7 +123,7 @@ export default function BySymptomPage() {
       <Cards allArticles={[LupusAndArthritisHowToImprove]}></Cards>
       {/* fatigue section */}
       <SectionTitleTurquoiseShadow>fatigue</SectionTitleTurquoiseShadow>
-      <Cards allArticles={[HowtoImproveFatigue]}></Cards>
+      <Cards allArticles={[FatigueAndAutoimmuneDisease]}></Cards>
       {/* is it AI? section */}
       <SectionTitleTurquoiseShadow>
         is it autoimmune?
