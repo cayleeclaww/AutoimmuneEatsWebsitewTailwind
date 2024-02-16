@@ -50,7 +50,7 @@ const ArticleComponent = (props) => {
         </div>
       </div>
       {/* social media icons - mobile */}
-      <SocialMediaMobile></SocialMediaMobile>
+      {/* <SocialMediaMobile></SocialMediaMobile> */}
       {/* article section links - mobile */}
       <div className="md:hidden block mx-6 mt-10 text-base">
         {article.sections.map((sect) => (
@@ -120,7 +120,7 @@ const ArticleComponent = (props) => {
               </div>
             </div>
             {/* social media icons - desktop */}
-            <SocialMediaDesktop></SocialMediaDesktop>
+            {/* <SocialMediaDesktop></SocialMediaDesktop> */}
           </div>
           {/* is this article helpful - desktop - once Vote Up is functional, uncomment below*/}
           {/* <ArticleIsHelpfulDesktop></ArticleIsHelpfulDesktop> */}
