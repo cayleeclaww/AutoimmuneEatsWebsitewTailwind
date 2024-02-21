@@ -43,7 +43,7 @@ export default function Home() {
     AutoimmuneDiseaseAndInfections,
   ];
 
-  const featuredArticle = IsItAutoimmuneChecklist;
+  const featuredArticle = BestAutoimmuneDiseaseDiet;
 
   return (
     <>

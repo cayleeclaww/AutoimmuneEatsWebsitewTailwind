@@ -89,7 +89,7 @@ const ArticleComponent = (props) => {
               // subtitle name + href ID
               <div key={sect.hrefID}>
                 <h2
-                  className="text-xl ml-1 mt-8 mb-2"
+                  className="text-2xl ml-1 mt-8 mb-2"
                   style={{ textShadow: "2px 2px 2px #99CED3" }}
                   id={sect.hrefID}
                 >

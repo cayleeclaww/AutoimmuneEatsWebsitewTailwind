@@ -6,7 +6,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body{ background-color: #fbfbf6}
+body {
+  background-color: #fbfbf6;
+}
+
+h3 {
+  font-size: 1.12rem;
+  line-height: 1.75rem;
+}
 
 /* generates "did you know?" and "tools & calculator" speech bubbles */
 .speech {
