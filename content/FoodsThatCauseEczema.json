@@ -2,7 +2,7 @@
   "title": "Foods That Cause Eczema: What to Eat & What Helps it Go Away",
   "datePublishedOrUpdated": "February 21, 2024",
   "article":{
-    "published_time": "2024-02-21T10:15:15.000Z"
+    "publishedTime": "2024-02-21T10:15:15.000Z"
   },
   "metadata": {
     "title": "Foods That Cause Eczema: What to Eat & What Helps it Go Away",
@@ -26,13 +26,14 @@
       "images": [
         {
           "url": "https://autoimmuneeats.com/Foods-That-Cause-Eczema-What-to-Eat-And-What-Helps-it-Go-Away.png",
+          "alt": "Featured image for Foods That Cause Eczema article",
           "width": 800,
           "height": 600
         }
       ],
       "locale": "en_US",
       "type": "article",
-      "publishedTime": "2024-02-21"
+      "publishedTime": "2024-02-21T10:15:15.000Z"
     },
     "robots": {
       "index": true,
