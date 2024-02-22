@@ -18,6 +18,7 @@ const Navbar = () => {
   };
 
   return (
+    // change to bg-[#fbfbf6] once logo is updated to match
     <header className="navbar relative w-full h-42 shadow-xl bg-white z-40 grid">
       <div className="flex justify-center md:block md:justify-between items-center h-full w-full p-4 2xl:px-16">
         <Link href="/">

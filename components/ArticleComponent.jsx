@@ -1,10 +1,9 @@
 import Image from "next/image";
 import TitleRectangleTurquoise from "./TitleRectangleTurquoise";
 import Link from "next/link";
-import VoteUpButton from "./VoteUpButton";
 import SocialMediaMobile from "./SocialMediaMobile";
 import SocialMediaDesktop from "./SocialMediaDesktop";
-import ArticleIsHelpfulDesktop from "./ArticleIsHelpfulDesktop";
+import ArticleIsHelpful from "./ArticleIsHelpful";
 import parse from "html-react-parser";
 import EmailPrompt from "./EmailPrompt";
 
@@ -18,7 +17,6 @@ const ArticleComponent = (props) => {
     <>
       {/* turquoise article title rectangle */}
       <TitleRectangleTurquoise>{article.title}</TitleRectangleTurquoise>
-
       {/* article section links - desktop*/}
       <div className="hidden md:block w-2/3 mx-6 pr-20 text-base lg:mx-10">
         {article.sections.map((sect, i) => (
@@ -28,7 +26,6 @@ const ArticleComponent = (props) => {
           </div>
         ))}
       </div>
-
       {/* vote up button - once operational, uncomment below */}
       {/* <div className="w-full flex justify-center md:justify-end md:w-4/5 md:-mt-8">
         <VoteUpButton></VoteUpButton>
@@ -49,7 +46,7 @@ const ArticleComponent = (props) => {
           Updated on {article.datePublishedOrUpdated}
         </div>
       </div>
-      {/* social media icons - mobile */}
+      {/* social media icons - mobile - currently not fully operational, but keep code so is in correct place when operational */}
       {/* <SocialMediaMobile></SocialMediaMobile> */}
       {/* article section links - mobile */}
       <div className="md:hidden block mx-6 mt-10 text-base">
@@ -119,12 +116,10 @@ const ArticleComponent = (props) => {
                 Updated on {article.datePublishedOrUpdated}
               </div>
             </div>
-            {/* social media icons - desktop */}
+            {/* social media icons - desktop - currently not fully operational, but keep code so is in correct place when operational*/}
             {/* <SocialMediaDesktop></SocialMediaDesktop> */}
           </div>
-          {/* is this article helpful - desktop - once Vote Up is functional, uncomment below*/}
-          {/* <ArticleIsHelpfulDesktop></ArticleIsHelpfulDesktop> */}
-          {/* Fullscript sidebar - desktop */}
+          {/* Fullscript sidebar #1- desktop */}
           <div className="place-content-center">
             <div className="grid place-items-center">
               <a
@@ -138,6 +133,10 @@ const ArticleComponent = (props) => {
               </a>
             </div>
           </div>
+          {/* is this article helpful - once Vote Up is functional, uncomment below*/}
+          {/* <ArticleIsHelpful /> */}
+          {/* Fullscript sidebar #2 - desktop */}
+
           <div className="place-content-center">
             <div className="grid place-items-center">
               <a
@@ -154,14 +153,9 @@ const ArticleComponent = (props) => {
         </div>
       </div>
       {/* prompt to join email list */}
-      <EmailPrompt className="md:w-1/2"/>
-      {/* is this article helpful? - desktop & mobile - once Vote Up is functional, uncomment below + use ArticleIsHelpfulDesktop/Mobile components */}
-      {/* <div className="grid place-items-center py-24">
-        <p className="text-xl">Is this article helpful?</p>
-        <div className="p-2 m-2 grid">
-          <VoteUpButton></VoteUpButton>
-        </div>
-      </div> */}
+      <EmailPrompt className="md:w-1/2" />
+      {/* is this article helpful? - once Vote Up is functional, uncomment below - will be hidden on mobile due to parent div properties */}
+      {/* <ArticleIsHelpful /> */}
       {/* author bio section */}
       <div className="grid mx-6 my-10">
         <div className="text-lg mb-2">About the author:</div>
