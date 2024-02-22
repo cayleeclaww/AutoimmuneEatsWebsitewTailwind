@@ -32,10 +32,8 @@ export default function ByDiseasePage() {
         <p>By Disease</p>
       </TitleRectangleTurquoise>
       {/* category description */}
-      <p className="mt-8 flex text-center mx-auto w-3/4">
-        1-2 sentence long description of category. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+      <p className="mt-8 flex text-center mx-auto w-3/4 text-xl">
+        Each autoimmune disease has its own special considerations. Find helpful tips to guide your healing journey, specific to your individual diagnosis.
       </p>
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">

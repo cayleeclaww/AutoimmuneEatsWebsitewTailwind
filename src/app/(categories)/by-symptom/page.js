@@ -30,10 +30,8 @@ export default function BySymptomPage() {
         <p>By Symptom</p>
       </TitleRectangleTurquoise>
       {/* category description */}
-      <p className="mt-8 flex text-center mx-auto w-3/4">
-        1-2 sentence long description of category. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+      <p className="mt-8 flex text-center mx-auto w-3/4 text-xl">
+        Many symptoms are common across different autoimmune diseases, & can improve with the same interventions. Use these helpful guides to reduce your pain & increase your quality of life. 
       </p>
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">

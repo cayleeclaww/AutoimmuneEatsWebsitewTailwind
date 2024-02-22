@@ -34,10 +34,10 @@ export default function NutritionAndSupplementsPage() {
       </TitleRectangleTurquoise>
 
       {/* category description */}
-      <p className="mt-8 flex text-center mx-auto w-3/4">
-        1-2 sentence long description of category. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+      <p className="mt-8 flex text-center mx-auto w-3/4 text-xl">
+        Nutrition is one of the greatest resources for improving autoimmune
+        disease naturally - but it can be tricky. Read on to learn best practices &
+        avoid common mistakes.
       </p>
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">
