@@ -34,6 +34,7 @@ module.exports = {
     extend: {
       colors: {
         'turquoise': '#99CED3',
+        'coral-pink': '#d59377',
       },
     },
   },

@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       {/* main image with overlayed text boxes - desktop + mobile */}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center bg-gradient-to-r from-turquoise via-coral-pink to-[#e3b341]">
         <Image
           className="hidden md:grid w-full z-1 min-w-[100%]"
           src={main_image}
