@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+// Generates the layout for an individual item in the Resources page. URL, src, alt, subtitle, and description are sourced from object created in resoucecs/page.js. Section titles are generated in resoucecs/page.js. 
+
 const ResourceItem = ({ url, src, alt, subtitle, description }) => {
   return (
     <>

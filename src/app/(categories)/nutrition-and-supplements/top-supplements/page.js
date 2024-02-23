@@ -1,6 +1,8 @@
 import TitleRectangleTurquoise from "../../../../../components/TitleRectangleTurquoise";
 import FullscriptSupplement from "../../../../../components/FullscriptSupplement";
 import TopSupplements from "../../../../../content/TopSupplements.json";
+// Did You Know? articles - *add later
+// Related Articles - *add later
 
 export default function TopSuppsPage() {
   return (

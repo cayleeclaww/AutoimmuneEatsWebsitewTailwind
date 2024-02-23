@@ -1,5 +1,4 @@
-//props will eventually be.... ???? Some way to post content directly onto social media...
-//instagram and Facebook links may work now... ?!?! Have not been added to social media mobile component (used https://developers.facebook.com/docs/plugins/share-button#configurator)
+// Currently not fully operational. Instagram works (simply links to IG page). FB functionality can almost certainly be improved. Pinterest, LinkedIn, print, and copy link (BsLink) are non-operational.
 
 import { BsLink45Deg } from "react-icons/bs";
 import { BiSolidPrinter, BiLogoPinterestAlt } from "react-icons/bi";

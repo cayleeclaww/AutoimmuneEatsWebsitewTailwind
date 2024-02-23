@@ -84,12 +84,20 @@ a {
   color: #759ca1;
 }
 
+/* added underline on hover to optimize accessibility */
 a:hover {
   font-weight: 600;
+  text-decoration: underline;
 }
 
 a:visited {
   color: purple;
+}
+
+/* for accessibility - adds red ring around elements when using tab button to navigate */
+:focus-visible {
+  outline: 2px solid crimson;
+  border-radius: 3px;
 }
 
 li {

@@ -2,7 +2,6 @@ import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import main_image from "../../../public/main_image_front_page_autoimmune_eats_cropped.jpg";
 import main_image_mobile from "../../../public/main_image_front_page_autoimmune_eats_HALF.jpg";
-// import placeholder_image from "../../../public/placeholder_article_photo.jpg";
 import Link from "next/link";
 import SectionTitleTurquoiseShadow from "../../../components/SectionTitleTurquoiseShadow";
 import Cards from "../../../components/CardComponent";
@@ -22,8 +21,7 @@ import WhatIsTheBestPsoriasisDiet from "../../../content/WhatIsTheBestPsoriasisD
 import HashimotosAndGluten from "../../../content/HashimotosAndGluten.json";
 import FoodsThatCauseEczema from "../../../content/FoodsThatCauseEczema.json";
 import AutoimmuneDiseaseAndInfections from "../../../content/LinkBetweenAutoimmuneDiseaseAndInfectionslikeCOVID.json";
-
-// **** NOTES FOR LATER: "Did you know?" + "tools and calulators" sections --> generate content, create components, update responsiveness/usability if needed, plug in code below
+// Did You Know? articles - *add later
 
 export default function Home() {
   const symptomsArticles = [
@@ -47,7 +45,7 @@ export default function Home() {
 
   return (
     <>
-      {/* creates main image with overlayed text boxes - COMPLETE: is mobile friendly!  */}
+      {/* main image with overlayed text boxes - desktop + mobile */}
       <div className="w-full flex justify-center">
         <Image
           className="hidden md:grid w-full z-1 min-w-[100%]"
@@ -62,6 +60,7 @@ export default function Home() {
           priority
           placeholder="blur"
         />
+
         {/* text boxes for sm and larger screens */}
         <div className="hidden sm:grid absolute z-2 m-16 justify-center max-h-24 lg:pt-20">
           <div className="bg-white box-border px-10 pt-10 text-center opacity-80">
@@ -75,7 +74,7 @@ export default function Home() {
               <br /> more peace & less pain.
             </p>
           </div>
-          <div class="w-60 mx-auto">
+          <div className="w-60 mx-auto">
             <Link
               href="https://mailchi.mp/5ce73b419aaa/autoimmune-eats"
               target="_blank"
@@ -111,7 +110,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* 4 boxes with main site features - COMPLETE: is mobile friendly! */}
+
+      {/* 4 boxes with main site features */}
       <div className="w-full grid grid-cols-2 md:flex my-6 sm:my-12 bg-white">
         <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
@@ -144,21 +144,27 @@ export default function Home() {
       </div>
       {/* featured article photo + description box */}
       <FeaturePhoto featuredArticle={featuredArticle} />
+
       {/* "nutrition and supplements" section */}
       <SectionTitleTurquoiseShadow>
         Nutrition & Supplements
       </SectionTitleTurquoiseShadow>
       <Cards allArticles={nutAndSuppsArticles}></Cards>
-      {/* Book section - COMPLETE: is mobile friendly! */}
+
+      {/* Book section */}
       <BookBuyNow />
-      {/* prompt to join email list  */}
+
+      {/* prompt to join email list */}
       <EmailPrompt />
+
       {/* "conditions" section */}
       <SectionTitleTurquoiseShadow>BY condition</SectionTitleTurquoiseShadow>
       <Cards allArticles={byDiseaseArticles}></Cards>
-      {/* green speech bubbles section - COMPLETE: is mobile friendly! */}
+
+      {/* green speech bubbles section  - desktop + mobile */}
       {/* <div className="grid grid-cols-1 md:grid-cols-2 mt-24 "> */}
-      {/* did you know? */}
+
+      {/* did you know? - add code later when 4 did you know articles are written*/}
       {/* <div className="grid grid-cols-1 ">
           <div class="speech bottom">did you know?</div>
 
@@ -196,7 +202,7 @@ export default function Home() {
           </div>
         </div> */}
 
-      {/* tools and calulators section  */}
+      {/* tools and calulators section  - add code later when calculators are built out*/}
       {/* <div className="grid grid-cols-1 ">
           <div class="speech bottom">tools & calculators</div>
 
@@ -235,9 +241,10 @@ export default function Home() {
         </div>
       </div> */}
 
-      {/* "recipes" section - use later after content is created! */}
+      {/* "recipes" section - use later when/if content is created! */}
       {/* <SectionTitleTurquoiseShadow>recipes</SectionTitleTurquoiseShadow> */}
       {/* <Cards allArticles={symptomsArticles}></Cards> */}
+
       {/* statement on scientific/journalistic integrity */}
       <div className="w-full bg-turquoise py-10 grid place-items-center text-center">
         <div className="w-3/4 md:w-1/2">
@@ -257,7 +264,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      {/* "symptoms" section - COMPLETE: is mobile friendly! */}
+
+      {/* "symptoms" section */}
       <SectionTitleTurquoiseShadow>BY SYMPTOM</SectionTitleTurquoiseShadow>
       <Cards allArticles={symptomsArticles}></Cards>
     </>

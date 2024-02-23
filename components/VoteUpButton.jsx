@@ -1,3 +1,5 @@
+// Currently not operational - requires backend to function. Will need to build out functionality so backend can accept up votes. Also will need to decide how to display number of votes.
+
 //props will eventually be ArticleTest.voteCount
 
 export default function VoteUpButton(props) {

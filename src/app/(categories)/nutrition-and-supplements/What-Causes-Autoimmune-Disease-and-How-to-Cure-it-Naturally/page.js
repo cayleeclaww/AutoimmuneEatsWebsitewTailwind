@@ -1,5 +1,7 @@
 import ArticleComponent from "../../../../../components/ArticleComponent";
 import article from "../../../../../content/WhatCausesAutoimmuneDiseaseandHowtoCureitNaturally.json";
+// Did You Know? articles - *add later
+// Related Articles - *add later
 
 export const metadata = article.metadata;
 

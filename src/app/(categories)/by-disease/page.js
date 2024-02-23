@@ -1,26 +1,17 @@
 import Link from "next/link";
-import { BsLink45Deg } from "react-icons/bs";
-import { BiSolidPrinter, BiLogoPinterestAlt } from "react-icons/bi";
-import { FaFacebookF } from "react-icons/fa";
-import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
-import Image from "next/image";
-import placeholder_image from "../../../../public/placeholder_article_photo.jpg";
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
 import Cards from "../../../../components/CardComponent";
 import SectionTitleTurquoiseShadow from "../../../../components/SectionTitleTurquoiseShadow";
 import EmailPrompt from "../../../../components/EmailPrompt";
-//articles
+import FeaturePhoto from "../../../../components/FeaturedArticle";
+// by-disease articles
 import WhatIsTheBestPsoriasisDiet from "../../../../content/WhatIsTheBestPsoriasisDiet.json";
 import HashimotosAndGluten from "../../../../content/HashimotosAndGluten.json";
 import FoodsThatCauseEczema from "../../../../content/FoodsThatCauseEczema.json";
 import AutoimmuneDiseaseAndInfections from "../../../../content/LinkBetweenAutoimmuneDiseaseAndInfectionslikeCOVID.json";
-
 import LupusAndArthritisHowToImprove from "../../../../content/LupusAndArthritisHowToImprove.json";
-import FeaturePhoto from "../../../../components/FeaturedArticle";
-
-// NOTES FOR LATER: add email prompt component once completed
-// NOTES FOR LATER: build out social media links
+// Did You Know? articles - *add later
 
 export default function ByDiseasePage() {
   const featuredArticle = HashimotosAndGluten;
@@ -33,7 +24,9 @@ export default function ByDiseasePage() {
       </TitleRectangleTurquoise>
       {/* category description */}
       <p className="mt-8 flex text-center mx-auto w-3/4 text-xl">
-        Each autoimmune disease has its own special considerations. Find helpful tips to guide your healing journey, specific to your individual diagnosis.
+        Each autoimmune disease has its own special considerations. Find helpful
+        tips to guide your healing journey, specific to your individual
+        diagnosis.
       </p>
       {/* subcategory links  */}
       <div className="mt-8 flex flex-wrap justify-center text-slate-400">
@@ -69,85 +62,36 @@ export default function ByDiseasePage() {
           lupus
         </Link>
       </div>
-      {/* social media icons */}
-      {/* <div className="flex justify-center gap-2 mt-8">
-        <AiOutlineInstagram
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "2px",
-            fontSize: "30px",
-            backgroundImage: "linear-gradient(120deg, blue, red, yellow)",
-            color: "white",
-          }}
-        ></AiOutlineInstagram>
-        <FaFacebookF
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "4px",
-            color: "#007FFF",
-          }}
-        ></FaFacebookF>
-        <BiLogoPinterestAlt
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "2px",
-            color: "red",
-          }}
-        ></BiLogoPinterestAlt>
-        <AiFillLinkedin
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "2px",
-            color: "#0066b2",
-          }}
-        ></AiFillLinkedin>
-        <BsLink45Deg
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "2px",
-          }}
-        ></BsLink45Deg>
-        <BiSolidPrinter
-          size={25}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid grey",
-            padding: "3px",
-          }}
-        ></BiSolidPrinter>
-      </div> */}
+      {/* social media icons - add code later when SocialMediaDesktop/Mobile are built out*/}
+
       {/* featured article photo + description box */}
       <FeaturePhoto featuredArticle={featuredArticle} />
 
       {/* psoriasis section */}
       <SectionTitleTurquoiseShadow>psoriasis</SectionTitleTurquoiseShadow>
       <Cards allArticles={[WhatIsTheBestPsoriasisDiet]}></Cards>
+
       {/* COVID and infections section */}
       <SectionTitleTurquoiseShadow>
         COVID & Infections
       </SectionTitleTurquoiseShadow>
       <Cards allArticles={[AutoimmuneDiseaseAndInfections]}></Cards>
+
       {/* hashimoto's section */}
       <SectionTitleTurquoiseShadow>Hashimoto's</SectionTitleTurquoiseShadow>
       <Cards allArticles={[HashimotosAndGluten]}></Cards>
+
       {/* eczema section  */}
       <SectionTitleTurquoiseShadow>eczema</SectionTitleTurquoiseShadow>
       <Cards allArticles={[FoodsThatCauseEczema]}></Cards>
+
       {/* lupus section  */}
       <SectionTitleTurquoiseShadow>lupus</SectionTitleTurquoiseShadow>
       <Cards allArticles={[LupusAndArthritisHowToImprove]}></Cards>
+
       {/* prompt to join email list  */}
       <EmailPrompt />
+
       {/* did you know? section */}
       {/* <FourCardSpread>did you know?</FourCardSpread> */}
     </>

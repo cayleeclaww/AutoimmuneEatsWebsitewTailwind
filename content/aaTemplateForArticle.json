@@ -1,0 +1,99 @@
+{
+  "title": "*Autoimmune Nutrition 101 [Template Article]",
+  "datePublishedOrUpdated": "*March 11, 2024",
+  "photoFeature": "/placeholder_article_photo.jpg",
+  "photoFeatureAlt": "Featured image for **shortened article name** article",
+  "article": {
+    "publishedTime": "*2024-03-11T16:00:00.000Z",
+    "author": "Caylee Clay, RDN CDN CYT"
+  },
+  "metadata": {
+    "title": "*Template Article: Fill in the Blanks",
+    "description": "*Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
+    "keywords": ["*main keyword", "*supporting keyword", "*supporting keyword"],
+    "alternates": {
+      "canonical": "https://autoimmuneeats.com/template-article"
+    },
+    "icons": {
+      "icon": "/icon.png"
+    },
+    "openGraph": {
+      "title": "*Template Article: Fill in the Blanks | Autoimmune Eats",
+      "description": "*same as above* Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
+      "url": "https://autoimmuneeats.com/template-article",
+      "siteName": "Autoimmune Eats",
+      "image": [
+        {
+          "url": "*https://autoimmuneeats.com/placeholder_article_photo.jpg",
+          "alt": "Featured image for **shortened article name** article",
+          "width": 800,
+          "height": 600
+        }
+      ],
+      "locale": "en_US",
+      "type": "article",
+      "publishTime": "*2024-01-25T12:00:00-05001"
+    },
+    "robots": {
+      "index": true,
+      "follow": true,
+      "nocache": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1
+      }
+    }
+  },
+  "voteCount": 20,
+  "authorInfo": {
+    "authorName": "Caylee Clay, RDN CDN CYT",
+    "authorPhoto": "/Caylee_headshot.jpeg",
+    "authorPhotoAlt": "Headshot of author Caylee Clay. Caylee is smiling with a grey jacket and straight bangs",
+    "authorBio": "Caylee Clay, RDN CDN CYT (they/them) is a dietitian-nutritionist, software engineer, scientist, researcher, author, & autoimmune disease expert. Caylee is the author of <a href='https://amzn.to/3xSaKFJ' target='_blank'>Gain Control Over Your Psoriasis</a>. Outside of work, Caylee loves gardening, hiking, cooking, & biking all over NYC."
+  },
+  "disclaimer": "PLEASE NOTE: Sections of this article may not be appropriate for those who have been diagnosed with an eating disorder, suspect they may have an eating disorder, or are engaging in disordered eating behaviors. This article is provided as informational content only, not as medical advice.",
+  "sections": [
+    {
+      "subtitle": "*Overview",
+      "hrefID": "Overview",
+      "content": ""
+    },
+    {
+      "subtitle": "*SectionOne",
+      "hrefID": "*Section-One",
+      "content": ""
+    },
+    {
+      "subtitle": "*SectionTwo",
+      "hrefID": "*Section-Two",
+      "content": ""
+    },
+    {
+      "subtitle": "*SectionThree",
+      "hrefID": "*Section-Three",
+      "content": ""
+    },
+    {
+      "subtitle": "*SectionFour",
+      "hrefID": "*Section-Four",
+      "content": ""
+    },
+    {
+      "subtitle": "*SectionFive",
+      "hrefID": "*Section-Five",
+      "content": ""
+    },
+    {
+      "subtitle": "*Bottom Line",
+      "hrefID": "Bottom-Line",
+      "content": ""
+    }
+  ],
+  "categories": ["*anti-inflammatory", "*diet", "*beginner"],
+  "photoAdditionalOne": "*live link OR /placeholder_article_photo.jpg (from public folder)",
+  "photoAdditionalTwo": "*live link OR /placeholder_article_photo.jpg (from public folder)",
+  "photoAdditionalThree": "*live link OR /placeholder_article_photo.jpg (from public folder)"
+}

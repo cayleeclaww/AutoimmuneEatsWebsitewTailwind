@@ -1,4 +1,4 @@
-//props will eventually be.... ???? Some way to post content directly onto social media...
+// Currently not fully operational. Instagram works (simply links to IG page) - however may be better as a prompt that tries to open app. FB functionality can almost certainly be improved. Pinterest, LinkedIn, print, and copy link (BsLink) are non-operational.
 
 import { BsLink45Deg } from "react-icons/bs";
 import { BiSolidPrinter, BiLogoPinterestAlt } from "react-icons/bi";

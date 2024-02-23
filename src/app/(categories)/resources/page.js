@@ -1,5 +1,5 @@
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
-import CardTitle from "../../../../components/SectionTitleTurquoiseShadow";
+import SectionTitle from "../../../../components/SectionTitleTurquoiseShadow";
 import BookBuyNow from "../../../../components/BookBuyNow";
 import EmailPrompt from "../../../../components/EmailPrompt";
 import ResourceItem from "../../../../components/ResourceItem";
@@ -14,12 +14,12 @@ export default function ResourcesPage() {
         <p>Resources</p>
       </TitleRectangleTurquoise>
       <div id="book">
-        <CardTitle>Gain Control Over Your Psoriasis</CardTitle>
+        <SectionTitle>Gain Control Over Your Psoriasis</SectionTitle>
         <BookBuyNow />
       </div>
       {/* Autoimmune Nutrition Starters' Guide */}
       <div id="autoimmune-nutrition-starters-guide">
-        <CardTitle>Autoimmune Nutrition Starter Guide</CardTitle>
+        <SectionTitle>Autoimmune Nutrition Starter Guide</SectionTitle>
         <ResourceItem
           url="https://mailchi.mp/dff1a9ca7a62/autoimmune-nutrition-starters-guide"
           src="/Email_Signup_Thumbnail_Autoimmune_Nutrition_Starters_Guide.png"
@@ -30,7 +30,7 @@ export default function ResourcesPage() {
       </div>
       {/* Guided Meditation */}
       <div id="guided-meditation">
-        <CardTitle>10 Minute Guided Meditation for Eating</CardTitle>
+        <SectionTitle>10 Minute Guided Meditation for Eating</SectionTitle>
         <ResourceItem
           url="https://mailchi.mp/4229b97caf89/guidedmeditation"
           src="/Email_Signup_Thumbnail_10_Minute_Guided_Meditation.png"
@@ -42,7 +42,7 @@ export default function ResourcesPage() {
       <EmailPrompt />
       {/* Candida screening form */}
       <div id="candida-screening-form">
-        <CardTitle>Candida Screening Form</CardTitle>
+        <SectionTitle>Candida Screening Form</SectionTitle>
         <ResourceItem
           url="https://mailchi.mp/27c76ba54c78/candidascreen"
           src="/Email_Signup_Thumbnail_Candida_Screening_Form.png"
@@ -53,7 +53,7 @@ export default function ResourcesPage() {
       </div>
       {/* better than a meal plan */}
       <div id="better-than-a-meal-plan">
-        <CardTitle>Better than a Meal Plan</CardTitle>
+        <SectionTitle>Better than a Meal Plan</SectionTitle>
         <ResourceItem
           url="https://mailchi.mp/fd4406528fee/betterthanamealplan"
           src="/Email_Signup_Thumbnail_Better_Than_a_Meal_Plan.jpg"
@@ -64,7 +64,7 @@ export default function ResourcesPage() {
       </div>
       {/* track psoriasis severity with PASI */}
       <div id="track-psoriasis-severity">
-        <CardTitle>Track Psoriasis Severity</CardTitle>
+        <SectionTitle>Track Psoriasis Severity</SectionTitle>
         <ResourceItem
           url="https://mailchi.mp/ea121f177b09/pasi"
           src="/Email_Signup_Thumbnail_Track_Your_Psoriasis_Severity.png"
@@ -74,7 +74,7 @@ export default function ResourcesPage() {
         />
       </div>
       {/* future top supplements section */}
-      {/* <CardTitle>Top Supplements</CardTitle> */}
+      {/* <SectionTitle>Top Supplements</SectionTitle> */}
       <EmailPrompt />
     </>
   );

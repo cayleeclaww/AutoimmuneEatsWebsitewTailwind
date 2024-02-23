@@ -1,3 +1,5 @@
+//Creates a title with a turquoise shadow behind it. Used in Resources, categories, and home pages.
+
 export default function SectionTitleTurquoiseShadow(props) {
   return (
     <>

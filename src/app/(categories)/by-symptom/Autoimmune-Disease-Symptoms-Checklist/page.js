@@ -1,5 +1,7 @@
 import article from "../../../../../content/IsItAutoimmuneChecklist.json";
 import ArticleComponent from "../../../../../components/ArticleComponent";
+// Did You Know? articles - *add later
+// Related Articles - *add later
 
 export const metadata = article.metadata;
 

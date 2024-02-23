@@ -3,12 +3,8 @@ import Image from "next/image";
 import Autoimmune_Eats_Logo from "../public/Autoimmune_Eats_Logo.png";
 import Link from "next/link";
 import "tailwindcss/tailwind.css";
-import {
-  AiOutlineMenu,
-  AiOutlineClose,
-} from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-
 
 const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -18,9 +14,10 @@ const Navbar = () => {
   };
 
   return (
-    // change to bg-[#fbfbf6] once logo is updated to match
+    // change below to bg-[#fbfbf6] once logo is updated to match
     <header className="navbar relative w-full h-42 shadow-xl bg-white z-40 grid">
       <div className="flex justify-center md:block md:justify-between items-center h-full w-full p-4 2xl:px-16">
+        {/* Logo - desktop + mobile */}
         <Link href="/">
           <Image
             src={Autoimmune_Eats_Logo}
@@ -34,19 +31,18 @@ const Navbar = () => {
 
         {/* desktop menu */}
         <div className="hidden md:flex justify-between items-center pt-2">
-          {/* YT video uses "sm:flex" but not working here -- RESOLVED??*/}
-
-          {/* bydisease menu item  */}
+          {/* by-disease menu items */}
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group text-black">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex ">
                 <Link
                   href="/by-disease"
-                  className="text-black visited:text-black"
+                  className="text-black visited:text-black hover:no-underline "
                 >
                   by disease
                 </Link>
               </span>
+              {/* creates arrow that flips on hover */}
               <svg
                 className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +52,7 @@ const Navbar = () => {
               </svg>
             </button>
 
-            {/* submenu list */}
+            {/* submenu items */}
             <div className="rounded absolute right-0 hidden text-gray-700 pt-1 group-hover:block drop-shadow-lg">
               <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer ">
                 <Link
@@ -101,13 +97,13 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* bysymptom menu item */}
+          {/* by-symptom menu items */}
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
                 <Link
                   href="/by-symptom"
-                  className="text-black visited:text-black"
+                  className="text-black visited:text-black hover:no-underline "
                 >
                   by symptom
                 </Link>
@@ -150,13 +146,13 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* nutritionandsupplements menu item */}
+          {/* nutrition-and-supplements menu items */}
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
                 <Link
                   href="/nutrition-and-supplements"
-                  className="text-black visited:text-black"
+                  className="text-black visited:text-black hover:no-underline "
                 >
                   nutrition & supplements
                 </Link>
@@ -188,6 +184,7 @@ const Navbar = () => {
                   top supplements
                 </Link>
               </div>
+              {/* uncomment once a resource of food sensitivities has been created */}
               {/* <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/food-sensitivities"
@@ -203,7 +200,10 @@ const Navbar = () => {
           <div className="group relative ">
             <button className="text-gray-700 rounded inline-flex items-center group">
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
-                <Link href="/about" className="text-black visited:text-black">
+                <Link
+                  href="/about"
+                  className="text-black visited:text-black hover:no-underline "
+                >
                   about
                 </Link>
               </span>
@@ -216,7 +216,7 @@ const Navbar = () => {
               <span className="mr-1 ml-10 uppercase hover:border-b text-l flex">
                 <Link
                   href="/resources"
-                  className="text-black visited:text-black"
+                  className="text-black visited:text-black hover:no-underline "
                 >
                   resources
                 </Link>
@@ -285,7 +285,7 @@ const Navbar = () => {
                   track psoriasis severity
                 </Link>
               </div>
-
+              {/* uncomment once Top Supps section is added to Resources page */}
               {/* <div className="bg-gray-200 hover:bg-turquoise py-4 px-4 cursor-pointer">
                 <Link
                   href="/nutrition-and-supplements/top-supplements"
@@ -298,7 +298,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* mobile menu */}
+        {/* mobile menu - does not include submenu items as seen in desktop version */}
         <div
           onClick={handleHamburger}
           className="md:hidden cursor-pointer absolute top-5 left-5"
@@ -306,7 +306,6 @@ const Navbar = () => {
           <AiOutlineMenu size={30} />
         </div>
 
-        {/* mobile menu  */}
         <div
           className={
             hamburgerOpen
