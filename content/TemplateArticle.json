@@ -3,6 +3,10 @@
   "datePublishedOrUpdated": "*December 11, 2023",
   "photoFeature": "*/placeholder_article_photo.jpg",
   "photoFeatureAlt": "Featured image for **shortened article name** article",
+  "article": {
+    "publishedTime": "2024-02-21T10:15:15.000Z",
+    "author": "Caylee Clay, RDN CDN CYT"
+  },
   "metadata": {
     "title": "*Template Article: Fill in the Blanks",
     "description": "*Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",

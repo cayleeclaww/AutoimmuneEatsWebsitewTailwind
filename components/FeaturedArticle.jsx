@@ -7,7 +7,7 @@ export default function FeaturedArticle(props) {
   return (
     <>
       <div className="w-full flex justify-center p-4 mt-12">
-        {/* desktop image */}
+        {/* desktop image - pulls image and alt from article JSON */}
         <Image
           className="hidden md:flex w-[50%] h-[50%]"
           style={{ boxShadow: "-10px 10px 15px #99CED3" }}
@@ -16,7 +16,7 @@ export default function FeaturedArticle(props) {
           width={800}
           height={560}
         />
-        {/* mobile image */}
+        {/* mobile image - pulls image and alt from article JSON */}
         <Image
           className="w-full border-x-6 flex md:hidden"
           style={{ boxShadow: "10px 10px 15px #99CED3" }}
@@ -26,7 +26,7 @@ export default function FeaturedArticle(props) {
           height={560}
         />
 
-        {/* desktop responsiveness */}
+        {/* desktop responsiveness - pulls title, description, and URL from article JSON */}
         <div className="hidden md:grid w-1/3 h-1/2 mt-32 bg-white border-solid border-2 border-black-600 -ml-14 -mb-8 ">
           <div className="text-2xl p-5 text-bold text-center">
             {featuredArticle.title}
@@ -44,7 +44,7 @@ export default function FeaturedArticle(props) {
           </Link>
         </div>
       </div>
-      {/* mobile responsiveness  */}
+      {/* mobile responsiveness  - pulls title, description, and URL from article JSON */}
       <div className="flex flex-col items-center md:hidden items-center mx-4 place-content-center pt-8">
         <p className="text-2xl px-4 text-bold text-center">
           {featuredArticle.title}

@@ -62,7 +62,7 @@ export default function NutritionAndSupplementsPage() {
       </div>
 
       {/* social media icons */}
-      <div className="flex justify-center gap-2 mt-8">
+      {/* <div className="flex justify-center gap-2 mt-8">
         <AiOutlineInstagram
           size={25}
           style={{
@@ -117,7 +117,7 @@ export default function NutritionAndSupplementsPage() {
             padding: "3px",
           }}
         ></BiSolidPrinter>
-      </div>
+      </div> */}
 
       {/* featured article photo + description box */}
       <FeaturePhoto featuredArticle={featuredArticle} />

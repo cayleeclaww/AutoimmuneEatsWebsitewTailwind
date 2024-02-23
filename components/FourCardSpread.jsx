@@ -1,6 +1,9 @@
 import placeholder_image from "../public/placeholder_article_photo.jpg";
 import Image from "next/image";
 
+// this component needs to be deleted - will delete after Did You Know? and Related Article sections are built out using CardComponent at the bottom of each article page, in ArticleComponent.
+
+
 export default function FourCardSpread(props) {
   return (
     <>
