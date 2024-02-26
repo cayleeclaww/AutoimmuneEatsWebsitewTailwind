@@ -84,10 +84,16 @@ a {
   color: #759ca1;
 }
 
-/* added underline on hover to optimize accessibility */
+/* optimized for accessibility */
 a:hover {
-  font-weight: 600;
   text-decoration: underline;
+}
+
+/* added underline on hover to further accessibility - only on desktop for now, caused issues on top of Categories page in mobile view (links would enlarge then move lines, rendering them unable to click) */
+a:hover {
+  @media (min-width: 768px) {
+    font-weight: 600;
+  }
 }
 
 a:visited {

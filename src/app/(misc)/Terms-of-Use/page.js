@@ -1,4 +1,3 @@
-// LATER: add in my own disclaimer from book + previous website about medical stuff - add to sections 21 and 22
 // CONSIDER: including bolded sections and live URLs from PDF 
 
 export default function TermsofUsePage() {
