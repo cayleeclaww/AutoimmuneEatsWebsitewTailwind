@@ -23,6 +23,44 @@ import FoodsThatCauseEczema from "../../../content/FoodsThatCauseEczema.json";
 import AutoimmuneDiseaseAndInfections from "../../../content/LinkBetweenAutoimmuneDiseaseAndInfectionslikeCOVID.json";
 // Did You Know? articles - *add later
 
+export const metadata = {
+  title: "Autoimmune Eats: Radical Nutrition for Autoimmune Disease",
+  canonical: "https://autoimmuneeats.com",
+  description:
+    "Harness nutrition to improve your autoimmune disease - without resorting to restrictive & unproven diets. Learn how you can start feeling better today.",
+  keywords: ["autoimmune eats", "autoimmune nutrition", "anti-diet autoimmune", "autoimmune eats caylee clay"],
+  icons: {
+    icon: "/icon.png",
+  },
+  openGraph: {
+    title: "Autoimmune Eats: Radical Nutrition for Autoimmune Disease",
+    description:
+      "Harness nutrition to improve your autoimmune disease - without resorting to restrictive & unproven diets. Learn how you can start feeling better today.",
+    url: "https://autoimmuneeats.com/",
+    siteName: "Autoimmune Eats",
+    image: [
+      {
+        url: "https://autoimmuneeats.com/public/Autoimmune_Eats_Logo.png",
+        alt: "Autoimmune Eats Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
 export default function Home() {
   const symptomsArticles = [
     IsItAutoimmuneChecklist,

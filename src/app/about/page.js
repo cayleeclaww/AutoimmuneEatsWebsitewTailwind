@@ -1,10 +1,17 @@
 import EmailPrompt from "../../../components/EmailPrompt";
+import Image from "next/image";
+import founderPic from "public/Caylee_Clay_photo.jpg";
+import SectionTitleTurquoiseShadow from "../../../components/SectionTitleTurquoiseShadow";
 
 export default function AboutPage() {
   return (
     <>
       <div className="w-2/3 mx-auto my-24">
-        <h1 className="text-3xl my-4">About Autoimmune Eats</h1>
+        <h1 className="text-center my-4">
+          <SectionTitleTurquoiseShadow>
+            About Autoimmune Eats
+          </SectionTitleTurquoiseShadow>
+        </h1>
         <p>
           Autoimmune Eats is here to provide revolutionary care for the
           autoimmune community.
@@ -23,22 +30,26 @@ export default function AboutPage() {
           <br></br>Both contemporary Western sciences & ancient Indigenous
           sciences are our guiding lights. While natural remedies are the main
           focus, we acknowledge that over-the-counter & prescription medications
-          can also be essential to managing our diseases. 
+          can also be essential to managing our diseases.
         </p>
-        <p>
+        <p className="pb-12 border-b-4 border-black-500">
           <br></br>
           We want you to feel better. We want you to empower you with knowledge,
           so that you can live in less pain without sacrificing quality of life.
           Ultimately, our main goal is to help those with autoimmune disease
           suffer less & live better.
         </p>
-        <h2 className="text-2xl mt-16 mb-4">Our Approach</h2>
+        <h2 className="text-center -mt-10 mb-4">
+          <SectionTitleTurquoiseShadow>
+            Our Approach
+          </SectionTitleTurquoiseShadow>
+        </h2>
         <p>
           This is a space that is free of both dieting & fatphobia. Restrictive
           diets & fat shaming are harmful, not helpful, to those suffering from
-          autoimmune disease. We have the science & the resources to offer
-          better options than these outdated & unfounded methods. It's time to
-          retire these prejudiced, damaging ideas.
+          autoimmune disease. We now have the science & resources to offer
+          solutions that actually work, instead of these outdated & unfounded
+          methods. It's time to retire these prejudiced damaging ideas.
         </p>
         <br></br>
         <ul>
@@ -53,7 +64,7 @@ export default function AboutPage() {
           <li>
             Being able to enjoy our favorite foods while still openly
             acknowledging that the American food system is broken &, at times,
-            poisonous.
+            downright poisonous.
           </li>
         </ul>
         <br></br>
@@ -63,18 +74,70 @@ export default function AboutPage() {
           create awareness of this connection, so that these communities can
           receive more appropriate healthcare.
         </p>
-        <p>
+        <p className="pb-12 border-b-4 border-black-500">
           <br></br> Finally, we firmly believe that the constantly increasing
           rates of autoimmune disease are heavily related to the destruction of
           our planet. Incidence of autoimmune disease directly corresponds to
-          pollution levels in our waterways, air, & food system.
+          pollution levels in our waterways, air, & food system. Our stance is
+          that a healthier planet will support healthier humans. (It just seems
+          obvious, doesn't it?)
         </p>
-        <p>
-          <br></br> Our stance is that a healthier planet will support healthier
-          humans. (It just seems obvious, doesn't it?)
+        {/* Meet the Founder section */}
+        <div className="grid md:grid-cols-[33%_66%] gap-4 py-12 border-b-4 border-black-500 ">
+          <div className="my-6 mx-auto">
+            <Image src={founderPic} width={300} height={300}></Image>
+          </div>
+          <div className="text-center md:text-left">
+            <h2
+              className="text-4xl -mt-6"
+              style={{ textShadow: "2px 2px 2px #99CED3" }}
+            >
+              meet the founder
+            </h2>
+            <h3 className="text-xl mb-4">Caylee Clay, RDN CDN CYT</h3>
+            <p>
+              Hi there! My name is Caylee Clay (they/them), & I have been
+              practicing nutrition for over 10 years. I completed a Bachelor of
+              Science in Nutrition & Food Studies at New York University, plus a
+              Dietetic Internship at Hunter College's School of Urban Public
+              Health. After becoming a Registered Dietitian-Nutritionist (RDN) &
+              a New York State Certified Dietitian-Nutritionist (CDN), I also
+              completed a Certified Yoga Teacher (CYT) program.
+              <br />
+              <br />
+              Beyond titles & degress, I struggled with autoimmune disease for
+              over half my life. Nutrition has been the greatest gift in my
+              autoimmune journey, providing me with so much healing & comfort.
+              My life's mission is to share this evidence-based information with
+              my autoimmune community.
+              <br />
+              <br />
+              As much as I love nutrition, I also am passionate about software
+              engineering. I built this website myself from scratch, utilizing
+              React on NextJS with the latest App Router. After wireframing in
+              Figma, I programmed this fully responsive design with Tailwind.
+              Deploying client-side rendering, this allows for top site speeds
+              by pre-fetching data, image optimizing, keeping state for static
+              components even after navigating away, & more.
+            </p>
+          </div>
+        </div>
+
+        <h2 className="text-center -mt-10 mb-4">
+          <SectionTitleTurquoiseShadow>contact</SectionTitleTurquoiseShadow>
+        </h2>
+        <p className="text-center">
+          Email:
+          <br />
+          eatyerveg [at] gmail.com
+          <br />
+          <br />
+          Phone:
+          <br/>
+          201 701 1355
         </p>
-        <EmailPrompt/>
       </div>
+      <EmailPrompt />
     </>
   );
 }
