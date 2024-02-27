@@ -7,7 +7,6 @@ import ArticleIsHelpful from "./ArticleIsHelpful";
 import parse from "html-react-parser";
 import EmailPrompt from "./EmailPrompt";
 
-
 const ArticleComponent = (props) => {
   const { article } = props;
 
@@ -38,7 +37,7 @@ const ArticleComponent = (props) => {
           className="w-20 h-20 rounded-full ml-10"
         />
         <div className="ml-4 mt-4 text-sm">
-          By {article.authorInfo.authorName}
+          By {parse(article.authorInfo.authorName)}
           <br />
           Updated on {article.datePublishedOrUpdated}
         </div>
@@ -107,7 +106,7 @@ const ArticleComponent = (props) => {
                 className="w-20 h-20 rounded-full "
               />
               <div className="ml-4 text-sm">
-                By {article.authorInfo.authorName}
+                By {parse(article.authorInfo.authorName)}
                 <br />
                 Updated on {article.datePublishedOrUpdated}
               </div>

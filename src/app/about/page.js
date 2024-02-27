@@ -2,6 +2,7 @@ import EmailPrompt from "../../../components/EmailPrompt";
 import Image from "next/image";
 import founderPic from "public/Caylee_Clay_photo.jpg";
 import SectionTitleTurquoiseShadow from "../../../components/SectionTitleTurquoiseShadow";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -59,7 +60,7 @@ export default function AboutPage() {
             bodies
           </li>
           <li>Healing the gut by fostering a healthy microbiome</li>
-          <li>Supporting the body’s natural detoxification pathways</li>
+          <li>Supporting the body's natural detoxification pathways</li>
           <li>Safely identifying & living with food sensitivities</li>
           <li>
             Being able to enjoy our favorite foods while still openly
@@ -83,7 +84,10 @@ export default function AboutPage() {
           obvious, doesn't it?)
         </p>
         {/* Meet the Founder section */}
-        <div className="grid md:grid-cols-[33%_66%] gap-4 py-12 border-b-4 border-black-500 ">
+        <div
+          className="grid md:grid-cols-[33%_66%] gap-4 py-20 border-b-4 border-black-500"
+          id="meet-the-founder"
+        >
           <div className="my-6 mx-auto">
             <Image src={founderPic} width={300} height={300}></Image>
           </div>
@@ -102,7 +106,12 @@ export default function AboutPage() {
               Dietetic Internship at Hunter College's School of Urban Public
               Health. After becoming a Registered Dietitian-Nutritionist (RDN) &
               a New York State Certified Dietitian-Nutritionist (CDN), I also
-              completed a Certified Yoga Teacher (CYT) program.
+              completed a Certified Yoga Teacher (CYT) program. I am the author
+              of{" "}
+              <Link href="https://amzn.to/3xSaKFJ" target="_blank">
+                Gain Control Over Your Psoriasis
+              </Link>
+              .
               <br />
               <br />
               Beyond titles & degress, I struggled with autoimmune disease for
@@ -115,15 +124,15 @@ export default function AboutPage() {
               As much as I love nutrition, I also am passionate about software
               engineering. I built this website myself from scratch, utilizing
               React on NextJS with the latest App Router. After wireframing in
-              Figma, I programmed this fully responsive design with Tailwind.
-              Deploying client-side rendering, this allows for top site speeds
-              by pre-fetching data, image optimizing, keeping state for static
+              Figma, I programmed this fully responsive design with Tailwind. By
+              deploying client-side rendering, top site speeds are attained by
+              pre-fetching data, image optimizing, keeping state for static
               components even after navigating away, & more.
             </p>
           </div>
         </div>
 
-        <h2 className="text-center -mt-10 mb-4">
+        <h2 className="text-center -mt-10 mb-4" id="contact">
           <SectionTitleTurquoiseShadow>contact</SectionTitleTurquoiseShadow>
         </h2>
         <p className="text-center">
@@ -133,7 +142,7 @@ export default function AboutPage() {
           <br />
           <br />
           Phone:
-          <br/>
+          <br />
           201 701 1355
         </p>
       </div>
