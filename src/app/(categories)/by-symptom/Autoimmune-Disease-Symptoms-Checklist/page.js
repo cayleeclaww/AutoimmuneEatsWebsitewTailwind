@@ -1,5 +1,5 @@
 import article from "../../../../../content/IsItAutoimmuneChecklist.json";
-import ArticleComponent from "../../../../../components/ArticleComponent";
+import ArticleComponent from "../../../../../components/ArticleTemplate";
 // Did You Know? articles - *add later
 // Related Articles - *add later
 
@@ -15,4 +15,3 @@ export default function BySymptomPage() {
     </>
   );
 }
-

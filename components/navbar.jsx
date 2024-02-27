@@ -137,7 +137,7 @@ const Navbar = () => {
               </div>
               <div className="bg-gray-200 hover:bg-[#99CED3] py-4 px-4 cursor-pointer">
                 <Link
-                  href="/by-symptom/Autoimmune-Disease-Symptom-Checklist"
+                  href="/by-symptom/Autoimmune-Disease-Symptoms-Checklist"
                   className="text-black visited:text-black"
                 >
                   is it autoimmune?

@@ -4,7 +4,7 @@ import main_image from "../../../public/main_image_front_page_autoimmune_eats_cr
 import main_image_mobile from "../../../public/main_image_front_page_autoimmune_eats_HALF.jpg";
 import Link from "next/link";
 import SectionTitleTurquoiseShadow from "../../../components/SectionTitleTurquoiseShadow";
-import Cards from "../../../components/CardComponent";
+import Cards from "../../../components/Cards";
 import EmailPrompt from "../../../components/EmailPrompt";
 import FeaturePhoto from "../../../components/FeaturedArticle";
 import BookBuyNow from "../../../components/BookBuyNow";
@@ -28,7 +28,12 @@ export const metadata = {
   canonical: "https://autoimmuneeats.com",
   description:
     "Harness nutrition to improve your autoimmune disease - without resorting to restrictive & unproven diets. Learn how you can start feeling better today.",
-  keywords: ["autoimmune eats", "autoimmune nutrition", "anti-diet autoimmune", "autoimmune eats caylee clay"],
+  keywords: [
+    "autoimmune eats",
+    "autoimmune nutrition",
+    "anti-diet autoimmune",
+    "autoimmune eats caylee clay",
+  ],
   icons: {
     icon: "/icon.png",
   },
@@ -103,7 +108,7 @@ export default function Home() {
         <div className="hidden sm:grid absolute z-2 m-16 justify-center max-h-24 lg:pt-20">
           <div className="bg-white box-border px-10 pt-10 text-center opacity-80">
             <p className="text-3xl lg:text-6xl pb-4 ">
-              <b>welcome</b>
+              <strong>welcome</strong>
               <br />
               to autoimmune eats
             </p>
@@ -128,7 +133,7 @@ export default function Home() {
         <div className="sm:hidden grid absolute m-14 z-2 place-self-center ">
           <div className="bg-white box-border px-2 pt-5 sm:pt-10 text-center opacity-80">
             <p className="text-2xl sm:text-6xl pb-4 ">
-              <b>welcome</b>
+              <strong>welcome</strong>
               <br />
               to autoimmune eats
             </p>
@@ -153,28 +158,28 @@ export default function Home() {
       <div className="w-full grid grid-cols-2 md:flex my-6 sm:my-12 bg-white">
         <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
-            <b>Free of dieting,</b>
+            <strong>Free of dieting,</strong>
             <br />
             fearing foods, & fat shaming
           </p>
         </div>
         <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
-            <b>Natural remedies</b>
+            <strong>Natural remedies</strong>
             <br />
             prioritized, medication supported
           </p>
         </div>
         <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
-            <b>Supported by</b>
+            <strong>Supported by</strong>
             <br />
             medical research & Indigenous knowledge
           </p>
         </div>
         <div className="p-5 md:w-1/4 sm:p-10 text-center text-l sm:text-xl">
           <p>
-            <b>Holistic</b>
+            <strong>Holistic</strong>
             <br />
             approach to healing & symptom management
           </p>

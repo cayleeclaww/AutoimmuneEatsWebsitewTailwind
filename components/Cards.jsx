@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const CardComponent = (props) => {
+// this component can be used for one or more cards - receives an array
+
+const Cards = (props) => {
   const { allArticles } = props;
 
   return (
@@ -32,4 +34,4 @@ const CardComponent = (props) => {
   );
 };
 
-export default CardComponent;
+export default Cards;

@@ -1,4 +1,4 @@
-import ArticleComponent from "../../../../../components/ArticleComponent";
+import ArticleComponent from "../../../../../components/ArticleTemplate";
 import article from "../../../../../content/WhatIsTheBestPsoriasisDiet.json";
 // Did You Know? articles - *add later
 // Related Articles - *add later

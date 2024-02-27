@@ -1,7 +1,7 @@
 import Link from "next/link";
 import FourCardSpread from "../../../../components/FourCardSpread";
 import TitleRectangleTurquoise from "../../../../components/TitleRectangleTurquoise";
-import Cards from "../../../../components/CardComponent";
+import Cards from "../../../../components/Cards";
 import SectionTitleTurquoiseShadow from "../../../../components/SectionTitleTurquoiseShadow";
 import FeaturePhoto from "../../../../components/FeaturedArticle";
 import EmailPrompt from "../../../../components/EmailPrompt";
@@ -10,7 +10,6 @@ import BestAutoimmuneDiseaseDiet from "../../../../content/BestAutoimmuneDisease
 import WhatCausesAutoimmuneDisease from "../../../../content/WhatCausesAutoimmuneDiseaseandHowtoCureitNaturally.json";
 import WorstFoodsforAutoimmuneDisease from "../../../../content/WorstFoodsforAutoimmuneDisease.json";
 // Did You Know? articles - *add later
-
 
 export default function NutritionAndSupplementsPage() {
   const featuredArticle = BestAutoimmuneDiseaseDiet;

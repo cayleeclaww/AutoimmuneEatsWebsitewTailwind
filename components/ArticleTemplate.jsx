@@ -7,7 +7,7 @@ import ArticleIsHelpful from "./ArticleIsHelpful";
 import parse from "html-react-parser";
 import EmailPrompt from "./EmailPrompt";
 
-const ArticleComponent = (props) => {
+const ArticleTemplate = (props) => {
   const { article } = props;
 
   return (
@@ -18,7 +18,7 @@ const ArticleComponent = (props) => {
       <div className="hidden md:block w-2/3 mx-6 pr-20 text-base lg:mx-10">
         {article.sections.map((sect, i) => (
           <div key={sect.hrefID} className="inline-block">
-            <Link href={`#${sect.hrefID}`}>&nbsp;{sect.subtitle}</Link>
+            &nbsp;<Link href={`#${sect.hrefID}`}>{sect.subtitle}</Link>
             {i + 1 == article.sections.length ? " " : " | "}
           </div>
         ))}
@@ -49,8 +49,8 @@ const ArticleComponent = (props) => {
         {article.sections.map((sect) => (
           <div key={sect.hrefID}>
             <Link href={`#${sect.hrefID}`}>
-              &nbsp;{sect.subtitle}
-              {" | "}
+              &#9900;&nbsp;{sect.subtitle}
+              <br />
             </Link>
           </div>
         ))}
@@ -175,4 +175,4 @@ const ArticleComponent = (props) => {
   );
 };
 
-export default ArticleComponent;
+export default ArticleTemplate;

@@ -91,14 +91,16 @@ export default function AboutPage() {
           <div className="my-6 mx-auto">
             <Image src={founderPic} width={300} height={300}></Image>
           </div>
-          <div className="text-center md:text-left">
+          <div className="">
             <h2
-              className="text-4xl -mt-6"
+              className="text-4xl -mt-6 text-center md:text-left"
               style={{ textShadow: "2px 2px 2px #99CED3" }}
             >
               meet the founder
             </h2>
-            <h3 className="text-xl mb-4">Caylee Clay, RDN CDN CYT</h3>
+            <h3 className="text-xl mb-4 text-center md:text-left">
+              Caylee Clay, RDN CDN CYT
+            </h3>
             <p>
               Hi there! My name is Caylee Clay (they/them), & I have been
               practicing nutrition for over 10 years. I completed a Bachelor of
@@ -123,12 +125,13 @@ export default function AboutPage() {
               <br />
               As much as I love nutrition, I also am passionate about software
               engineering. I built this website myself from scratch, utilizing
-              React on NextJS with the latest App Router. After wireframing in
-              Figma, I programmed this fully responsive design with Tailwind. By
-              deploying client-side rendering, top site speeds are attained by
-              pre-fetching data, image optimizing, keeping state for static
-              components even after navigating away, & more.
+              React in NextJS. After wireframing in Figma, I programmed this
+              fully responsive design with Tailwind. By deploying client-side
+              rendering, top site speeds are attained by pre-fetching data,
+              image optimizing, keeping state for static components even after
+              navigating away, & more.
             </p>
+            {/* ui/ux, design, active language, Vercel cloud, CI/CD pipeline, SEO "deployed with Vercel enabling a flawless CI/CD pipepline allowing for quick & seamless updates --> tech + benefit" */}
           </div>
         </div>
 
