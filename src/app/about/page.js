@@ -103,13 +103,14 @@ export default function AboutPage() {
             </h3>
             <p>
               Hi there! My name is Caylee Clay (they/them), & I have been
-              practicing nutrition for over 10 years. I completed a Bachelor of
-              Science in Nutrition & Food Studies at New York University, plus a
-              Dietetic Internship at Hunter College's School of Urban Public
-              Health. After becoming a Registered Dietitian-Nutritionist (RDN) &
-              a New York State Certified Dietitian-Nutritionist (CDN), I also
-              completed a Certified Yoga Teacher (CYT) program. I am the author
-              of{" "}
+              practicing nutrition for over 10 years. I received a Bachelor of
+              Science in Nutrition & Food Studies at New York University, during
+              which I completed an independent study with public health advocate
+              Dr. Marion Nestle. Next, I attended the Dietetic Internship at
+              Hunter College's School of Urban Public Health. After becoming a
+              Registered Dietitian-Nutritionist (RDN) & a New York State
+              Certified Dietitian-Nutritionist (CDN), I also completed a
+              Certified Yoga Teacher (CYT) program. I am the author of{" "}
               <Link href="https://amzn.to/3xSaKFJ" target="_blank">
                 Gain Control Over Your Psoriasis
               </Link>
@@ -124,14 +125,20 @@ export default function AboutPage() {
               <br />
               <br />
               As much as I love nutrition, I also am passionate about software
-              engineering. I built this website myself from scratch, utilizing
-              React in NextJS. After wireframing in Figma, I programmed this
-              fully responsive design with Tailwind. By deploying client-side
+              engineering. I built this website myself, including designing the
+              UI/UX & programming the site from scratch. I began by researching
+              & studying similar style websites, then drafted an initial design.
+              Next, I wireframed my design in Figma, which allowed for fast
+              browser-based prototyping. After ensuring cohesion among the UI/UX
+              design elements, development began. I programmed this fully
+              responsive design with React in NextJS, utilizing the Tailwind CSS
+              framework to expedite the process. By deploying client-side
               rendering, top site speeds are attained by pre-fetching data,
               image optimizing, keeping state for static components even after
-              navigating away, & more.
+              navigating away, & more. Deploying on Vercel's cloud platform
+              enabled a flawless CI/CD pipeline, allowing for quick & seamless
+              updates.
             </p>
-            {/* ui/ux, design, active language, Vercel cloud, CI/CD pipeline, SEO "deployed with Vercel enabling a flawless CI/CD pipepline allowing for quick & seamless updates --> tech + benefit" */}
           </div>
         </div>
 
