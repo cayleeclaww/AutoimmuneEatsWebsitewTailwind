@@ -101,16 +101,19 @@ export default function AboutPage() {
             <h3 className="text-xl mb-4 text-center md:text-left">
               Caylee Clay, RDN CDN CYT
             </h3>
-            <p>
+            <p className="text-base">
               Hi there! My name is Caylee Clay (they/them), & I have been
               practicing nutrition for over 10 years. I received a Bachelor of
               Science in Nutrition & Food Studies at New York University, during
-              which I completed an independent study with public health advocate
-              Dr. Marion Nestle. Next, I attended the Dietetic Internship at
-              Hunter College's School of Urban Public Health. After becoming a
-              Registered Dietitian-Nutritionist (RDN) & a New York State
-              Certified Dietitian-Nutritionist (CDN), I also completed a
-              Certified Yoga Teacher (CYT) program. I am the author of{" "}
+              which I completed an independent study with public health advocate{" "}
+              <Link href="https://www.foodpolitics.com/" target="_blank">
+                Dr. Marion Nestle
+              </Link>
+              . Next, I attended the Dietetic Internship at Hunter College's
+              School of Urban Public Health. After becoming a Registered
+              Dietitian-Nutritionist (RDN) & a New York State Certified
+              Dietitian-Nutritionist (CDN), I also completed a Certified Yoga
+              Teacher (CYT) program. I am the author of{" "}
               <Link href="https://amzn.to/3xSaKFJ" target="_blank">
                 Gain Control Over Your Psoriasis
               </Link>
@@ -121,7 +124,12 @@ export default function AboutPage() {
               over half my life. Nutrition has been the greatest gift in my
               autoimmune journey, providing me with so much healing & comfort.
               My life's mission is to share this evidence-based information with
-              my autoimmune community.
+              my autoimmune community. My personal story is outlined at length
+              in{" "}
+              <Link href="https://amzn.to/3xSaKFJ" target="_blank">
+                my book
+              </Link>
+              .
               <br />
               <br />
               As much as I love nutrition, I also am passionate about software
@@ -136,7 +144,7 @@ export default function AboutPage() {
               rendering, top site speeds are attained by pre-fetching data,
               image optimizing, keeping state for static components even after
               navigating away, & more. Deploying on Vercel's cloud platform
-              enabled a flawless CI/CD pipeline, allowing for quick & seamless
+              enables a flawless CI/CD pipeline, allowing for quick & seamless
               updates.
             </p>
           </div>

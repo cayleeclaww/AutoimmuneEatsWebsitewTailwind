@@ -45,7 +45,7 @@ export const metadata = {
     siteName: "Autoimmune Eats",
     image: [
       {
-        url: "https://autoimmuneeats.com/public/Autoimmune_Eats_Logo.png",
+        url: "https://autoimmuneeats.com/Autoimmune_Eats_Logo.png",
         alt: "Autoimmune Eats Logo",
       },
     ],
