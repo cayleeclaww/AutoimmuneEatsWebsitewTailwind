@@ -8,7 +8,7 @@ export default function EmailPrompt() {
 
   return (
     // turquoise background
-    <div className="w-full bg-turquoise h-80 grid justify-items-center my-16">
+    <div className="w-full bg-turquoise py-10 grid justify-items-center my-16">
       {/* first line of text - cannot be further down in code, or email input box matches length of this text which is undesireable */}
       <h2 className="-mb-14 pt-16 text-3xl font-bold px-6 text-center ">
         Be the first to know when new articles are released!

@@ -48,10 +48,12 @@ const ArticleTemplate = (props) => {
       <div className="md:hidden block mx-6 mt-10 text-base">
         {article.sections.map((sect) => (
           <div key={sect.hrefID}>
-            <Link href={`#${sect.hrefID}`}>
-              &#9900;&nbsp;{sect.subtitle}
-              <br />
-            </Link>
+            <ul>
+              <Link href={`#${sect.hrefID}`}>
+                <li>{sect.subtitle}</li>
+                {/* <br /> */}
+              </Link>
+            </ul>
           </div>
         ))}
       </div>
