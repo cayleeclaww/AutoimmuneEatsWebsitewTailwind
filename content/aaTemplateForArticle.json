@@ -11,9 +11,6 @@
     "title": "*Template Article: Fill in the Blanks",
     "description": "*Do you know the best and worst foods for autoimmune disease? Should you eat an anti-inflammatory diet? The answer may surprise you!",
     "keywords": ["*main keyword", "*supporting keyword", "*supporting keyword"],
-    "alternates": {
-      "canonical": "https://autoimmuneeats.com/template-article"
-    },
     "icons": {
       "icon": "/icon.png"
     },
