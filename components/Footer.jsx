@@ -12,10 +12,16 @@ export default function Footer() {
         <p>
           &copy; 2024 Eat Your Veggies Nutrition PLLC. All rights reserved. Our
           website services, content, and products are for informational purposes
-          only. Content provided on this website does not constitute medical advice,
-          diagnosis, or treatment. See additional information in Terms of Use.
+          only. Content provided on this website does not constitute medical
+          advice, diagnosis, or treatment. See additional information in Terms
+          of Use.
         </p>
       </div>
+      <script
+        async
+        data-id="101446386"
+        src="//static.getclicky.com/js"
+      ></script>
     </div>
   );
 }
