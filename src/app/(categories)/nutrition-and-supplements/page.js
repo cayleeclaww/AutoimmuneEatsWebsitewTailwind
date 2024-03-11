@@ -35,6 +35,12 @@ export default function NutritionAndSupplementsPage() {
         >
           nutrition recommendations
         </Link>
+        <Link
+          href="/nutrition-and-supplements/top-supplements"
+          className="uppercase text-base hover:text-turquoise mx-8 my-4"
+        >
+          top supplements
+        </Link>
         {/* <Link
           href="/nutrition-and-supplements/***UPDATE later after content is created! ***"
           className="uppercase text-base hover:text-turquoise mx-8 my-4"

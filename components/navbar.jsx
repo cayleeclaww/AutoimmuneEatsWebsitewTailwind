@@ -347,6 +347,15 @@ const Navbar = () => {
                 </div>
               </Link>
 
+              <Link href="/nutrition-and-supplements/top-supplements">
+                <div
+                  onClick={() => setHamburgerOpen(false)}
+                  className="py-4 cursor-pointer"
+                >
+                  top supplements
+                </div>
+              </Link>
+
               <Link href="/about">
                 <div
                   onClick={() => setHamburgerOpen(false)}
