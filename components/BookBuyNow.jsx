@@ -8,13 +8,14 @@ const BookBuyNow = () => {
       {/* desktop responsiveness */}
       <div className="w-full flex justify-center py-16 items-center">
         <div className="hidden md:grid m-6 border-solid border-2 border-grey h-fit max-h-90 max-w-md items-center mt-14 bg-white">
-          <p className="text-2xl p-4 text-bold text-center">
+          <p className="text-3xl py-4 px-2 text-bold text-center">
             Gain Control Over Your Psoriasis
           </p>
           <p className="text-l px-4 pb-4">
             Stop living in pain & start self-healing by harnessing the power of
             the latest psoriasis science & research.
-            <br /> <br />
+          </p>
+          <p className="text-l px-4 pb-4">
             Make peace with your body by learning your psoriasis triggers, not
             by attempting to follow some unproven highly restrictive psoriasis
             diet.
@@ -24,6 +25,10 @@ const BookBuyNow = () => {
               buy here
             </button>
           </Link>
+          <p className="text-sm italic text-center mx-3 mb-3 text-gray-400">
+            These are affiliate links, which keep this informational website
+            free of charge. Bookshop.org supports our work the most.
+          </p>
         </div>
         <Image
           className="hidden md:flex visible w-[50%] h-[50%] z-1 "
@@ -31,6 +36,7 @@ const BookBuyNow = () => {
           alt="Display of the book, tablet, and ebook covers for Gain Control Over Your Psoriasis"
         />
       </div>
+
       {/* mobile responsiveness */}
       <div className="md:hidden grid p-4 bg-white">
         <Image
@@ -40,13 +46,14 @@ const BookBuyNow = () => {
         />
       </div>
       <div className="md:hidden flex flex-col items-center px-4 bg-white">
-        <p className="text-2xl px-4 pt-6 text-bold text-center">
+        <p className="text-3xl px-4 pt-6 text-bold text-center">
           Gain Control Over Your Psoriasis
         </p>
         <p className="text-l px-4 p-2 text-center">
           Stop living in pain & start self-healing by harnessing the power of
-          the latest psoriasis science & research. <br />
-          <br />
+          the latest psoriasis science & research.{" "}
+        </p>
+        <p className="text-l px-4 p-2 text-center">
           Make peace with your body by learning your psoriasis triggers, not by
           attempting to follow some unproven highly restrictive psoriasis diet.
         </p>
@@ -55,6 +62,10 @@ const BookBuyNow = () => {
             buy here
           </button>
         </Link>
+        <p className="text-sm italic text-center mx-3 mb-3 text-gray-400">
+          These are affiliate links, which keep this informational website free
+          of charge. Bookshop.org supports our work the most.
+        </p>
       </div>
     </>
   );

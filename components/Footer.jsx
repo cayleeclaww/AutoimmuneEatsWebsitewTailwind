@@ -7,7 +7,8 @@ export default function Footer() {
         <p>
           <Link href="/Privacy-Policy">Privacy Policy</Link> |{" "}
           <Link href="/Terms-of-Use">Terms of Use</Link> |{" "}
-          <Link href="/Cookie-Policy">Cookie Policy</Link>
+          <Link href="/Cookie-Policy">Cookie Policy</Link> |{" "}
+          <Link href="/Disclaimer">Disclaimer</Link>
         </p>
         <p>
           &copy; 2024 Eat Your Veggies Nutrition PLLC. All rights reserved. Our

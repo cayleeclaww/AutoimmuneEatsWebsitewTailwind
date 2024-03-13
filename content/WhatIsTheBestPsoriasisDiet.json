@@ -48,6 +48,8 @@
   "photoFeature": "/What-is-the-Best-Psoriasis-Diet-9-Foods-to-Avoid-and-More.png",
   "photoFeatureAlt": "Featured image for What is The Best Psoriasis Diet article",
   "disclaimer": "PLEASE NOTE: Sections of this article may not be appropriate for those who have been diagnosed with an eating disorder, suspect they may have an eating disorder, or are engaging in disordered eating behaviors. This article is provided as informational content only, not as medical advice.",
+  "affiliateDisclosure": "This page may contain affiliate links. We only recommend products that we have used and/or are supported by research. Your support helps to keep the below information available free of charge.",
+
   "sections": [
     {
       "subtitle": "Overview",
@@ -120,5 +122,13 @@
       "content": "<p>Ultimately, only you can determine the best psoriasis diet for yourself. Safely identifying <a href='https://www.autoimmuneeats.com/nutrition-and-supplements/worst-foods-for-autoimmune-disease-what-you-need-to-know#Food-Sensitivities' target='_blank'>food sensitivities</a> takes time, but is well worth it. Use this list of the 9 foods to avoid with psoriasis to help guide your process. </p><br/><p>Knowing which foods are more likely to drive inflammation, promote heart disease, or cause other problems that will trigger your psoriasis is important. However, it's equally important to know that you do <strong>not</strong> need to remove these foods from your life permanently. Instead, <a href='https://www.autoimmuneeats.com/nutrition-and-supplements/worst-foods-for-autoimmune-disease-what-you-need-to-know#Dangers-of-Dieting' target='_blank'>finding a balance</a> is key. </p><br/><p>While it can be easy to focus on foods that are “bad” for psoriasis, it can be more helpful to focus on foods that can <a href='https://www.autoimmuneeats.com/nutrition-and-supplements/Best-Autoimmune-Disease-Diet-Anti-Inflammatory-or-AIP-or' target='_blank'>help heal psoriasis</a>. </p><br/><p>Finally, if you need support eating healthier without developing a dangerously restrictive dieting mindset, check out our <a href='https://www.autoimmuneeats.com/resources#autoimmune-nutrition-starters-guide' target='_blank'>Autoimmune Nutrition Starter Guide</a>. </p>"
     }
   ],
-  "categories": ["psoriasis", "best diet", "worst foods", "gluten", "dairy","nightshades", "inflammation"]
+  "categories": [
+    "psoriasis",
+    "best diet",
+    "worst foods",
+    "gluten",
+    "dairy",
+    "nightshades",
+    "inflammation"
+  ]
 }

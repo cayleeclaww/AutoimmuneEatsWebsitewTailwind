@@ -3,7 +3,7 @@ export default function CookiePolicyPage() {
     <>
       <div className="w-2/3 mx-auto my-24">
         <h1 className="text-3xl my-4">Cookie Policy</h1>
-        <p>Last updated January 1, 2024</p>
+        <p>Last updated March 13, 2024</p>
         <br></br>
         <p>
           This Cookie Policy explains how Eat Your Veggies Nutrition PLLC
@@ -171,6 +171,24 @@ export default function CookiePolicyPage() {
           The information collected through this process does not enable us or
           them to identify your name, contact details, or other details that
           directly identify you unless you choose to provide these.
+        </p>
+        <br></br>
+        <h2 className="text-2xl my-4 uppercase">
+          Affiliate Program Participation
+        </h2>
+        <p>
+          The Website may engage in affiliate marketing, which is done by
+          embedding tracking links into the Website. If you click on a link for
+          an affiliate partnership, a cookie will be placed on your browser to
+          track any sales for purposes of commissions.</p>
+          <br></br>
+          <p>Eat Your Veggies Nutrition PLLC is a participant in the Amazon Services LLC Associates Program, an
+          affiliate advertising program designed to provide a means for sites to
+          earn advertising fees by advertising and links to Amazon.com. As part
+          of this Amazon Associates program, the Website will post customized
+          links, provided by Amazon, to track the referrals to their website.
+          This program utilizes cookies to track visits for the purposes of
+          assigning commission on these sales.
         </p>
         <br></br>
         <h2 className="text-2xl my-4 uppercase">

@@ -1,4 +1,4 @@
-// CONSIDER: including bolded sections and live URLs from PDF 
+// CONSIDER: including bolded sections and live URLs from PDF
 
 export default function TermsofUsePage() {
   return (
@@ -679,11 +679,22 @@ export default function TermsofUsePage() {
         <br></br>
         <h2 className="text-2xl my-4 uppercase">12. ADVERTISERS</h2>
         <p>
-          We allow advertisers to display their advertisements and other
+          At this time, we do not work with advertisers. In the future, we may
+          allow advertisers to display their advertisements and other
           information in certain areas of the Services, such as sidebar
-          advertisements or banner advertisements. We simply provide the space
-          to place such advertisements, and we have no other relationship with
+          advertisements or banner advertisements. We will simply provide the space
+          to place these advertisements, and we have no other relationship with
           advertisers.
+        </p>
+        <br></br>
+        <p>Affiliate Marketing</p>
+        <br></br>
+        <p>
+          From time to time, the Site may engage in affiliate marketing. This
+          means that if you use an affiliate link to make a purchase, the
+          Website will receive a commission on that purchase. All efforts are
+          made to ensure that affiliate links are disclosed in accordance with
+          the FTC.
         </p>
         <br></br>
         <h2 className="text-2xl my-4 uppercase">13. SERVICES MANAGEMENT</h2>

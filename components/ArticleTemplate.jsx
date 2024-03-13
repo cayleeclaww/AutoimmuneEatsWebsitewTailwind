@@ -76,8 +76,9 @@ const ArticleTemplate = (props) => {
           {/* article contents - desktop & mobile */}
           <div className="grid px-8 lg:px-12">
             {/* disclaimer - desktop & mobile */}
-            <p className="text-sm ml-1 mt-8 mb-2 italic">
-              {article.disclaimer}
+            <p className="text-sm ml-1 mt-4 italic">{article.disclaimer}
+            <br></br><br></br>
+            {article.affiliateDisclosure}
             </p>
             {/* subtitle names + href ID - desktop & mobile */}
             {article.sections.map((sect) => (
