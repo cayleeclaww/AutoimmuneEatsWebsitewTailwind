@@ -120,7 +120,7 @@ export default function AboutPage() {
               .
               <br />
               <br />
-              Beyond titles & degress, I struggled with autoimmune disease for
+              Beyond titles & degrees, I lived with autoimmune disease for
               over half my life. Nutrition has been the greatest gift in my
               autoimmune journey, providing me with so much healing & comfort.
               My life's mission is to share this evidence-based information with
