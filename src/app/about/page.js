@@ -114,19 +114,25 @@ export default function AboutPage() {
               Dietitian-Nutritionist (RDN) & a New York State Certified
               Dietitian-Nutritionist (CDN), I also completed a Certified Yoga
               Teacher (CYT) program. I am the author of{" "}
-              <Link href="https://amzn.to/3xSaKFJ" target="_blank">
+              <Link
+                href="https://bookshop.org/a/102444/9781735150413"
+                target="_blank"
+              >
                 Gain Control Over Your Psoriasis
               </Link>
               .
               <br />
               <br />
-              Beyond titles & degrees, I lived with autoimmune disease for
-              over half my life. Nutrition has been the greatest gift in my
+              Beyond titles & degrees, I lived with autoimmune disease for over
+              half my life. Nutrition has been the greatest gift in my
               autoimmune journey, providing me with so much healing & comfort.
               My life's mission is to share this evidence-based information with
               my autoimmune community. My personal story is outlined at length
               in{" "}
-              <Link href="https://amzn.to/3xSaKFJ" target="_blank">
+              <Link
+                href="https://bookshop.org/a/102444/9781735150413"
+                target="_blank"
+              >
                 my book
               </Link>
               .
